@@ -1,0 +1,6 @@
+﻿CREATE TABLE [T_KarteiFlags] (
+  [ID] AUTOINCREMENT CONSTRAINT [PrimaryKey] PRIMARY KEY UNIQUE NOT NULL,
+  [FlagID] LONG,
+  [KarteiID] LONG,
+  [AngelegtAm] DATETIME
+)

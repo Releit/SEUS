@@ -1,0 +1,140 @@
+﻿Version =20
+VersionRequired =20
+Begin Report
+    LayoutForPrint = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    ScrollBars =0
+    BorderStyle =0
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =5047
+    DatasheetFontHeight =11
+    ItemSuffix =53
+    RecSrcDt = Begin
+        0xbc2d9203b15de440
+    End
+    RecordSource ="SELECT T_LieferscheinPos.ID AS PosID, T_LieferscheinPos.LieferscheinID, T_Liefer"
+        "scheinPos.Menge, T_LieferscheinPos.Einheit, [Beschreibung] & ' ' & [Anmerkungen]"
+        " AS [Text], Round([VKexkl]*(1+[UStProz]),4) AS Preis FROM T_LieferscheinPos; "
+    DatasheetFontName ="Tahoma"
+    FilterOnLoad =0
+    ShowPageMargins =0
+    FitToPage =1
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            ShowDatePicker =0
+        End
+        Begin UnboundObjectFrame
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin BreakLevel
+            ControlSource ="PosID"
+        End
+        Begin PageHeader
+            Height =0
+            Name ="Seitenkopfbereich"
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =233
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    TextAlign =3
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Width =680
+                    Height =233
+                    ColumnOrder =3
+                    FontSize =10
+                    Name ="Menge"
+                    ControlSource ="Menge"
+                    ShowDatePicker =1
+
+                    LayoutCachedWidth =680
+                    LayoutCachedHeight =233
+                End
+                Begin TextBox
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =1474
+                    Width =3573
+                    Height =233
+                    ColumnOrder =2
+                    FontSize =10
+                    TabIndex =1
+                    Name ="Beschreibung"
+                    ControlSource ="Text"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =1474
+                    LayoutCachedWidth =5047
+                    LayoutCachedHeight =233
+                End
+                Begin TextBox
+                    TextAlign =2
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =680
+                    Width =794
+                    Height =233
+                    FontSize =10
+                    TabIndex =2
+                    Name ="Einheit"
+                    ControlSource ="Einheit"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =680
+                    LayoutCachedWidth =1474
+                    LayoutCachedHeight =233
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="Seitenfußbereich"
+        End
+    End
+End
+CodeBehindForm
+' See "Lieferschein_Positionen.cls"

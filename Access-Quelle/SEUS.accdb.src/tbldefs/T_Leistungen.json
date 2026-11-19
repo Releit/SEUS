@@ -1,0 +1,105 @@
+﻿{
+  "Info": {
+    "Class": "clsDbTableDef",
+    "Description": "Linked Table"
+  },
+  "Items": {
+    "Name": "T_Leistungen",
+    "Connect": "ODBC;DSN=zeiterfassung;",
+    "SourceTableName": "T_Leistungen",
+    "Attributes": 536870912,
+    "PrimaryKey": "[ID]",
+    "FieldProperties": {
+      "ID": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "KarteiID": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "ProduktID": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "ProjektID": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "MitarbeiterID": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "AufRechnungID": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "VerrKndID": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "AufHonorarRechnungID": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "VerrHonorarID": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "Pos": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "Menge": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "VKExkl": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "UstProz": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "MengeAusStunden": {
+        "DisplayControl": {
+          "Type": 3,
+          "Value": 106
+        }
+      },
+      "KeineVerrechnung": {
+        "DisplayControl": {
+          "Type": 3,
+          "Value": 106
+        }
+      }
+    }
+  }
+}

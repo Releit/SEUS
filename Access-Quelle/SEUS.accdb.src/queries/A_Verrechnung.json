@@ -1,0 +1,56 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "A_Verrechnung"
+  },
+  "Items": {
+    "QueryType": 0,
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1666,
+        "bottom": 945
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1650,
+        "bottom": 452
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "T_Leistungen",
+          "Alias": "",
+          "Left": 240,
+          "Top": 12,
+          "Right": 460,
+          "Bottom": 176,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "T_Produkte",
+          "Alias": "",
+          "Left": 508,
+          "Top": 12,
+          "Right": 652,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "T_Kartei",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 192,
+          "Bottom": 156,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

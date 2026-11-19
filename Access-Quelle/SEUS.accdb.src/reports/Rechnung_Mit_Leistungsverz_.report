@@ -1,0 +1,857 @@
+﻿Version =20
+VersionRequired =20
+Begin Report
+    LayoutForPrint = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =10516
+    DatasheetFontHeight =11
+    ItemSuffix =58
+    RecSrcDt = Begin
+        0xc66273764f3ce440
+    End
+    RecordSource ="SELECT T_RechnungsPos.RechnungID, Nz([Titel]+\" \",\"\") & [Name1] & \" \" & [Na"
+        "me2] & Nz(Chr(13) & Chr(10) & [zuhanden],\"\") AS Kundenname, T_Kartei.Adresse, "
+        "[PLZ] & \" \" & [Ort] AS PLZOrt, T_Rechnungen.Datum, T_Rechnungen.Nr, T_Rechnung"
+        "sPos.Datum, [Menge] & \" \" & [Einheit] AS MengeEinheit, IIf(IsNull([Beschreibun"
+        "g]),\"\",[Beschreibung]+Chr(13)+Chr(10)) & [T_RechnungsPos].[anmerkungen] AS Pos"
+        "Text, T_Einstellungen.RechnungsFussText, T_RechnungsPos.VKexkl, T_RechnungsPos.U"
+        "StProz, T_RechnungsPos.Menge, T_Zahlungsarten.RechnungsText, ([kurzzeichen]+\"-\""
+        ") & Format([T_Rechnungen].[Nr]) AS RNr, T_Kartei.UID, IIf([UstProz]=0.1,Round([U"
+        "stProz]*[VKexkl]*[menge],2),Null) AS Ust10Proz, IIf([UstProz]=0.12,Round([UstPro"
+        "z]*[VKexkl]*[menge],2),Null) AS Ust12Proz, IIf([UstProz]=0.2,Round([UstProz]*[VK"
+        "exkl]*[menge],2),Null) AS Ust20Proz, [VKexkl]*[Menge] AS Gesamt, IIf(IsNull([T_K"
+        "artei].[uid]),Null,\"Ihre UID:\") AS UIDNrTxt, \"#_ EMailto \" & [eMail] & \" _#"
+        " #_ EMailsubject \" & [eMailSubject] & \" _#\" AS PdfParameter, \"#_ EMailbody \""
+        " & [eMailBody1] AS PdfEMailBody1, [emailbody2] & \" _# #_ NextAction 4 _#\" AS p"
+        "dfEMailBody, T_Rechnungen.DruckText, T_RechnungsPos.Beschreibung, T_RechnungsPos"
+        ".Anmerkungen FROM T_Einstellungen, T_Kartei INNER JOIN ((T_Rechnungen INNER JOIN"
+        " T_Zahlungsarten ON T_Rechnungen.ZahlartID = T_Zahlungsarten.ID) INNER JOIN T_Re"
+        "chnungsPos ON T_Rechnungen.ID = T_RechnungsPos.RechnungID) ON T_Kartei.ID = T_Re"
+        "chnungen.KarteiID WHERE (((T_RechnungsPos.RechnungID)=mBR_GetID())); "
+    DatasheetFontName ="Tahoma"
+    FilterOnLoad =0
+    FitToPage =1
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            ShowDatePicker =0
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin UnboundObjectFrame
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin PageBreak
+            Width =283
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            GroupFooter = NotDefault
+            KeepTogether =2
+            ControlSource ="RechnungID"
+        End
+        Begin PageHeader
+            Height =0
+            Name ="Seitenkopfbereich"
+        End
+        Begin BreakHeader
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            CanShrink = NotDefault
+            Height =5649
+            Name ="Gruppenkopf0"
+            Begin
+                Begin TextBox
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =6240
+                    Top =3001
+                    Width =3795
+                    Height =435
+                    FontSize =16
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld36"
+                    ControlSource ="=IIf([brutto]>0,\"Rechnung\",\"Gutschrift\")"
+
+                    LayoutCachedLeft =6240
+                    LayoutCachedTop =3001
+                    LayoutCachedWidth =10035
+                    LayoutCachedHeight =3436
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Left =567
+                    Top =2415
+                    Width =5103
+                    Height =555
+                    ColumnOrder =4
+                    TabIndex =7
+                    Name ="Kundenname"
+                    ControlSource ="Kundenname"
+                    FontName ="Arial"
+
+                    LayoutCachedLeft =567
+                    LayoutCachedTop =2415
+                    LayoutCachedWidth =5670
+                    LayoutCachedHeight =2970
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Left =567
+                    Top =2970
+                    Width =5103
+                    Height =300
+                    ColumnOrder =5
+                    TabIndex =8
+                    Name ="Adresse"
+                    ControlSource ="Adresse"
+                    FontName ="Arial"
+
+                    LayoutCachedLeft =567
+                    LayoutCachedTop =2970
+                    LayoutCachedWidth =5670
+                    LayoutCachedHeight =3270
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Left =567
+                    Top =3255
+                    Width =5103
+                    Height =300
+                    ColumnOrder =7
+                    TabIndex =1
+                    Name ="PLZOrt"
+                    ControlSource ="PLZOrt"
+                    FontName ="Arial"
+
+                    LayoutCachedLeft =567
+                    LayoutCachedTop =3255
+                    LayoutCachedWidth =5670
+                    LayoutCachedHeight =3555
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    TextFontCharSet =178
+                    IMESentenceMode =3
+                    Left =573
+                    Top =4770
+                    Width =9923
+                    Height =285
+                    ColumnOrder =6
+                    FontSize =10
+                    TabIndex =6
+                    Name ="DruckText"
+                    ControlSource ="DruckText"
+                    FontName ="Arial"
+
+                    LayoutCachedLeft =573
+                    LayoutCachedTop =4770
+                    LayoutCachedWidth =10496
+                    LayoutCachedHeight =5055
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =6240
+                    Top =5334
+                    Width =1134
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld10"
+                    Caption ="Menge"
+                    LayoutCachedLeft =6240
+                    LayoutCachedTop =5334
+                    LayoutCachedWidth =7374
+                    LayoutCachedHeight =5649
+                End
+                Begin Label
+                    Left =570
+                    Top =5334
+                    Width =5670
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld11"
+                    Caption ="Beschreibung"
+                    LayoutCachedLeft =570
+                    LayoutCachedTop =5334
+                    LayoutCachedWidth =6240
+                    LayoutCachedHeight =5649
+                End
+                Begin Label
+                    TextAlign =3
+                    Left =7378
+                    Top =5334
+                    Width =1134
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld12"
+                    Caption ="Einzelpreis"
+                    LayoutCachedLeft =7378
+                    LayoutCachedTop =5334
+                    LayoutCachedWidth =8512
+                    LayoutCachedHeight =5649
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =8512
+                    Top =5334
+                    Width =851
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld13"
+                    Caption ="USt. "
+                    LayoutCachedLeft =8512
+                    LayoutCachedTop =5334
+                    LayoutCachedWidth =9363
+                    LayoutCachedHeight =5649
+                End
+                Begin Label
+                    TextAlign =3
+                    Left =9363
+                    Top =5334
+                    Width =1134
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld14"
+                    Caption ="Gesamt"
+                    LayoutCachedLeft =9363
+                    LayoutCachedTop =5334
+                    LayoutCachedWidth =10497
+                    LayoutCachedHeight =5649
+                End
+                Begin Line
+                    BorderWidth =1
+                    Left =577
+                    Top =5634
+                    Width =9923
+                    BorderColor =8355711
+                    Name ="Linie20"
+                    LayoutCachedLeft =577
+                    LayoutCachedTop =5634
+                    LayoutCachedWidth =10500
+                    LayoutCachedHeight =5634
+                End
+                Begin Line
+                    BorderWidth =2
+                    Left =6240
+                    Top =3406
+                    Width =4082
+                    BorderColor =8355711
+                    Name ="Linie37"
+                    LayoutCachedLeft =6240
+                    LayoutCachedTop =3406
+                    LayoutCachedWidth =10322
+                    LayoutCachedHeight =3406
+                End
+                Begin TextBox
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =7936
+                    Top =3466
+                    Width =1598
+                    Height =285
+                    ColumnOrder =3
+                    FontSize =10
+                    TabIndex =3
+                    Name ="RNr"
+                    ControlSource ="RNr"
+
+                    LayoutCachedLeft =7936
+                    LayoutCachedTop =3466
+                    LayoutCachedWidth =9534
+                    LayoutCachedHeight =3751
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            TextAlign =1
+                            Left =6240
+                            Top =3466
+                            Width =1200
+                            Height =285
+                            FontSize =10
+                            Name ="Bezeichnungsfeld39"
+                            Caption ="RechnungsNr:"
+                            LayoutCachedLeft =6240
+                            LayoutCachedTop =3466
+                            LayoutCachedWidth =7440
+                            LayoutCachedHeight =3751
+                        End
+                    End
+                End
+                Begin TextBox
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =7936
+                    Top =3751
+                    Width =1598
+                    Height =285
+                    ColumnOrder =2
+                    FontSize =10
+                    TabIndex =4
+                    Name ="Text40"
+                    ControlSource ="T_Rechnungen.Datum"
+
+                    LayoutCachedLeft =7936
+                    LayoutCachedTop =3751
+                    LayoutCachedWidth =9534
+                    LayoutCachedHeight =4036
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            TextAlign =1
+                            Left =6240
+                            Top =3750
+                            Width =1530
+                            Height =285
+                            FontSize =10
+                            Name ="Bezeichnungsfeld41"
+                            Caption ="Rechnungsdatum:"
+                            LayoutCachedLeft =6240
+                            LayoutCachedTop =3750
+                            LayoutCachedWidth =7770
+                            LayoutCachedHeight =4035
+                        End
+                    End
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =6240
+                    Top =4036
+                    Width =1478
+                    Height =285
+                    ColumnOrder =1
+                    FontSize =10
+                    TabIndex =5
+                    Name ="Text42"
+                    ControlSource ="UIDNrTxt"
+
+                    LayoutCachedLeft =6240
+                    LayoutCachedTop =4036
+                    LayoutCachedWidth =7718
+                    LayoutCachedHeight =4321
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =7936
+                    Top =4036
+                    Width =1598
+                    Height =285
+                    ColumnOrder =0
+                    FontSize =10
+                    TabIndex =2
+                    Name ="Text44"
+                    ControlSource ="UID"
+
+                    LayoutCachedLeft =7936
+                    LayoutCachedTop =4036
+                    LayoutCachedWidth =9534
+                    LayoutCachedHeight =4321
+                End
+                Begin Label
+                    BackStyle =1
+                    TextAlign =1
+                    Left =6240
+                    Top =630
+                    Width =3930
+                    Height =285
+                    ForeColor =1643706
+                    Name ="Bezeichnungsfeld49"
+                    Caption ="Software Entwicklung Und Service"
+                    FontName ="Verdana"
+                    LayoutCachedLeft =6240
+                    LayoutCachedTop =630
+                    LayoutCachedWidth =10170
+                    LayoutCachedHeight =915
+                    BackThemeColorIndex =1
+                End
+                Begin Label
+                    BackStyle =1
+                    TextFontFamily =18
+                    Left =6240
+                    Top =1185
+                    Width =4110
+                    Height =765
+                    FontSize =10
+                    ForeColor =10040879
+                    Name ="Bezeichnungsfeld50"
+                    Caption ="A-8713 St. Stefan ob Leoben, Niederdorf 21\015\012Tel.: +43(0)3832 3558 Mobil: +"
+                        "43(0)650 6910003\015\012eMail: office@seus.at"
+                    FontName ="Cambria"
+                    LayoutCachedLeft =6240
+                    LayoutCachedTop =1185
+                    LayoutCachedWidth =10350
+                    LayoutCachedHeight =1950
+                    ThemeFontIndex =0
+                    BackThemeColorIndex =1
+                End
+                Begin Label
+                    Left =6240
+                    Width =4110
+                    Height =675
+                    FontSize =26
+                    FontWeight =700
+                    ForeColor =1643706
+                    Name ="Bezeichnungsfeld51"
+                    Caption ="www.SEUS.at"
+                    FontName ="Verdana"
+                    LayoutCachedLeft =6240
+                    LayoutCachedWidth =10350
+                    LayoutCachedHeight =675
+                End
+                Begin Line
+                    BorderWidth =1
+                    Left =6240
+                    Top =630
+                    Width =4110
+                    BorderColor =1643706
+                    Name ="Linie52"
+                    LayoutCachedLeft =6240
+                    LayoutCachedTop =630
+                    LayoutCachedWidth =10350
+                    LayoutCachedHeight =630
+                End
+                Begin Label
+                    BackStyle =1
+                    Left =6240
+                    Top =930
+                    Width =2475
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    ForeColor =10040879
+                    Name ="Bezeichnungsfeld53"
+                    Caption ="Ing. Reinhard Leitner\015\012"
+                    FontName ="Verdana"
+                    LayoutCachedLeft =6240
+                    LayoutCachedTop =930
+                    LayoutCachedWidth =8715
+                    LayoutCachedHeight =1215
+                    BackThemeColorIndex =1
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =315
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =6237
+                    Width =1134
+                    Height =315
+                    ColumnOrder =3
+                    FontSize =10
+                    Name ="Text15"
+                    ControlSource ="MengeEinheit"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =6237
+                    LayoutCachedWidth =7371
+                    LayoutCachedHeight =315
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Left =567
+                    Width =5670
+                    Height =315
+                    ColumnOrder =2
+                    FontSize =10
+                    TabIndex =1
+                    Name ="PosText"
+                    ControlSource ="PosText"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =567
+                    LayoutCachedWidth =6237
+                    LayoutCachedHeight =315
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =7371
+                    Width =1134
+                    Height =315
+                    ColumnOrder =1
+                    FontSize =10
+                    TabIndex =2
+                    Name ="Text17"
+                    ControlSource ="VKexkl"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =7371
+                    LayoutCachedWidth =8505
+                    LayoutCachedHeight =315
+                End
+                Begin TextBox
+                    DecimalPlaces =0
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =8505
+                    Width =851
+                    Height =315
+                    ColumnOrder =0
+                    FontSize =10
+                    TabIndex =3
+                    Name ="Text18"
+                    ControlSource ="UStProz"
+                    Format ="Percent"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =8505
+                    LayoutCachedWidth =9356
+                    LayoutCachedHeight =315
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =9356
+                    Width =1134
+                    Height =315
+                    ColumnOrder =5
+                    FontSize =10
+                    TabIndex =4
+                    Name ="Gesamt"
+                    ControlSource ="Gesamt"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =9356
+                    LayoutCachedWidth =10490
+                    LayoutCachedHeight =315
+                End
+            End
+        End
+        Begin BreakFooter
+            CanGrow = NotDefault
+            CanShrink = NotDefault
+            Height =1762
+            Name ="Gruppenfuß0"
+            Begin
+                Begin Line
+                    BorderWidth =1
+                    Left =570
+                    Top =15
+                    Width =9923
+                    BorderColor =8355711
+                    Name ="Linie22"
+                    LayoutCachedLeft =570
+                    LayoutCachedTop =15
+                    LayoutCachedWidth =10493
+                    LayoutCachedHeight =15
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    TextAlign =3
+                    IMESentenceMode =3
+                    Left =9358
+                    Top =345
+                    Width =1134
+                    Height =11
+                    ColumnOrder =2
+                    FontSize =10
+                    TabIndex =3
+                    Name ="Ust10Proz"
+                    ControlSource ="=sum([Ust10Proz])"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+
+                    LayoutCachedLeft =9358
+                    LayoutCachedTop =345
+                    LayoutCachedWidth =10492
+                    LayoutCachedHeight =356
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    TextAlign =3
+                    IMESentenceMode =3
+                    Left =9361
+                    Top =408
+                    Width =1134
+                    Height =11
+                    ColumnOrder =3
+                    FontSize =10
+                    TabIndex =2
+                    Name ="Ust20Proz"
+                    ControlSource ="=sum([Ust20Proz])"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+
+                    LayoutCachedLeft =9361
+                    LayoutCachedTop =408
+                    LayoutCachedWidth =10495
+                    LayoutCachedHeight =419
+                End
+                Begin TextBox
+                    TextAlign =3
+                    IMESentenceMode =3
+                    Left =9351
+                    Top =30
+                    Width =1134
+                    Height =285
+                    ColumnOrder =0
+                    FontSize =10
+                    TabIndex =5
+                    Name ="Netto"
+                    ControlSource ="=sum([Gesamt])"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+
+                    LayoutCachedLeft =9351
+                    LayoutCachedTop =30
+                    LayoutCachedWidth =10485
+                    LayoutCachedHeight =315
+                    Begin
+                        Begin Label
+                            TextAlign =3
+                            Left =6645
+                            Top =30
+                            Width =2595
+                            Height =285
+                            FontSize =10
+                            Name ="Bezeichnungsfeld27"
+                            Caption ="Summe Netto"
+                            LayoutCachedLeft =6645
+                            LayoutCachedTop =30
+                            LayoutCachedWidth =9240
+                            LayoutCachedHeight =315
+                        End
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    IMESentenceMode =3
+                    Left =9361
+                    Top =483
+                    Width =1134
+                    Height =285
+                    ColumnOrder =1
+                    FontSize =10
+                    TabIndex =4
+                    Name ="Brutto"
+                    ControlSource ="=[Netto]+nz([Ust10Proz],0)+nz([Ust12Proz],0)+nz([Ust20Proz],0)"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+
+                    LayoutCachedLeft =9361
+                    LayoutCachedTop =483
+                    LayoutCachedWidth =10495
+                    LayoutCachedHeight =768
+                    Begin
+                        Begin Label
+                            TextAlign =3
+                            Left =6648
+                            Top =483
+                            Width =2595
+                            Height =285
+                            FontSize =10
+                            Name ="Bezeichnungsfeld32"
+                            Caption ="Gesamtsumme Brutto"
+                            LayoutCachedLeft =6648
+                            LayoutCachedTop =483
+                            LayoutCachedWidth =9243
+                            LayoutCachedHeight =768
+                        End
+                    End
+                End
+                Begin Line
+                    BorderWidth =1
+                    Left =7368
+                    Top =453
+                    Width =3119
+                    BorderColor =8355711
+                    Name ="Linie33"
+                    LayoutCachedLeft =7368
+                    LayoutCachedTop =453
+                    LayoutCachedWidth =10487
+                    LayoutCachedHeight =453
+                End
+                Begin Line
+                    BorderWidth =1
+                    Left =7368
+                    Top =768
+                    Width =3119
+                    BorderColor =8355711
+                    Name ="Linie34"
+                    LayoutCachedLeft =7368
+                    LayoutCachedTop =768
+                    LayoutCachedWidth =10487
+                    LayoutCachedHeight =768
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    TextAlign =3
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =6645
+                    Top =345
+                    Width =2595
+                    Height =11
+                    FontSize =10
+                    Name ="Ust10Txt"
+                    ControlSource ="=IIf(isnull([Ust10Proz]),Null,\"USt. 10%\")"
+
+                    LayoutCachedLeft =6645
+                    LayoutCachedTop =345
+                    LayoutCachedWidth =9240
+                    LayoutCachedHeight =356
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    TextAlign =3
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =6648
+                    Top =408
+                    Width =2595
+                    Height =11
+                    FontSize =10
+                    TabIndex =1
+                    Name ="Ust20Txt"
+                    ControlSource ="=IIf(IsNull([Ust20Proz]),Null,\"USt. 20%\")"
+
+                    LayoutCachedLeft =6648
+                    LayoutCachedTop =408
+                    LayoutCachedWidth =9243
+                    LayoutCachedHeight =419
+                End
+                Begin Line
+                    BorderWidth =1
+                    Left =7368
+                    Top =798
+                    Width =3119
+                    BorderColor =8355711
+                    Name ="Linie35"
+                    LayoutCachedLeft =7368
+                    LayoutCachedTop =798
+                    LayoutCachedWidth =10487
+                    LayoutCachedHeight =798
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =566
+                    Top =1133
+                    Width =9930
+                    Height =315
+                    ColumnWidth =10065
+                    TabIndex =6
+                    Name ="RechnungsText"
+                    ControlSource ="RechnungsText"
+
+                    LayoutCachedLeft =566
+                    LayoutCachedTop =1133
+                    LayoutCachedWidth =10496
+                    LayoutCachedHeight =1448
+                End
+                Begin Subform
+                    OldBorderStyle =0
+                    Left =285
+                    Top =1680
+                    Width =10225
+                    Height =82
+                    TabIndex =7
+                    Name ="Untergeordnet55"
+                    SourceObject ="Report.Leistungsverzeichnis"
+                    LinkChildFields ="AufRechnungID"
+                    LinkMasterFields ="RechnungID"
+
+                    LayoutCachedLeft =285
+                    LayoutCachedTop =1680
+                    LayoutCachedWidth =10510
+                    LayoutCachedHeight =1762
+                End
+                Begin PageBreak
+                    Top =1587
+                    Name ="Seitenumbruch57"
+                End
+            End
+        End
+        Begin PageFooter
+            Height =866
+            Name ="Seitenfußbereich"
+            Begin
+                Begin TextBox
+                    CanGrow = NotDefault
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =570
+                    Top =15
+                    Width =9915
+                    Height =851
+                    ColumnWidth =11160
+                    ColumnOrder =0
+                    FontSize =8
+                    Name ="RechnungsFussText"
+                    ControlSource ="RechnungsFussText"
+                    FontName ="Century Gothic"
+
+                    LayoutCachedLeft =570
+                    LayoutCachedTop =15
+                    LayoutCachedWidth =10485
+                    LayoutCachedHeight =866
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "Rechnung_Mit_Leistungsverz_.cls"

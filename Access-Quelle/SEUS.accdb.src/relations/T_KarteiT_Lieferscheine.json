@@ -1,0 +1,18 @@
+﻿{
+  "Info": {
+    "Class": "clsDbRelation",
+    "Description": "Database relationship"
+  },
+  "Items": {
+    "Name": "T_KarteiT_Lieferscheine",
+    "Attributes": 4096,
+    "Table": "T_Kartei",
+    "ForeignTable": "T_Lieferscheine",
+    "Fields": [
+      {
+        "Name": "ID",
+        "ForeignName": "KarteiID"
+      }
+    ]
+  }
+}

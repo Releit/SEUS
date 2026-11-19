@@ -1,0 +1,72 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "A_Rechnungen_Nach_BMS"
+  },
+  "Items": {
+    "QueryType": 64,
+    "QueryProperties": {
+      "RecordLocks": {
+        "Type": 2,
+        "Value": 2
+      }
+    },
+    "Columns": {
+      "T_Kartei.Name1": {
+        "ColumnWidth": 3330,
+        "AggregateType": -1
+      },
+      "T_Rechnungen.zuhanden": {
+        "ColumnWidth": 1860,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1705,
+        "bottom": 857
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1689,
+        "bottom": 593
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 2699,
+      "Tables": [
+        {
+          "Name": "T_Rechnungen",
+          "Alias": "",
+          "Left": 322,
+          "Top": 16,
+          "Right": 466,
+          "Bottom": 541,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "T_Kartei",
+          "Alias": "",
+          "Left": -5,
+          "Top": 9,
+          "Right": 241,
+          "Bottom": 539,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Rechnungen",
+          "Alias": "",
+          "Left": 534,
+          "Top": 12,
+          "Right": 678,
+          "Bottom": 156,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

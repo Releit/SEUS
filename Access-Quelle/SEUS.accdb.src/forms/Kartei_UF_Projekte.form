@@ -1,0 +1,567 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =2
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =10148
+    RowHeight =495
+    DatasheetFontHeight =10
+    ItemSuffix =63
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    RecSrcDt = Begin
+        0xd432f0d78c9be540
+    End
+    RecordSource ="SELECT T_Projekte.*, mDF_ProjektLeistungenEuro([ID]) AS LeistungenEuro, \"€/Tag\""
+        " AS EuroProTag, mDF_ProjektLeistungenEuroVerrechnet([ID]) AS LeistungenEuroVerre"
+        "chnet, \"Leistungen\" AS Leistungen, mDF_ProjektLeistungenStd([ID]) AS Leistunge"
+        "nStd, mDF_ProjektLeistungenStdVerrechnet([ID]) AS LeistungenStdVerr FROM T_Proje"
+        "kte ORDER BY T_Projekte.StartDatum DESC; "
+    Caption ="T_Rechnungen"
+    DatasheetFontName ="Calibri"
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            BorderColor =-2147483609
+            ForeColor =11830108
+            FontName ="Calibri"
+        End
+        Begin Rectangle
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BorderColor =-2147483609
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+            BorderColor =-2147483609
+        End
+        Begin Image
+            BackStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin OptionButton
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =-2147483609
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            BackStyle =1
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin BoundObjectFrame
+            SizeMode =3
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+            BorderColor =-2147483609
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AsianLineBreak =1
+        End
+        Begin ListBox
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin ComboBox
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin UnboundObjectFrame
+            BackStyle =0
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Tab
+            Width =5100
+            Height =3420
+            FontSize =11
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Attachment
+            BackStyle =0
+            BorderLineStyle =0
+            PictureSizeMode =3
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+            LabelX =-1701
+        End
+        Begin EmptyCell
+            Height =240
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =-2147483609
+            Name ="Formularkopf"
+        End
+        Begin Section
+            Height =5355
+            Name ="Detailbereich"
+            AlternateBackColor =16777215
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3855
+                    Top =1077
+                    Height =315
+                    ColumnWidth =2760
+                    ColumnOrder =0
+                    Name ="ProjektName"
+                    ControlSource ="ProjektName"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =2154
+                            Top =1077
+                            Width =1365
+                            Height =315
+                            Name ="Bezeichnungsfeld41"
+                            Caption ="Projektname"
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3855
+                    Top =1474
+                    Width =4320
+                    Height =1008
+                    ColumnWidth =2505
+                    ColumnOrder =1
+                    TabIndex =1
+                    Name ="Beschreibung"
+                    ControlSource ="Beschreibung"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =2154
+                            Top =1474
+                            Width =1395
+                            Height =315
+                            Name ="Bezeichnungsfeld42"
+                            Caption ="Beschreibung"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3855
+                    Top =2551
+                    Height =315
+                    ColumnWidth =1185
+                    ColumnOrder =2
+                    TabIndex =2
+                    Name ="StartDatum"
+                    ControlSource ="StartDatum"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =2154
+                            Top =2551
+                            Width =1185
+                            Height =315
+                            Name ="Bezeichnungsfeld43"
+                            Caption ="Startdatum"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3855
+                    Top =2948
+                    Height =315
+                    ColumnWidth =1185
+                    ColumnOrder =3
+                    TabIndex =3
+                    Name ="EndDatum"
+                    ControlSource ="EndDatum"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =2154
+                            Top =2948
+                            Width =1095
+                            Height =315
+                            Name ="Bezeichnungsfeld44"
+                            Caption ="Enddatum"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =3855
+                    Top =3344
+                    ColumnWidth =1035
+                    ColumnOrder =4
+                    TabIndex =4
+                    Name ="obsolet"
+                    ControlSource ="obsolet"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            Left =4085
+                            Top =3314
+                            Width =780
+                            Height =315
+                            Name ="Bezeichnungsfeld45"
+                            Caption ="obsolet"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =3855
+                    Top =3779
+                    ColumnWidth =1110
+                    ColumnOrder =5
+                    TabIndex =5
+                    Name ="Pauschalverrechnung"
+                    ControlSource ="Pauschalverrechnung"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            Left =4080
+                            Top =3750
+                            Width =2055
+                            Height =315
+                            Name ="Bezeichnungsfeld47"
+                            Caption ="Pauschal."
+                        End
+                    End
+                End
+                Begin TextBox
+                    FontUnderline = NotDefault
+                    IsHyperlink = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1701
+                    Height =315
+                    ColumnWidth =1290
+                    ColumnOrder =8
+                    TabIndex =6
+                    Name ="Leistungen"
+                    ControlSource ="Leistungen"
+                    OnClick ="[Event Procedure]"
+
+                    ForeThemeColorIndex =10
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Width =1155
+                            Height =315
+                            Name ="Bezeichnungsfeld48"
+                            Caption ="Leistungen"
+                        End
+                    End
+                End
+                Begin TextBox
+                    FontUnderline = NotDefault
+                    IsHyperlink = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1701
+                    Top =435
+                    Height =315
+                    ColumnWidth =795
+                    ColumnOrder =9
+                    TabIndex =7
+                    Name ="EuroProTag"
+                    ControlSource ="EuroProTag"
+                    OnClick ="[Event Procedure]"
+
+                    ForeThemeColorIndex =10
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Top =435
+                            Width =1155
+                            Height =315
+                            Name ="Bezeichnungsfeld50"
+                            Caption ="Euro"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3911
+                    Top =4138
+                    Height =315
+                    ColumnWidth =1335
+                    ColumnOrder =7
+                    TabIndex =8
+                    Name ="Pauschalbetrag"
+                    ControlSource ="Pauschalbetrag"
+                    Format ="#,##0.00 €;-#,##0.00 €"
+
+                    CurrencySymbol ="€"
+                    ColLCID =1031
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =2210
+                            Top =4138
+                            Width =1545
+                            Height =315
+                            Name ="Bezeichnungsfeld51"
+                            Caption ="Pauschal €"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =8333
+                    Top =3118
+                    Height =315
+                    ColumnWidth =1305
+                    ColumnOrder =11
+                    TabIndex =9
+                    Name ="LeistungenEuroVerrechnet"
+                    ControlSource ="LeistungenEuroVerrechnet"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =6632
+                            Top =3118
+                            Width =1275
+                            Height =315
+                            Name ="Bezeichnungsfeld52"
+                            Caption ="Verrechnet €"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =8447
+                    Top =3628
+                    Height =315
+                    ColumnWidth =1440
+                    ColumnOrder =10
+                    TabIndex =10
+                    Name ="LeistungenEuro"
+                    ControlSource ="LeistungenEuro"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =6750
+                            Top =3630
+                            Width =1245
+                            Height =315
+                            Name ="Bezeichnungsfeld54"
+                            Caption ="Leistungen €"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3911
+                    Top =4573
+                    Height =315
+                    ColumnOrder =6
+                    TabIndex =11
+                    Name ="PauschalStd"
+                    ControlSource ="PauschalStd"
+                    Format ="Standard"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =2210
+                            Top =4573
+                            Width =1545
+                            Height =315
+                            Name ="Bezeichnungsfeld56"
+                            Caption ="Pauschal Std."
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =8333
+                    Top =4065
+                    Height =315
+                    ColumnWidth =975
+                    TabIndex =12
+                    Name ="LeistungenStd"
+                    ControlSource ="LeistungenStd"
+                    Format ="Standard"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =6632
+                            Top =4065
+                            Width =1275
+                            Height =315
+                            Name ="Bezeichnungsfeld58"
+                            Caption ="Stunden"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =8447
+                    Top =4575
+                    Height =315
+                    ColumnWidth =1155
+                    TabIndex =13
+                    Name ="LeistungenStdVerr"
+                    ControlSource ="LeistungenStdVerr"
+                    Format ="Standard"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =6750
+                            Top =4577
+                            Width =1245
+                            Height =315
+                            Name ="Bezeichnungsfeld60"
+                            Caption ="Std. Verr."
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3906
+                    Top =5025
+                    Height =315
+                    ColumnWidth =1725
+                    TabIndex =14
+                    Name ="ProjektStdSatz"
+                    ControlSource ="ProjektStdSatz"
+                    Format ="#,##0.00 €;-#,##0.00 €"
+
+                    CurrencySymbol ="€"
+                    ColLCID =1031
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =2205
+                            Top =5025
+                            Width =1575
+                            Height =315
+                            Name ="Bezeichnungsfeld62"
+                            Caption ="Projekt Std. Satz"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =330
+            Name ="Formularfuß"
+            AutoHeight =1
+        End
+    End
+End
+CodeBehindForm
+' See "Kartei_UF_Projekte.cls"

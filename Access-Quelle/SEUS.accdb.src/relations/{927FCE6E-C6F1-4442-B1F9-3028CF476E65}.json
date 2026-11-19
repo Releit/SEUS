@@ -1,0 +1,18 @@
+﻿{
+  "Info": {
+    "Class": "clsDbRelation",
+    "Description": "Database relationship"
+  },
+  "Items": {
+    "Name": "{927FCE6E-C6F1-4442-B1F9-3028CF476E65}",
+    "Attributes": 4096,
+    "Table": "T_Produkte",
+    "ForeignTable": "T_KundenProduktpreise_alt",
+    "Fields": [
+      {
+        "Name": "ID",
+        "ForeignName": "ProduktID"
+      }
+    ]
+  }
+}

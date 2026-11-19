@@ -1,0 +1,488 @@
+﻿Version =20
+VersionRequired =20
+Begin Report
+    LayoutForPrint = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =15884
+    DatasheetFontHeight =11
+    ItemSuffix =17
+    Filter ="Jahr= 2012"
+    RecSrcDt = Begin
+        0x67fe4892141be440
+    End
+    RecordSource ="SELECT T_Rechnungen.ID, T_Rechnungen.Nr, T_Rechnungen.Datum, Nz([anschrift],[Kun"
+        "de]) AS KundenName, T_Rechnungen.Anmerkungen, Sum([menge]*[vkexkl]) AS Netto, Su"
+        "m([menge]*[vkexkl]*(1+[Ustproz])) AS Brutto, Year([T_Rechnungen].[datum]) AS Jah"
+        "r FROM T_Rechnungen INNER JOIN T_RechnungsPos ON T_Rechnungen.ID = T_RechnungsPo"
+        "s.RechnungID GROUP BY T_Rechnungen.ID, T_Rechnungen.Nr, T_Rechnungen.Datum, Nz(["
+        "anschrift],[Kunde]), T_Rechnungen.Anmerkungen, Year([T_Rechnungen].[datum]); "
+    Caption ="Rechnungsliste"
+    DatasheetFontName ="Calibri"
+    FilterOnLoad =0
+    FitToPage =1
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =15921906
+    DatasheetGridlinesColor12 =0
+    FitToScreen =1
+    DatasheetBackThemeColorIndex =1
+    BorderThemeColorIndex =3
+    ThemeFontIndex =1
+    ForeThemeColorIndex =0
+    AlternateBackThemeColorIndex =1
+    AlternateBackShade =95.0
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =0
+            BorderTint =50.0
+            ForeThemeColorIndex =0
+            ForeTint =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+            BorderThemeColorIndex =0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin TextBox
+            AddColon = NotDefault
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            ShowDatePicker =0
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ThemeFontIndex =1
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin BreakLevel
+            ControlSource ="Nr"
+        End
+        Begin BreakLevel
+            ControlSource ="Datum"
+        End
+        Begin FormHeader
+            KeepTogether = NotDefault
+            Height =582
+            Name ="Berichtskopf"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin Label
+                    TextFontFamily =0
+                    Left =57
+                    Top =57
+                    Width =3120
+                    Height =525
+                    FontSize =18
+                    BorderColor =8355711
+                    ForeColor =8355711
+                    Name ="Bezeichnungsfeld12"
+                    Caption ="Rechnungsliste"
+                    FontName ="Tahoma"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =57
+                    LayoutCachedTop =57
+                    LayoutCachedWidth =3177
+                    LayoutCachedHeight =582
+                    ThemeFontIndex =-1
+                End
+            End
+        End
+        Begin PageHeader
+            Height =360
+            BackColor =-2147483610
+            Name ="Seitenkopfbereich"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            Begin
+                Begin Label
+                    TextAlign =2
+                    Left =440
+                    Top =57
+                    Width =315
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    BorderColor =8355711
+                    Name ="Nr_Bezeichnungsfeld"
+                    Caption ="Nr"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =440
+                    LayoutCachedTop =57
+                    LayoutCachedWidth =755
+                    LayoutCachedHeight =342
+                    ForeTint =100.0
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =1430
+                    Top =57
+                    Width =705
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    BorderColor =8355711
+                    Name ="Datum_Bezeichnungsfeld"
+                    Caption ="Datum"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =1430
+                    LayoutCachedTop =57
+                    LayoutCachedWidth =2135
+                    LayoutCachedHeight =342
+                    ForeTint =100.0
+                End
+                Begin Label
+                    TextAlign =1
+                    Left =2388
+                    Top =57
+                    Width =690
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    BorderColor =8355711
+                    Name ="NameAnschrift_Bezeichnungsfeld"
+                    Caption ="Kunde"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =2388
+                    LayoutCachedTop =57
+                    LayoutCachedWidth =3078
+                    LayoutCachedHeight =342
+                    ForeTint =100.0
+                End
+                Begin Label
+                    TextAlign =1
+                    Left =6807
+                    Top =57
+                    Width =1395
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    BorderColor =8355711
+                    Name ="Anmerkungen_Bezeichnungsfeld"
+                    Caption ="Anmerkungen"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =6807
+                    LayoutCachedTop =57
+                    LayoutCachedWidth =8202
+                    LayoutCachedHeight =342
+                    ForeTint =100.0
+                End
+                Begin Label
+                    TextAlign =3
+                    Left =11550
+                    Top =57
+                    Width =585
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    BorderColor =8355711
+                    Name ="Netto_Bezeichnungsfeld"
+                    Caption ="Netto"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =11550
+                    LayoutCachedTop =57
+                    LayoutCachedWidth =12135
+                    LayoutCachedHeight =342
+                    ForeTint =100.0
+                End
+                Begin Label
+                    TextAlign =3
+                    Left =12624
+                    Top =57
+                    Width =690
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    BorderColor =8355711
+                    Name ="Brutto_Bezeichnungsfeld"
+                    Caption ="Brutto"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =12624
+                    LayoutCachedTop =57
+                    LayoutCachedWidth =13314
+                    LayoutCachedHeight =342
+                    ForeTint =100.0
+                End
+                Begin Line
+                    LineSlant = NotDefault
+                    BorderWidth =1
+                    Top =345
+                    Width =15876
+                    BorderColor =8355711
+                    Name ="Linie18"
+                    GridlineColor =10921638
+                    LayoutCachedTop =345
+                    LayoutCachedWidth =15876
+                    LayoutCachedHeight =345
+                    BorderTint =50.0
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =13379
+                    Top =56
+                    Width =2505
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    BorderColor =8355711
+                    Name ="Bezeichnungsfeld15"
+                    Caption ="Bemerkung"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =13379
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =15884
+                    LayoutCachedHeight =341
+                    ForeTint =100.0
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =393
+            Name ="Detailbereich"
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =30
+                    Top =15
+                    Width =1134
+                    Height =315
+                    FontSize =10
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Nr"
+                    ControlSource ="Nr"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =30
+                    LayoutCachedTop =15
+                    LayoutCachedWidth =1164
+                    LayoutCachedHeight =330
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =1215
+                    Top =15
+                    Width =1134
+                    Height =315
+                    FontSize =10
+                    TabIndex =1
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Datum"
+                    ControlSource ="Datum"
+                    GridlineColor =10921638
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =1215
+                    LayoutCachedTop =15
+                    LayoutCachedWidth =2349
+                    LayoutCachedHeight =330
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =2388
+                    Top =15
+                    Width =4362
+                    Height =315
+                    ColumnWidth =6195
+                    FontSize =10
+                    TabIndex =2
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="KundenName"
+                    ControlSource ="KundenName"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =2388
+                    LayoutCachedTop =15
+                    LayoutCachedWidth =6750
+                    LayoutCachedHeight =330
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =6807
+                    Top =15
+                    Width =4137
+                    Height =315
+                    FontSize =10
+                    TabIndex =3
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Anmerkungen"
+                    ControlSource ="Anmerkungen"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =6807
+                    LayoutCachedTop =15
+                    LayoutCachedWidth =10944
+                    LayoutCachedHeight =330
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =11001
+                    Top =15
+                    Width =1134
+                    Height =315
+                    FontSize =10
+                    TabIndex =4
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Netto"
+                    ControlSource ="Netto"
+                    Format ="Standard"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =11001
+                    LayoutCachedTop =15
+                    LayoutCachedWidth =12135
+                    LayoutCachedHeight =330
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =12180
+                    Top =15
+                    Width =1134
+                    Height =315
+                    ColumnWidth =1815
+                    FontSize =10
+                    TabIndex =5
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Brutto"
+                    ControlSource ="Brutto"
+                    Format ="Standard"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =12180
+                    LayoutCachedTop =15
+                    LayoutCachedWidth =13314
+                    LayoutCachedHeight =330
+                End
+                Begin Line
+                    LineSlant = NotDefault
+                    BorderWidth =1
+                    Top =378
+                    Width =15876
+                    BorderColor =8355711
+                    Name ="Linie16"
+                    GridlineColor =10921638
+                    LayoutCachedTop =378
+                    LayoutCachedWidth =15876
+                    LayoutCachedHeight =378
+                    BorderTint =50.0
+                End
+            End
+        End
+        Begin PageFooter
+            Height =543
+            Name ="Seitenfußbereich"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =57
+                    Top =228
+                    Width =5040
+                    Height =315
+                    FontSize =8
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Text13"
+                    ControlSource ="=Now()"
+                    Format ="Long Date"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =57
+                    LayoutCachedTop =228
+                    LayoutCachedWidth =5097
+                    LayoutCachedHeight =543
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =3
+                    IMESentenceMode =3
+                    Left =10830
+                    Top =225
+                    Width =5040
+                    Height =315
+                    FontSize =8
+                    TabIndex =1
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Text14"
+                    ControlSource ="=\"Seite \" & [Page] & \" von \" & [Pages]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =10830
+                    LayoutCachedTop =225
+                    LayoutCachedWidth =15870
+                    LayoutCachedHeight =540
+                End
+            End
+        End
+        Begin FormFooter
+            KeepTogether = NotDefault
+            Height =0
+            Name ="Berichtsfuß"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+        End
+    End
+End

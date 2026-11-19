@@ -1,0 +1,327 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =2
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =8892
+    RowHeight =315
+    DatasheetFontHeight =11
+    ItemSuffix =47
+    Right =50000
+    Bottom =50000
+    RecSrcDt = Begin
+        0xe233ecb2d216e440
+    End
+    RecordSource ="SELECT T_SchweißPrüfungen.* FROM T_SchweißPrüfungen ORDER BY T_SchweißPrüfungen."
+        "Datum DESC; "
+    BeforeInsert ="[Event Procedure]"
+    BeforeUpdate ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            BorderColor =-2147483609
+            ForeColor =11830108
+            FontName ="Calibri"
+        End
+        Begin Rectangle
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BorderColor =-2147483609
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+            BorderColor =-2147483609
+        End
+        Begin Image
+            BackStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin OptionButton
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =-2147483609
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            BackStyle =1
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin BoundObjectFrame
+            SizeMode =3
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+            BorderColor =-2147483609
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AsianLineBreak =1
+        End
+        Begin ListBox
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin ComboBox
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin UnboundObjectFrame
+            BackStyle =0
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Tab
+            Width =5100
+            Height =3420
+            FontSize =11
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Attachment
+            BackStyle =0
+            BorderLineStyle =0
+            PictureSizeMode =3
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+            LabelX =-1701
+        End
+        Begin EmptyCell
+            Height =240
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =-2147483609
+            Name ="Formularkopf"
+        End
+        Begin Section
+            Height =4705
+            Name ="Detailbereich"
+            AlternateBackColor =16777215
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2494
+                    Top =396
+                    Height =315
+                    ColumnOrder =0
+                    TabIndex =1
+                    Name ="Datum"
+                    ControlSource ="Datum"
+                    Format ="Short Date"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =793
+                            Top =396
+                            Width =750
+                            Height =315
+                            Name ="Bezeichnungsfeld32"
+                            Caption ="Datum"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListRows =25
+                    ListWidth =4536
+                    Left =2551
+                    Top =907
+                    Height =315
+                    ColumnWidth =2100
+                    Name ="SchweißerID"
+                    ControlSource ="SchweißerID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT T_Schweißer.ID, [Nachname] & \" \" & [Vorname] AS Ausdr1 FROM T_Schweißer"
+                        " WHERE (((T_Schweißer.KarteiID)=[Formulare]![Kartei]![ID])) ORDER BY [Nachname] "
+                        "& \" \" & [Vorname]; "
+                    ColumnWidths ="0;4536"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =850
+                            Top =907
+                            Width =1305
+                            Height =315
+                            Name ="Bezeichnungsfeld43"
+                            Caption ="Schweißer"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =2607
+                    Top =1417
+                    Height =315
+                    ColumnWidth =2535
+                    TabIndex =2
+                    Name ="Prüfbezeichnung"
+                    ControlSource ="Prüfbezeichnung"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =906
+                            Top =1417
+                            Width =1710
+                            Height =315
+                            Name ="Bezeichnungsfeld44"
+                            Caption ="Prüfbezeichnung"
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2664
+                    Top =1870
+                    Width =4320
+                    Height =1008
+                    ColumnWidth =2175
+                    TabIndex =4
+                    Name ="Anmerkungen"
+                    ControlSource ="Anmerkungen"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =963
+                            Top =1870
+                            Width =1455
+                            Height =315
+                            Name ="Bezeichnungsfeld45"
+                            Caption ="Anmerkungen"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListRows =25
+                    Left =2721
+                    Top =3174
+                    Height =315
+                    TabIndex =3
+                    Name ="ZertifiziererID"
+                    ControlSource ="ZertifiziererID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT T_Zertifizierer.ID, T_Zertifizierer.ZertifiziererName FROM T_Zertifiziere"
+                        "r ORDER BY T_Zertifizierer.ZertifiziererName; "
+                    ColumnWidths ="0;4536"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =1020
+                            Top =3174
+                            Width =1440
+                            Height =315
+                            Name ="Bezeichnungsfeld46"
+                            Caption ="Zertifizierer"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+            AutoHeight =1
+        End
+    End
+End
+CodeBehindForm
+' See "Kartei_UF_SchweißPrüfungen.cls"

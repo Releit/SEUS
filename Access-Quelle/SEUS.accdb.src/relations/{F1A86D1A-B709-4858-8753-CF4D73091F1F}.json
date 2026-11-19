@@ -1,0 +1,18 @@
+﻿{
+  "Info": {
+    "Class": "clsDbRelation",
+    "Description": "Database relationship"
+  },
+  "Items": {
+    "Name": "{F1A86D1A-B709-4858-8753-CF4D73091F1F}",
+    "Attributes": 0,
+    "Table": "T_Zahlungsarten",
+    "ForeignTable": "T_Lieferscheine",
+    "Fields": [
+      {
+        "Name": "ID",
+        "ForeignName": "ZahlartID"
+      }
+    ]
+  }
+}

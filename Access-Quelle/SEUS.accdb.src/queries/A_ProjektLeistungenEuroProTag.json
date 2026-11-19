@@ -1,0 +1,57 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "A_ProjektLeistungenEuroProTag"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Gesamt": {
+        "ColumnWidth": 1890,
+        "Format": {
+          "Type": "dbText",
+          "Value": "#,##0.00 €;-#,##0.00 €"
+        },
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1666,
+        "bottom": 836
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1319,
+        "bottom": 574
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "T_Leistungen",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 192,
+          "Bottom": 402,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "T_Produkte",
+          "Alias": "",
+          "Left": 464,
+          "Top": -2,
+          "Right": 608,
+          "Bottom": 142,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

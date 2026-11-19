@@ -1,0 +1,33 @@
+﻿{
+  "Info": {
+    "Class": "clsDbTableDef",
+    "Description": "Linked Table"
+  },
+  "Items": {
+    "Name": "T_Status",
+    "Connect": "ODBC;DSN=zeiterfassung;",
+    "SourceTableName": "T_Status",
+    "Attributes": 536870912,
+    "PrimaryKey": "[ID]",
+    "FieldProperties": {
+      "ID": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "Sortierung": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "Aktiv": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      }
+    }
+  }
+}

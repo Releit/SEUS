@@ -1,0 +1,38 @@
+﻿{
+  "Info": {
+    "Class": "clsDbForm",
+    "Description": "ToDoListe_UF Conditional Formatting"
+  },
+  "Items": {
+    "ConditionalFormatting": {
+      "Priorität": {
+        "Rules": [
+          {
+            "Type": "FieldValue",
+            "Enabled": true,
+            "FontBold": false,
+            "FontItalic": false,
+            "FontUnderline": false,
+            "ForeColor": "RGB(186,20,25)",
+            "BackColor": "RGB(255,255,255)",
+            "Operator": "Equal",
+            "Expression1": "\"hoch\"",
+            "Expression2": ""
+          },
+          {
+            "Type": "FieldValue",
+            "Enabled": true,
+            "FontBold": true,
+            "FontItalic": false,
+            "FontUnderline": false,
+            "ForeColor": "RGB(255,0,0)",
+            "BackColor": "RGB(255,255,255)",
+            "Operator": "Equal",
+            "Expression1": "\"sehr hoch\"",
+            "Expression2": ""
+          }
+        ]
+      }
+    }
+  }
+}

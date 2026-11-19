@@ -1,0 +1,965 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ViewsAllowed =1
+    BorderStyle =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    Cycle =1
+    GridY =10
+    Width =15360
+    DatasheetFontHeight =11
+    ItemSuffix =63
+    Right =50000
+    Bottom =50000
+    RecSrcDt = Begin
+        0xbe9a2a124aa9e340
+    End
+    RecordSource ="T_Einstellungen"
+    Caption ="Einstellungen"
+    DatasheetFontName ="Tahoma"
+    AllowDatasheetView =0
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            BorderColor =-2147483609
+            ForeColor =11830108
+            FontName ="Calibri"
+        End
+        Begin Rectangle
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BorderColor =-2147483609
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+            BorderColor =-2147483609
+        End
+        Begin Image
+            BackStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin OptionButton
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =-2147483609
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            BackStyle =1
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin BoundObjectFrame
+            SizeMode =3
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+            BorderColor =-2147483609
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AsianLineBreak =1
+        End
+        Begin ListBox
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin ComboBox
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin UnboundObjectFrame
+            BackStyle =0
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Tab
+            Width =5100
+            Height =3420
+            FontSize =11
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Page
+            Width =1701
+            Height =1701
+        End
+        Begin Attachment
+            BackStyle =0
+            BorderLineStyle =0
+            PictureSizeMode =3
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+            LabelX =-1701
+        End
+        Begin EmptyCell
+            Height =240
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin FormHeader
+            Height =540
+            Name ="Formularkopf"
+            BackThemeColorIndex =4
+            BackShade =50.0
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =57
+                    Top =57
+                    Width =2025
+                    Height =390
+                    FontSize =14
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld8"
+                    Caption ="Einstellungen"
+                    FontName ="Tahoma"
+                    ForeThemeColorIndex =1
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =13005
+                    Width =510
+                    Height =510
+                    Name ="Befehl9"
+                    Caption ="Befehl9"
+                    ControlTipText ="Formular schließen"
+                    OnClickEmMacro = Begin
+                        Version =196611
+                        ColumnsShown =8
+                        Begin
+                            Action ="Close"
+                            Argument ="-1"
+                            Argument =""
+                            Argument ="0"
+                        End
+                        Begin
+                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                "nterfaceMacro For=\"Befehl9\" xmlns=\"http://schemas.microsoft.com/office/access"
+                                "services/2009/11/application\" xmlns:a=\"http://schemas.microsoft.com/office/acc"
+                                "essservices/2009/11/forms\"><St"
+                        End
+                        Begin
+                            Comment ="_AXL:atements><Action Name=\"CloseWindow\"/></Statements></UserInterfaceMacro>"
+                        End
+                    End
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000010081080 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000040485020100810e0104050ff ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000040404080405860ff106890ff2080a0f0 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000607070ff80a0b0ff4080a0ff20a0d0ff40a8e0ff2078a0ff ,
+                        0x101020ff101020ff000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000708890ffa0d8f0ff60d0ffff50c0f0ff30a8e0ff1080b0ff ,
+                        0xe0d8d0ff102020ff000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000708890ffb0e8f0ff80e0ffff60c8f0ff50b8f0ff1088c0ff ,
+                        0xf0d8d0ff202830ff000000000000000090482030904820ff0000000000000000 ,
+                        0x0000000000000000808890ffb0e8f0ff80e0ffff60d0ffff404050ff1090c0ff ,
+                        0xf0e0d0ff303840ff0000000090482030a05030ffa05020ff0000000000000000 ,
+                        0x00000000000000008090a0ffc0f0ffff90e0ffff70d8ffff60c8f0ff0090c0ff ,
+                        0xf0e0e0ff404050ff90482030a05030ffd07840ffb05830ffa05020ffa04820ff ,
+                        0x904820ff904820ff8090a0ffc0f0ffffa0e8ffff80d8ffff70d0f0ff40b0e0ff ,
+                        0xf0e8e0ff605050ffa05830ffe08860fff09060fff08850ffe07850ffd07040ff ,
+                        0xb06840ff904820ff8098a0ffc0f0ffffa0e8ffff90e8ffff80e0ffff80b8d0ff ,
+                        0xf0e8e0ffe09870ffffc0a0ffffb090ffffa070fff09060fff08850ffe07850ff ,
+                        0xd07040ffa05020ff8098a0ffc0f0ffffc0f8ffffa0e0f0ff90a8b0ffc0c8d0ff ,
+                        0xf0f0e0ff908080fff0a070ffffc0a0ffffb090ffffb090ffffa880fff0a080ff ,
+                        0xe09870ffb05030ff90a0a0ffe0f8ffffb0c8d0ff90a0b0fff0f0f0fffff8f0ff ,
+                        0xf0f0f0ff607080ffe0987050f0a070ffffc0a0ffd06830ffe09870ffe09060ff ,
+                        0xe08860ffe08050ff90a0b0ff90a8b0ffc0c8d0ffffffffffffffffffffffffff ,
+                        0xffffffff708890ff00000000e0987050e09870ffd07040ff0000000000000000 ,
+                        0x000000000000000090a0b0ff90a0b0ff90a0b0ff90a0b0ff90a0a0ff8098a0ff ,
+                        0x8098a0ff9098a0ff0000000000000000e0987050e09870ff0000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                End
+            End
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =7320
+            BackColor =15590879
+            Name ="Detailbereich"
+            AlternateBackColor =16777215
+            Begin
+                Begin Tab
+                    OverlapFlags =85
+                    Left =30
+                    Top =15
+                    Width =15300
+                    Height =7320
+                    Name ="Register1"
+
+                    Begin
+                        Begin Page
+                            OverlapFlags =87
+                            Left =165
+                            Top =495
+                            Width =15030
+                            Height =6690
+                            Name ="Allgemeines"
+                            Begin
+                                Begin CheckBox
+                                    OverlapFlags =215
+                                    Left =2999
+                                    Top =4125
+                                    Name ="Projekte"
+                                    ControlSource ="Projekte"
+
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =215
+                                            Left =960
+                                            Top =4095
+                                            Width =1275
+                                            Height =315
+                                            Name ="Bezeichnungsfeld45"
+                                            Caption ="Projekte"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =2999
+                                    Top =850
+                                    Width =4641
+                                    Height =315
+                                    TabIndex =1
+                                    Name ="BLZ"
+                                    ControlSource ="BLZ"
+
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =215
+                                            Left =960
+                                            Top =850
+                                            Width =1440
+                                            Height =315
+                                            Name ="Bezeichnungsfeld19"
+                                            Caption ="Bankleitzahl"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =2999
+                                    Top =1260
+                                    Width =4641
+                                    Height =315
+                                    TabIndex =2
+                                    Name ="KtoNr"
+                                    ControlSource ="KtoNr"
+
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =215
+                                            Left =960
+                                            Top =1260
+                                            Width =1650
+                                            Height =315
+                                            Name ="Bezeichnungsfeld20"
+                                            Caption ="Kontonummer"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    EnterKeyBehavior = NotDefault
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =2999
+                                    Top =1667
+                                    Width =4641
+                                    Height =660
+                                    TabIndex =3
+                                    Name ="KontoName"
+                                    ControlSource ="KontoName"
+
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =215
+                                            Left =960
+                                            Top =1667
+                                            Width =1845
+                                            Height =315
+                                            Name ="Bezeichnungsfeld21"
+                                            Caption ="Konto lauten auf"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =2999
+                                    Top =2565
+                                    Width =4641
+                                    Height =315
+                                    TabIndex =4
+                                    Name ="UID"
+                                    ControlSource ="UID"
+
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =215
+                                            Left =960
+                                            Top =2565
+                                            Width =1380
+                                            Height =315
+                                            Name ="Bezeichnungsfeld22"
+                                            Caption ="eigene UID:"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =2999
+                                    Top =2970
+                                    Width =4641
+                                    Height =315
+                                    TabIndex =5
+                                    Name ="FirmenOrt"
+                                    ControlSource ="FirmenOrt"
+
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =215
+                                            Left =960
+                                            Top =2970
+                                            Width =1320
+                                            Height =315
+                                            Name ="Bezeichnungsfeld44"
+                                            Caption ="Firmenort:"
+                                        End
+                                    End
+                                End
+                                Begin CheckBox
+                                    OverlapFlags =215
+                                    Left =2999
+                                    Top =4515
+                                    TabIndex =6
+                                    Name ="chkToDoListeBeimStart"
+                                    ControlSource ="ToDoListeBeimStart"
+                                    AfterUpdate ="[Event Procedure]"
+
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =215
+                                            Left =960
+                                            Top =4485
+                                            Width =1875
+                                            Height =555
+                                            Name ="Bezeichnungsfeld46"
+                                            Caption ="ToDo-Liste beim Start anzeigen"
+                                        End
+                                    End
+                                End
+                                Begin CheckBox
+                                    OverlapFlags =215
+                                    Left =2999
+                                    Top =3446
+                                    TabIndex =7
+                                    Name ="KarteiProduktpreise"
+                                    ControlSource ="KarteiProduktpreise"
+
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =215
+                                            Left =960
+                                            Top =3420
+                                            Width =1950
+                                            Height =585
+                                            Name ="Bezeichnungsfeld47"
+                                            Caption ="Produktpreise im Formular Kartei"
+                                        End
+                                    End
+                                End
+                                Begin Subform
+                                    OverlapFlags =247
+                                    Left =967
+                                    Top =5813
+                                    Width =6675
+                                    Height =1125
+                                    Name ="Einstellungen_UF_Sprachen"
+                                    SourceObject ="Form.Einstellungen_UF_Sprachen"
+
+                                    BorderThemeColorIndex =1
+                                    BorderShade =65.0
+                                End
+                                Begin Label
+                                    OverlapFlags =223
+                                    Left =960
+                                    Top =5535
+                                    Width =1515
+                                    Height =315
+                                    Name ="Bezeichnungsfeld59"
+                                    Caption ="Fremdsprachen"
+                                End
+                                Begin TextBox
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =2999
+                                    Top =5115
+                                    Width =10956
+                                    Height =315
+                                    Name ="BelegBasisOrdner"
+                                    ControlSource ="BelegBasisOrdner"
+
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =215
+                                            Left =960
+                                            Top =5115
+                                            Width =1785
+                                            Height =315
+                                            Name ="Bezeichnungsfeld62"
+                                            Caption ="Beleg Basisordner"
+                                        End
+                                    End
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =247
+                            Left =165
+                            Top =495
+                            Width =15030
+                            Height =6690
+                            Name ="Texte"
+                            Begin
+                                Begin TextBox
+                                    EnterKeyBehavior = NotDefault
+                                    ScrollBars =2
+                                    OverlapFlags =247
+                                    TextAlign =2
+                                    IMESentenceMode =3
+                                    Left =1620
+                                    Top =600
+                                    Width =11640
+                                    Height =1140
+                                    FontSize =10
+                                    Name ="RechnungsFussText"
+                                    ControlSource ="RechnungsFussText"
+                                    GroupTable =2
+                                    RightPadding =38
+                                    BottomPadding =38
+
+                                    ColumnStart =1
+                                    ColumnEnd =1
+                                    LayoutGroup =1
+                                    GroupTable =2
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            TextAlign =1
+                                            Left =240
+                                            Top =600
+                                            Width =1320
+                                            Height =1140
+                                            Name ="RechnungsFussText_Bezeichnungsfeld"
+                                            Caption ="Rechnungs-\015\012fusstext"
+                                            GroupTable =2
+                                            BottomPadding =38
+                                            LayoutGroup =1
+                                            GroupTable =2
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    TextAlign =1
+                                    IMESentenceMode =3
+                                    Left =1620
+                                    Top =1800
+                                    Width =11640
+                                    Height =360
+                                    Name ="EmailSubject"
+                                    ControlSource ="EmailSubject"
+                                    GroupTable =2
+                                    RightPadding =38
+                                    BottomPadding =38
+
+                                    RowStart =1
+                                    RowEnd =1
+                                    ColumnStart =1
+                                    ColumnEnd =1
+                                    LayoutGroup =1
+                                    GroupTable =2
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            TextAlign =1
+                                            Left =240
+                                            Top =1800
+                                            Width =1320
+                                            Height =360
+                                            Name ="EmailSubject_Bezeichnungsfeld"
+                                            Caption ="Email Subject"
+                                            GroupTable =2
+                                            BottomPadding =38
+                                            RowStart =1
+                                            RowEnd =1
+                                            LayoutGroup =1
+                                            GroupTable =2
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    EnterKeyBehavior = NotDefault
+                                    ScrollBars =2
+                                    OverlapFlags =247
+                                    TextAlign =1
+                                    IMESentenceMode =3
+                                    Left =1620
+                                    Top =2220
+                                    Width =11640
+                                    Height =1140
+                                    FontSize =10
+                                    Name ="EmailBody1"
+                                    ControlSource ="EmailBody1"
+                                    GroupTable =2
+                                    RightPadding =38
+                                    BottomPadding =38
+
+                                    RowStart =2
+                                    RowEnd =2
+                                    ColumnStart =1
+                                    ColumnEnd =1
+                                    LayoutGroup =1
+                                    GroupTable =2
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            TextAlign =1
+                                            Left =240
+                                            Top =2220
+                                            Width =1320
+                                            Height =1140
+                                            Name ="EmailBody1_Bezeichnungsfeld"
+                                            Caption ="Email Body \015\012Teil1 "
+                                            GroupTable =2
+                                            BottomPadding =38
+                                            RowStart =2
+                                            RowEnd =2
+                                            LayoutGroup =1
+                                            GroupTable =2
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    EnterKeyBehavior = NotDefault
+                                    ScrollBars =2
+                                    OverlapFlags =247
+                                    TextAlign =1
+                                    IMESentenceMode =3
+                                    Left =1620
+                                    Top =3420
+                                    Width =11640
+                                    Height =1140
+                                    FontSize =10
+                                    Name ="EmailBody2"
+                                    ControlSource ="EmailBody2"
+                                    GroupTable =2
+                                    RightPadding =38
+                                    BottomPadding =38
+
+                                    RowStart =3
+                                    RowEnd =3
+                                    ColumnStart =1
+                                    ColumnEnd =1
+                                    LayoutGroup =1
+                                    GroupTable =2
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            TextAlign =1
+                                            Left =240
+                                            Top =3420
+                                            Width =1320
+                                            Height =1140
+                                            Name ="EmailBody2_Bezeichnungsfeld"
+                                            Caption ="Email Body \015\012Teil2"
+                                            GroupTable =2
+                                            BottomPadding =38
+                                            RowStart =3
+                                            RowEnd =3
+                                            LayoutGroup =1
+                                            GroupTable =2
+                                        End
+                                    End
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =247
+                            Left =165
+                            Top =495
+                            Width =15030
+                            Height =6690
+                            Name ="Anreden"
+                            Begin
+                                Begin Subform
+                                    OverlapFlags =247
+                                    Left =226
+                                    Top =623
+                                    Width =8400
+                                    Height =5670
+                                    Name ="Einstellungen_UF_Anreden"
+                                    SourceObject ="Form.Einstellungen_UF_Anreden"
+
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =247
+                            Left =165
+                            Top =495
+                            Width =15030
+                            Height =6690
+                            Name ="Mahnwesen"
+                            Begin
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =6758
+                                    Top =630
+                                    Width =741
+                                    Height =315
+                                    Name ="MahnFrist"
+                                    ControlSource ="MahnFrist"
+
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            TextAlign =3
+                                            Left =4215
+                                            Top =630
+                                            Width =2460
+                                            Height =315
+                                            Name ="Bezeichnungsfeld25"
+                                            Caption ="Zahlungserinnerung nach "
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =6764
+                                    Top =1020
+                                    Width =741
+                                    Height =315
+                                    TabIndex =1
+                                    Name ="MahnFrist2"
+                                    ControlSource ="MahnFrist2"
+
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            TextAlign =3
+                                            Left =4530
+                                            Top =1020
+                                            Width =2145
+                                            Height =315
+                                            Name ="Bezeichnungsfeld26"
+                                            Caption ="nächste Mahnung nach"
+                                        End
+                                    End
+                                End
+                                Begin ComboBox
+                                    RowSourceTypeInt =1
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =2708
+                                    Top =630
+                                    Width =756
+                                    Height =315
+                                    TabIndex =2
+                                    Name ="MahnAnzahl"
+                                    ControlSource ="MahnAnzahl"
+                                    RowSourceType ="Value List"
+                                    RowSource ="1;2;3"
+
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =285
+                                            Top =630
+                                            Width =2355
+                                            Height =585
+                                            Name ="Bezeichnungsfeld24"
+                                            Caption ="Anzahl Mahnungen inkl. Zahlungserinnerung"
+                                        End
+                                    End
+                                End
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =7605
+                                    Top =630
+                                    Width =2430
+                                    Height =315
+                                    Name ="Bezeichnungsfeld27"
+                                    Caption ="Tagen ab Rechungsdatum"
+                                End
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =7605
+                                    Top =1020
+                                    Width =2775
+                                    Height =315
+                                    Name ="Bezeichnungsfeld28"
+                                    Caption ="Tagen ab letzten Mahndatum"
+                                End
+                                Begin TextBox
+                                    EnterKeyBehavior = NotDefault
+                                    ScrollBars =2
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =255
+                                    Top =1544
+                                    Width =13230
+                                    Height =1083
+                                    FontSize =10
+                                    TabIndex =3
+                                    Name ="MahnText1"
+                                    ControlSource ="MahnText1"
+
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =255
+                                            Left =255
+                                            Top =1260
+                                            Width =2385
+                                            Height =315
+                                            Name ="Bezeichnungsfeld29"
+                                            Caption ="Text Zahlungserinnerung"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    EnterKeyBehavior = NotDefault
+                                    ScrollBars =2
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =255
+                                    Top =2991
+                                    Width =13230
+                                    Height =1083
+                                    FontSize =10
+                                    TabIndex =4
+                                    Name ="MahnText2"
+                                    ControlSource ="MahnText2"
+
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =255
+                                            Left =255
+                                            Top =2707
+                                            Width =2130
+                                            Height =315
+                                            Name ="Bezeichnungsfeld35"
+                                            Caption ="Text 1. Mahnung"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    EnterKeyBehavior = NotDefault
+                                    ScrollBars =2
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =255
+                                    Top =4438
+                                    Width =13230
+                                    Height =1083
+                                    FontSize =10
+                                    TabIndex =5
+                                    Name ="MahnText3"
+                                    ControlSource ="MahnText3"
+
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =255
+                                            Left =255
+                                            Top =4154
+                                            Width =2130
+                                            Height =315
+                                            Name ="Bezeichnungsfeld37"
+                                            Caption ="Text 2. Mahnung"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    EnterKeyBehavior = NotDefault
+                                    ScrollBars =2
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =255
+                                    Top =5885
+                                    Width =13230
+                                    Height =1083
+                                    FontSize =10
+                                    TabIndex =6
+                                    Name ="MahnFußText"
+                                    ControlSource ="MahnFußText"
+
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =255
+                                            Left =255
+                                            Top =5601
+                                            Width =2130
+                                            Height =315
+                                            Name ="Bezeichnungsfeld39"
+                                            Caption ="Mahnung Fußtext"
+                                        End
+                                    End
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =247
+                            Left =165
+                            Top =495
+                            Width =15030
+                            Height =6690
+                            Name ="Zahlungsarten"
+                            Begin
+                                Begin Subform
+                                    OverlapFlags =247
+                                    Left =195
+                                    Top =495
+                                    Width =13260
+                                    Height =6583
+                                    Name ="Untergeordnet55"
+                                    SourceObject ="Form.Einstellungen_UF_Zahlungsarten"
+
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =247
+                            Left =170
+                            Top =495
+                            Width =15030
+                            Height =6690
+                            Name ="Seite60"
+                            Caption ="USt.-Regelungen"
+                            Begin
+                                Begin Subform
+                                    OverlapFlags =247
+                                    Left =170
+                                    Top =510
+                                    Width =15030
+                                    Height =6645
+                                    Name ="Einstellungen_UF_UstRegelungen"
+                                    SourceObject ="Form.Einstellungen_UF_UstRegelungen"
+
+                                End
+                            End
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+            AutoHeight =1
+        End
+    End
+End
+CodeBehindForm
+' See "Einstellungen.cls"

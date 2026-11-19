@@ -1,0 +1,172 @@
+﻿Version =20
+VersionRequired =20
+Begin Report
+    LayoutForPrint = NotDefault
+    AutoResize = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    CloseButton = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularFamily =55
+    BorderStyle =0
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =3005
+    DatasheetFontHeight =10
+    ItemSuffix =86
+    RecSrcDt = Begin
+        0x1d1efd616ecde340
+    End
+    RecordSource ="SELECT V_Lieferscheine.LieferscheinID, V_Lieferscheine.Anrede, [V_Lieferscheine]"
+        ".[Anschriftname] & Nz((Chr(13)+Chr(10)+[V_Lieferscheine].[zuhanden]),\"\") AS Ku"
+        "ndenname, V_Lieferscheine.Adresse, [PLZ] & ' ' & [Ort] AS PLZOrt FROM V_Liefersc"
+        "heine; "
+    DatasheetFontName ="Arial"
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DatasheetGridlinesColor12 =12632256
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =2
+            FontName ="Arial"
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            OldBorderStyle =0
+            TextFontFamily =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Arial"
+            AsianLineBreak =255
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ForeThemeColorIndex =2
+            ForeShade =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin PageHeader
+            Height =0
+            Name ="Seitenkopfbereich"
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =1588
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    CanGrow = NotDefault
+                    TextFontFamily =34
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Top =270
+                    Width =3005
+                    Height =255
+                    FontSize =9
+                    Name ="Kundenname"
+                    ControlSource ="Kundenname"
+                    ShowDatePicker =0
+
+                    LayoutCachedTop =270
+                    LayoutCachedWidth =3005
+                    LayoutCachedHeight =525
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    TextFontFamily =34
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Top =540
+                    Width =3005
+                    Height =255
+                    FontSize =9
+                    TabIndex =1
+                    Name ="Adresse"
+                    ControlSource ="Adresse"
+                    ShowDatePicker =0
+
+                    LayoutCachedTop =540
+                    LayoutCachedWidth =3005
+                    LayoutCachedHeight =795
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    TextFontFamily =34
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Top =810
+                    Width =3005
+                    Height =255
+                    FontSize =9
+                    TabIndex =2
+                    Name ="PLZOrt"
+                    ControlSource ="PLZOrt"
+                    ShowDatePicker =0
+
+                    LayoutCachedTop =810
+                    LayoutCachedWidth =3005
+                    LayoutCachedHeight =1065
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    TextFontFamily =34
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Width =3005
+                    Height =255
+                    FontSize =9
+                    TabIndex =3
+                    Name ="Text80"
+                    ControlSource ="Anrede"
+                    ShowDatePicker =0
+
+                    LayoutCachedWidth =3005
+                    LayoutCachedHeight =255
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="Seitenfußbereich"
+        End
+    End
+End
+CodeBehindForm
+' See "Lieferschein_AdressKopf.cls"

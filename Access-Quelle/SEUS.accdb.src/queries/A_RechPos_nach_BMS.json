@@ -1,0 +1,68 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "A_RechPos_nach_BMS"
+  },
+  "Items": {
+    "QueryType": 64,
+    "QueryProperties": {
+      "RecordLocks": {
+        "Type": 2,
+        "Value": 2
+      }
+    },
+    "Columns": {
+      "T_RechnungsPos.Anmerkungen": {
+        "ColumnWidth": 11430,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1705,
+        "bottom": 857
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1689,
+        "bottom": 593
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 2699,
+      "Tables": [
+        {
+          "Name": "T_RechnungsPos",
+          "Alias": "",
+          "Left": 391,
+          "Top": 41,
+          "Right": 535,
+          "Bottom": 448,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Rech_pos",
+          "Alias": "",
+          "Left": 696,
+          "Top": 64,
+          "Right": 840,
+          "Bottom": 206,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Rechnungen",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 192,
+          "Bottom": 597,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

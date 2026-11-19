@@ -1,0 +1,65 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "A_Corona_ZA_Vergleich"
+  },
+  "Items": {
+    "QueryType": 0,
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 2089,
+        "bottom": 1289
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1301,
+        "bottom": 959
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "T_Zahlungsausgänge",
+          "Alias": "",
+          "Left": 752,
+          "Top": 107,
+          "Right": 1040,
+          "Bottom": 508,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "T_EingangsRechnungen",
+          "Alias": "",
+          "Left": 76,
+          "Top": 84,
+          "Right": 220,
+          "Bottom": 228,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "T_EingangsRechnungen_ZA",
+          "Alias": "",
+          "Left": 424,
+          "Top": 161,
+          "Right": 568,
+          "Bottom": 305,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "T_AusgabenArten",
+          "Alias": "",
+          "Left": 142,
+          "Top": 407,
+          "Right": 286,
+          "Bottom": 551,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "A_AuswahlZahlungseingänge"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Kunde": {
+        "ColumnWidth": 4530,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1705,
+        "bottom": 857
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1689,
+        "bottom": 415
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "T_Zahlungseingänge",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 275,
+          "Bottom": 319,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "A_AuswahlKartei",
+          "Alias": "",
+          "Left": 515,
+          "Top": 12,
+          "Right": 659,
+          "Bottom": 156,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

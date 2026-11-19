@@ -1,0 +1,336 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =2
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =8880
+    DatasheetFontHeight =11
+    ItemSuffix =35
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    RecSrcDt = Begin
+        0x29ad70b96c4fe640
+    End
+    RecordSource ="SELECT T_KundenProduktpreise.* FROM T_KundenProduktpreise ORDER BY T_KundenProdu"
+        "ktpreise.GültigAb DESC , T_KundenProduktpreise.ProduktID; "
+    BeforeInsert ="[Event Procedure]"
+    BeforeUpdate ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            BorderColor =-2147483609
+            ForeColor =11830108
+            FontName ="Calibri"
+        End
+        Begin Rectangle
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BorderColor =-2147483609
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+            BorderColor =-2147483609
+        End
+        Begin Image
+            BackStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin OptionButton
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =-2147483609
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            BackStyle =1
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin BoundObjectFrame
+            SizeMode =3
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+            BorderColor =-2147483609
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AsianLineBreak =1
+        End
+        Begin ListBox
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin ComboBox
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin UnboundObjectFrame
+            BackStyle =0
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Tab
+            Width =5100
+            Height =3420
+            FontSize =11
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Attachment
+            BackStyle =0
+            BorderLineStyle =0
+            PictureSizeMode =3
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+            LabelX =-1701
+        End
+        Begin EmptyCell
+            Height =240
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =-2147483609
+            Name ="Formularkopf"
+        End
+        Begin Section
+            Height =4080
+            Name ="Detailbereich"
+            AutoHeight =1
+            AlternateBackColor =16777215
+            Begin
+                Begin TextBox
+                    DecimalPlaces =4
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2280
+                    Top =360
+                    Width =6180
+                    Height =360
+                    ColumnOrder =2
+                    Name ="VKexkl"
+                    ControlSource ="VKexkl"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    GroupTable =9
+                    RightPadding =38
+                    BottomPadding =38
+
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =9
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =0
+                            Top =360
+                            Width =2220
+                            Height =360
+                            Name ="VKexkl_Bezeichnungsfeld"
+                            Caption ="VKexkl"
+                            GroupTable =9
+                            BottomPadding =38
+                            RowStart =1
+                            RowEnd =1
+                            LayoutGroup =1
+                            GroupTable =9
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =6
+                    ListRows =30
+                    ListWidth =7938
+                    Left =2280
+                    Top =0
+                    Width =6180
+                    Height =300
+                    ColumnWidth =7815
+                    ColumnOrder =1
+                    TabIndex =1
+                    Name ="ProduktID"
+                    ControlSource ="ProduktID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT T_Produkte.ID, T_Produkte.Beschreibung, T_Produkte.VKexkl, T_Produkte.Ein"
+                        "heit, T_Produkte.UstProz, T_Produkte.StandardMenge FROM T_Produkte WHERE (((T_Pr"
+                        "odukte.obsolet)=False)) ORDER BY T_Produkte.Beschreibung; "
+                    ColumnWidths ="0;5670;1134;1134;0;0"
+                    GroupTable =9
+                    RightPadding =38
+                    BottomPadding =38
+
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =9
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =0
+                            Top =0
+                            Width =2220
+                            Height =300
+                            Name ="ProduktID_Bezeichnungsfeld"
+                            Caption ="Produkt"
+                            GroupTable =9
+                            BottomPadding =38
+                            LayoutGroup =1
+                            GroupTable =9
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2324
+                    Top =907
+                    Height =315
+                    ColumnOrder =0
+                    TabIndex =2
+                    Name ="GültigAb"
+                    ControlSource ="GültigAb"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =623
+                            Top =907
+                            Width =945
+                            Height =315
+                            Name ="Bezeichnungsfeld33"
+                            Caption ="Gültig ab"
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2381
+                    Top =1303
+                    Width =4320
+                    Height =1008
+                    ColumnWidth =4455
+                    TabIndex =3
+                    Name ="Anmerkungen"
+                    ControlSource ="Anmerkungen"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =680
+                            Top =1303
+                            Width =1455
+                            Height =315
+                            Name ="Bezeichnungsfeld34"
+                            Caption ="Anmerkung"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+            AutoHeight =1
+        End
+    End
+End
+CodeBehindForm
+' See "Kartei_UF_Produktpreise.cls"

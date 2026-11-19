@@ -1,0 +1,442 @@
+﻿Version =20
+VersionRequired =20
+Begin Report
+    LayoutForPrint = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =10234
+    DatasheetFontHeight =11
+    ItemSuffix =77
+    RecSrcDt = Begin
+        0xdc8fc674f7f9e340
+    End
+    RecordSource ="PARAMETERS [Letzter Bankbeleg Datum] DateTime; SELECT V_RechnungenMitSaldo.Anred"
+        "e, V_RechnungenMitSaldo.Kundenname, V_RechnungenMitSaldo.Anschriftname, V_Rechnu"
+        "ngenMitSaldo.Adresse, [V_RechnungenMitSaldo].[plz] & ' ' & [V_RechnungenMitSaldo"
+        "].[ort] AS PLZOrt_, mED_GetText(\"FirmenOrt\") & \", \" & Format([V_RechnungenMi"
+        "tSaldo].[Mahnung1Am],\"dd/mm/yyyy\") AS OrtDatum, V_RechnungenMitSaldo.Nr, V_Rec"
+        "hnungenMitSaldo.Datum, V_RechnungenMitSaldo.BetragInkl AS Betrag, V_RechnungenMi"
+        "tSaldo.Saldo, V_RechnungenMitSaldo.MahnStufe, V_RechnungenMitSaldo.Mahnung1Am, V"
+        "_RechnungenMitSaldo.Mahnung2Am, V_RechnungenMitSaldo.Mahnung3Am, mBR_MahnFussTex"
+        "t([Mahnung1Am],[Letzter Bankbeleg Datum]) AS MahnFussText FROM V_RechnungenMitSa"
+        "ldo WHERE (((V_RechnungenMitSaldo.Saldo)<>0)); "
+    DatasheetFontName ="Tahoma"
+    FilterOnLoad =0
+    FitToPage =1
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            ShowDatePicker =0
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin PageBreak
+            Width =283
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            GroupFooter = NotDefault
+            KeepTogether =2
+            ControlSource ="Kundenname"
+        End
+        Begin PageHeader
+            Height =1815
+            Name ="Seitenkopfbereich"
+            Begin
+                Begin Subform
+                    Locked = NotDefault
+                    OldBorderStyle =0
+                    Left =12
+                    Width =10222
+                    Height =1815
+                    Name ="Untergeordnet67"
+                    SourceObject ="Report.BelegKopf"
+
+                    LayoutCachedLeft =12
+                    LayoutCachedWidth =10234
+                    LayoutCachedHeight =1815
+                End
+            End
+        End
+        Begin BreakHeader
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            CanShrink = NotDefault
+            ForceNewPage =1
+            Height =5010
+            Name ="Gruppenkopf0"
+            Begin
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Left =340
+                    Top =1013
+                    Width =4836
+                    Height =270
+                    ColumnOrder =6
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =3
+                    Name ="Kundenname"
+                    ControlSource ="Kundenname"
+                    FontName ="Verdana"
+
+                    LayoutCachedLeft =340
+                    LayoutCachedTop =1013
+                    LayoutCachedWidth =5176
+                    LayoutCachedHeight =1283
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Left =340
+                    Top =1305
+                    Width =4836
+                    Height =270
+                    ColumnOrder =7
+                    FontSize =10
+                    TabIndex =4
+                    Name ="Adresse"
+                    ControlSource ="Adresse"
+                    FontName ="Verdana"
+
+                    LayoutCachedLeft =340
+                    LayoutCachedTop =1305
+                    LayoutCachedWidth =5176
+                    LayoutCachedHeight =1575
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Left =340
+                    Top =1590
+                    Width =4836
+                    Height =270
+                    ColumnOrder =9
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="PLZOrt"
+                    ControlSource ="PLZOrt_"
+                    FontName ="Verdana"
+
+                    LayoutCachedLeft =340
+                    LayoutCachedTop =1590
+                    LayoutCachedWidth =5176
+                    LayoutCachedHeight =1860
+                End
+                Begin TextBox
+                    TextAlign =3
+                    IMESentenceMode =3
+                    Left =8025
+                    Top =2430
+                    Width =1988
+                    Height =285
+                    ColumnOrder =4
+                    FontSize =8
+                    TabIndex =1
+                    ForeColor =7500402
+                    Name ="Text40"
+                    ControlSource ="OrtDatum"
+                    FontName ="Verdana"
+
+                    LayoutCachedLeft =8025
+                    LayoutCachedTop =2430
+                    LayoutCachedWidth =10013
+                    LayoutCachedHeight =2715
+                End
+                Begin Label
+                    BackStyle =1
+                    Left =90
+                    Top =3105
+                    Width =6591
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Titel"
+                    Caption ="Zahlungserinnerung"
+                    FontName ="Verdana"
+                    LayoutCachedLeft =90
+                    LayoutCachedTop =3105
+                    LayoutCachedWidth =6681
+                    LayoutCachedHeight =3390
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =1788
+                    Top =4695
+                    Width =1701
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld10"
+                    Caption ="ausgestellt am"
+                    LayoutCachedLeft =1788
+                    LayoutCachedTop =4695
+                    LayoutCachedWidth =3489
+                    LayoutCachedHeight =5010
+                End
+                Begin Label
+                    TextAlign =3
+                    Left =5190
+                    Top =4695
+                    Width =1701
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld12"
+                    Caption ="offener Betrag"
+                    LayoutCachedLeft =5190
+                    LayoutCachedTop =4695
+                    LayoutCachedWidth =6891
+                    LayoutCachedHeight =5010
+                End
+                Begin Line
+                    Left =78
+                    Top =4995
+                    Width =9923
+                    Name ="Linie20"
+                    LayoutCachedLeft =78
+                    LayoutCachedTop =4995
+                    LayoutCachedWidth =10001
+                    LayoutCachedHeight =4995
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =3489
+                    Top =4695
+                    Width =1701
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld49"
+                    Caption ="Rechnungsbetrag"
+                    LayoutCachedLeft =3489
+                    LayoutCachedTop =4695
+                    LayoutCachedWidth =5190
+                    LayoutCachedHeight =5010
+                End
+                Begin Label
+                    Left =75
+                    Top =4695
+                    Width =1701
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld11"
+                    Caption ="Rechnung Nr:"
+                    LayoutCachedLeft =75
+                    LayoutCachedTop =4695
+                    LayoutCachedWidth =1776
+                    LayoutCachedHeight =5010
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Left =90
+                    Top =3510
+                    Width =10020
+                    Height =851
+                    FontSize =10
+                    Name ="Mahntext1"
+                    ControlSource ="=mBR_Mahntext(1)"
+                    FontName ="Verdana"
+
+                    LayoutCachedLeft =90
+                    LayoutCachedTop =3510
+                    LayoutCachedWidth =10110
+                    LayoutCachedHeight =4361
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Left =340
+                    Top =735
+                    Width =4836
+                    Height =270
+                    FontSize =10
+                    TabIndex =5
+                    Name ="Anrede"
+                    ControlSource ="Anrede"
+                    FontName ="Verdana"
+
+                    LayoutCachedLeft =340
+                    LayoutCachedTop =735
+                    LayoutCachedWidth =5176
+                    LayoutCachedHeight =1005
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =285
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    CanGrow = NotDefault
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =87
+                    Height =285
+                    ColumnOrder =3
+                    FontSize =10
+                    TabIndex =1
+                    Name ="Produktname"
+                    ControlSource ="Nr"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =87
+                    LayoutCachedWidth =1788
+                    LayoutCachedHeight =285
+                End
+                Begin TextBox
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =1788
+                    Height =285
+                    ColumnOrder =4
+                    FontSize =10
+                    Name ="Menge"
+                    ControlSource ="Datum"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =1788
+                    LayoutCachedWidth =3489
+                    LayoutCachedHeight =285
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =5190
+                    Height =285
+                    ColumnOrder =2
+                    FontSize =10
+                    TabIndex =2
+                    Name ="Text17"
+                    ControlSource ="Saldo"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =5190
+                    LayoutCachedWidth =6891
+                    LayoutCachedHeight =285
+                End
+                Begin TextBox
+                    TextAlign =3
+                    IMESentenceMode =3
+                    Left =3489
+                    Height =285
+                    ColumnOrder =0
+                    FontSize =10
+                    TabIndex =3
+                    Name ="Einheit"
+                    ControlSource ="Betrag"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =3489
+                    LayoutCachedWidth =5190
+                    LayoutCachedHeight =285
+                    CurrencySymbol ="€"
+                End
+            End
+        End
+        Begin BreakFooter
+            CanGrow = NotDefault
+            CanShrink = NotDefault
+            Height =2145
+            Name ="Gruppenfuß0"
+            Begin
+                Begin Line
+                    Left =87
+                    Width =9923
+                    Name ="Linie22"
+                    LayoutCachedLeft =87
+                    LayoutCachedWidth =10010
+                End
+                Begin Label
+                    BackStyle =1
+                    TextAlign =1
+                    Left =90
+                    Top =1260
+                    Width =9930
+                    Height =885
+                    FontSize =10
+                    Name ="BelegText2"
+                    Caption ="Falls Sie diesen Betrag inzwischen bezahlt haben sollten, danken wir Ihnen – in "
+                        "diesem Fall betrachten Sie dieses Schreiben als gegenstandslos.\015\012Mit freun"
+                        "dlichen Grüßen\015\012\015\012"
+                    FontName ="Verdana"
+                    LayoutCachedLeft =90
+                    LayoutCachedTop =1260
+                    LayoutCachedWidth =10020
+                    LayoutCachedHeight =2145
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Left =90
+                    Top =315
+                    Width =10020
+                    Height =735
+                    FontSize =10
+                    Name ="Text75"
+                    ControlSource ="MahnFussText"
+                    FontName ="Verdana"
+
+                    LayoutCachedLeft =90
+                    LayoutCachedTop =315
+                    LayoutCachedWidth =10110
+                    LayoutCachedHeight =1050
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="Seitenfußbereich"
+        End
+    End
+End
+CodeBehindForm
+' See "Mahnung1.cls"

@@ -1,0 +1,24 @@
+﻿{
+  "Info": {
+    "Class": "clsDbForm",
+    "Description": "ZahlungsausgangsListe_UF Conditional Formatting"
+  },
+  "Items": {
+    "ConditionalFormatting": {
+      "Zugeordnet": {
+        "Rules": [
+          {
+            "Type": "Expression",
+            "Enabled": true,
+            "FontBold": false,
+            "FontItalic": false,
+            "FontUnderline": false,
+            "ForeColor": "RGB(255,0,0)",
+            "BackColor": "RGB(255,255,255)",
+            "Expression1": "Round([Betrag],2)<>Round([Zugeordnet],2)"
+          }
+        ]
+      }
+    }
+  }
+}

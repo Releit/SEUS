@@ -1,0 +1,674 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =14706
+    DatasheetFontHeight =11
+    ItemSuffix =64
+    Right =50000
+    Bottom =50000
+    RecSrcDt = Begin
+        0xed24d39f14cae340
+    End
+    DatasheetFontName ="Calibri"
+    OnLoad ="[Event Procedure]"
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin TextBox
+            AddColon = NotDefault
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ThemeFontIndex =1
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin ListBox
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            BorderColor =12632256
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin ComboBox
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =12632256
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin Tab
+            Width =5100
+            Height =3420
+            FontSize =11
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Page
+            Width =1701
+            Height =1701
+        End
+        Begin FormHeader
+            Height =525
+            Name ="Formularkopf"
+            BackThemeColorIndex =4
+            BackShade =50.0
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =60
+                    Top =60
+                    Width =1740
+                    Height =390
+                    FontSize =14
+                    FontWeight =700
+                    BorderColor =-2147483609
+                    Name ="Bezeichnungsfeld26"
+                    Caption ="Mahnungen"
+                    FontName ="Tahoma"
+                    ForeThemeColorIndex =1
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =14130
+                    Width =510
+                    Height =510
+                    ForeColor =-2147483609
+                    Name ="cmdClose"
+                    OnClick ="[Event Procedure]"
+                    ControlTipText ="Formular schließen"
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000010081080 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000040485020100810e0104050ff ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000040404080405860ff106890ff2080a0f0 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000607070ff80a0b0ff4080a0ff20a0d0ff40a8e0ff2078a0ff ,
+                        0x101020ff101020ff000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000708890ffa0d8f0ff60d0ffff50c0f0ff30a8e0ff1080b0ff ,
+                        0xe0d8d0ff102020ff000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000708890ffb0e8f0ff80e0ffff60c8f0ff50b8f0ff1088c0ff ,
+                        0xf0d8d0ff202830ff000000000000000090482030904820ff0000000000000000 ,
+                        0x0000000000000000808890ffb0e8f0ff80e0ffff60d0ffff404050ff1090c0ff ,
+                        0xf0e0d0ff303840ff0000000090482030a05030ffa05020ff0000000000000000 ,
+                        0x00000000000000008090a0ffc0f0ffff90e0ffff70d8ffff60c8f0ff0090c0ff ,
+                        0xf0e0e0ff404050ff90482030a05030ffd07840ffb05830ffa05020ffa04820ff ,
+                        0x904820ff904820ff8090a0ffc0f0ffffa0e8ffff80d8ffff70d0f0ff40b0e0ff ,
+                        0xf0e8e0ff605050ffa05830ffe08860fff09060fff08850ffe07850ffd07040ff ,
+                        0xb06840ff904820ff8098a0ffc0f0ffffa0e8ffff90e8ffff80e0ffff80b8d0ff ,
+                        0xf0e8e0ffe09870ffffc0a0ffffb090ffffa070fff09060fff08850ffe07850ff ,
+                        0xd07040ffa05020ff8098a0ffc0f0ffffc0f8ffffa0e0f0ff90a8b0ffc0c8d0ff ,
+                        0xf0f0e0ff908080fff0a070ffffc0a0ffffb090ffffb090ffffa880fff0a080ff ,
+                        0xe09870ffb05030ff90a0a0ffe0f8ffffb0c8d0ff90a0b0fff0f0f0fffff8f0ff ,
+                        0xf0f0f0ff607080ffe0987050f0a070ffffc0a0ffd06830ffe09870ffe09060ff ,
+                        0xe08860ffe08050ff90a0b0ff90a8b0ffc0c8d0ffffffffffffffffffffffffff ,
+                        0xffffffff708890ff00000000e0987050e09870ffd07040ff0000000000000000 ,
+                        0x000000000000000090a0b0ff90a0b0ff90a0b0ff90a0b0ff90a0a0ff8098a0ff ,
+                        0x8098a0ff9098a0ff0000000000000000e0987050e09870ff0000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =13395
+                    Width =510
+                    Height =510
+                    TabIndex =1
+                    ForeColor =-2147483609
+                    Name ="cmdRequery"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100180000000000000300000000000000000000 ,
+                        0x0000000000000000ced3d6ced3d6000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000000ced3d6ced3d6ced3d60000 ,
+                        0x00ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff ,
+                        0xffff000000ced3d6ced3d6ced3d6000000ffffffffffffffffffffffffffffff ,
+                        0x008200ffffffffffffffffffffffffffffff000000ced3d6ced3d6ced3d60000 ,
+                        0x00ffffffffffffffffffffffff008200008200ffffffffffffffffffffffffff ,
+                        0xffff000000ced3d6ced3d6ced3d6000000ffffffffffffffffff008200008200 ,
+                        0x008200008200008200ffffffffffffffffff000000ced3d6ced3d6ced3d60000 ,
+                        0x00ffffffffffffffffffffffff008200008200ffffffffffff008200ffffffff ,
+                        0xffff000000ced3d6ced3d6ced3d6000000ffffffffffffffffffffffffffffff ,
+                        0x008200ffffffffffff008200ffffffffffff000000ced3d6ced3d6ced3d60000 ,
+                        0x00ffffffffffff008200ffffffffffffffffffffffffffffff008200ffffffff ,
+                        0xffff000000ced3d6ced3d6ced3d6000000ffffffffffff008200ffffffffffff ,
+                        0x008200ffffffffffffffffffffffffffffff000000ced3d6ced3d6ced3d60000 ,
+                        0x00ffffffffffff008200ffffffffffff008200008200ffffffffffffffffffff ,
+                        0xffff000000ced3d6ced3d6ced3d6000000ffffffffffffffffff008200008200 ,
+                        0x008200008200008200ffffffffffffffffff000000ced3d6ced3d6ced3d60000 ,
+                        0x00ffffffffffffffffffffffffffffff008200008200ffffffffffffffffffff ,
+                        0xffff000000ced3d6ced3d6ced3d6000000ffffffffffffffffffffffffffffff ,
+                        0x008200ffffffffffff000000000000000000000000ced3d6ced3d6ced3d60000 ,
+                        0x00ffffffffffffffffffffffffffffffffffffffffffffffff000000ffffff00 ,
+                        0x0000ced3d6ced3d6ced3d6ced3d6000000ffffffffffffffffffffffffffffff ,
+                        0xffffffffffffffffff000000000000ced3d6ced3d6ced3d6ced3d6ced3d60000 ,
+                        0x00000000000000000000000000000000000000000000000000000000ced3d6ce ,
+                        0xd3d6ced3d6ced3d6
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Daten aktualisieren"
+                    Picture ="REFRESH.ICO"
+                    ImageData = Begin
+                        0x00000000
+                    End
+
+                End
+            End
+        End
+        Begin Section
+            Height =8955
+            BackColor =15590879
+            Name ="Detailbereich"
+            Begin
+                Begin Tab
+                    OverlapFlags =85
+                    Width =14700
+                    Height =8940
+                    Name ="Register1"
+
+                    Begin
+                        Begin Page
+                            OverlapFlags =87
+                            Left =120
+                            Top =450
+                            Width =14430
+                            Height =8370
+                            Name ="Mahnung1"
+                            Caption ="Zahlungserinnerung"
+                            Begin
+                                Begin ListBox
+                                    ColumnHeads = NotDefault
+                                    OverlapFlags =215
+                                    MultiSelect =1
+                                    IMESentenceMode =3
+                                    ColumnCount =8
+                                    Left =120
+                                    Top =671
+                                    Width =14400
+                                    Height =3637
+                                    FontSize =10
+                                    Name ="LstZuMahnen1"
+                                    RowSourceType ="Table/Query"
+                                    RowSource ="SELECT V_RechnungenMitSaldo.RechnungID, V_RechnungenMitSaldo.Mahnung1am AS Mahnd"
+                                        "atum, V_RechnungenMitSaldo.Datum AS [R-Datum], V_RechnungenMitSaldo.Nr AS [R-Nr]"
+                                        ", V_RechnungenMitSaldo.Kundenname, V_RechnungenMitSaldo.BetragInkl AS Betrag, V_"
+                                        "RechnungenMitSaldo.Saldo, Nz([V_RechnungenMitSaldo].[MahnStufe],0) AS MahnStufe "
+                                        "FROM V_RechnungenMitSaldo WHERE (((V_RechnungenMitSaldo.Datum)<Date()-mED_GetLon"
+                                        "g(\"Mahnfrist\")) And ((V_RechnungenMitSaldo.Saldo)<0) And ((Nz(V_RechnungenMitS"
+                                        "aldo.MahnStufe,0))<1)) ORDER BY V_RechnungenMitSaldo.Datum; "
+                                    ColumnWidths ="0;1134;1134;1134;5670;2835;1134;1134"
+                                    OnDblClick ="[Event Procedure]"
+
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =223
+                                    Left =11520
+                                    Top =4308
+                                    Width =3000
+                                    Height =390
+                                    FontSize =10
+                                    TabIndex =1
+                                    Name ="cmdMahnung1"
+                                    Caption ="Zahlungserinnerungen erstellen"
+                                    OnClick ="[Event Procedure]"
+
+                                End
+                                Begin Label
+                                    OverlapFlags =223
+                                    Left =120
+                                    Top =450
+                                    Width =1095
+                                    Height =285
+                                    FontSize =10
+                                    Name ="Bezeichnungsfeld11"
+                                    Caption ="zu mahnen"
+                                End
+                                Begin ListBox
+                                    ColumnHeads = NotDefault
+                                    OverlapFlags =215
+                                    MultiSelect =1
+                                    IMESentenceMode =3
+                                    ColumnCount =8
+                                    Left =127
+                                    Top =4706
+                                    Width =14400
+                                    Height =3637
+                                    FontSize =10
+                                    TabIndex =2
+                                    Name ="LstMahnung1"
+                                    RowSourceType ="Table/Query"
+                                    RowSource ="SELECT V_RechnungenMitSaldo.RechnungID, V_RechnungenMitSaldo.Mahnung1am AS Mahnd"
+                                        "atum, V_RechnungenMitSaldo.Datum AS [R-Datum], V_RechnungenMitSaldo.Nr AS [R-Nr]"
+                                        ", V_RechnungenMitSaldo.Kundenname, V_RechnungenMitSaldo.BetragInkl AS Betrag, V_"
+                                        "RechnungenMitSaldo.Saldo, V_RechnungenMitSaldo.MahnStufe FROM V_RechnungenMitSal"
+                                        "do WHERE (((V_RechnungenMitSaldo.Datum)<Date()-mED_GetLong(\"Mahnfrist\")) AND ("
+                                        "(V_RechnungenMitSaldo.Saldo)<0) AND ((V_RechnungenMitSaldo.MahnStufe)=1)) ORDER "
+                                        "BY V_RechnungenMitSaldo.Datum; "
+                                    ColumnWidths ="0;1134;1134;1134;5670;2835;1134;1134"
+                                    OnDblClick ="[Event Procedure]"
+
+                                End
+                                Begin Label
+                                    OverlapFlags =223
+                                    Left =135
+                                    Top =4485
+                                    Width =1920
+                                    Height =285
+                                    FontSize =10
+                                    Name ="Bezeichnungsfeld13"
+                                    Caption ="Zahlungserinnerungen"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =11520
+                                    Top =8355
+                                    Width =3000
+                                    Height =390
+                                    FontSize =10
+                                    TabIndex =3
+                                    Name ="cmdPrintMahnung1"
+                                    Caption ="Zahlungserinnerungen  drucken"
+                                    OnClick ="[Event Procedure]"
+                                    ImageData = Begin
+                                        0x00000000
+                                    End
+
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =215
+                            Left =120
+                            Top =435
+                            Width =14430
+                            Height =8385
+                            Name ="Mahnung2"
+                            Caption ="1. Mahnung"
+                            Begin
+                                Begin ListBox
+                                    ColumnHeads = NotDefault
+                                    OverlapFlags =247
+                                    MultiSelect =1
+                                    IMESentenceMode =3
+                                    ColumnCount =8
+                                    Left =120
+                                    Top =656
+                                    Width =14400
+                                    Height =3637
+                                    FontSize =10
+                                    Name ="LstZuMahnen2"
+                                    RowSourceType ="Table/Query"
+                                    RowSource ="SELECT V_RechnungenMitSaldo.RechnungID, V_RechnungenMitSaldo.Mahnung1am AS Mahnd"
+                                        "atum, V_RechnungenMitSaldo.Datum AS [R-Datum], V_RechnungenMitSaldo.Nr AS [R-Nr]"
+                                        ", V_RechnungenMitSaldo.Kundenname, V_RechnungenMitSaldo.BetragInkl AS Betrag, V_"
+                                        "RechnungenMitSaldo.Saldo, V_RechnungenMitSaldo.MahnStufe FROM V_RechnungenMitSal"
+                                        "do WHERE (((V_RechnungenMitSaldo.Mahnung1am)<Date()-mED_GetLong(\"Mahnfrist2\"))"
+                                        " AND ((V_RechnungenMitSaldo.Datum)<Date()-mED_GetLong(\"Mahnfrist\")) AND ((V_Re"
+                                        "chnungenMitSaldo.Saldo)<0) AND ((V_RechnungenMitSaldo.MahnStufe)<2)) ORDER BY V_"
+                                        "RechnungenMitSaldo.Datum; "
+                                    ColumnWidths ="0;1134;1134;1134;5670;2835;1134;1134"
+                                    OnDblClick ="[Event Procedure]"
+
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =223
+                                    Left =11520
+                                    Top =4305
+                                    Width =3000
+                                    Height =390
+                                    FontSize =10
+                                    TabIndex =1
+                                    Name ="cmdMahnung2"
+                                    Caption ="1. Mahnung erstellen"
+                                    OnClick ="[Event Procedure]"
+                                    ImageData = Begin
+                                        0x00000000
+                                    End
+
+                                End
+                                Begin Label
+                                    OverlapFlags =223
+                                    Left =120
+                                    Top =435
+                                    Width =1095
+                                    Height =285
+                                    FontSize =10
+                                    Name ="Bezeichnungsfeld35"
+                                    Caption ="zu mahnen"
+                                End
+                                Begin ListBox
+                                    ColumnHeads = NotDefault
+                                    OverlapFlags =247
+                                    MultiSelect =2
+                                    IMESentenceMode =3
+                                    ColumnCount =8
+                                    Left =127
+                                    Top =4691
+                                    Width =14400
+                                    Height =3637
+                                    FontSize =10
+                                    TabIndex =2
+                                    Name ="LstMahnung2"
+                                    RowSourceType ="Table/Query"
+                                    RowSource ="SELECT V_RechnungenMitSaldo.RechnungID, V_RechnungenMitSaldo.Mahnung2am AS Mahnd"
+                                        "atum, V_RechnungenMitSaldo.Datum AS [R-Datum], V_RechnungenMitSaldo.Nr AS [R-Nr]"
+                                        ", V_RechnungenMitSaldo.Kundenname, V_RechnungenMitSaldo.BetragInkl AS Betrag, V_"
+                                        "RechnungenMitSaldo.Saldo, V_RechnungenMitSaldo.MahnStufe FROM V_RechnungenMitSal"
+                                        "do WHERE (((V_RechnungenMitSaldo.Datum)<Date()-mED_GetLong(\"Mahnfrist\")) AND ("
+                                        "(V_RechnungenMitSaldo.Saldo)<0) AND ((V_RechnungenMitSaldo.MahnStufe)=2)) ORDER "
+                                        "BY V_RechnungenMitSaldo.Datum; "
+                                    ColumnWidths ="0;1134;1134;1134;5670;2835;1134;1134"
+                                    OnDblClick ="[Event Procedure]"
+
+                                End
+                                Begin Label
+                                    OverlapFlags =223
+                                    Left =135
+                                    Top =4470
+                                    Width =1095
+                                    Height =285
+                                    FontSize =10
+                                    Name ="Bezeichnungsfeld37"
+                                    Caption ="1. Mahnung"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =11520
+                                    Top =8352
+                                    Width =3000
+                                    Height =390
+                                    FontSize =10
+                                    TabIndex =3
+                                    Name ="cmdPrintMahnung2"
+                                    Caption ="1. Mahnung  drucken"
+                                    OnClick ="[Event Procedure]"
+                                    ImageData = Begin
+                                        0x00000000
+                                    End
+
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =215
+                            Left =135
+                            Top =435
+                            Width =14415
+                            Height =8385
+                            Name ="Mahnung3"
+                            Caption ="2. Mahnung"
+                            Begin
+                                Begin ListBox
+                                    ColumnHeads = NotDefault
+                                    OverlapFlags =247
+                                    MultiSelect =1
+                                    IMESentenceMode =3
+                                    ColumnCount =8
+                                    Left =150
+                                    Top =656
+                                    Width =14400
+                                    Height =3637
+                                    FontSize =10
+                                    Name ="LstZuMahnen3"
+                                    RowSourceType ="Table/Query"
+                                    RowSource ="SELECT V_RechnungenMitSaldo.RechnungID, V_RechnungenMitSaldo.Mahnung2am AS Mahnd"
+                                        "atum, V_RechnungenMitSaldo.Datum AS [R-Datum], V_RechnungenMitSaldo.Nr AS [R-Nr]"
+                                        ", V_RechnungenMitSaldo.Kundenname, V_RechnungenMitSaldo.BetragInkl AS Betrag, V_"
+                                        "RechnungenMitSaldo.Saldo, V_RechnungenMitSaldo.MahnStufe FROM V_RechnungenMitSal"
+                                        "do WHERE (((V_RechnungenMitSaldo.Mahnung2am)<Date()-mED_GetLong(\"Mahnfrist2\"))"
+                                        " AND ((V_RechnungenMitSaldo.Datum)<Date()-mED_GetLong(\"Mahnfrist\")) AND ((V_Re"
+                                        "chnungenMitSaldo.Saldo)<0) AND ((V_RechnungenMitSaldo.MahnStufe)<3)) ORDER BY V_"
+                                        "RechnungenMitSaldo.Datum; "
+                                    ColumnWidths ="0;1134;1134;1134;5670;2835;1134;1134"
+                                    OnDblClick ="[Event Procedure]"
+
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =11481
+                                    Top =4305
+                                    Width =3000
+                                    Height =390
+                                    FontSize =10
+                                    Name ="cmdMahnung3"
+                                    Caption ="2. Mahnung erstellen"
+                                    OnClick ="[Event Procedure]"
+                                    ImageData = Begin
+                                        0x00000000
+                                    End
+
+                                End
+                                Begin Label
+                                    OverlapFlags =223
+                                    Left =150
+                                    Top =435
+                                    Width =1095
+                                    Height =285
+                                    FontSize =10
+                                    Name ="Bezeichnungsfeld41"
+                                    Caption ="zu mahnen"
+                                End
+                                Begin ListBox
+                                    ColumnHeads = NotDefault
+                                    OverlapFlags =247
+                                    MultiSelect =1
+                                    IMESentenceMode =3
+                                    ColumnCount =8
+                                    Left =150
+                                    Top =4710
+                                    Width =14400
+                                    Height =3637
+                                    FontSize =10
+                                    Name ="LstMahnung3"
+                                    RowSourceType ="Table/Query"
+                                    RowSource ="SELECT V_RechnungenMitSaldo.RechnungID, V_RechnungenMitSaldo.Mahnung3am AS Mahnd"
+                                        "atum, V_RechnungenMitSaldo.Datum AS [R-Datum], V_RechnungenMitSaldo.Nr AS [R-Nr]"
+                                        ", V_RechnungenMitSaldo.Kundenname, V_RechnungenMitSaldo.BetragInkl AS Betrag, V_"
+                                        "RechnungenMitSaldo.Saldo, V_RechnungenMitSaldo.MahnStufe FROM V_RechnungenMitSal"
+                                        "do WHERE (((V_RechnungenMitSaldo.Datum)<Date()-mED_GetLong(\"Mahnfrist\")) AND ("
+                                        "(V_RechnungenMitSaldo.Saldo)<0) AND ((V_RechnungenMitSaldo.MahnStufe)=3)) ORDER "
+                                        "BY V_RechnungenMitSaldo.Datum; "
+                                    ColumnWidths ="0;1134;1134;1134;5670;2835;1134;1134"
+                                    OnDblClick ="[Event Procedure]"
+
+                                End
+                                Begin Label
+                                    OverlapFlags =223
+                                    Left =165
+                                    Top =4470
+                                    Width =1095
+                                    Height =285
+                                    FontSize =10
+                                    Name ="Bezeichnungsfeld43"
+                                    Caption ="2. Mahnung"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =11481
+                                    Top =8352
+                                    Width =3000
+                                    Height =390
+                                    FontSize =10
+                                    Name ="cmdPrintMahnung3"
+                                    Caption ="2. Mahnung  drucken"
+                                    OnClick ="[Event Procedure]"
+                                    ImageData = Begin
+                                        0x00000000
+                                    End
+
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =215
+                            Left =135
+                            Top =450
+                            Width =14415
+                            Height =8370
+                            Name ="Rechtsanwalt"
+                            Begin
+                                Begin ListBox
+                                    ColumnHeads = NotDefault
+                                    OverlapFlags =247
+                                    MultiSelect =1
+                                    IMESentenceMode =3
+                                    ColumnCount =8
+                                    Left =135
+                                    Top =656
+                                    Width =14400
+                                    Height =3637
+                                    FontSize =10
+                                    Name ="LstZuMahnen4"
+                                    RowSourceType ="Table/Query"
+                                    RowSource ="SELECT V_RechnungenMitSaldo.RechnungID, mED_LetztesMahnDatum([Rechnungid]) AS Ma"
+                                        "hndatum, V_RechnungenMitSaldo.Datum AS [R-Datum], V_RechnungenMitSaldo.Nr AS [R-"
+                                        "Nr], V_RechnungenMitSaldo.Kundenname, V_RechnungenMitSaldo.BetragInkl AS Betrag,"
+                                        " V_RechnungenMitSaldo.Saldo, V_RechnungenMitSaldo.MahnStufe FROM V_RechnungenMit"
+                                        "Saldo WHERE (((mED_LetztesMahnDatum([Rechnungid]))<Date()-mED_GetLong(\"Mahnfris"
+                                        "t2\")) AND ((V_RechnungenMitSaldo.Datum)<Date()-mED_GetLong(\"Mahnfrist\")) AND "
+                                        "((V_RechnungenMitSaldo.Saldo)<0) AND ((V_RechnungenMitSaldo.MahnStufe)<mED_GetLo"
+                                        "ng(\"MahnAnzahl\")+1)) ORDER BY V_RechnungenMitSaldo.Datum; "
+                                    ColumnWidths ="0;1134;1134;1134;5670;2835;1134;1134"
+                                    OnDblClick ="[Event Procedure]"
+
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =223
+                                    Left =10372
+                                    Top =4308
+                                    Width =4170
+                                    Height =390
+                                    FontSize =10
+                                    TabIndex =1
+                                    Name ="cmdMahnung4"
+                                    Caption ="zur Rechtsanwalt-Liste"
+                                    OnClick ="[Event Procedure]"
+                                    ImageData = Begin
+                                        0x00000000
+                                    End
+
+                                End
+                                Begin Label
+                                    OverlapFlags =223
+                                    Left =135
+                                    Top =450
+                                    Width =1560
+                                    Height =285
+                                    FontSize =10
+                                    Name ="Bezeichnungsfeld47"
+                                    Caption ="zum Rechtsanwalt"
+                                End
+                                Begin ListBox
+                                    ColumnHeads = NotDefault
+                                    OverlapFlags =247
+                                    MultiSelect =1
+                                    IMESentenceMode =3
+                                    ColumnCount =8
+                                    Left =142
+                                    Top =4691
+                                    Width =14400
+                                    Height =3637
+                                    FontSize =10
+                                    TabIndex =2
+                                    Name ="LstMahnung4"
+                                    RowSourceType ="Table/Query"
+                                    RowSource ="SELECT V_RechnungenMitSaldo.RechnungID, V_RechnungenMitSaldo.RechtsanwaltAm AS ["
+                                        "RA-am], V_RechnungenMitSaldo.Datum AS [R-Datum], V_RechnungenMitSaldo.Nr AS [R-N"
+                                        "r], V_RechnungenMitSaldo.Kundenname, V_RechnungenMitSaldo.BetragInkl AS Betrag, "
+                                        "V_RechnungenMitSaldo.Saldo, V_RechnungenMitSaldo.MahnStufe FROM V_RechnungenMitS"
+                                        "aldo WHERE (((V_RechnungenMitSaldo.Datum)<Date()-mED_GetLong(\"Mahnfrist\")) AND"
+                                        " ((V_RechnungenMitSaldo.Saldo)<0) AND ((V_RechnungenMitSaldo.MahnStufe)>=mED_Get"
+                                        "Long(\"MahnAnzahl\")+1)) ORDER BY V_RechnungenMitSaldo.Datum; "
+                                    ColumnWidths ="0;1134;1134;1134;5670;2835;1134;1134"
+                                    OnDblClick ="[Event Procedure]"
+
+                                End
+                                Begin Label
+                                    OverlapFlags =223
+                                    Left =150
+                                    Top =4470
+                                    Width =1185
+                                    Height =285
+                                    FontSize =10
+                                    Name ="Bezeichnungsfeld49"
+                                    Caption ="Rechtsanwalt"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =10372
+                                    Top =8355
+                                    Width =4170
+                                    Height =390
+                                    FontSize =10
+                                    TabIndex =3
+                                    Name ="cmdPrintMahnung4"
+                                    Caption ="Rechungsliste für Rechtsanwalt  drucken"
+                                    OnClick ="[Event Procedure]"
+                                    ImageData = Begin
+                                        0x00000000
+                                    End
+
+                                End
+                            End
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "Mahnungen.cls"

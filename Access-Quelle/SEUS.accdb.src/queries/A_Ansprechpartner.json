@@ -1,0 +1,48 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "A_Ansprechpartner"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Name1": {
+        "ColumnWidth": 2040,
+        "AggregateType": -1
+      },
+      "Name2": {
+        "ColumnWidth": 2265,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1705,
+        "bottom": 857
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1689,
+        "bottom": 381
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "T_Ansprechpartner",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 395,
+          "Bottom": 358,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

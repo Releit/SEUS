@@ -1,0 +1,222 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =2
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =5985
+    DatasheetFontHeight =10
+    ItemSuffix =11
+    Right =50000
+    Bottom =50000
+    RecSrcDt = Begin
+        0x880e6df09096e440
+    End
+    RecordSource ="SELECT T_RechnungsPos.ProduktID, T_RechnungsPos.RechnungID, T_Rechnungen.Datum, "
+        "T_Rechnungen.Nr, T_Kartei.Name1, T_RechnungsPos.Menge, T_RechnungsPos.Einheit FR"
+        "OM (T_Kartei INNER JOIN T_Rechnungen ON T_Kartei.[ID] = T_Rechnungen.[KarteiID])"
+        " INNER JOIN T_RechnungsPos ON T_Rechnungen.[ID] = T_RechnungsPos.[RechnungID]; "
+    Caption ="Produkte_UF_RechnungsPos"
+    DatasheetFontName ="Calibri"
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =15921906
+    DatasheetGridlinesColor12 =0
+    FitToScreen =1
+    DatasheetBackThemeColorIndex =1
+    BorderThemeColorIndex =3
+    ThemeFontIndex =1
+    ForeThemeColorIndex =0
+    AlternateBackThemeColorIndex =1
+    AlternateBackShade =95.0
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =0
+            BorderTint =50.0
+            ForeThemeColorIndex =0
+            ForeTint =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin TextBox
+            AddColon = NotDefault
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ThemeFontIndex =1
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin FormHeader
+            Height =0
+            Name ="Formularkopf"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =2
+            BackTint =20.0
+        End
+        Begin Section
+            Height =2364
+            Name ="Detailbereich"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =342
+                    Width =1452
+                    Height =312
+                    ColumnWidth =1104
+                    Name ="Datum"
+                    ControlSource ="Datum"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =342
+                            Top =342
+                            Width =2208
+                            Height =312
+                            Name ="Datum_Bezeichnungsfeld"
+                            Caption ="Datum"
+                        End
+                    End
+                End
+                Begin TextBox
+                    FontUnderline = NotDefault
+                    IsHyperlink = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =741
+                    Width =1392
+                    Height =312
+                    ColumnWidth =792
+                    TabIndex =1
+                    Name ="Nr"
+                    ControlSource ="Nr"
+                    OnClick ="[Event Procedure]"
+
+                    ForeThemeColorIndex =10
+                    ForeTint =100.0
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =342
+                            Top =741
+                            Width =2208
+                            Height =312
+                            Name ="Nr_Bezeichnungsfeld"
+                            Caption ="Nr"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =1140
+                    Width =3288
+                    Height =312
+                    ColumnWidth =4176
+                    TabIndex =2
+                    Name ="Name1"
+                    ControlSource ="Name1"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =342
+                            Top =1140
+                            Width =2208
+                            Height =312
+                            Name ="Name1_Bezeichnungsfeld"
+                            Caption ="Name1"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =1539
+                    Width =3288
+                    Height =312
+                    ColumnWidth =960
+                    TabIndex =3
+                    Name ="Menge"
+                    ControlSource ="Menge"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =342
+                            Top =1539
+                            Width =2208
+                            Height =312
+                            Name ="Menge_Bezeichnungsfeld"
+                            Caption ="Menge"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =1938
+                    Width =1392
+                    Height =312
+                    ColumnWidth =960
+                    TabIndex =4
+                    Name ="Einheit"
+                    ControlSource ="Einheit"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =342
+                            Top =1938
+                            Width =2208
+                            Height =312
+                            Name ="Einheit_Bezeichnungsfeld"
+                            Caption ="Einheit"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+        End
+    End
+End
+CodeBehindForm
+' See "Produkte_UF_RechnungsPos.cls"

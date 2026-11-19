@@ -1,0 +1,54 @@
+﻿{
+  "Info": {
+    "Class": "clsDbForm",
+    "Description": "EingangsRechnungenListe_UF Conditional Formatting"
+  },
+  "Items": {
+    "ConditionalFormatting": {
+      "Ust10Proz": {
+        "Rules": [
+          {
+            "Type": "Expression",
+            "Enabled": true,
+            "FontBold": false,
+            "FontItalic": false,
+            "FontUnderline": false,
+            "ForeColor": "RGB(186,20,25)",
+            "BackColor": "RGB(255,255,255)",
+            "Expression1": "[UstProz]=0.1 And [Ust10Proz]<>([Brutto]/11)"
+          }
+        ]
+      },
+      "Ust20Proz": {
+        "Rules": [
+          {
+            "Type": "Expression",
+            "Enabled": true,
+            "FontBold": false,
+            "FontItalic": false,
+            "FontUnderline": false,
+            "ForeColor": "RGB(186,20,25)",
+            "BackColor": "RGB(255,255,255)",
+            "Expression1": "[UstProz]=0.2 And [Ust20Proz]<>([Brutto]/6)"
+          }
+        ]
+      },
+      "offen": {
+        "Rules": [
+          {
+            "Type": "FieldValue",
+            "Enabled": true,
+            "FontBold": false,
+            "FontItalic": false,
+            "FontUnderline": false,
+            "ForeColor": "RGB(255,0,0)",
+            "BackColor": "RGB(255,255,255)",
+            "Operator": "NotEqual",
+            "Expression1": "0",
+            "Expression2": ""
+          }
+        ]
+      }
+    }
+  }
+}

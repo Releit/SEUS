@@ -1,0 +1,18 @@
+﻿{
+  "Info": {
+    "Class": "clsDbRelation",
+    "Description": "Database relationship"
+  },
+  "Items": {
+    "Name": "{4B4B4C19-1AAC-423C-8491-5C085B0F5D87}",
+    "Attributes": 0,
+    "Table": "T_Kartei",
+    "ForeignTable": "T_Rechnungen",
+    "Fields": [
+      {
+        "Name": "ID",
+        "ForeignName": "KarteiID"
+      }
+    ]
+  }
+}

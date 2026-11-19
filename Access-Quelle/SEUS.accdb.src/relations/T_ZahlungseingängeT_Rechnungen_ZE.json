@@ -1,0 +1,18 @@
+﻿{
+  "Info": {
+    "Class": "clsDbRelation",
+    "Description": "Database relationship"
+  },
+  "Items": {
+    "Name": "T_ZahlungseingängeT_Rechnungen_ZE",
+    "Attributes": 0,
+    "Table": "T_Zahlungseingänge",
+    "ForeignTable": "T_Rechnungen_ZE",
+    "Fields": [
+      {
+        "Name": "ID",
+        "ForeignName": "ZEID"
+      }
+    ]
+  }
+}

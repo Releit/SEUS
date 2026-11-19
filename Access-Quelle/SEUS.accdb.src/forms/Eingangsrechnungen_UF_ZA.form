@@ -1,0 +1,180 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =2
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9225
+    DatasheetFontHeight =10
+    ItemSuffix =9
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    AfterDelConfirm ="[Event Procedure]"
+    RecSrcDt = Begin
+        0x653e0dcd72aae440
+    End
+    RecordSource ="SELECT T_EingangsRechnungen_ZA.ID, T_EingangsRechnungen_ZA.ZAID, T_EingangsRechn"
+        "ungen_ZA.ERID, T_EingangsRechnungen_ZA.Betrag, T_Zahlungsausgänge.Datum, T_Zahlu"
+        "ngsausgänge.Betrag AS ZABetrag FROM T_EingangsRechnungen_ZA INNER JOIN T_Zahlung"
+        "sausgänge ON T_EingangsRechnungen_ZA.ZAID = T_Zahlungsausgänge.ID ORDER BY T_Zah"
+        "lungsausgänge.Datum; "
+    Caption ="Eingangsrechnungen_UF_ZE"
+    AfterUpdate ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =15921906
+    DatasheetGridlinesColor12 =0
+    FitToScreen =1
+    DatasheetBackThemeColorIndex =1
+    BorderThemeColorIndex =3
+    ThemeFontIndex =1
+    ForeThemeColorIndex =0
+    AlternateBackThemeColorIndex =1
+    AlternateBackShade =95.0
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =0
+            BorderTint =50.0
+            ForeThemeColorIndex =0
+            ForeTint =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin TextBox
+            AddColon = NotDefault
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ThemeFontIndex =1
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin FormHeader
+            Height =0
+            Name ="Formularkopf"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =2
+            BackTint =20.0
+        End
+        Begin Section
+            Height =1830
+            Name ="Detailbereich"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =342
+                    Width =1392
+                    Height =312
+                    ColumnWidth =1110
+                    Name ="Datum"
+                    ControlSource ="Datum"
+                    OnDblClick ="[Event Procedure]"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =342
+                            Top =342
+                            Width =2208
+                            Height =312
+                            Name ="ZEID_Bezeichnungsfeld"
+                            Caption ="Datum"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =741
+                    Width =3288
+                    Height =312
+                    ColumnWidth =1104
+                    TabIndex =1
+                    Name ="Betrag"
+                    ControlSource ="Betrag"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+
+                    CurrencySymbol ="€"
+                    ColLCID =3079
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =342
+                            Top =741
+                            Width =2208
+                            Height =312
+                            Name ="Betrag_Bezeichnungsfeld"
+                            Caption ="Betrag"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =1173
+                    Width =3288
+                    Height =312
+                    TabIndex =2
+                    Name ="ZABetrag"
+                    ControlSource ="ZABetrag"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+
+                    CurrencySymbol ="€"
+                    ColLCID =3079
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =342
+                            Top =1173
+                            Width =2208
+                            Height =312
+                            Name ="Bezeichnungsfeld8"
+                            Caption ="ZA-Betrag"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+        End
+    End
+End
+CodeBehindForm
+' See "Eingangsrechnungen_UF_ZA.cls"

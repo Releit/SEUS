@@ -1,0 +1,159 @@
+﻿Version =20
+VersionRequired =20
+Begin Report
+    LayoutForPrint = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9637
+    DatasheetFontHeight =11
+    ItemSuffix =57
+    RecSrcDt = Begin
+        0xdc4e6fce5340e440
+    End
+    DatasheetFontName ="Tahoma"
+    OnLoad ="[Event Procedure]"
+    FilterOnLoad =0
+    FitToPage =1
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            ShowDatePicker =0
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin UnboundObjectFrame
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin PageBreak
+            Width =283
+        End
+        Begin PageHeader
+            Height =1365
+            Name ="Seitenkopfbereich"
+            Begin
+                Begin Label
+                    BackStyle =1
+                    TextAlign =1
+                    Top =570
+                    Width =3870
+                    Height =315
+                    ForeColor =1643706
+                    Name ="Bezeichnungsfeld49"
+                    Caption ="Software Entwicklung Und Service"
+                    FontName ="Verdana"
+                    LayoutCachedTop =570
+                    LayoutCachedWidth =3870
+                    LayoutCachedHeight =885
+                    BackThemeColorIndex =1
+                End
+                Begin Label
+                    BackStyle =1
+                    TextFontFamily =18
+                    Top =1125
+                    Width =3750
+                    Height =240
+                    FontSize =9
+                    ForeColor =10040879
+                    Name ="Bezeichnungsfeld50"
+                    Caption ="A-8713 St. Stefan ob Leoben, Niederdorf 21\015\012"
+                    FontName ="Cambria"
+                    LayoutCachedTop =1125
+                    LayoutCachedWidth =3750
+                    LayoutCachedHeight =1365
+                    ThemeFontIndex =0
+                    BackThemeColorIndex =1
+                End
+                Begin Label
+                    Width =3780
+                    Height =630
+                    FontSize =24
+                    FontWeight =700
+                    ForeColor =1643706
+                    Name ="Bezeichnungsfeld51"
+                    Caption ="www.SEUS.at"
+                    FontName ="Verdana"
+                    LayoutCachedWidth =3780
+                    LayoutCachedHeight =630
+                End
+                Begin Line
+                    BorderWidth =1
+                    Top =570
+                    Width =3795
+                    BorderColor =1643706
+                    Name ="Linie52"
+                    LayoutCachedTop =570
+                    LayoutCachedWidth =3795
+                    LayoutCachedHeight =570
+                End
+                Begin Label
+                    BackStyle =1
+                    Top =870
+                    Width =2250
+                    Height =270
+                    FontSize =9
+                    FontWeight =700
+                    ForeColor =10040879
+                    Name ="Bezeichnungsfeld53"
+                    Caption ="Ing. Reinhard Leitner\015\012"
+                    FontName ="Verdana"
+                    LayoutCachedTop =870
+                    LayoutCachedWidth =2250
+                    LayoutCachedHeight =1140
+                    BackThemeColorIndex =1
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =0
+            Name ="Detailbereich"
+        End
+        Begin PageFooter
+            Height =0
+            Name ="Seitenfußbereich"
+        End
+    End
+End
+CodeBehindForm
+' See "Kuvert.cls"

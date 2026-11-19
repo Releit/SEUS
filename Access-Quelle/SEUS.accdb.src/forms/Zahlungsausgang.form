@@ -1,0 +1,491 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    Cycle =1
+    GridY =10
+    Width =19020
+    DatasheetFontHeight =11
+    ItemSuffix =36
+    Right =50000
+    Bottom =50000
+    Filter ="ID= 423"
+    RecSrcDt = Begin
+        0x0ee84b4ad385e440
+    End
+    RecordSource ="T_Zahlungsausgänge"
+    Caption ="Zahlungsausgang"
+    OnCurrent ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    AllowDatasheetView =0
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =15921906
+    DatasheetGridlinesColor12 =0
+    FitToScreen =1
+    DatasheetBackThemeColorIndex =1
+    BorderThemeColorIndex =3
+    ThemeFontIndex =1
+    ForeThemeColorIndex =0
+    AlternateBackThemeColorIndex =1
+    AlternateBackShade =95.0
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =0
+            BorderTint =50.0
+            ForeThemeColorIndex =0
+            ForeTint =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            FontName ="Calibri"
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+            UseTheme =1
+            Shape =1
+            Gradient =12
+            BackThemeColorIndex =4
+            BackTint =60.0
+            BorderLineStyle =0
+            BorderThemeColorIndex =4
+            BorderTint =60.0
+            ThemeFontIndex =1
+            HoverThemeColorIndex =4
+            HoverTint =40.0
+            PressedThemeColorIndex =4
+            PressedShade =75.0
+            HoverForeThemeColorIndex =0
+            HoverForeTint =75.0
+            PressedForeThemeColorIndex =0
+            PressedForeTint =75.0
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin TextBox
+            AddColon = NotDefault
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ThemeFontIndex =1
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin ListBox
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin ComboBox
+            AddColon = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ForeThemeColorIndex =2
+            ForeShade =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderThemeColorIndex =1
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+            BorderShade =65.0
+            ShowPageHeaderAndPageFooter =1
+        End
+        Begin FormHeader
+            Height =576
+            BackColor =-2147483599
+            Name ="Formularkopf"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            Begin
+                Begin Label
+                    FontItalic = NotDefault
+                    OverlapFlags =85
+                    TextFontFamily =18
+                    Width =4095
+                    Height =480
+                    FontSize =18
+                    FontWeight =700
+                    BorderColor =-2147483609
+                    Name ="Bezeichnungsfeld20"
+                    Caption ="Zahlungsausgang"
+                    FontName ="Arial"
+                    GridlineColor =0
+                    ThemeFontIndex =-1
+                    BackThemeColorIndex =-1
+                    BorderThemeColorIndex =-1
+                    BorderTint =100.0
+                    ForeThemeColorIndex =1
+                    ForeTint =100.0
+                    GridlineThemeColorIndex =-1
+                    GridlineShade =100.0
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =6803
+                    Width =576
+                    Height =576
+                    Name ="Befehl22"
+                    Caption ="Befehl22"
+                    ControlTipText ="Formular schließen"
+                    OnClickEmMacro = Begin
+                        Version =196611
+                        ColumnsShown =8
+                        Begin
+                            Action ="Close"
+                            Argument ="-1"
+                            Argument =""
+                            Argument ="0"
+                        End
+                        Begin
+                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                "nterfaceMacro For=\"Befehl22\" xmlns=\"http://schemas.microsoft.com/office/acces"
+                                "sservices/2009/11/application\" xmlns:a=\"http://schemas.microsoft.com/office/ac"
+                                "cessservices/2009/11/forms\"><S"
+                        End
+                        Begin
+                            Comment ="_AXL:tatements><Action Name=\"CloseWindow\"/></Statements></UserInterfaceMacro>"
+                        End
+                    End
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000010081080 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000040485020100810e0104050ff ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000040404080405860ff106890ff2080a0f0 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000607070ff80a0b0ff4080a0ff20a0d0ff40a8e0ff2078a0ff ,
+                        0x101020ff101020ff000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000708890ffa0d8f0ff60d0ffff50c0f0ff30a8e0ff1080b0ff ,
+                        0xe0d8d0ff102020ff000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000708890ffb0e8f0ff80e0ffff60c8f0ff50b8f0ff1088c0ff ,
+                        0xf0d8d0ff202830ff000000000000000090482030904820ff0000000000000000 ,
+                        0x0000000000000000808890ffb0e8f0ff80e0ffff60d0ffff404050ff1090c0ff ,
+                        0xf0e0d0ff303840ff0000000090482030a05030ffa05020ff0000000000000000 ,
+                        0x00000000000000008090a0ffc0f0ffff90e0ffff70d8ffff60c8f0ff0090c0ff ,
+                        0xf0e0e0ff404050ff90482030a05030ffd07840ffb05830ffa05020ffa04820ff ,
+                        0x904820ff904820ff8090a0ffc0f0ffffa0e8ffff80d8ffff70d0f0ff40b0e0ff ,
+                        0xf0e8e0ff605050ffa05830ffe08860fff09060fff08850ffe07850ffd07040ff ,
+                        0xb06840ff904820ff8098a0ffc0f0ffffa0e8ffff90e8ffff80e0ffff80b8d0ff ,
+                        0xf0e8e0ffe09870ffffc0a0ffffb090ffffa070fff09060fff08850ffe07850ff ,
+                        0xd07040ffa05020ff8098a0ffc0f0ffffc0f8ffffa0e0f0ff90a8b0ffc0c8d0ff ,
+                        0xf0f0e0ff908080fff0a070ffffc0a0ffffb090ffffb090ffffa880fff0a080ff ,
+                        0xe09870ffb05030ff90a0a0ffe0f8ffffb0c8d0ff90a0b0fff0f0f0fffff8f0ff ,
+                        0xf0f0f0ff607080ffe0987050f0a070ffffc0a0ffd06830ffe09870ffe09060ff ,
+                        0xe08860ffe08050ff90a0b0ff90a8b0ffc0c8d0ffffffffffffffffffffffffff ,
+                        0xffffffff708890ff00000000e0987050e09870ffd07040ff0000000000000000 ,
+                        0x000000000000000090a0b0ff90a0b0ff90a0b0ff90a0b0ff90a0a0ff8098a0ff ,
+                        0x8098a0ff9098a0ff0000000000000000e0987050e09870ff0000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                End
+            End
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =7605
+            BackColor =15527148
+            Name ="Detailbereich"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3192
+                    Top =1539
+                    Height =315
+                    ColumnWidth =1815
+                    TabIndex =2
+                    Name ="Datum"
+                    ControlSource ="Datum"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =342
+                            Top =1539
+                            Width =2760
+                            Height =315
+                            ForeColor =5855577
+                            Name ="RechnungsDatum_Bezeichnungsfeld"
+                            Caption ="Datum"
+                            ForeTint =65.0
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3192
+                    Top =1938
+                    Width =4110
+                    Height =315
+                    ColumnWidth =2760
+                    TabIndex =3
+                    Name ="Nr"
+                    ControlSource ="LfdNr"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =342
+                            Top =1938
+                            Width =2760
+                            Height =315
+                            ForeColor =5855577
+                            Name ="RechnungsNr_Bezeichnungsfeld"
+                            Caption ="Laufende-Nr."
+                            ForeTint =65.0
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3192
+                    Top =2337
+                    Height =315
+                    ColumnWidth =3000
+                    TabIndex =4
+                    Name ="Betrag"
+                    ControlSource ="Betrag"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+
+                    CurrencySymbol ="€"
+                    ColLCID =3079
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =342
+                            Top =2337
+                            Width =2760
+                            Height =315
+                            ForeColor =5855577
+                            Name ="Betrag_Bezeichnungsfeld"
+                            Caption ="Betrag"
+                            ForeTint =65.0
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListRows =35
+                    Left =3192
+                    Top =342
+                    Width =4110
+                    Height =315
+                    Name ="LiefKarteiID"
+                    ControlSource ="KarteiID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT T_Kartei.ID, T_Kartei.Name1 FROM T_Kartei WHERE (((T_Kartei.Lieferant)=Ye"
+                        "s)) ORDER BY T_Kartei.Name1; "
+                    ColumnWidths ="0;5670"
+                    AfterUpdate ="[Event Procedure]"
+
+                    ForeThemeColorIndex =0
+                    ForeTint =75.0
+                    ForeShade =100.0
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =342
+                            Top =342
+                            Width =2760
+                            Height =315
+                            ForeColor =5855577
+                            Name ="LiefKarteiID_Bezeichnungsfeld"
+                            Caption ="Lieferant"
+                            ForeTint =65.0
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =3192
+                    Top =1140
+                    Width =4110
+                    Height =315
+                    TabIndex =1
+                    Name ="ZahlungsartID"
+                    ControlSource ="ZahlungsartID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT T_Zahlungsarten.ID, T_Zahlungsarten.Zahlungsart FROM T_Zahlungsarten ORDE"
+                        "R BY T_Zahlungsarten.Zahlungsart; "
+                    ColumnWidths ="0;5670"
+
+                    ForeThemeColorIndex =0
+                    ForeTint =75.0
+                    ForeShade =100.0
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =342
+                            Top =1140
+                            Width =2760
+                            Height =315
+                            ForeColor =5855577
+                            Name ="ZahlArtID_Bezeichnungsfeld"
+                            Caption ="Zahlart"
+                            ForeTint =65.0
+                        End
+                    End
+                End
+                Begin Subform
+                    OverlapFlags =215
+                    Left =7024
+                    Top =3607
+                    Width =5964
+                    Height =3648
+                    TabIndex =5
+                    Name ="UF_ZA"
+                    SourceObject ="Form.Eingangsrechnungen_UF_ZA"
+                    LinkChildFields ="ZAID"
+                    LinkMasterFields ="ID"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =7030
+                            Top =3315
+                            Width =3015
+                            Height =360
+                            ForeColor =5855577
+                            Name ="Bezeichnungsfeld27"
+                            Caption ="Zugeordnete Rechnungen"
+                            ForeTint =65.0
+                        End
+                    End
+                End
+                Begin ListBox
+                    ColumnHeads = NotDefault
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    ColumnCount =3
+                    Left =1695
+                    Top =3607
+                    Width =4605
+                    Height =3648
+                    TabIndex =6
+                    Name ="LstZA"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT T_EingangsRechnungen.ID, T_EingangsRechnungen.Datum, T_EingangsRechnungen"
+                        ".Brutto, Abs(Sum(Nz([T_EingangsRechnungen_ZA].[Betrag],0))-[T_EingangsRechnungen"
+                        "].[Brutto]-Nz([T_EingangsRechnungen].[skonto],0)) AS Ausdr1, T_EingangsRechnunge"
+                        "n.Skonto FROM T_EingangsRechnungen LEFT JOIN T_EingangsRechnungen_ZA ON T_Eingan"
+                        "gsRechnungen.ID = T_EingangsRechnungen_ZA.ERID WHERE (((T_EingangsRechnungen.Lie"
+                        "fKarteiID)=[Formulare]![Zahlungsausgang]![KarteiID])) GROUP BY T_EingangsRechnun"
+                        "gen.ID, T_EingangsRechnungen.Datum, T_EingangsRechnungen.Brutto, T_EingangsRechn"
+                        "ungen.Skonto HAVING (((Abs(Sum(Nz([T_EingangsRechnungen_ZA].[Betrag],0))-[T_Eing"
+                        "angsRechnungen].[Brutto]-Nz([T_EingangsRechnungen].[skonto],0)))>=0.005)) ORDER "
+                        "BY T_EingangsRechnungen.Datum; "
+                    ColumnWidths ="0;1134;1441"
+                    OnDblClick ="[Event Procedure]"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =1750
+                            Top =3315
+                            Width =3345
+                            Height =330
+                            ForeColor =5855577
+                            Name ="Datum1_Bezeichnungsfeld"
+                            Caption ="Rechungen ohne Zahlung"
+                            ForeTint =65.0
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =1755
+                    Top =7275
+                    Width =3345
+                    Height =330
+                    Name ="Bezeichnungsfeld30"
+                    Caption ="Zuordnen mit Doppelkick"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+        End
+    End
+End
+CodeBehindForm
+' See "Zahlungsausgang.cls"

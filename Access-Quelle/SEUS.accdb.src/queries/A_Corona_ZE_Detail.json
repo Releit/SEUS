@@ -1,0 +1,70 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "A_Corona_ZE_Detail"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Netto": {
+        "ColumnOrder": 3,
+        "ColumnWidth": 1815,
+        "AggregateType": -1
+      },
+      "T_Kartei.Name1": {
+        "ColumnWidth": 4605,
+        "AggregateType": -1
+      },
+      "T_Kartei.Name2": {
+        "ColumnWidth": 2700,
+        "AggregateType": -1
+      },
+      "T_Zahlungseingänge.Betrag": {
+        "ColumnOrder": 2,
+        "AggregateType": -1
+      },
+      "T_Zahlungseingänge.Datum": {
+        "ColumnOrder": 1,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 2089,
+        "bottom": 1193
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1301,
+        "bottom": 959
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "T_Zahlungseingänge",
+          "Alias": "",
+          "Left": 752,
+          "Top": 107,
+          "Right": 1040,
+          "Bottom": 508,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "T_Kartei",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 192,
+          "Bottom": 156,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

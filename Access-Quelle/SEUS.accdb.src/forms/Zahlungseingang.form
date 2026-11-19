@@ -1,0 +1,613 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =11400
+    DatasheetFontHeight =11
+    ItemSuffix =20
+    Right =50000
+    Bottom =50000
+    RecSrcDt = Begin
+        0xcfde7c64ce65e440
+    End
+    RecordSource ="T_Zahlungseingänge"
+    OnCurrent ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    AllowDatasheetView =0
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =15921906
+    DatasheetGridlinesColor12 =0
+    FitToScreen =1
+    DatasheetBackThemeColorIndex =1
+    BorderThemeColorIndex =3
+    ThemeFontIndex =1
+    ForeThemeColorIndex =0
+    AlternateBackThemeColorIndex =1
+    AlternateBackShade =95.0
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =0
+            BorderTint =50.0
+            ForeThemeColorIndex =0
+            ForeTint =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            FontName ="Calibri"
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+            UseTheme =1
+            Shape =1
+            Gradient =12
+            BackThemeColorIndex =4
+            BackTint =60.0
+            BorderLineStyle =0
+            BorderThemeColorIndex =4
+            BorderTint =60.0
+            ThemeFontIndex =1
+            HoverThemeColorIndex =4
+            HoverTint =40.0
+            PressedThemeColorIndex =4
+            PressedShade =75.0
+            HoverForeThemeColorIndex =0
+            HoverForeTint =75.0
+            PressedForeThemeColorIndex =0
+            PressedForeTint =75.0
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin TextBox
+            AddColon = NotDefault
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ThemeFontIndex =1
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin ListBox
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin ComboBox
+            AddColon = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ForeThemeColorIndex =2
+            ForeShade =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderThemeColorIndex =1
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+            BorderShade =65.0
+            ShowPageHeaderAndPageFooter =1
+        End
+        Begin EmptyCell
+            Height =240
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin FormHeader
+            Height =600
+            Name ="Formularkopf"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =4
+            BackShade =75.0
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Width =3945
+                    Height =390
+                    FontSize =14
+                    FontWeight =700
+                    BorderColor =-2147483609
+                    Name ="Bezeichnungsfeld26"
+                    Caption ="Zahlungseingang zuordnen"
+                    FontName ="Tahoma"
+                    GridlineColor =0
+                    ThemeFontIndex =-1
+                    BackThemeColorIndex =-1
+                    BorderThemeColorIndex =-1
+                    BorderTint =100.0
+                    ForeThemeColorIndex =1
+                    ForeTint =100.0
+                    GridlineThemeColorIndex =-1
+                    GridlineShade =100.0
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =10771
+                    Width =576
+                    Height =576
+                    Name ="cmdClose"
+                    OnClick ="[Event Procedure]"
+                    ControlTipText ="Formular schließen"
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000082c2ea0982c2ea4b82c2ea90 ,
+                        0x82c2eade00000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000082c2ea2182c2ea7582c2eab782c2eaf982c2eaff82c2eaff ,
+                        0x82c2eaff00000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000082c2eaff82c2eaff82c2eaff82c2eaff82c2eaff82c2eaff ,
+                        0x82c2eaff82c2eaff82c2eaff82c2eaff82c2eaff000000000000000000000000 ,
+                        0x000000000000000082c2eaff82c2eaff82c2eaff82c2eaff82c2eaff82c2eaff ,
+                        0x82c2eaffffffffffffffffffffffffff82c2eaff000000000000000000000000 ,
+                        0x000000000000000082c2eaff82c2eaff82c2eaff82c2eaff82c2eaff82c2eaff ,
+                        0x82c2eaffffffffffffffffffffffffa500000000000000000000000000000000 ,
+                        0x000000000000000082c2eaff82c2eaff82c2eaff82c2eaff82c2eaff82c2eaff ,
+                        0x82c2eaffffffffffffffffc000000000b17d4a90b17d4affb17d4af0b17d4a36 ,
+                        0x000000000000000082c2eaff82c2eaff82c2eaff82c2eaff82c2eaff82c2eaff ,
+                        0x82c2eaffffffffedffffff30b17d4a87b17d4affb17d4af0b17d4a3600000000 ,
+                        0x000000000000000082c2eaff82c2eaff82c2eaffffffffffd7ecf8ff82c2eaff ,
+                        0x82c2eaffffffff30b17d4a81b17d4affb17d4affb17d4affb17d4affb17d4aff ,
+                        0xb17d4affb17d4aff82c2eaff82c2eaff82c2eaffdceef9ffc4e2f5ff82c2eaff ,
+                        0x82c2eaffffffff27b17d4a7eb17d4affb17d4affb17d4affb17d4affb17d4aff ,
+                        0xb17d4affb17d4aff82c2eaff82c2eaff82c2eaff82c2eaff82c2eaff82c2eaff ,
+                        0x82c2eaffffffffe4ffffff27b17d4a84b17d4affb17d4af0b17d4a3900000000 ,
+                        0x000000000000000082c2eaff82c2eaff82c2eaff82c2eaff82c2eaff82c2eaff ,
+                        0x82c2eaffffffffffffffffbd00000000b17d4a8db17d4affb17d4af0b17d4a39 ,
+                        0x000000000000000082c2eaff82c2eaff82c2eaff82c2eaff82c2eaff82c2eaff ,
+                        0x82c2eaffffffffffffffffffffffffa500000000000000000000000000000000 ,
+                        0x000000000000000082c2eaff82c2eaff82c2eaff82c2eaff82c2eaff82c2eaff ,
+                        0x82c2eaffffffffffffffffffffffffff82c2eaff000000000000000000000000 ,
+                        0x000000000000000082c2eaff82c2eaff82c2eaff82c2eaff82c2eaff82c2eaff ,
+                        0x82c2eaff82c2eaff82c2eaff82c2eaff82c2eaff000000000000000000000000 ,
+                        0x000000000000000082c2ea2182c2ea6f82c2eab782c2eaf982c2eaff82c2eaff ,
+                        0x82c2eaff00000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000082c2ea0982c2ea4e82c2ea96 ,
+                        0x82c2eae400000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                End
+            End
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =7920
+            Name ="Detailbereich"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            BackShade =85.0
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2100
+                    Top =120
+                    Width =1680
+                    Height =300
+                    BorderColor =-2147483609
+                    ForeColor =0
+                    Name ="Datum"
+                    ControlSource ="Datum"
+                    Format ="Short Date"
+                    GroupTable =1
+                    BottomPadding =150
+                    GridlineColor =0
+
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    BackThemeColorIndex =-1
+                    BorderThemeColorIndex =-1
+                    BorderShade =100.0
+                    ThemeFontIndex =-1
+                    ForeThemeColorIndex =-1
+                    ForeTint =100.0
+                    GridlineThemeColorIndex =-1
+                    GridlineShade =100.0
+                    GroupTable =1
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =600
+                            Top =120
+                            Width =1440
+                            Height =300
+                            FontSize =10
+                            Name ="Bezeichnungsfeld1"
+                            Caption ="Datum"
+                            GroupTable =1
+                            BottomPadding =150
+                            LayoutGroup =1
+                            ForeThemeColorIndex =2
+                            ForeTint =100.0
+                            ForeShade =75.0
+                            GroupTable =1
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2100
+                    Top =540
+                    Width =1680
+                    Height =300
+                    TabIndex =1
+                    BorderColor =-2147483609
+                    ForeColor =0
+                    Name ="Betrag"
+                    ControlSource ="Betrag"
+                    Format ="Standard"
+                    AfterUpdate ="[Event Procedure]"
+                    GroupTable =2
+                    BottomPadding =150
+                    GridlineColor =0
+
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =2
+                    BackThemeColorIndex =-1
+                    BorderThemeColorIndex =-1
+                    BorderShade =100.0
+                    ThemeFontIndex =-1
+                    ForeThemeColorIndex =-1
+                    ForeTint =100.0
+                    GridlineThemeColorIndex =-1
+                    GridlineShade =100.0
+                    GroupTable =2
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =600
+                            Top =540
+                            Width =1440
+                            Height =300
+                            FontSize =10
+                            Name ="Bezeichnungsfeld5"
+                            Caption ="Betrag"
+                            GroupTable =2
+                            BottomPadding =150
+                            LayoutGroup =2
+                            ForeThemeColorIndex =2
+                            ForeTint =100.0
+                            ForeShade =75.0
+                            GroupTable =2
+                        End
+                    End
+                End
+                Begin ListBox
+                    ColumnHeads = NotDefault
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    ColumnCount =8
+                    Left =120
+                    Top =2204
+                    Width =11220
+                    Height =2835
+                    FontSize =10
+                    TabIndex =2
+                    Name ="lstBelege"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT V_Rechnungen.RechnungID, V_Rechnungen.KarteiID, V_Rechnungen.Datum, V_Rec"
+                        "hnungen.Nr, V_Rechnungen.KundenName, V_Rechnungen.BetragInkl, V_Rechnungen.Bezah"
+                        "lt, V_Rechnungen.DruckText FROM V_Rechnungen WHERE (((V_Rechnungen.Datum)>=#1/1/"
+                        "2014#) AND ((V_Rechnungen.Bezahlt)<>[Betraginkl]) AND ((V_Rechnungen.KarteiID)=["
+                        "Formulare]![Zahlungseingang]![KarteiID])); "
+                    ColumnWidths ="0;0;1134;1134;2835;1134;1134;5670"
+                    OnDblClick ="[Event Procedure]"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =126
+                            Top =1875
+                            Width =4770
+                            Height =315
+                            FontSize =10
+                            Name ="Datum_Bezeichnungsfeld"
+                            Caption ="passende Rechnungen des Kunden ohne Zahlungseingang"
+                            ForeThemeColorIndex =2
+                            ForeTint =100.0
+                            ForeShade =75.0
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =124
+                    Top =5034
+                    Width =3900
+                    Height =315
+                    FontSize =10
+                    Name ="Bezeichnungsfeld8"
+                    Caption ="buchen mit Doppelklick"
+                    ForeThemeColorIndex =2
+                    ForeTint =100.0
+                    ForeShade =75.0
+                End
+                Begin EmptyCell
+                    Left =2040
+                    Top =960
+                    Width =6180
+                    Height =300
+                    Name ="EmptyCell64"
+                    GroupTable =3
+                    RightPadding =38
+                    BottomPadding =38
+                    GridlineColor =0
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =3
+                    GridlineThemeColorIndex =-1
+                    GridlineShade =100.0
+                    GroupTable =3
+                End
+                Begin EmptyCell
+                    Left =0
+                    Top =960
+                    Width =2040
+                    Height =300
+                    Name ="EmptyCell68"
+                    GroupTable =3
+                    BottomPadding =38
+                    GridlineColor =0
+                    LayoutGroup =3
+                    GridlineThemeColorIndex =-1
+                    GridlineShade =100.0
+                    GroupTable =3
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =215
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListRows =30
+                    Left =2100
+                    Top =960
+                    Width =4200
+                    Height =300
+                    TabIndex =3
+                    BorderColor =-2147483609
+                    ForeColor =0
+                    Name ="ZahlungsartID"
+                    ControlSource ="ZahlungsartID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT T_Zahlungsarten.ID, T_Zahlungsarten.Zahlungsart FROM T_Zahlungsarten ORDE"
+                        "R BY T_Zahlungsarten.Zahlungsart; "
+                    ColumnWidths ="0;5670"
+                    OnDblClick ="=pv_GoToID()"
+                    GroupTable =4
+                    RightPadding =38
+                    BottomPadding =38
+                    GridlineColor =0
+
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =4
+                    ThemeFontIndex =-1
+                    BackThemeColorIndex =-1
+                    BorderThemeColorIndex =-1
+                    BorderShade =100.0
+                    ForeThemeColorIndex =-1
+                    ForeShade =100.0
+                    GridlineThemeColorIndex =-1
+                    GridlineShade =100.0
+                    GroupTable =4
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextAlign =1
+                            Left =600
+                            Top =960
+                            Width =1440
+                            Height =300
+                            FontSize =10
+                            Name ="Bezeichnungsfeld71"
+                            Caption ="Zahlart"
+                            GroupTable =4
+                            BottomPadding =38
+                            LayoutGroup =4
+                            ForeThemeColorIndex =2
+                            ForeTint =100.0
+                            ForeShade =75.0
+                            GroupTable =4
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =42
+                    ListWidth =8505
+                    Left =2043
+                    Top =1380
+                    Width =8742
+                    Height =315
+                    TabIndex =4
+                    BorderColor =-2147483609
+                    ForeColor =0
+                    Name ="KarteiID"
+                    ControlSource ="KarteiID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="A_AuswahlKartei"
+                    ColumnWidths ="0;8505"
+                    GridlineColor =0
+
+                    ThemeFontIndex =-1
+                    BackThemeColorIndex =-1
+                    BorderThemeColorIndex =-1
+                    BorderShade =100.0
+                    ForeThemeColorIndex =-1
+                    ForeShade =100.0
+                    GridlineThemeColorIndex =-1
+                    GridlineShade =100.0
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =570
+                            Top =1380
+                            Width =855
+                            Height =315
+                            BorderColor =-2147483609
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld76"
+                            Caption ="Kunde"
+                            GridlineColor =0
+                            ThemeFontIndex =-1
+                            BackThemeColorIndex =-1
+                            BorderThemeColorIndex =-1
+                            BorderTint =100.0
+                            ForeThemeColorIndex =-1
+                            ForeTint =100.0
+                            GridlineThemeColorIndex =-1
+                            GridlineShade =100.0
+                        End
+                    End
+                End
+                Begin Subform
+                    OverlapFlags =215
+                    Left =126
+                    Top =5820
+                    Width =11220
+                    Height =2100
+                    TabIndex =5
+                    Name ="UF_ZE"
+                    SourceObject ="Form.ZE_UF_Rechnungen"
+                    LinkChildFields ="ZEID"
+                    LinkMasterFields ="ID"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =1
+                            Left =126
+                            Top =5580
+                            Width =2655
+                            Height =315
+                            FontSize =10
+                            Name ="Bezeichnungsfeld16"
+                            Caption ="zugeordnete Rechnungen"
+                            ForeThemeColorIndex =2
+                            ForeTint =100.0
+                            ForeShade =75.0
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =6201
+                    Top =1892
+                    Width =227
+                    Height =284
+                    TabIndex =6
+                    Name ="Kontrollkästchen17"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =119
+                            Left =6426
+                            Top =1860
+                            Width =4005
+                            Height =285
+                            FontSize =10
+                            Name ="Bezeichnungsfeld18"
+                            Caption ="auch Rechnungen von anderen Kunden anzeigen"
+                            ForeThemeColorIndex =2
+                            ForeTint =100.0
+                            ForeShade =75.0
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            BackShade =85.0
+        End
+    End
+End
+CodeBehindForm
+' See "Zahlungseingang.cls"

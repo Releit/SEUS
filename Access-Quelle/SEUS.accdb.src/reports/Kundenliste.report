@@ -1,0 +1,467 @@
+﻿Version =20
+VersionRequired =20
+Begin Report
+    LayoutForPrint = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =10159
+    DatasheetFontHeight =11
+    ItemSuffix =17
+    RecSrcDt = Begin
+        0xe5918d34af1ae440
+    End
+    RecordSource ="SELECT T_Kartei.ID, T_Kartei.Nr, [Name1] & \" \" & [Name2] AS Kundenname, T_Kart"
+        "ei.PLZ, T_Kartei.Ort, T_Kartei.Adresse, T_Kartei.Anrede, T_Kartei.Titel, T_Karte"
+        "i.Tel, T_Kartei.Fax, A_LetzteLieferung.MaxvonDatum AS LetzteLieferung FROM T_Kar"
+        "tei LEFT JOIN A_LetzteLieferung ON T_Kartei.ID = A_LetzteLieferung.KarteiID; "
+    Caption ="Abfrage3"
+    DatasheetFontName ="Calibri"
+    FilterOnLoad =0
+    FitToPage =1
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =15921906
+    DatasheetGridlinesColor12 =0
+    FitToScreen =1
+    DatasheetBackThemeColorIndex =1
+    BorderThemeColorIndex =3
+    ThemeFontIndex =1
+    ForeThemeColorIndex =0
+    AlternateBackThemeColorIndex =1
+    AlternateBackShade =95.0
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =0
+            BorderTint =50.0
+            ForeThemeColorIndex =0
+            ForeTint =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin TextBox
+            AddColon = NotDefault
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            ShowDatePicker =0
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ThemeFontIndex =1
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin BreakLevel
+            ControlSource ="Kundenname"
+        End
+        Begin FormHeader
+            KeepTogether = NotDefault
+            Height =600
+            Name ="Berichtskopf"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =2
+            BackTint =20.0
+            Begin
+                Begin Label
+                    Left =60
+                    Top =60
+                    Width =1995
+                    Height =540
+                    FontSize =20
+                    BorderColor =8355711
+                    ForeColor =8355711
+                    Name ="Bezeichnungsfeld14"
+                    Caption ="Karteiliste"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =2055
+                    LayoutCachedHeight =600
+                End
+            End
+        End
+        Begin PageHeader
+            Height =372
+            Name ="Seitenkopfbereich"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin Label
+                    TextAlign =1
+                    Left =15
+                    Top =57
+                    Width =2130
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    BorderColor =8355711
+                    ForeColor =8355711
+                    Name ="Kundenname_Bezeichnungsfeld"
+                    Caption ="Kundenname"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =15
+                    LayoutCachedTop =57
+                    LayoutCachedWidth =2145
+                    LayoutCachedHeight =372
+                End
+                Begin Label
+                    TextAlign =1
+                    Left =2190
+                    Top =57
+                    Width =1665
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    BorderColor =8355711
+                    ForeColor =8355711
+                    Name ="Adresse_Bezeichnungsfeld"
+                    Caption ="Adresse"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =2190
+                    LayoutCachedTop =57
+                    LayoutCachedWidth =3855
+                    LayoutCachedHeight =372
+                End
+                Begin Label
+                    TextAlign =1
+                    Left =3885
+                    Top =57
+                    Width =627
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    BorderColor =8355711
+                    ForeColor =8355711
+                    Name ="PLZ_Bezeichnungsfeld"
+                    Caption ="PLZ"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =3885
+                    LayoutCachedTop =57
+                    LayoutCachedWidth =4512
+                    LayoutCachedHeight =372
+                End
+                Begin Label
+                    TextAlign =1
+                    Left =4566
+                    Top =57
+                    Width =1650
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    BorderColor =8355711
+                    ForeColor =8355711
+                    Name ="Ort_Bezeichnungsfeld"
+                    Caption ="Ort"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =4566
+                    LayoutCachedTop =57
+                    LayoutCachedWidth =6216
+                    LayoutCachedHeight =372
+                End
+                Begin Label
+                    TextAlign =1
+                    Left =6240
+                    Top =57
+                    Width =1425
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    BorderColor =8355711
+                    ForeColor =8355711
+                    Name ="Tel_Bezeichnungsfeld"
+                    Caption ="Tel"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =6240
+                    LayoutCachedTop =57
+                    LayoutCachedWidth =7665
+                    LayoutCachedHeight =372
+                End
+                Begin Label
+                    TextAlign =1
+                    Left =7692
+                    Top =57
+                    Width =465
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    BorderColor =8355711
+                    ForeColor =8355711
+                    Name ="Fax_Bezeichnungsfeld"
+                    Caption ="Fax"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =7692
+                    LayoutCachedTop =57
+                    LayoutCachedWidth =8157
+                    LayoutCachedHeight =372
+                End
+                Begin Label
+                    TextAlign =3
+                    Left =8745
+                    Top =60
+                    Width =1380
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    BorderColor =8355711
+                    ForeColor =8355711
+                    Name ="MaxvonDatum_Bezeichnungsfeld"
+                    Caption ="letzte Lieferung"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =8745
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =10125
+                    LayoutCachedHeight =345
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =313
+            Name ="Detailbereich"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    CanGrow = NotDefault
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =15
+                    Top =57
+                    Width =2130
+                    Height =256
+                    FontSize =9
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Kundenname"
+                    ControlSource ="Kundenname"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =15
+                    LayoutCachedTop =57
+                    LayoutCachedWidth =2145
+                    LayoutCachedHeight =313
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =2190
+                    Top =57
+                    Width =1665
+                    Height =256
+                    FontSize =9
+                    TabIndex =1
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Adresse"
+                    ControlSource ="Adresse"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =2190
+                    LayoutCachedTop =57
+                    LayoutCachedWidth =3855
+                    LayoutCachedHeight =313
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =3885
+                    Top =57
+                    Width =627
+                    Height =256
+                    FontSize =9
+                    TabIndex =2
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="PLZ"
+                    ControlSource ="PLZ"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =3885
+                    LayoutCachedTop =57
+                    LayoutCachedWidth =4512
+                    LayoutCachedHeight =313
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =4566
+                    Top =57
+                    Width =1650
+                    Height =256
+                    FontSize =9
+                    TabIndex =3
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Ort"
+                    ControlSource ="Ort"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =4566
+                    LayoutCachedTop =57
+                    LayoutCachedWidth =6216
+                    LayoutCachedHeight =313
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =6240
+                    Top =57
+                    Width =1425
+                    Height =256
+                    FontSize =9
+                    TabIndex =4
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Tel"
+                    ControlSource ="Tel"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =6240
+                    LayoutCachedTop =57
+                    LayoutCachedWidth =7665
+                    LayoutCachedHeight =313
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =7692
+                    Top =57
+                    Width =1425
+                    Height =256
+                    FontSize =9
+                    TabIndex =5
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Fax"
+                    ControlSource ="Fax"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =7692
+                    LayoutCachedTop =57
+                    LayoutCachedWidth =9117
+                    LayoutCachedHeight =313
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =9189
+                    Top =57
+                    Width =943
+                    Height =256
+                    FontSize =9
+                    TabIndex =6
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="MaxvonDatum"
+                    ControlSource ="LetzteLieferung"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =9189
+                    LayoutCachedTop =57
+                    LayoutCachedWidth =10132
+                    LayoutCachedHeight =313
+                End
+            End
+        End
+        Begin PageFooter
+            Height =558
+            Name ="Seitenfußbereich"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =57
+                    Top =228
+                    Width =4386
+                    Height =285
+                    FontSize =9
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Text15"
+                    ControlSource ="=Now()"
+                    Format ="Long Date"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =57
+                    LayoutCachedTop =228
+                    LayoutCachedWidth =4443
+                    LayoutCachedHeight =513
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =3
+                    IMESentenceMode =3
+                    Left =5788
+                    Top =228
+                    Width =4371
+                    Height =285
+                    FontSize =9
+                    TabIndex =1
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Text16"
+                    ControlSource ="=\"Seite \" & [Page] & \" von \" & [Pages]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =5788
+                    LayoutCachedTop =228
+                    LayoutCachedWidth =10159
+                    LayoutCachedHeight =513
+                End
+            End
+        End
+        Begin FormFooter
+            KeepTogether = NotDefault
+            Height =0
+            Name ="Berichtsfuß"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+        End
+    End
+End

@@ -1,0 +1,501 @@
+﻿Version =20
+VersionRequired =20
+Begin Report
+    LayoutForPrint = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9944
+    DatasheetFontHeight =11
+    ItemSuffix =53
+    Left =1155
+    Top =7065
+    RecSrcDt = Begin
+        0x1c3ceb732ce3e340
+    End
+    RecordSource ="SELECT T_RechnungsPos.ID AS PosID, T_RechnungsPos.RechnungID, T_RechnungsPos.Dat"
+        "um, [Menge] & \" \" & [Einheit] AS MengeEinheit, IIf(IsNull([Beschreibung]),\"\""
+        ",[Beschreibung]+Chr(13)+Chr(10)) & [T_RechnungsPos].[anmerkungen] AS PosText, T_"
+        "Lieferscheine.Nr AS LieferscheinNr, T_Lieferscheine.Datum AS LieferscheinDatum, "
+        "T_RechnungsPos.VKexkl, T_RechnungsPos.UStProz, T_RechnungsPos.Menge, Round([UstP"
+        "roz]*[VKexkl]*[menge]*(1-[RabattProz]),4) AS Ust, [VKexkl]*[Menge] AS Gesamt, T_"
+        "RechnungsPos.RabattProz, Nz([RabattExkl],0) AS Rabatt, IIf(Not IsNull([T_Liefers"
+        "cheine].[Adressenid]),'Lieferort: ' & [T_Adressen].[Name1] & (' '+[T_Adressen].["
+        "Name2]) & (\", \"+[T_Adressen].[Adresse]) & ', ' & [PLZ] & ' ' & [Ort],'') AS Li"
+        "eferadresse FROM (T_Adressen RIGHT JOIN T_Lieferscheine ON T_Adressen.ID = T_Lie"
+        "ferscheine.AdressenID) RIGHT JOIN (T_RechnungsPos LEFT JOIN V_RechnungenRabatt O"
+        "N T_RechnungsPos.RechnungID = V_RechnungenRabatt.RechnungID) ON T_Lieferscheine."
+        "ID = T_RechnungsPos.LieferscheinID; "
+    DatasheetFontName ="Tahoma"
+    FilterOnLoad =0
+    FitToPage =1
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            ShowDatePicker =0
+        End
+        Begin UnboundObjectFrame
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            GroupFooter = NotDefault
+            KeepTogether =2
+            ControlSource ="RechnungID"
+        End
+        Begin BreakLevel
+            ControlSource ="PosID"
+        End
+        Begin PageHeader
+            Height =0
+            Name ="Seitenkopfbereich"
+        End
+        Begin BreakHeader
+            KeepTogether = NotDefault
+            ForceNewPage =1
+            Height =330
+            Name ="Gruppenkopf0"
+            Begin
+                Begin Label
+                    Left =4536
+                    Top =15
+                    Width =1299
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld9"
+                    Caption ="Lieferschein"
+                    FontName ="Arial"
+                    LayoutCachedLeft =4536
+                    LayoutCachedTop =15
+                    LayoutCachedWidth =5835
+                    LayoutCachedHeight =330
+                End
+                Begin Label
+                    TextAlign =2
+                    Top =15
+                    Width =1134
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld10"
+                    Caption ="Menge"
+                    FontName ="Arial"
+                    LayoutCachedTop =15
+                    LayoutCachedWidth =1134
+                    LayoutCachedHeight =330
+                End
+                Begin Label
+                    Left =1134
+                    Top =15
+                    Width =3402
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld11"
+                    Caption ="Artikelbezeichnung"
+                    FontName ="Arial"
+                    LayoutCachedLeft =1134
+                    LayoutCachedTop =15
+                    LayoutCachedWidth =4536
+                    LayoutCachedHeight =330
+                End
+                Begin Label
+                    TextAlign =3
+                    Left =7214
+                    Top =15
+                    Width =1299
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld12"
+                    Caption ="Einzelpreis"
+                    FontName ="Arial"
+                    LayoutCachedLeft =7214
+                    LayoutCachedTop =15
+                    LayoutCachedWidth =8513
+                    LayoutCachedHeight =330
+                End
+                Begin Label
+                    TextAlign =3
+                    Left =8792
+                    Top =15
+                    Width =1134
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld14"
+                    Caption ="Gesamt"
+                    FontName ="Arial"
+                    LayoutCachedLeft =8792
+                    LayoutCachedTop =15
+                    LayoutCachedWidth =9926
+                    LayoutCachedHeight =330
+                End
+                Begin Line
+                    BorderWidth =1
+                    Left =6
+                    Top =315
+                    Width =9923
+                    BorderColor =8355711
+                    Name ="Linie20"
+                    LayoutCachedLeft =6
+                    LayoutCachedTop =315
+                    LayoutCachedWidth =9929
+                    LayoutCachedHeight =315
+                End
+                Begin Label
+                    Left =5910
+                    Top =15
+                    Width =1134
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld51"
+                    Caption ="Datum"
+                    FontName ="Arial"
+                    LayoutCachedLeft =5910
+                    LayoutCachedTop =15
+                    LayoutCachedWidth =7044
+                    LayoutCachedHeight =330
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =396
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =5910
+                    Width =1134
+                    Height =285
+                    ColumnOrder =4
+                    FontSize =10
+                    Name ="LieferscheinDatum"
+                    ControlSource ="LieferscheinDatum"
+                    FontName ="Arial"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =5910
+                    LayoutCachedWidth =7044
+                    LayoutCachedHeight =285
+                End
+                Begin TextBox
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Width =1134
+                    Height =285
+                    ColumnOrder =3
+                    FontSize =10
+                    TabIndex =1
+                    Name ="Text15"
+                    ControlSource ="MengeEinheit"
+                    FontName ="Arial"
+                    ShowDatePicker =1
+
+                    LayoutCachedWidth =1134
+                    LayoutCachedHeight =285
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Left =1134
+                    Width =3402
+                    Height =285
+                    ColumnOrder =2
+                    FontSize =10
+                    TabIndex =2
+                    Name ="PosText"
+                    ControlSource ="PosText"
+                    FontName ="Arial"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =1134
+                    LayoutCachedWidth =4536
+                    LayoutCachedHeight =285
+                End
+                Begin TextBox
+                    DecimalPlaces =4
+                    TextAlign =3
+                    IMESentenceMode =3
+                    Left =7214
+                    Width =1299
+                    Height =285
+                    ColumnOrder =1
+                    FontSize =10
+                    TabIndex =3
+                    Name ="Text17"
+                    ControlSource ="VKexkl"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Arial"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =7214
+                    LayoutCachedWidth =8513
+                    LayoutCachedHeight =285
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =8564
+                    Width =1359
+                    Height =285
+                    ColumnOrder =5
+                    FontSize =10
+                    TabIndex =4
+                    Name ="Gesamt"
+                    ControlSource ="Gesamt"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Arial"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =8564
+                    LayoutCachedWidth =9923
+                    LayoutCachedHeight =285
+                End
+                Begin TextBox
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =4536
+                    Width =1299
+                    Height =285
+                    FontSize =10
+                    TabIndex =5
+                    Name ="LieferscheinNr"
+                    ControlSource ="LieferscheinNr"
+                    FontName ="Arial"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =4536
+                    LayoutCachedWidth =5835
+                    LayoutCachedHeight =285
+                End
+                Begin TextBox
+                    HideDuplicates = NotDefault
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    IMESentenceMode =3
+                    Left =570
+                    Top =300
+                    Width =8112
+                    Height =15
+                    FontSize =10
+                    TabIndex =6
+                    Name ="Lieferadresse"
+                    ControlSource ="Lieferadresse"
+                    FontName ="Arial"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =570
+                    LayoutCachedTop =300
+                    LayoutCachedWidth =8682
+                    LayoutCachedHeight =315
+                End
+            End
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            CanShrink = NotDefault
+            Height =975
+            Name ="Gruppenfuß0"
+            Begin
+                Begin Line
+                    BorderWidth =1
+                    Width =9923
+                    BorderColor =8355711
+                    Name ="Linie22"
+                    LayoutCachedWidth =9923
+                End
+                Begin TextBox
+                    TextAlign =3
+                    IMESentenceMode =3
+                    Left =8664
+                    Top =15
+                    Width =1254
+                    Height =285
+                    ColumnOrder =0
+                    FontSize =10
+                    TabIndex =1
+                    Name ="Netto"
+                    ControlSource ="=Round(Sum([Gesamt]),2)"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Arial"
+
+                    LayoutCachedLeft =8664
+                    LayoutCachedTop =15
+                    LayoutCachedWidth =9918
+                    LayoutCachedHeight =300
+                    Begin
+                        Begin Label
+                            TextAlign =3
+                            Left =6078
+                            Top =15
+                            Width =2595
+                            Height =285
+                            FontSize =10
+                            Name ="Bezeichnungsfeld27"
+                            Caption ="Summe Netto"
+                            FontName ="Arial"
+                            LayoutCachedLeft =6078
+                            LayoutCachedTop =15
+                            LayoutCachedWidth =8673
+                            LayoutCachedHeight =300
+                        End
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    IMESentenceMode =3
+                    Left =8668
+                    Top =645
+                    Width =1254
+                    Height =285
+                    ColumnOrder =1
+                    FontSize =10
+                    Name ="Brutto"
+                    ControlSource ="=Round(Sum([Gesamt]),2)+Round(Sum([USt]),2)"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Arial"
+
+                    LayoutCachedLeft =8668
+                    LayoutCachedTop =645
+                    LayoutCachedWidth =9922
+                    LayoutCachedHeight =930
+                    Begin
+                        Begin Label
+                            TextAlign =3
+                            Left =6075
+                            Top =645
+                            Width =2595
+                            Height =285
+                            FontSize =10
+                            Name ="Bezeichnungsfeld32"
+                            Caption ="Gesamtsumme Brutto"
+                            FontName ="Arial"
+                            LayoutCachedLeft =6075
+                            LayoutCachedTop =645
+                            LayoutCachedWidth =8670
+                            LayoutCachedHeight =930
+                        End
+                    End
+                End
+                Begin Line
+                    BorderWidth =1
+                    Left =6521
+                    Top =630
+                    Width =3402
+                    BorderColor =8355711
+                    Name ="Linie33"
+                    LayoutCachedLeft =6521
+                    LayoutCachedTop =630
+                    LayoutCachedWidth =9923
+                    LayoutCachedHeight =630
+                End
+                Begin Line
+                    BorderWidth =1
+                    Left =6521
+                    Top =930
+                    Width =3402
+                    BorderColor =8355711
+                    Name ="Linie34"
+                    LayoutCachedLeft =6521
+                    LayoutCachedTop =930
+                    LayoutCachedWidth =9923
+                    LayoutCachedHeight =930
+                End
+                Begin Line
+                    BorderWidth =1
+                    Left =6521
+                    Top =960
+                    Width =3402
+                    BorderColor =8355711
+                    Name ="Linie35"
+                    LayoutCachedLeft =6521
+                    LayoutCachedTop =960
+                    LayoutCachedWidth =9923
+                    LayoutCachedHeight =960
+                End
+                Begin TextBox
+                    TextAlign =3
+                    IMESentenceMode =3
+                    Left =8661
+                    Top =315
+                    Width =1254
+                    Height =285
+                    FontSize =10
+                    TabIndex =2
+                    Name ="UStGesamt"
+                    ControlSource ="=Round(Sum([USt]),2)"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Arial"
+
+                    LayoutCachedLeft =8661
+                    LayoutCachedTop =315
+                    LayoutCachedWidth =9915
+                    LayoutCachedHeight =600
+                    Begin
+                        Begin Label
+                            TextAlign =3
+                            Left =6075
+                            Top =315
+                            Width =2595
+                            Height =285
+                            FontSize =10
+                            Name ="Bezeichnungsfeld48"
+                            Caption ="+ 20% MWSt."
+                            FontName ="Arial"
+                            LayoutCachedLeft =6075
+                            LayoutCachedTop =315
+                            LayoutCachedWidth =8670
+                            LayoutCachedHeight =600
+                        End
+                    End
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="Seitenfußbereich"
+        End
+    End
+End
+CodeBehindForm
+' See "Beleg_Positionen.cls"

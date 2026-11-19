@@ -1,0 +1,323 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    BorderStyle =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =7937
+    DatasheetFontHeight =11
+    ItemSuffix =23
+    Right =50000
+    Bottom =50000
+    RecSrcDt = Begin
+        0x3ed9091ed0a8e340
+    End
+    DatasheetFontName ="Tahoma"
+    AllowDatasheetView =0
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =0
+            BorderTint =50.0
+            ForeThemeColorIndex =0
+            ForeTint =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Section
+            Height =4535
+            BackColor =15527148
+            Name ="Detailbereich"
+            Begin
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =585
+                    Top =1425
+                    Width =3236
+                    Height =572
+                    FontSize =12
+                    FontWeight =700
+                    Name ="cmdProdukte"
+                    Caption ="Produkte"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    ControlTipText ="Produkte verwalten"
+                    LeftPadding =60
+                    RightPadding =75
+                    BottomPadding =120
+                    ImageData = Begin
+                        0x00000000
+                    End
+
+                    ForeThemeColorIndex =1
+                    UseTheme =1
+                    Bevel =-1
+                    Gradient =25
+                    BackThemeColorIndex =4
+                    BorderThemeColorIndex =4
+                    HoverThemeColorIndex =4
+                    HoverTint =80.0
+                    PressedThemeColorIndex =4
+                    PressedShade =80.0
+                    HoverForeThemeColorIndex =1
+                    PressedForeThemeColorIndex =1
+                    Shadow =-1
+                    QuickStyle =37
+                    QuickStyleMask =-1
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =2325
+                    Top =3405
+                    Width =3236
+                    Height =576
+                    TabIndex =4
+                    Name ="cmdClose"
+                    Caption ="Befehl7"
+                    OnClick ="[Event Procedure]"
+                    ControlTipText ="Formular schließen"
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000010081080 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000040485020100810e0104050ff ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000040404080405860ff106890ff2080a0f0 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000607070ff80a0b0ff4080a0ff20a0d0ff40a8e0ff2078a0ff ,
+                        0x101020ff101020ff000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000708890ffa0d8f0ff60d0ffff50c0f0ff30a8e0ff1080b0ff ,
+                        0xe0d8d0ff102020ff000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000708890ffb0e8f0ff80e0ffff60c8f0ff50b8f0ff1088c0ff ,
+                        0xf0d8d0ff202830ff000000000000000090482030904820ff0000000000000000 ,
+                        0x0000000000000000808890ffb0e8f0ff80e0ffff60d0ffff404050ff1090c0ff ,
+                        0xf0e0d0ff303840ff0000000090482030a05030ffa05020ff0000000000000000 ,
+                        0x00000000000000008090a0ffc0f0ffff90e0ffff70d8ffff60c8f0ff0090c0ff ,
+                        0xf0e0e0ff404050ff90482030a05030ffd07840ffb05830ffa05020ffa04820ff ,
+                        0x904820ff904820ff8090a0ffc0f0ffffa0e8ffff80d8ffff70d0f0ff40b0e0ff ,
+                        0xf0e8e0ff605050ffa05830ffe08860fff09060fff08850ffe07850ffd07040ff ,
+                        0xb06840ff904820ff8098a0ffc0f0ffffa0e8ffff90e8ffff80e0ffff80b8d0ff ,
+                        0xf0e8e0ffe09870ffffc0a0ffffb090ffffa070fff09060fff08850ffe07850ff ,
+                        0xd07040ffa05020ff8098a0ffc0f0ffffc0f8ffffa0e0f0ff90a8b0ffc0c8d0ff ,
+                        0xf0f0e0ff908080fff0a070ffffc0a0ffffb090ffffb090ffffa880fff0a080ff ,
+                        0xe09870ffb05030ff90a0a0ffe0f8ffffb0c8d0ff90a0b0fff0f0f0fffff8f0ff ,
+                        0xf0f0f0ff607080ffe0987050f0a070ffffc0a0ffd06830ffe09870ffe09060ff ,
+                        0xe08860ffe08050ff90a0b0ff90a8b0ffc0c8d0ffffffffffffffffffffffffff ,
+                        0xffffffff708890ff00000000e0987050e09870ffd07040ff0000000000000000 ,
+                        0x000000000000000090a0b0ff90a0b0ff90a0b0ff90a0b0ff90a0a0ff8098a0ff ,
+                        0x8098a0ff9098a0ff0000000000000000e0987050e09870ff0000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =223
+                    Left =585
+                    Top =2055
+                    Width =3236
+                    Height =572
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="cmdEinstellungen"
+                    Caption ="Einstellungen"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    ControlTipText ="Programmeinstellung verwalten"
+                    LeftPadding =60
+                    RightPadding =75
+                    BottomPadding =120
+                    ImageData = Begin
+                        0x00000000
+                    End
+
+                    ForeThemeColorIndex =1
+                    UseTheme =1
+                    Bevel =-1
+                    Gradient =25
+                    BackThemeColorIndex =9
+                    BorderThemeColorIndex =9
+                    HoverThemeColorIndex =9
+                    HoverTint =80.0
+                    PressedThemeColorIndex =9
+                    PressedShade =80.0
+                    HoverForeThemeColorIndex =1
+                    PressedForeThemeColorIndex =1
+                    Shadow =-1
+                    QuickStyle =42
+                    QuickStyleMask =-1
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =3990
+                    Top =1425
+                    Width =3236
+                    Height =572
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="cmdRechnungenOffen"
+                    Caption ="offene Rechnungen"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    ControlTipText ="Liste offen Rechungen öffnen"
+                    LeftPadding =60
+                    RightPadding =75
+                    BottomPadding =120
+
+                    ForeThemeColorIndex =1
+                    UseTheme =1
+                    Bevel =-1
+                    Gradient =25
+                    BackThemeColorIndex =5
+                    BorderThemeColorIndex =5
+                    HoverThemeColorIndex =5
+                    HoverTint =80.0
+                    PressedThemeColorIndex =5
+                    PressedShade =80.0
+                    HoverForeThemeColorIndex =1
+                    PressedForeThemeColorIndex =1
+                    Shadow =-1
+                    QuickStyle =38
+                    QuickStyleMask =-1
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =3990
+                    Top =2055
+                    Width =3236
+                    Height =572
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =3
+                    Name ="mdMahnungen"
+                    Caption ="Mahnwesen"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    ControlTipText ="Mahnwesen"
+                    LeftPadding =60
+                    RightPadding =75
+                    BottomPadding =120
+
+                    ForeThemeColorIndex =1
+                    UseTheme =1
+                    Bevel =-1
+                    Gradient =25
+                    BackThemeColorIndex =5
+                    BorderThemeColorIndex =5
+                    HoverThemeColorIndex =5
+                    HoverTint =80.0
+                    PressedThemeColorIndex =5
+                    PressedShade =80.0
+                    HoverForeThemeColorIndex =1
+                    PressedForeThemeColorIndex =1
+                    Shadow =-1
+                    QuickStyle =38
+                    QuickStyleMask =-1
+                    Overlaps =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextFontFamily =18
+                    Left =2040
+                    Top =283
+                    Width =3885
+                    Height =630
+                    FontSize =24
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld18"
+                    Caption ="Menü Sonstiges"
+                    FontName ="Tahoma"
+                    ThemeFontIndex =-1
+                    ForeThemeColorIndex =2
+                    ForeTint =100.0
+                    ForeShade =75.0
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =585
+                    Top =2700
+                    Width =3236
+                    Height =572
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =5
+                    Name ="Befehl22"
+                    Caption ="Simple SQL"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    ControlTipText ="Programmeinstellung verwalten"
+                    LeftPadding =60
+                    RightPadding =75
+                    BottomPadding =120
+                    ImageData = Begin
+                        0x00000000
+                    End
+
+                    ForeThemeColorIndex =1
+                    UseTheme =1
+                    Bevel =-1
+                    Gradient =25
+                    BackThemeColorIndex =9
+                    BorderThemeColorIndex =9
+                    HoverThemeColorIndex =9
+                    HoverTint =80.0
+                    PressedThemeColorIndex =9
+                    PressedShade =80.0
+                    HoverForeThemeColorIndex =1
+                    PressedForeThemeColorIndex =1
+                    Shadow =-1
+                    QuickStyle =42
+                    QuickStyleMask =-1
+                    Overlaps =1
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "UnterMenü.cls"

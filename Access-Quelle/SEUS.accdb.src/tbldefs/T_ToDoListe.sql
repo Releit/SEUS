@@ -1,0 +1,20 @@
+﻿CREATE TABLE [T_ToDoListe] (
+  [ID] AUTOINCREMENT CONSTRAINT [PrimaryKey] PRIMARY KEY UNIQUE NOT NULL,
+  [KarteiID] LONG,
+  [Datum] DATETIME,
+  [AmAbBis] VARCHAR (3),
+  [Aufgabe] VARCHAR (100),
+  [Priorität] VARCHAR (10),
+  [FaelligAm] DATETIME,
+  [erledigt] BIT,
+  [Anmerkungen] LONGTEXT,
+  [AngelegtAm] DATETIME,
+  [AngelegtVon] VARCHAR (20),
+  [BearbeitetAm] DATETIME,
+  [BearbeitetVon] VARCHAR (20),
+  [obsolet] BIT,
+  [obsoletAm] DATETIME,
+  [obsoletWeil] VARCHAR (100),
+  [ErledigtAm] DATETIME,
+  [ErledigtVon] VARCHAR (50)
+)

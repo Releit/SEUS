@@ -1,0 +1,18 @@
+﻿{
+  "Info": {
+    "Class": "clsDbRelation",
+    "Description": "Database relationship"
+  },
+  "Items": {
+    "Name": "T_LieferscheineT_LieferscheinPos",
+    "Attributes": 4096,
+    "Table": "T_Lieferscheine",
+    "ForeignTable": "T_LieferscheinPos",
+    "Fields": [
+      {
+        "Name": "ID",
+        "ForeignName": "LieferscheinID"
+      }
+    ]
+  }
+}

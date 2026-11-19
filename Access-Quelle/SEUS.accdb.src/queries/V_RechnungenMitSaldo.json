@@ -1,0 +1,47 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "V_RechnungenMitSaldo"
+  },
+  "Items": {
+    "QueryType": 0,
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1496,
+        "bottom": 807
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1476,
+        "bottom": 214
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "V_Rechnungen",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 223,
+          "Bottom": 190,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "V_SaldoNachRechnung",
+          "Alias": "",
+          "Left": 347,
+          "Top": 61,
+          "Right": 491,
+          "Bottom": 205,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

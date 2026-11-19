@@ -1,0 +1,406 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    AllowUpdating =2
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =21123
+    DatasheetFontHeight =11
+    ItemSuffix =52
+    Right =50000
+    Bottom =50000
+    Filter ="ID= 254"
+    RecSrcDt = Begin
+        0x5e17a646911ae440
+    End
+    RecordSource ="SELECT T_Verrechnung.* FROM T_Verrechnung ORDER BY T_Verrechnung.ID DESC; "
+    Caption ="Leistungsverrechnung"
+    OnCurrent ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    AllowDatasheetView =0
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            BorderColor =-2147483609
+            ForeColor =11830108
+            FontName ="Calibri"
+        End
+        Begin Rectangle
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BorderColor =-2147483609
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+            BorderColor =-2147483609
+        End
+        Begin Image
+            BackStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin OptionButton
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =-2147483609
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            BackStyle =1
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin BoundObjectFrame
+            SizeMode =3
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+            BorderColor =-2147483609
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AsianLineBreak =1
+        End
+        Begin ListBox
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin ComboBox
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin UnboundObjectFrame
+            BackStyle =0
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Tab
+            Width =5100
+            Height =3420
+            FontSize =11
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Attachment
+            BackStyle =0
+            BorderLineStyle =0
+            PictureSizeMode =3
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+            LabelX =-1701
+        End
+        Begin FormHeader
+            CanGrow = NotDefault
+            Height =518
+            Name ="Formularkopf"
+            BackThemeColorIndex =4
+            BackShade =50.0
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =60
+                    Top =60
+                    Width =5355
+                    Height =375
+                    FontSize =14
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld20"
+                    Caption ="Leistungsverrechnung nach Aufwand"
+                    FontName ="Tahoma"
+                    ForeThemeColorIndex =1
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =19200
+                    Width =516
+                    Height =516
+                    Name ="cmdClose"
+                    OnClick ="[Event Procedure]"
+                    ControlTipText ="Formular schließen"
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000010081080 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000040485020100810e0104050ff ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000040404080405860ff106890ff2080a0f0 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000607070ff80a0b0ff4080a0ff20a0d0ff40a8e0ff2078a0ff ,
+                        0x101020ff101020ff000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000708890ffa0d8f0ff60d0ffff50c0f0ff30a8e0ff1080b0ff ,
+                        0xe0d8d0ff102020ff000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000708890ffb0e8f0ff80e0ffff60c8f0ff50b8f0ff1088c0ff ,
+                        0xf0d8d0ff202830ff000000000000000090482030904820ff0000000000000000 ,
+                        0x0000000000000000808890ffb0e8f0ff80e0ffff60d0ffff404050ff1090c0ff ,
+                        0xf0e0d0ff303840ff0000000090482030a05030ffa05020ff0000000000000000 ,
+                        0x00000000000000008090a0ffc0f0ffff90e0ffff70d8ffff60c8f0ff0090c0ff ,
+                        0xf0e0e0ff404050ff90482030a05030ffd07840ffb05830ffa05020ffa04820ff ,
+                        0x904820ff904820ff8090a0ffc0f0ffffa0e8ffff80d8ffff70d0f0ff40b0e0ff ,
+                        0xf0e8e0ff605050ffa05830ffe08860fff09060fff08850ffe07850ffd07040ff ,
+                        0xb06840ff904820ff8098a0ffc0f0ffffa0e8ffff90e8ffff80e0ffff80b8d0ff ,
+                        0xf0e8e0ffe09870ffffc0a0ffffb090ffffa070fff09060fff08850ffe07850ff ,
+                        0xd07040ffa05020ff8098a0ffc0f0ffffc0f8ffffa0e0f0ff90a8b0ffc0c8d0ff ,
+                        0xf0f0e0ff908080fff0a070ffffc0a0ffffb090ffffb090ffffa880fff0a080ff ,
+                        0xe09870ffb05030ff90a0a0ffe0f8ffffb0c8d0ff90a0b0fff0f0f0fffff8f0ff ,
+                        0xf0f0f0ff607080ffe0987050f0a070ffffc0a0ffd06830ffe09870ffe09060ff ,
+                        0xe08860ffe08050ff90a0b0ff90a8b0ffc0c8d0ffffffffffffffffffffffffff ,
+                        0xffffffff708890ff00000000e0987050e09870ffd07040ff0000000000000000 ,
+                        0x000000000000000090a0b0ff90a0b0ff90a0b0ff90a0b0ff90a0a0ff8098a0ff ,
+                        0x8098a0ff9098a0ff0000000000000000e0987050e09870ff0000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =18086
+                    Width =516
+                    Height =516
+                    TabIndex =1
+                    Name ="cmdRequery"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100180000000000000300000000000000000000 ,
+                        0x0000000000000000ced3d6ced3d6000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000000ced3d6ced3d6ced3d60000 ,
+                        0x00ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff ,
+                        0xffff000000ced3d6ced3d6ced3d6000000ffffffffffffffffffffffffffffff ,
+                        0x008200ffffffffffffffffffffffffffffff000000ced3d6ced3d6ced3d60000 ,
+                        0x00ffffffffffffffffffffffff008200008200ffffffffffffffffffffffffff ,
+                        0xffff000000ced3d6ced3d6ced3d6000000ffffffffffffffffff008200008200 ,
+                        0x008200008200008200ffffffffffffffffff000000ced3d6ced3d6ced3d60000 ,
+                        0x00ffffffffffffffffffffffff008200008200ffffffffffff008200ffffffff ,
+                        0xffff000000ced3d6ced3d6ced3d6000000ffffffffffffffffffffffffffffff ,
+                        0x008200ffffffffffff008200ffffffffffff000000ced3d6ced3d6ced3d60000 ,
+                        0x00ffffffffffff008200ffffffffffffffffffffffffffffff008200ffffffff ,
+                        0xffff000000ced3d6ced3d6ced3d6000000ffffffffffff008200ffffffffffff ,
+                        0x008200ffffffffffffffffffffffffffffff000000ced3d6ced3d6ced3d60000 ,
+                        0x00ffffffffffff008200ffffffffffff008200008200ffffffffffffffffffff ,
+                        0xffff000000ced3d6ced3d6ced3d6000000ffffffffffffffffff008200008200 ,
+                        0x008200008200008200ffffffffffffffffff000000ced3d6ced3d6ced3d60000 ,
+                        0x00ffffffffffffffffffffffffffffff008200008200ffffffffffffffffffff ,
+                        0xffff000000ced3d6ced3d6ced3d6000000ffffffffffffffffffffffffffffff ,
+                        0x008200ffffffffffff000000000000000000000000ced3d6ced3d6ced3d60000 ,
+                        0x00ffffffffffffffffffffffffffffffffffffffffffffffff000000ffffff00 ,
+                        0x0000ced3d6ced3d6ced3d6ced3d6000000ffffffffffffffffffffffffffffff ,
+                        0xffffffffffffffffff000000000000ced3d6ced3d6ced3d6ced3d6ced3d60000 ,
+                        0x00000000000000000000000000000000000000000000000000000000ced3d6ce ,
+                        0xd3d6ced3d6ced3d6
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Daten aktualisieren"
+                    Picture ="REFRESH.ICO"
+                    ImageData = Begin
+                        0x00000000
+                    End
+
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =87
+                    Left =15870
+                    Width =2220
+                    Height =516
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="cmdVerrechnen"
+                    Caption ="alle Rechnungen anlegen"
+                    OnClick ="[Event Procedure]"
+                    ControlTipText ="Leistungen verrechnen, Rechnung(en) erstellen"
+
+                    ForeThemeColorIndex =0
+                    ForeTint =65.0
+                    HoverForeThemeColorIndex =0
+                    HoverForeTint =65.0
+                    PressedForeThemeColorIndex =0
+                    PressedForeTint =65.0
+                    Overlaps =1
+                End
+            End
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =8625
+            BackColor =15527148
+            Name ="Detailbereich"
+            AlternateBackColor =15527148
+            Begin
+                Begin Subform
+                    OverlapFlags =85
+                    Left =11321
+                    Top =360
+                    Width =9802
+                    Height =8265
+                    Name ="UF_Positionen"
+                    SourceObject ="Form.Verrechnung_UF_Positionen"
+
+                End
+                Begin Subform
+                    OverlapFlags =87
+                    Left =165
+                    Top =360
+                    Width =11109
+                    Height =8265
+                    TabIndex =1
+                    Name ="UF_Kunden"
+                    SourceObject ="Form.Verrechnung_UF_Kunden"
+                    LinkChildFields ="VerrechnungID"
+                    LinkMasterFields ="ID"
+
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =165
+                    Top =60
+                    Width =1200
+                    Height =285
+                    Name ="Bezeichnungsfeld47"
+                    Caption ="Kundenliste"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =11310
+                    Top =60
+                    Width =1335
+                    Height =285
+                    Name ="Bezeichnungsfeld48"
+                    Caption ="Positionsliste"
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =7215
+                    Top =86
+                    TabIndex =2
+                    Name ="chkProjektGruppierung"
+                    DefaultValue ="0"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            Left =7445
+                            Top =60
+                            Width =2085
+                            Height =285
+                            FontSize =10
+                            Name ="Bezeichnungsfeld50"
+                            Caption ="Gruppieren nach Projekt"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =9825
+                    Top =15
+                    Width =1433
+                    Height =341
+                    FontSize =10
+                    TabIndex =3
+                    Name ="cmdReCalc"
+                    Caption ="aktualisieren"
+                    OnClick ="[Event Procedure]"
+
+                    ForeThemeColorIndex =0
+                    HoverForeThemeColorIndex =0
+                    PressedForeThemeColorIndex =0
+                    Overlaps =1
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+            AutoHeight =1
+        End
+    End
+End
+CodeBehindForm
+' See "Verrechnung.cls"

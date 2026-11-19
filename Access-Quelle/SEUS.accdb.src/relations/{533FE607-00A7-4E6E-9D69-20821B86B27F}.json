@@ -1,0 +1,18 @@
+﻿{
+  "Info": {
+    "Class": "clsDbRelation",
+    "Description": "Database relationship"
+  },
+  "Items": {
+    "Name": "{533FE607-00A7-4E6E-9D69-20821B86B27F}",
+    "Attributes": 0,
+    "Table": "T_Rechnungen",
+    "ForeignTable": "T_RechnungsPos",
+    "Fields": [
+      {
+        "Name": "ID",
+        "ForeignName": "RechnungID"
+      }
+    ]
+  }
+}

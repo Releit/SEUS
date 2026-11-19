@@ -1,0 +1,12 @@
+﻿{
+  "Info": {
+    "Class": "clsDbSharedImage",
+    "Description": "Shared Image Gallery Item"
+  },
+  "Items": {
+    "Name": "Rechnung_Auschnitt",
+    "FileName": "Rechnung_Auschnitt.png",
+    "Extension": "png",
+    "ContentHash": "6fd1777"
+  }
+}

@@ -1,0 +1,272 @@
+﻿Version =20
+VersionRequired =20
+Begin Report
+    LayoutForPrint = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =5132
+    DatasheetFontHeight =11
+    ItemSuffix =9
+    RecSrcDt = Begin
+        0x44a69003b15de440
+    End
+    RecordSource ="SELECT T_Lieferscheine.ID AS LieferscheinID, T_Lieferscheine.Datum, T_Liefersche"
+        "ine.Nr, T_Kartei.Nr AS KNr, T_Lieferscheine.KarteiID, Nz([T_Adressen].[Anrede],["
+        "T_Kartei].[Anrede]) AS Anrede, T_Lieferscheine.ZuHanden, [T_Kartei].[Name1] & ' "
+        "' & [T_Kartei].[Name2] AS Kundenname, Nz([T_Adressen].[Name1],[T_Kartei].[Name1]"
+        ") & ' ' & Nz([T_Adressen].[Name2],[T_Kartei].[Name2]) AS Anschriftname, Nz([T_Ad"
+        "ressen].[Adresse],[T_Kartei].[Adresse]) AS Adresse, Nz([T_Adressen].[PLZ],[T_Kar"
+        "tei].[PLZ]) AS PLZ, Nz([T_Adressen].[Ort],[T_Kartei].[Ort]) AS Ort, Nz([tel],[mo"
+        "bil]) AS TelMobil, Nz([mobil],\"F:\"+[fax]) AS MobilFax FROM T_Kartei INNER JOIN"
+        " (T_Adressen RIGHT JOIN T_Lieferscheine ON T_Adressen.ID = T_Lieferscheine.Adres"
+        "senID) ON T_Kartei.ID = T_Lieferscheine.KarteiID GROUP BY T_Lieferscheine.ID, T_"
+        "Lieferscheine.Datum, T_Lieferscheine.Nr, T_Kartei.Nr, T_Lieferscheine.KarteiID, "
+        "Nz([T_Adressen].[Anrede],[T_Kartei].[Anrede]), T_Lieferscheine.ZuHanden, [T_Kart"
+        "ei].[Name1] & ' ' & [T_Kartei].[Name2], Nz([T_Adressen].[Name1],[T_Kartei].[Name"
+        "1]) & ' ' & Nz([T_Adressen].[Name2],[T_Kartei].[Name2]), Nz([T_Adressen].[Adress"
+        "e],[T_Kartei].[Adresse]), Nz([T_Adressen].[PLZ],[T_Kartei].[PLZ]), Nz([T_Adresse"
+        "n].[Ort],[T_Kartei].[Ort]), Nz([tel],[mobil]), Nz([mobil],\"F:\"+[fax]) HAVING ("
+        "((T_Lieferscheine.ID)=mBR_GetID())); "
+    DatasheetFontName ="Calibri"
+    FilterOnLoad =0
+    FitToPage =1
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =15921906
+    DatasheetGridlinesColor12 =0
+    FitToScreen =1
+    DatasheetBackThemeColorIndex =1
+    BorderThemeColorIndex =3
+    ThemeFontIndex =1
+    ForeThemeColorIndex =0
+    AlternateBackThemeColorIndex =1
+    AlternateBackShade =95.0
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =0
+            BorderTint =50.0
+            ForeThemeColorIndex =0
+            ForeTint =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin Image
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin TextBox
+            AddColon = NotDefault
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            ShowDatePicker =0
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ThemeFontIndex =1
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin PageHeader
+            Height =0
+            Name ="Seitenkopfbereich"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =10943
+            Name ="Detailbereich"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =3742
+                    Top =2098
+                    Width =1134
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="KNr"
+                    ControlSource ="KNr"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =3742
+                    LayoutCachedTop =2098
+                    LayoutCachedWidth =4876
+                    LayoutCachedHeight =2383
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =1410
+                    Top =3799
+                    Height =225
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =1
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Nr"
+                    ControlSource ="Nr"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =1410
+                    LayoutCachedTop =3799
+                    LayoutCachedWidth =3111
+                    LayoutCachedHeight =4024
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =1410
+                    Top =4020
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =2
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Datum"
+                    ControlSource ="Datum"
+                    GridlineColor =10921638
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =1410
+                    LayoutCachedTop =4020
+                    LayoutCachedWidth =3111
+                    LayoutCachedHeight =4260
+                End
+                Begin Subform
+                    OldBorderStyle =0
+                    Top =2130
+                    Width =3021
+                    Height =1588
+                    TabIndex =3
+                    Name ="Lieferschein_AdressKopf"
+                    SourceObject ="Report.Lieferschein_AdressKopf"
+                    LinkChildFields ="LieferscheinID"
+                    LinkMasterFields ="LieferscheinID"
+                    GridlineColor =10921638
+
+                    LayoutCachedTop =2130
+                    LayoutCachedWidth =3021
+                    LayoutCachedHeight =3718
+                End
+                Begin Subform
+                    OldBorderStyle =0
+                    Top =7768
+                    Width =5119
+                    Height =1878
+                    TabIndex =4
+                    Name ="Lieferschein_Positionen"
+                    SourceObject ="Report.Lieferschein_Positionen"
+                    LinkChildFields ="LieferscheinID"
+                    LinkMasterFields ="LieferscheinID"
+                    GridlineColor =10921638
+
+                    LayoutCachedTop =7768
+                    LayoutCachedWidth =5119
+                    LayoutCachedHeight =9646
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =3742
+                    Top =3289
+                    Width =1390
+                    Height =227
+                    FontSize =9
+                    FontWeight =700
+                    TabIndex =5
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Text7"
+                    ControlSource ="TelMobil"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =3742
+                    LayoutCachedTop =3289
+                    LayoutCachedWidth =5132
+                    LayoutCachedHeight =3516
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =3742
+                    Top =3515
+                    Width =1390
+                    Height =227
+                    FontSize =9
+                    FontWeight =700
+                    TabIndex =6
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Text8"
+                    ControlSource ="MobilFax"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =3742
+                    LayoutCachedTop =3515
+                    LayoutCachedWidth =5132
+                    LayoutCachedHeight =3742
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="Seitenfußbereich"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+        End
+    End
+End

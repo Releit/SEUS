@@ -1,0 +1,257 @@
+﻿Version =20
+VersionRequired =20
+Begin Report
+    LayoutForPrint = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =10516
+    DatasheetFontHeight =11
+    ItemSuffix =57
+    RecSrcDt = Begin
+        0x43318c0619d3e440
+    End
+    RecordSource ="SELECT T_RechnungsPos.RechnungID, T_RechnungsPos.ID AS PosID, IIf(IsNull([Adress"
+        "enID]),Nz([T_Kartei].[Titel]+\" \",\"\") & [T_Kartei].[Name1] & \" \" & (Chr(13)"
+        "+Chr(10)+[T_Kartei].[Name2]),Nz([T_Adressen].[Titel]+\" \",\"\") & [T_Adressen]."
+        "[Name1] & \" \" & (Chr(13)+Chr(10)+[T_Adressen].[Name2])) & Nz(Chr(13)+Chr(10)+["
+        "T_Rechnungen].[zuhanden],\"\") AS Kundenname, IIf(IsNull([AdressenID]),[T_Kartei"
+        "].[Adresse],[T_Adressen].[Adresse]) AS Adresse_, IIf(IsNull([AdressenID]),IIf([T"
+        "_Kartei].[Landcode]<>\"A\",[T_Kartei].[Landcode]+\"-\",\"\") & [T_Kartei].[PLZ] "
+        "& \" \" & [T_Kartei].[Ort],[T_Adressen].[PLZ] & \" \" & [T_Adressen].[Ort]) AS P"
+        "LZOrt, T_Rechnungen.Datum, T_Rechnungen.Nr, T_RechnungsPos.Datum, [Menge] & \" \""
+        " & [Einheit] AS MengeEinheit, IIf(IsNull([Beschreibung]),\"\",[Beschreibung]+Chr"
+        "(13)+Chr(10)) & [T_RechnungsPos].[anmerkungen] AS PosText, T_RechnungsPos.VKexkl"
+        ", T_RechnungsPos.UStProz, T_RechnungsPos.Menge, T_Zahlungsarten.RechnungsText, ("
+        "[kurzzeichen]+\"-\") & Format([T_Rechnungen].[Nr]) AS RNr, T_Kartei.UID, IIf([Us"
+        "tProz]=0.1,Round([UstProz]*[VKexkl]*[menge],2),Null) AS Ust10Proz, IIf([UstProz]"
+        "=0.12,Round([UstProz]*[VKexkl]*[menge],2),Null) AS Ust12Proz, IIf([UstProz]=0.2,"
+        "Round([UstProz]*[VKexkl]*[menge],2),Null) AS Ust20Proz, [VKexkl]*[Menge] AS Gesa"
+        "mt, IIf(IsNull([T_Kartei].[uid]),Null,\"Ihre UID:\") AS UIDNrTxt, T_Rechnungen.D"
+        "ruckText, T_RechnungsPos.Beschreibung, T_RechnungsPos.Anmerkungen, mED_GetMemo(\""
+        "RechnungsFussText\") AS RechnungsFussText FROM (T_Kartei INNER JOIN ((T_Rechnung"
+        "en INNER JOIN T_Zahlungsarten ON T_Rechnungen.ZahlartID = T_Zahlungsarten.ID) LE"
+        "FT JOIN T_Adressen ON T_Rechnungen.AdressenID = T_Adressen.ID) ON T_Kartei.ID = "
+        "T_Rechnungen.KarteiID) INNER JOIN T_RechnungsPos ON T_Rechnungen.ID = T_Rechnung"
+        "sPos.RechnungID WHERE (((T_RechnungsPos.RechnungID)=mBR_GetID())); "
+    DatasheetFontName ="Tahoma"
+    OnLoad ="[Event Procedure]"
+    FilterOnLoad =0
+    FitToPage =1
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            ShowDatePicker =0
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin UnboundObjectFrame
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin PageBreak
+            Width =283
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            GroupFooter = NotDefault
+            KeepTogether =2
+            ControlSource ="RechnungID"
+        End
+        Begin BreakLevel
+            ControlSource ="PosID"
+        End
+        Begin PageHeader
+            Height =0
+            Name ="Seitenkopfbereich"
+        End
+        Begin BreakHeader
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            CanShrink = NotDefault
+            ForceNewPage =1
+            Height =5985
+            Name ="Gruppenkopf0"
+            Begin
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Left =5102
+                    Top =3004
+                    Width =5103
+                    Height =555
+                    ColumnOrder =4
+                    TabIndex =1
+                    Name ="Kundenname"
+                    ControlSource ="Kundenname"
+                    FontName ="Arial"
+
+                    LayoutCachedLeft =5102
+                    LayoutCachedTop =3004
+                    LayoutCachedWidth =10205
+                    LayoutCachedHeight =3559
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Left =5102
+                    Top =3559
+                    Width =5103
+                    Height =300
+                    ColumnOrder =5
+                    TabIndex =2
+                    Name ="Adresse"
+                    ControlSource ="Adresse_"
+                    FontName ="Arial"
+
+                    LayoutCachedLeft =5102
+                    LayoutCachedTop =3559
+                    LayoutCachedWidth =10205
+                    LayoutCachedHeight =3859
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Left =5102
+                    Top =3844
+                    Width =5103
+                    Height =300
+                    ColumnOrder =7
+                    Name ="PLZOrt"
+                    ControlSource ="PLZOrt"
+                    FontName ="Arial"
+
+                    LayoutCachedLeft =5102
+                    LayoutCachedTop =3844
+                    LayoutCachedWidth =10205
+                    LayoutCachedHeight =4144
+                End
+                Begin Label
+                    BackStyle =1
+                    TextAlign =1
+                    Top =630
+                    Width =3930
+                    Height =285
+                    ForeColor =1643706
+                    Name ="Bezeichnungsfeld49"
+                    Caption ="Software Entwicklung Und Service"
+                    FontName ="Verdana"
+                    LayoutCachedTop =630
+                    LayoutCachedWidth =3930
+                    LayoutCachedHeight =915
+                    BackThemeColorIndex =1
+                End
+                Begin Label
+                    BackStyle =1
+                    Top =1215
+                    Width =4215
+                    Height =270
+                    FontSize =8
+                    ForeColor =10040879
+                    Name ="Bezeichnungsfeld50"
+                    Caption ="A-8713 St. Stefan ob Leoben, Niederdorf 21\015\012"
+                    FontName ="Verdana"
+                    LayoutCachedTop =1215
+                    LayoutCachedWidth =4215
+                    LayoutCachedHeight =1485
+                    BackThemeColorIndex =1
+                End
+                Begin Label
+                    Width =4110
+                    Height =675
+                    FontSize =26
+                    FontWeight =700
+                    ForeColor =1643706
+                    Name ="Bezeichnungsfeld51"
+                    Caption ="www.SEUS.at"
+                    FontName ="Verdana"
+                    LayoutCachedWidth =4110
+                    LayoutCachedHeight =675
+                End
+                Begin Line
+                    BorderWidth =1
+                    Top =630
+                    Width =4110
+                    BorderColor =1643706
+                    Name ="Linie52"
+                    LayoutCachedTop =630
+                    LayoutCachedWidth =4110
+                    LayoutCachedHeight =630
+                End
+                Begin Label
+                    BackStyle =1
+                    Top =930
+                    Width =2475
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    ForeColor =10040879
+                    Name ="Bezeichnungsfeld53"
+                    Caption ="Ing. Reinhard Leitner\015\012"
+                    FontName ="Verdana"
+                    LayoutCachedTop =930
+                    LayoutCachedWidth =2475
+                    LayoutCachedHeight =1215
+                    BackThemeColorIndex =1
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =315
+            Name ="Detailbereich"
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            CanShrink = NotDefault
+            Height =0
+            Name ="Gruppenfuß0"
+        End
+        Begin PageFooter
+            Height =0
+            Name ="Seitenfußbereich"
+        End
+    End
+End
+CodeBehindForm
+' See "Kuvert A5.cls"

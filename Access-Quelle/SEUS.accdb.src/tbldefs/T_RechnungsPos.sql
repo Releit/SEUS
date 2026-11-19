@@ -1,0 +1,20 @@
+﻿CREATE TABLE [T_RechnungsPos] (
+  [ID] AUTOINCREMENT CONSTRAINT [PrimaryKey] PRIMARY KEY UNIQUE NOT NULL,
+  [RechnungID] LONG,
+  [ProduktID] LONG,
+  [LieferscheinID] LONG,
+  [Datum] DATETIME,
+  [Menge] SINGLE,
+  [Einheit] VARCHAR (10),
+  [Beschreibung] VARCHAR (100),
+  [VKexkl] CURRENCY,
+  [UStProz] SINGLE,
+  [VKInkl] CURRENCY,
+  [RabattProz] SINGLE,
+  [Anmerkungen] LONGTEXT,
+  [Pos] VARCHAR (10),
+  [AngelegtAm] DATETIME,
+  [AngelegtVon] VARCHAR (30),
+  [BearbeitetAm] DATETIME,
+  [BearbeitetVon] VARCHAR (30)
+)

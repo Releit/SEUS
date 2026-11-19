@@ -1,0 +1,98 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "A_Bericht_Rechnung"
+  },
+  "Items": {
+    "QueryType": 0,
+    "QueryProperties": {
+      "RowHeight": {
+        "Type": 3,
+        "Value": 1650
+      }
+    },
+    "Columns": {
+      "pdfEMailBody": {
+        "ColumnWidth": 2220,
+        "AggregateType": -1
+      },
+      "PdfEMailBody1": {
+        "ColumnWidth": 6810,
+        "AggregateType": -1
+      },
+      "PdfParameter": {
+        "ColumnWidth": 3495,
+        "AggregateType": -1
+      },
+      "PosText": {
+        "ColumnWidth": 4545,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1705,
+        "bottom": 857
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1689,
+        "bottom": 204
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "T_Einstellungen",
+          "Alias": "",
+          "Left": 650,
+          "Top": 138,
+          "Right": 746,
+          "Bottom": 267,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "T_Kartei",
+          "Alias": "",
+          "Left": 82,
+          "Top": 3,
+          "Right": 297,
+          "Bottom": 252,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "T_Rechnungen",
+          "Alias": "",
+          "Left": 351,
+          "Top": 46,
+          "Right": 612,
+          "Bottom": 250,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "T_Zahlungsarten",
+          "Alias": "",
+          "Left": 691,
+          "Top": 7,
+          "Right": 925,
+          "Bottom": 121,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "T_RechnungsPos",
+          "Alias": "",
+          "Left": 963,
+          "Top": 6,
+          "Right": 1059,
+          "Bottom": 120,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+﻿{
+  "Info": {
+    "Class": "clsDbRelation",
+    "Description": "Database relationship"
+  },
+  "Items": {
+    "Name": "{65DD6B91-D6A2-4974-8682-A38B04421402}",
+    "Attributes": 0,
+    "Table": "T_Produkte",
+    "ForeignTable": "T_Leistungen_alt",
+    "Fields": [
+      {
+        "Name": "ID",
+        "ForeignName": "ProduktID"
+      }
+    ]
+  }
+}

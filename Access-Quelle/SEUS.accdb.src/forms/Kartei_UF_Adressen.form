@@ -1,0 +1,472 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =2
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =8880
+    RowHeight =705
+    DatasheetFontHeight =10
+    ItemSuffix =21
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    RecSrcDt = Begin
+        0x6652a652aec9e340
+    End
+    RecordSource ="SELECT T_Adressen.* FROM T_Adressen; "
+    BeforeInsert ="[Event Procedure]"
+    BeforeUpdate ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            BorderColor =-2147483609
+            ForeColor =11830108
+            FontName ="Calibri"
+        End
+        Begin Rectangle
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BorderColor =-2147483609
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+            BorderColor =-2147483609
+        End
+        Begin Image
+            BackStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin OptionButton
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =-2147483609
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            BackStyle =1
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin BoundObjectFrame
+            SizeMode =3
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+            BorderColor =-2147483609
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AsianLineBreak =1
+        End
+        Begin ListBox
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin ComboBox
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin UnboundObjectFrame
+            BackStyle =0
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Tab
+            Width =5100
+            Height =3420
+            FontSize =11
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Attachment
+            BackStyle =0
+            BorderLineStyle =0
+            PictureSizeMode =3
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+            LabelX =-1701
+        End
+        Begin EmptyCell
+            Height =240
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =-2147483609
+            Name ="Formularkopf"
+        End
+        Begin Section
+            Height =4080
+            Name ="Detailbereich"
+            AutoHeight =1
+            AlternateBackColor =16777215
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =1200
+                    Top =1200
+                    Width =1560
+                    Height =300
+                    ColumnWidth =870
+                    ColumnOrder =3
+                    Name ="PLZ"
+                    ControlSource ="PLZ"
+                    GroupTable =2
+                    RightPadding =38
+                    BottomPadding =38
+
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =2
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =0
+                            Top =1200
+                            Width =1080
+                            Height =300
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld43"
+                            Caption ="PLZ"
+                            GroupTable =2
+                            BottomPadding =38
+                            LayoutGroup =1
+                            GroupTable =2
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =1200
+                    Top =1980
+                    Width =5040
+                    Height =300
+                    ColumnWidth =1740
+                    ColumnOrder =5
+                    TabIndex =1
+                    Name ="Adresse"
+                    ControlSource ="Adresse"
+                    GroupTable =3
+                    RightPadding =38
+                    BottomPadding =38
+
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =2
+                    GroupTable =3
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =0
+                            Top =1980
+                            Width =1080
+                            Height =300
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld46"
+                            Caption ="Adresse"
+                            GroupTable =3
+                            BottomPadding =38
+                            LayoutGroup =2
+                            GroupTable =3
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =1200
+                    Top =1560
+                    Width =5040
+                    Height =300
+                    ColumnWidth =1515
+                    ColumnOrder =4
+                    TabIndex =2
+                    Name ="Ort"
+                    ControlSource ="Ort"
+                    GroupTable =4
+                    RightPadding =38
+                    BottomPadding =38
+                    ShowDatePicker =0
+
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =3
+                    GroupTable =4
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =0
+                            Top =1560
+                            Width =1080
+                            Height =300
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld48"
+                            Caption ="Ort"
+                            GroupTable =4
+                            BottomPadding =38
+                            LayoutGroup =3
+                            GroupTable =4
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =1200
+                    Top =840
+                    Width =5040
+                    Height =300
+                    ColumnWidth =4245
+                    ColumnOrder =2
+                    TabIndex =3
+                    Name ="Name2"
+                    ControlSource ="Name2"
+                    GroupTable =5
+                    RightPadding =38
+                    BottomPadding =38
+
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =4
+                    GroupTable =5
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =0
+                            Top =840
+                            Width =1080
+                            Height =300
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld50"
+                            Caption ="Name2"
+                            GroupTable =5
+                            BottomPadding =38
+                            LayoutGroup =4
+                            GroupTable =5
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =1200
+                    Top =420
+                    Width =5040
+                    Height =300
+                    ColumnWidth =2985
+                    ColumnOrder =1
+                    TabIndex =4
+                    Name ="Name1"
+                    ControlSource ="Name1"
+                    GroupTable =6
+                    RightPadding =38
+                    BottomPadding =38
+
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =5
+                    GroupTable =6
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =0
+                            Top =420
+                            Width =1080
+                            Height =300
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld52"
+                            Caption ="Name1"
+                            GroupTable =6
+                            BottomPadding =38
+                            LayoutGroup =5
+                            GroupTable =6
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =3660
+                    Top =0
+                    Width =480
+                    Height =300
+                    ForeColor =-2147483615
+                    Name ="Bezeichnungsfeld76"
+                    Caption ="Titel"
+                    GroupTable =7
+                    BottomPadding =38
+                    LayoutGroup =7
+                    GroupTable =7
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =1200
+                    Top =0
+                    Width =2220
+                    Height =300
+                    ColumnWidth =1125
+                    ColumnOrder =0
+                    TabIndex =5
+                    Name ="Anrede"
+                    ControlSource ="Anrede"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT T_Anreden.Anrede FROM T_Anreden ORDER BY T_Anreden.Anrede; "
+                    GroupTable =8
+                    RightPadding =38
+                    BottomPadding =38
+
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =6
+                    GroupTable =8
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =0
+                            Top =0
+                            Width =1080
+                            Height =300
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld74"
+                            Caption ="Anrede"
+                            GroupTable =8
+                            BottomPadding =38
+                            LayoutGroup =6
+                            GroupTable =8
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =1247
+                    Top =2607
+                    Width =227
+                    Height =227
+                    ColumnWidth =1635
+                    TabIndex =6
+                    Name ="StandardFürRechnungen"
+                    ControlSource ="StandardFürRechnungen"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =1477
+                            Top =2577
+                            Width =1860
+                            Height =315
+                            Name ="Bezeichnungsfeld20"
+                            Caption ="Rechnungsadr."
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+            AutoHeight =1
+        End
+    End
+End
+CodeBehindForm
+' See "Kartei_UF_Adressen.cls"

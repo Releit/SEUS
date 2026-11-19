@@ -1,0 +1,63 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "A_Import_Lieferanten"
+  },
+  "Items": {
+    "QueryType": 64,
+    "OptionFlag": 2,
+    "QueryProperties": {
+      "RecordLocks": {
+        "Type": 2,
+        "Value": 2
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1705,
+        "bottom": 857
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1689,
+        "bottom": 561
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 2699,
+      "Tables": [
+        {
+          "Name": "Kund_Lief_Mit",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 192,
+          "Bottom": 500,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LiefRechnungen",
+          "Alias": "",
+          "Left": 240,
+          "Top": 12,
+          "Right": 384,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "T_Kartei",
+          "Alias": "",
+          "Left": 538,
+          "Top": 220,
+          "Right": 682,
+          "Bottom": 562,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

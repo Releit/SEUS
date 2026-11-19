@@ -1,0 +1,18 @@
+﻿{
+  "Info": {
+    "Class": "clsDbRelation",
+    "Description": "Database relationship"
+  },
+  "Items": {
+    "Name": "{D691BED4-F951-4834-B43D-934C034BCDF0}",
+    "Attributes": 0,
+    "Table": "T_Zahlungsarten",
+    "ForeignTable": "T_Zahlungseingänge",
+    "Fields": [
+      {
+        "Name": "ID",
+        "ForeignName": "ZahlungsartID"
+      }
+    ]
+  }
+}

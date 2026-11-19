@@ -1,0 +1,583 @@
+﻿Version =20
+VersionRequired =20
+Begin Report
+    LayoutForPrint = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =10221
+    DatasheetFontHeight =11
+    ItemSuffix =28
+    RecSrcDt = Begin
+        0x7cb56877f24fe640
+    End
+    RecordSource ="SELECT T_Rechnungen.Anschriftname, T_Leistungen.Datum, T_Leistungen.Von, T_Leist"
+        "ungen.Bis, T_Leistungen.Menge, T_Leistungen.Einheit, (\"[\"+[Projektname]+\"] \""
+        ") & [T_Leistungen].[Anmerkungen] AS [Text], Year([T_Leistungen].[Datum])*100+Mon"
+        "th([T_Leistungen].[Datum]) AS JahrMonat, T_Leistungen.KarteiID, T_Leistungen.Auf"
+        "RechnungID, T_Produkte.Beschreibung AS ProduktName, T_Rechnungen.Nr AS RechnungN"
+        "r, T_Mitarbeiter.Vorname AS Mitarbeiter FROM (T_Produkte RIGHT JOIN (T_Leistunge"
+        "n LEFT JOIN T_Rechnungen ON T_Leistungen.AufRechnungID = T_Rechnungen.ID) ON T_P"
+        "rodukte.ID = T_Leistungen.ProduktID) LEFT JOIN T_Mitarbeiter ON T_Leistungen.Mit"
+        "arbeiterID = T_Mitarbeiter.ID; "
+    Caption ="Leistungsverzeichnis"
+    DatasheetFontName ="Calibri"
+    FilterOnLoad =0
+    FitToPage =1
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =15921906
+    DatasheetGridlinesColor12 =0
+    FitToScreen =1
+    DatasheetBackThemeColorIndex =1
+    BorderThemeColorIndex =3
+    ThemeFontIndex =1
+    ForeThemeColorIndex =0
+    AlternateBackThemeColorIndex =1
+    AlternateBackShade =95.0
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =0
+            BorderTint =50.0
+            ForeThemeColorIndex =0
+            ForeTint =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+            BorderThemeColorIndex =0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin TextBox
+            AddColon = NotDefault
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            ShowDatePicker =0
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ThemeFontIndex =1
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            GroupFooter = NotDefault
+            ControlSource ="=[Anschriftname]"
+        End
+        Begin BreakLevel
+            GroupFooter = NotDefault
+            ControlSource ="ProduktName"
+        End
+        Begin BreakLevel
+            ControlSource ="Datum"
+        End
+        Begin BreakLevel
+            ControlSource ="Von"
+        End
+        Begin FormHeader
+            KeepTogether = NotDefault
+            Height =450
+            Name ="Berichtskopf"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            Begin
+                Begin Label
+                    Top =15
+                    Width =2940
+                    Height =435
+                    FontSize =16
+                    Name ="Bezeichnungsfeld14"
+                    Caption ="Leistungsverzeichnis"
+                    FontName ="Tahoma"
+                    LayoutCachedTop =15
+                    LayoutCachedWidth =2940
+                    LayoutCachedHeight =450
+                    ThemeFontIndex =-1
+                End
+            End
+        End
+        Begin PageHeader
+            Height =0
+            Name ="Seitenkopfbereich"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+        End
+        Begin BreakHeader
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            RepeatSection = NotDefault
+            Height =600
+            BackColor =-2147483610
+            Name ="Gruppenkopf0"
+            Begin
+                Begin TextBox
+                    CanGrow = NotDefault
+                    OldBorderStyle =0
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Width =7371
+                    Height =330
+                    FontWeight =700
+                    ForeColor =0
+                    Name ="Kunde"
+                    ControlSource ="Anschriftname"
+
+                    LayoutCachedWidth =7371
+                    LayoutCachedHeight =330
+                    ForeTint =100.0
+                End
+                Begin Label
+                    TextAlign =1
+                    Top =360
+                    Width =851
+                    Height =227
+                    FontSize =9
+                    FontWeight =700
+                    ForeColor =0
+                    Name ="Datum_Bezeichnungsfeld"
+                    Caption ="Datum"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    LayoutCachedTop =360
+                    LayoutCachedWidth =851
+                    LayoutCachedHeight =587
+                    ForeTint =100.0
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =851
+                    Top =360
+                    Width =567
+                    Height =227
+                    FontSize =9
+                    FontWeight =700
+                    ForeColor =0
+                    Name ="Von_Bezeichnungsfeld"
+                    Caption ="Von"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =851
+                    LayoutCachedTop =360
+                    LayoutCachedWidth =1418
+                    LayoutCachedHeight =587
+                    ForeTint =100.0
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =1418
+                    Top =360
+                    Width =567
+                    Height =227
+                    FontSize =9
+                    FontWeight =700
+                    ForeColor =0
+                    Name ="Bis_Bezeichnungsfeld"
+                    Caption ="Bis"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =1418
+                    LayoutCachedTop =360
+                    LayoutCachedWidth =1985
+                    LayoutCachedHeight =587
+                    ForeTint =100.0
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =3119
+                    Top =360
+                    Width =1134
+                    Height =227
+                    FontSize =9
+                    FontWeight =700
+                    ForeColor =0
+                    Name ="Menge_Bezeichnungsfeld"
+                    Caption ="Menge"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =3119
+                    LayoutCachedTop =360
+                    LayoutCachedWidth =4253
+                    LayoutCachedHeight =587
+                    ForeTint =100.0
+                End
+                Begin Label
+                    TextAlign =1
+                    Left =4253
+                    Top =360
+                    Width =5954
+                    Height =227
+                    FontSize =9
+                    FontWeight =700
+                    ForeColor =0
+                    Name ="Beschreibung_Bezeichnungsfeld"
+                    Caption ="Beschreibung"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =4253
+                    LayoutCachedTop =360
+                    LayoutCachedWidth =10207
+                    LayoutCachedHeight =587
+                    ForeTint =100.0
+                End
+                Begin Line
+                    LineSlant = NotDefault
+                    BorderWidth =1
+                    Top =585
+                    Width =10206
+                    BorderColor =8355711
+                    Name ="Linie18"
+                    LayoutCachedTop =585
+                    LayoutCachedWidth =10206
+                    LayoutCachedHeight =585
+                    BorderTint =50.0
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =9081
+                    Top =15
+                    Width =1101
+                    Height =285
+                    FontSize =10
+                    TabIndex =1
+                    ForeColor =0
+                    Name ="RechnungNr"
+                    ControlSource ="RechnungNr"
+
+                    LayoutCachedLeft =9081
+                    LayoutCachedTop =15
+                    LayoutCachedWidth =10182
+                    LayoutCachedHeight =300
+                    ForeTint =100.0
+                    Begin
+                        Begin Label
+                            TextAlign =3
+                            Left =7665
+                            Top =15
+                            Width =1410
+                            Height =285
+                            FontSize =10
+                            ForeColor =0
+                            Name ="Bezeichnungsfeld25"
+                            Caption ="zu Rechnungnr.:"
+                            LayoutCachedLeft =7665
+                            LayoutCachedTop =15
+                            LayoutCachedWidth =9075
+                            LayoutCachedHeight =300
+                            ForeTint =100.0
+                        End
+                    End
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =1985
+                    Top =360
+                    Width =1134
+                    Height =227
+                    FontSize =9
+                    FontWeight =700
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld26"
+                    Caption ="Mitarbeiter"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =1985
+                    LayoutCachedTop =360
+                    LayoutCachedWidth =3119
+                    LayoutCachedHeight =587
+                    ForeTint =100.0
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =227
+            Name ="Detailbereich"
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Width =851
+                    Height =227
+                    FontSize =8
+                    ForeColor =0
+                    Name ="Datum"
+                    ControlSource ="Datum"
+                    Format ="dd/mm/yy"
+                    ShowDatePicker =1
+
+                    LayoutCachedWidth =851
+                    LayoutCachedHeight =227
+                    ForeTint =100.0
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =851
+                    Width =567
+                    Height =227
+                    FontSize =8
+                    TabIndex =1
+                    ForeColor =0
+                    Name ="Von"
+                    ControlSource ="Von"
+                    Format ="Short Time"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =851
+                    LayoutCachedWidth =1418
+                    LayoutCachedHeight =227
+                    ForeTint =100.0
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =1418
+                    Width =567
+                    Height =227
+                    FontSize =8
+                    TabIndex =2
+                    ForeColor =0
+                    Name ="Bis"
+                    ControlSource ="Bis"
+                    Format ="Short Time"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =1418
+                    LayoutCachedWidth =1985
+                    LayoutCachedHeight =227
+                    ForeTint =100.0
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =3
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =3119
+                    Width =567
+                    Height =227
+                    FontSize =8
+                    TabIndex =3
+                    ForeColor =0
+                    Name ="Menge"
+                    ControlSource ="Menge"
+                    Format ="Standard"
+
+                    LayoutCachedLeft =3119
+                    LayoutCachedWidth =3686
+                    LayoutCachedHeight =227
+                    ForeTint =100.0
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =3686
+                    Width =567
+                    Height =227
+                    FontSize =8
+                    TabIndex =4
+                    ForeColor =0
+                    Name ="Einheit"
+                    ControlSource ="Einheit"
+
+                    LayoutCachedLeft =3686
+                    LayoutCachedWidth =4253
+                    LayoutCachedHeight =227
+                    ForeTint =100.0
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    OldBorderStyle =0
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =4253
+                    Width =5954
+                    Height =227
+                    ColumnWidth =13350
+                    FontSize =8
+                    TabIndex =5
+                    ForeColor =0
+                    Name ="Anmerkungen"
+                    ControlSource ="Text"
+
+                    LayoutCachedLeft =4253
+                    LayoutCachedWidth =10207
+                    LayoutCachedHeight =227
+                    ForeTint =100.0
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    OldBorderStyle =0
+                    TextAlign =2
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =1985
+                    Width =1134
+                    Height =227
+                    FontSize =8
+                    TabIndex =6
+                    ForeColor =0
+                    Name ="Mitarbeiter"
+                    ControlSource ="Mitarbeiter"
+
+                    LayoutCachedLeft =1985
+                    LayoutCachedWidth =3119
+                    LayoutCachedHeight =227
+                    ForeTint =100.0
+                End
+            End
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            CanShrink = NotDefault
+            Height =271
+            BreakLevel =1
+            Name ="Gruppenfuß2"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            BackShade =95.0
+            Begin
+                Begin TextBox
+                    OldBorderStyle =0
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =2670
+                    Top =15
+                    Width =1023
+                    Height =256
+                    FontSize =9
+                    FontWeight =700
+                    ForeColor =0
+                    Name ="Text17"
+                    ControlSource ="=Sum([Menge])"
+                    Format ="Standard"
+
+                    LayoutCachedLeft =2670
+                    LayoutCachedTop =15
+                    LayoutCachedWidth =3693
+                    LayoutCachedHeight =271
+                    ForeTint =100.0
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =3686
+                    Top =15
+                    Width =567
+                    Height =256
+                    FontSize =9
+                    FontWeight =700
+                    TabIndex =1
+                    ForeColor =0
+                    Name ="Text22"
+                    ControlSource ="Einheit"
+
+                    LayoutCachedLeft =3686
+                    LayoutCachedTop =15
+                    LayoutCachedWidth =4253
+                    LayoutCachedHeight =271
+                    ForeTint =100.0
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =4253
+                    Width =5954
+                    Height =256
+                    ColumnWidth =2550
+                    FontSize =9
+                    FontWeight =700
+                    TabIndex =2
+                    ForeColor =0
+                    Name ="ProduktName"
+                    ControlSource ="ProduktName"
+
+                    LayoutCachedLeft =4253
+                    LayoutCachedWidth =10207
+                    LayoutCachedHeight =256
+                    ForeTint =100.0
+                End
+                Begin Line
+                    LineSlant = NotDefault
+                    BorderWidth =1
+                    Width =10206
+                    BorderColor =8355711
+                    Name ="Linie24"
+                    LayoutCachedWidth =10206
+                    BorderTint =50.0
+                End
+                Begin Line
+                    LineSlant = NotDefault
+                    BorderWidth =1
+                    Top =255
+                    Width =10206
+                    BorderColor =8355711
+                    Name ="Linie19"
+                    LayoutCachedTop =255
+                    LayoutCachedWidth =10206
+                    LayoutCachedHeight =255
+                    BorderTint =50.0
+                End
+            End
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            CanShrink = NotDefault
+            Height =113
+            Name ="Gruppenfuß0"
+            BackThemeColorIndex =1
+        End
+        Begin PageFooter
+            Height =0
+            Name ="Seitenfußbereich"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+        End
+        Begin FormFooter
+            KeepTogether = NotDefault
+            Height =0
+            Name ="Berichtsfuß"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+        End
+    End
+End

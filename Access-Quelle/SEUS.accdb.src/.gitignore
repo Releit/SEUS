@@ -1,0 +1,6 @@
+vcs-index.*
+*.env
+.env.*
+!.env*.example
+logs/
+test-results/

@@ -1,0 +1,213 @@
+﻿Version =20
+VersionRequired =20
+Begin Report
+    LayoutForPrint = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularFamily =55
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =5676
+    DatasheetFontHeight =10
+    ItemSuffix =88
+    RecSrcDt = Begin
+        0x31d3cf2956d5e340
+    End
+    RecordSource ="SELECT V_Rechnungen.RechnungID, V_Rechnungen.Anrede, [V_Rechnungen].[Anschriftna"
+        "me] & Nz((Chr(13)+Chr(10)+[T_Rechnungen].[zuhanden]),\"\") AS Kundenname, V_Rech"
+        "nungen.Adresse, [PLZ] & ' ' & [Ort] AS PLZOrt, V_Rechnungen.Name1, V_Rechnungen."
+        "Name2, V_Rechnungen.Name3 FROM V_Rechnungen; "
+    DatasheetFontName ="Arial"
+    FilterOnLoad =0
+    DatasheetGridlinesColor12 =12632256
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =2
+            FontName ="Arial"
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            OldBorderStyle =0
+            TextFontFamily =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Arial"
+            AsianLineBreak =255
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ForeThemeColorIndex =2
+            ForeShade =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            GroupFooter = NotDefault
+            ControlSource ="RechnungID"
+        End
+        Begin PageHeader
+            Height =0
+            Name ="Seitenkopfbereich"
+        End
+        Begin BreakHeader
+            KeepTogether = NotDefault
+            Height =0
+            Name ="Gruppenkopf0"
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =1875
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    CanGrow = NotDefault
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Top =315
+                    Width =5676
+                    Height =300
+                    FontSize =11
+                    Name ="Name1"
+                    ControlSource ="Name1"
+                    ShowDatePicker =0
+
+                    LayoutCachedTop =315
+                    LayoutCachedWidth =5676
+                    LayoutCachedHeight =615
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Top =1260
+                    Width =5676
+                    Height =300
+                    FontSize =11
+                    TabIndex =1
+                    Name ="Adresse"
+                    ControlSource ="Adresse"
+                    ShowDatePicker =0
+
+                    LayoutCachedTop =1260
+                    LayoutCachedWidth =5676
+                    LayoutCachedHeight =1560
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Top =1575
+                    Width =5676
+                    Height =300
+                    FontSize =11
+                    TabIndex =2
+                    Name ="PLZOrt"
+                    ControlSource ="PLZOrt"
+                    ShowDatePicker =0
+
+                    LayoutCachedTop =1575
+                    LayoutCachedWidth =5676
+                    LayoutCachedHeight =1875
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Width =5676
+                    Height =300
+                    FontSize =11
+                    TabIndex =3
+                    Name ="Text80"
+                    ControlSource ="Anrede"
+                    ShowDatePicker =0
+
+                    LayoutCachedWidth =5676
+                    LayoutCachedHeight =300
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Top =630
+                    Width =5676
+                    Height =300
+                    FontSize =11
+                    TabIndex =4
+                    Name ="Name2"
+                    ControlSource ="Name2"
+                    ShowDatePicker =0
+
+                    LayoutCachedTop =630
+                    LayoutCachedWidth =5676
+                    LayoutCachedHeight =930
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Top =945
+                    Width =5676
+                    Height =300
+                    FontSize =11
+                    TabIndex =5
+                    Name ="Name3"
+                    ControlSource ="Name3"
+                    ShowDatePicker =0
+
+                    LayoutCachedTop =945
+                    LayoutCachedWidth =5676
+                    LayoutCachedHeight =1245
+                End
+            End
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =0
+            Name ="Gruppenfuß1"
+        End
+        Begin PageFooter
+            Height =0
+            Name ="Seitenfußbereich"
+        End
+    End
+End
+CodeBehindForm
+' See "Beleg_AdressKopf.cls"

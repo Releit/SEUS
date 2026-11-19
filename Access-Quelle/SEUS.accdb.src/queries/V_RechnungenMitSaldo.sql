@@ -1,0 +1,23 @@
+﻿SELECT
+  V_Rechnungen.RechnungID,
+  V_Rechnungen.Datum,
+  V_Rechnungen.Nr,
+  V_Rechnungen.Anrede,
+  V_Rechnungen.KarteiID,
+  V_Rechnungen.Anschriftname,
+  V_Rechnungen.Kundenname,
+  V_Rechnungen.Adresse,
+  V_Rechnungen.PLZ,
+  V_Rechnungen.Ort,
+  V_Rechnungen.BetragExkl,
+  V_Rechnungen.BetragInkl,
+  V_SaldoNachRechnung.Saldo,
+  V_Rechnungen.DruckText,
+  V_Rechnungen.MahnStufe,
+  V_Rechnungen.Mahnung1Am,
+  V_Rechnungen.Mahnung2Am,
+  V_Rechnungen.Mahnung3Am,
+  V_Rechnungen.RechtsanwaltAm
+FROM
+  V_Rechnungen
+  LEFT JOIN V_SaldoNachRechnung ON V_Rechnungen.RechnungID = V_SaldoNachRechnung.RechnungID;

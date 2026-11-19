@@ -1,0 +1,365 @@
+﻿Version =20
+VersionRequired =20
+Begin Report
+    LayoutForPrint = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularFamily =55
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =11057
+    DatasheetFontHeight =10
+    ItemSuffix =95
+    RecSrcDt = Begin
+        0x8d74de8f2ce3e340
+    End
+    RecordSource ="SELECT V_Rechnungen.RechnungID AS ID, V_Rechnungen.Datum AS RDatum, V_Rechnungen"
+        ".Nr, T_Kartei.Nr AS KdNr, Format([T_Rechnungen].[Nr]) AS RNr, T_Kartei.UID, IIf("
+        "IsNull([T_Kartei].[uid]),Null,\"Ihre UID-Nr.:\") AS UIDNrTxt, V_Rechnungen.Druck"
+        "Text, T_Einstellungen.RechnungsFussText, IIf([BetragExkl]>0,\"Rechnung\",\"Gutsc"
+        "hrift\") AS Titel FROM T_Einstellungen, T_Kartei INNER JOIN V_Rechnungen ON T_Ka"
+        "rtei.ID = V_Rechnungen.KarteiID WHERE (((V_Rechnungen.RechnungID)=mBR_GetID()));"
+        " "
+    DatasheetFontName ="Arial"
+    OnLoad ="[Event Procedure]"
+    FilterOnLoad =0
+    DatasheetGridlinesColor12 =12632256
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =2
+            FontName ="Arial"
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            OldBorderStyle =0
+            TextFontFamily =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Arial"
+            AsianLineBreak =255
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ForeThemeColorIndex =2
+            ForeShade =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            GroupFooter = NotDefault
+            ControlSource ="ID"
+        End
+        Begin PageHeader
+            Height =1814
+            Name ="Seitenkopfbereich"
+            Begin
+                Begin Subform
+                    OldBorderStyle =0
+                    Left =567
+                    Width =10221
+                    Height =1814
+                    Name ="BelegKopf"
+                    SourceObject ="Report.BelegKopf"
+
+                    LayoutCachedLeft =567
+                    LayoutCachedWidth =10788
+                    LayoutCachedHeight =1814
+                End
+            End
+        End
+        Begin BreakHeader
+            KeepTogether = NotDefault
+            Height =0
+            Name ="Gruppenkopf0"
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =8675
+            Name ="Detailbereich"
+            Begin
+                Begin Image
+                    Visible = NotDefault
+                    PictureType =2
+                    Left =570
+                    Top =113
+                    Width =10207
+                    Height =2895
+                    Name ="FirmenPapier"
+                    Picture ="Rechnung_Auschnitt"
+
+                    LayoutCachedLeft =570
+                    LayoutCachedTop =113
+                    LayoutCachedWidth =10777
+                    LayoutCachedHeight =3008
+                    TabIndex =11
+                End
+                Begin TextBox
+                    TextAlign =1
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =8419
+                    Top =2020
+                    Height =270
+                    FontSize =10
+                    Name ="RDatum"
+                    ControlSource ="RDatum"
+
+                    LayoutCachedLeft =8419
+                    LayoutCachedTop =2020
+                    LayoutCachedWidth =10120
+                    LayoutCachedHeight =2290
+                End
+                Begin TextBox
+                    TextAlign =1
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =8421
+                    Top =2659
+                    Height =270
+                    FontSize =10
+                    TabIndex =1
+                    Name ="Nr"
+                    ControlSource ="Nr"
+
+                    LayoutCachedLeft =8421
+                    LayoutCachedTop =2659
+                    LayoutCachedWidth =10122
+                    LayoutCachedHeight =2929
+                End
+                Begin TextBox
+                    TextAlign =1
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =8419
+                    Top =2340
+                    Height =270
+                    FontSize =10
+                    TabIndex =2
+                    Name ="KdNr"
+                    ControlSource ="KdNr"
+
+                    LayoutCachedLeft =8419
+                    LayoutCachedTop =2340
+                    LayoutCachedWidth =10120
+                    LayoutCachedHeight =2610
+                End
+                Begin Subform
+                    OldBorderStyle =0
+                    Left =829
+                    Top =630
+                    Width =5692
+                    Height =2374
+                    TabIndex =3
+                    Name ="Untergeordnet86"
+                    SourceObject ="Report.Beleg_AdressKopf"
+                    LinkChildFields ="RechnungID"
+                    LinkMasterFields ="ID"
+
+                    LayoutCachedLeft =829
+                    LayoutCachedTop =630
+                    LayoutCachedWidth =6521
+                    LayoutCachedHeight =3004
+                End
+                Begin Subform
+                    OldBorderStyle =0
+                    Left =825
+                    Top =4125
+                    Width =9960
+                    Height =3750
+                    TabIndex =4
+                    Name ="Untergeordnet87"
+                    SourceObject ="Report.Beleg_Positionen"
+                    LinkChildFields ="RechnungID"
+                    LinkMasterFields ="ID"
+
+                    LayoutCachedLeft =825
+                    LayoutCachedTop =4125
+                    LayoutCachedWidth =10785
+                    LayoutCachedHeight =7875
+                End
+                Begin TextBox
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =2781
+                    Top =3291
+                    Height =330
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =5
+                    Name ="RNr"
+                    ControlSource ="RNr"
+
+                    LayoutCachedLeft =2781
+                    LayoutCachedTop =3291
+                    LayoutCachedWidth =4482
+                    LayoutCachedHeight =3621
+                    Begin
+                        Begin Label
+                            TextAlign =3
+                            TextFontFamily =34
+                            Left =2224
+                            Top =3285
+                            Width =495
+                            Height =345
+                            FontSize =12
+                            FontWeight =700
+                            Name ="Bezeichnungsfeld88"
+                            Caption =" Nr.:"
+                            LayoutCachedLeft =2224
+                            LayoutCachedTop =3285
+                            LayoutCachedWidth =2719
+                            LayoutCachedHeight =3630
+                        End
+                    End
+                End
+                Begin TextBox
+                    TextAlign =2
+                    TextFontFamily =34
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =570
+                    Top =7920
+                    Width =10200
+                    Height =690
+                    TabIndex =6
+                    Name ="RechnungsFussText"
+                    ControlSource ="RechnungsFussText"
+
+                    LayoutCachedLeft =570
+                    LayoutCachedTop =7920
+                    LayoutCachedWidth =10770
+                    LayoutCachedHeight =8610
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    IMESentenceMode =3
+                    Left =1080
+                    Top =3720
+                    Width =9630
+                    Height =345
+                    TabIndex =7
+                    Name ="DruckText"
+                    ControlSource ="DruckText"
+
+                    LayoutCachedLeft =1080
+                    LayoutCachedTop =3720
+                    LayoutCachedWidth =10710
+                    LayoutCachedHeight =4065
+                End
+                Begin TextBox
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =855
+                    Top =3285
+                    Width =1356
+                    Height =330
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =8
+                    Name ="Titel"
+                    ControlSource ="Titel"
+
+                    LayoutCachedLeft =855
+                    LayoutCachedTop =3285
+                    LayoutCachedWidth =2211
+                    LayoutCachedHeight =3615
+                End
+                Begin TextBox
+                    TextAlign =1
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =6885
+                    Top =2970
+                    Width =1446
+                    Height =270
+                    FontSize =10
+                    TabIndex =9
+                    Name ="UIDNrTxt"
+                    ControlSource ="UIDNrTxt"
+
+                    LayoutCachedLeft =6885
+                    LayoutCachedTop =2970
+                    LayoutCachedWidth =8331
+                    LayoutCachedHeight =3240
+                End
+                Begin TextBox
+                    TextAlign =1
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =8422
+                    Top =2970
+                    Width =2286
+                    Height =270
+                    FontSize =10
+                    TabIndex =10
+                    Name ="UID"
+                    ControlSource ="UID"
+
+                    LayoutCachedLeft =8422
+                    LayoutCachedTop =2970
+                    LayoutCachedWidth =10708
+                    LayoutCachedHeight =3240
+                End
+            End
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =5500
+            Name ="Gruppenfuß1"
+            Begin
+                Begin Subform
+                    OldBorderStyle =0
+                    Width =11057
+                    Height =5500
+                    Name ="Eingebettet60"
+                    SourceObject ="Report.Beleg_UF_Erlagschein"
+                    LinkChildFields ="RechnungID"
+                    LinkMasterFields ="ID"
+
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="Seitenfußbereich"
+        End
+    End
+End
+CodeBehindForm
+' See "Beleg.cls"

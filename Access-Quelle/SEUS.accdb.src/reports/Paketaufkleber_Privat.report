@@ -1,0 +1,255 @@
+﻿Version =20
+VersionRequired =20
+Begin Report
+    LayoutForPrint = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =10516
+    DatasheetFontHeight =11
+    ItemSuffix =60
+    RecSrcDt = Begin
+        0x8df4ca8cce70e440
+    End
+    RecordSource ="SELECT T_Kartei.ID, T_Kartei.Adresse, IIf([T_Kartei].[Landcode]<>\"A\",[T_Kartei"
+        "].[Landcode]+\"-\",\"\") & [T_Kartei].[PLZ] & \" \" & [T_Kartei].[Ort] AS PLZOrt"
+        ", Nz([T_Kartei].[Titel]+\" \",\"\") & [T_Kartei].[Name1] & \" \" & (Chr(13)+Chr("
+        "10)+[T_Kartei].[Name2]) AS Kundenname FROM T_Kartei WHERE (((T_Kartei.ID)=mBR_Ge"
+        "tID())); "
+    DatasheetFontName ="Tahoma"
+    OnLoad ="[Event Procedure]"
+    FilterOnLoad =0
+    FitToPage =1
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            ShowDatePicker =0
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin UnboundObjectFrame
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin PageBreak
+            Width =283
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            GroupFooter = NotDefault
+            KeepTogether =2
+            ControlSource ="ID"
+        End
+        Begin PageHeader
+            Height =0
+            Name ="Seitenkopfbereich"
+        End
+        Begin BreakHeader
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            CanShrink = NotDefault
+            ForceNewPage =1
+            Height =3968
+            Name ="Gruppenkopf0"
+            Begin
+                Begin Label
+                    BackStyle =1
+                    Top =525
+                    Width =1230
+                    Height =285
+                    FontSize =10
+                    Name ="Bezeichnungsfeld59"
+                    Caption ="Niederdorf 21\015\012"
+                    LayoutCachedTop =525
+                    LayoutCachedWidth =1230
+                    LayoutCachedHeight =810
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
+                    ForeTint =95.0
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Left =5102
+                    Top =2267
+                    Width =5103
+                    Height =615
+                    ColumnOrder =4
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="Kundenname"
+                    ControlSource ="Kundenname"
+                    FontName ="Arial"
+
+                    LayoutCachedLeft =5102
+                    LayoutCachedTop =2267
+                    LayoutCachedWidth =10205
+                    LayoutCachedHeight =2882
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Left =5100
+                    Top =2880
+                    Width =5103
+                    Height =330
+                    ColumnOrder =5
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="Adresse"
+                    ControlSource ="Adresse"
+                    FontName ="Arial"
+
+                    LayoutCachedLeft =5100
+                    LayoutCachedTop =2880
+                    LayoutCachedWidth =10203
+                    LayoutCachedHeight =3210
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Left =5100
+                    Top =3210
+                    Width =5103
+                    Height =330
+                    ColumnOrder =7
+                    FontSize =12
+                    FontWeight =700
+                    Name ="PLZOrt"
+                    ControlSource ="PLZOrt"
+                    FontName ="Arial"
+
+                    LayoutCachedLeft =5100
+                    LayoutCachedTop =3210
+                    LayoutCachedWidth =10203
+                    LayoutCachedHeight =3540
+                End
+                Begin Label
+                    BackStyle =1
+                    Top =765
+                    Width =3615
+                    Height =285
+                    FontSize =10
+                    Name ="Bezeichnungsfeld50"
+                    Caption ="A-8713 St. Stefan ob Leoben\015\012"
+                    LayoutCachedTop =765
+                    LayoutCachedWidth =3615
+                    LayoutCachedHeight =1050
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
+                    ForeTint =95.0
+                End
+                Begin Label
+                    BackStyle =1
+                    Top =255
+                    Width =3060
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld53"
+                    Caption ="Reinhard Leitner\015\012"
+                    LayoutCachedTop =255
+                    LayoutCachedWidth =3060
+                    LayoutCachedHeight =540
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
+                    ForeTint =95.0
+                End
+                Begin Label
+                    BackStyle =1
+                    Width =1410
+                    Height =285
+                    FontSize =10
+                    Name ="Bezeichnungsfeld57"
+                    Caption ="Absender/From:\015\012"
+                    LayoutCachedWidth =1410
+                    LayoutCachedHeight =285
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
+                    ForeTint =95.0
+                End
+                Begin Label
+                    BackStyle =1
+                    Left =5102
+                    Top =1984
+                    Width =2475
+                    Height =285
+                    FontSize =10
+                    Name ="Bezeichnungsfeld58"
+                    Caption ="An/To:\015\012"
+                    LayoutCachedLeft =5102
+                    LayoutCachedTop =1984
+                    LayoutCachedWidth =7577
+                    LayoutCachedHeight =2269
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
+                    ForeTint =95.0
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =0
+            Name ="Detailbereich"
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            CanShrink = NotDefault
+            Height =30
+            Name ="Gruppenfuß0"
+        End
+        Begin PageFooter
+            Height =0
+            Name ="Seitenfußbereich"
+        End
+    End
+End
+CodeBehindForm
+' See "Paketaufkleber_Privat.cls"

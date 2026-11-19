@@ -1,0 +1,47 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "A_ZE_RechungsDaten"
+  },
+  "Items": {
+    "QueryType": 0,
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 2089,
+        "bottom": 1289
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 2073,
+        "bottom": 649
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "V_Rechnungen",
+          "Alias": "",
+          "Left": 240,
+          "Top": 12,
+          "Right": 681,
+          "Bottom": 568,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "T_Rechnungen_ZE",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 192,
+          "Bottom": 156,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

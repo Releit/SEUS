@@ -1,0 +1,39 @@
+﻿{
+  "Info": {
+    "Class": "clsDbTableDef",
+    "Description": "Linked Table"
+  },
+  "Items": {
+    "Name": "T_KundenProduktpreise",
+    "Connect": "ODBC;DSN=zeiterfassung;",
+    "SourceTableName": "T_KundenProduktpreise",
+    "Attributes": 536870912,
+    "PrimaryKey": "[ID]",
+    "FieldProperties": {
+      "ID": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "ProduktID": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "KarteiID": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "VKExkl": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      }
+    }
+  }
+}

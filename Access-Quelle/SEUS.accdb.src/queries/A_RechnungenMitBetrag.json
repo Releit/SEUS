@@ -1,0 +1,66 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "A_RechnungenMitBetrag"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Kunde": {
+        "ColumnWidth": 2775,
+        "AggregateType": -1
+      },
+      "RechnungsbetragInkl": {
+        "ColumnWidth": 2025,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1705,
+        "bottom": 857
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1689,
+        "bottom": 216
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "T_Kartei",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 192,
+          "Bottom": 328,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "T_Rechnungen",
+          "Alias": "",
+          "Left": 240,
+          "Top": 12,
+          "Right": 474,
+          "Bottom": 278,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "T_RechnungsPos",
+          "Alias": "",
+          "Left": 536,
+          "Top": 59,
+          "Right": 805,
+          "Bottom": 333,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

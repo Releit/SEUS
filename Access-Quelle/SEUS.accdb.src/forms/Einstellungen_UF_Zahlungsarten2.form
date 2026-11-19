@@ -1,0 +1,239 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =11520
+    DatasheetFontHeight =11
+    ItemSuffix =9
+    Right =50000
+    Bottom =50000
+    RecSrcDt = Begin
+        0x9a30c273ee1be440
+    End
+    RecordSource ="T_Zahlungsarten"
+    Caption ="Einstellungen_UF_Zahlungsarten2"
+    DatasheetFontName ="Calibri"
+    AllowDatasheetView =0
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =15921906
+    DatasheetGridlinesColor12 =0
+    FitToScreen =1
+    DatasheetBackThemeColorIndex =1
+    BorderThemeColorIndex =3
+    ThemeFontIndex =1
+    ForeThemeColorIndex =0
+    AlternateBackThemeColorIndex =1
+    AlternateBackShade =95.0
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =0
+            BorderTint =50.0
+            ForeThemeColorIndex =0
+            ForeTint =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin TextBox
+            AddColon = NotDefault
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ThemeFontIndex =1
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin FormHeader
+            Height =1026
+            Name ="Formularkopf"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =2
+            BackTint =20.0
+            Begin
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =1
+                    Left =342
+                    Top =684
+                    Width =3021
+                    Height =300
+                    BorderColor =8355711
+                    ForeColor =8355711
+                    Name ="Zahlungsart_Bezeichnungsfeld"
+                    Caption ="Zahlungsart"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    GridlineColor =10921638
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =1
+                    Left =3420
+                    Top =684
+                    Width =5985
+                    Height =300
+                    BorderColor =8355711
+                    ForeColor =8355711
+                    Name ="RechnungsText_Bezeichnungsfeld"
+                    Caption ="RechnungsText"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    GridlineColor =10921638
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =9462
+                    Top =684
+                    Width =1482
+                    Height =300
+                    BorderColor =8355711
+                    ForeColor =8355711
+                    Name ="Kurzzeichen_Bezeichnungsfeld"
+                    Caption ="Kurzzeichen"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    GridlineColor =10921638
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =11001
+                    Top =684
+                    Width =462
+                    Height =300
+                    BorderColor =8355711
+                    ForeColor =8355711
+                    Name ="Standard_Bezeichnungsfeld"
+                    Caption ="Standard"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    GridlineColor =10921638
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =57
+                    Top =57
+                    Width =7128
+                    Height =969
+                    FontSize =20
+                    BorderColor =8355711
+                    ForeColor =8355711
+                    Name ="Bezeichnungsfeld8"
+                    Caption ="Einstellungen_UF_Zahlungsarten2"
+                    GridlineColor =10921638
+                End
+            End
+        End
+        Begin Section
+            Height =1194
+            Name ="Detailbereich"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =342
+                    Top =57
+                    Width =3021
+                    Height =315
+                    ColumnWidth =3000
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Zahlungsart"
+                    ControlSource ="Zahlungsart"
+                    GridlineColor =10921638
+
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3420
+                    Top =57
+                    Width =5985
+                    Height =1080
+                    ColumnWidth =3000
+                    TabIndex =1
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="RechnungsText"
+                    ControlSource ="RechnungsText"
+                    GridlineColor =10921638
+
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =9462
+                    Top =57
+                    Width =1482
+                    Height =315
+                    ColumnWidth =2010
+                    TabIndex =2
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Kurzzeichen"
+                    ControlSource ="Kurzzeichen"
+                    GridlineColor =10921638
+
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =11001
+                    Top =57
+                    TabIndex =3
+                    BorderColor =10921638
+                    Name ="Standard"
+                    ControlSource ="Standard"
+                    GridlineColor =10921638
+
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+        End
+    End
+End

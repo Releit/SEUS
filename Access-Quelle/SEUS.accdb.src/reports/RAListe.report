@@ -1,0 +1,425 @@
+﻿Version =20
+VersionRequired =20
+Begin Report
+    LayoutForPrint = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =15309
+    DatasheetFontHeight =11
+    ItemSuffix =87
+    Filter ="MahnStufe=4"
+    RecSrcDt = Begin
+        0x07911f3c6dcde340
+    End
+    RecordSource ="SELECT V_RechnungenMitSaldo.Anrede, V_RechnungenMitSaldo.Kundenname, V_Rechnunge"
+        "nMitSaldo.AnschriftName, V_RechnungenMitSaldo.Adresse, [V_RechnungenMitSaldo].[p"
+        "lz] & ' ' & [V_RechnungenMitSaldo].[ort] AS PLZOrt_, mED_GetText(\"FirmenOrt\") "
+        "& \", \" & Format([V_RechnungenMitSaldo].[Mahnung1Am],\"dd/mm/yyyy\") AS OrtDatu"
+        "m, V_RechnungenMitSaldo.Nr, V_RechnungenMitSaldo.Datum, V_RechnungenMitSaldo.bet"
+        "ragInkl, V_RechnungenMitSaldo.Saldo, V_RechnungenMitSaldo.MahnStufe, V_Rechnunge"
+        "nMitSaldo.Mahnung1Am, V_RechnungenMitSaldo.Mahnung2Am, V_RechnungenMitSaldo.Mahn"
+        "ung3Am FROM V_RechnungenMitSaldo; "
+    DatasheetFontName ="Tahoma"
+    FilterOnLoad =0
+    FitToPage =1
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            ShowDatePicker =0
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin PageBreak
+            Width =283
+        End
+        Begin BreakLevel
+            ControlSource ="Kundenname"
+        End
+        Begin PageHeader
+            Height =1500
+            Name ="Seitenkopfbereich"
+            Begin
+                Begin Label
+                    Left =10773
+                    Top =1185
+                    Width =1134
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld11"
+                    Caption ="Rechnung Nr:"
+                    LayoutCachedLeft =10773
+                    LayoutCachedTop =1185
+                    LayoutCachedWidth =11907
+                    LayoutCachedHeight =1500
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =11907
+                    Top =1185
+                    Width =1134
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld10"
+                    Caption ="Datum"
+                    LayoutCachedLeft =11907
+                    LayoutCachedTop =1185
+                    LayoutCachedWidth =13041
+                    LayoutCachedHeight =1500
+                End
+                Begin Label
+                    TextAlign =3
+                    Left =14175
+                    Top =1185
+                    Width =1134
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld12"
+                    Caption ="offen"
+                    LayoutCachedLeft =14175
+                    LayoutCachedTop =1185
+                    LayoutCachedWidth =15309
+                    LayoutCachedHeight =1500
+                End
+                Begin Line
+                    Top =1485
+                    Width =15309
+                    BorderColor =9605778
+                    Name ="Linie20"
+                    LayoutCachedTop =1485
+                    LayoutCachedWidth =15309
+                    LayoutCachedHeight =1485
+                End
+                Begin Label
+                    TextAlign =3
+                    Left =13041
+                    Top =1185
+                    Width =1134
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld49"
+                    Caption =" Betrag inkl."
+                    LayoutCachedLeft =13041
+                    LayoutCachedTop =1185
+                    LayoutCachedWidth =14175
+                    LayoutCachedHeight =1500
+                End
+                Begin Label
+                    Top =1185
+                    Width =2835
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld76"
+                    Caption ="Kundenname"
+                    LayoutCachedTop =1185
+                    LayoutCachedWidth =2835
+                    LayoutCachedHeight =1500
+                End
+                Begin Label
+                    Left =6237
+                    Top =1185
+                    Width =2268
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld77"
+                    Caption ="Adresse"
+                    LayoutCachedLeft =6237
+                    LayoutCachedTop =1185
+                    LayoutCachedWidth =8505
+                    LayoutCachedHeight =1500
+                End
+                Begin Label
+                    Left =8505
+                    Top =1185
+                    Width =2268
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld78"
+                    Caption ="PLZ Ort"
+                    LayoutCachedLeft =8505
+                    LayoutCachedTop =1185
+                    LayoutCachedWidth =10773
+                    LayoutCachedHeight =1500
+                End
+                Begin Line
+                    BorderWidth =2
+                    Top =615
+                    Width =15309
+                    BorderColor =-2147483614
+                    Name ="Linie49"
+                    LayoutCachedTop =615
+                    LayoutCachedWidth =15309
+                    LayoutCachedHeight =615
+                End
+                Begin Label
+                    Top =165
+                    Width =7530
+                    Height =435
+                    FontSize =16
+                    Name ="Bezeichnungsfeld82"
+                    Caption ="Liste offene Rechnungen für den Rechtsanwalt"
+                    FontName ="Verdana"
+                    LayoutCachedTop =165
+                    LayoutCachedWidth =7530
+                    LayoutCachedHeight =600
+                End
+                Begin Label
+                    Left =3969
+                    Top =1185
+                    Width =2268
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld83"
+                    Caption ="Anschriftname"
+                    LayoutCachedLeft =3969
+                    LayoutCachedTop =1185
+                    LayoutCachedWidth =6237
+                    LayoutCachedHeight =1500
+                End
+                Begin Label
+                    Left =2835
+                    Top =1185
+                    Width =1134
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld85"
+                    Caption ="Anrede"
+                    LayoutCachedLeft =2835
+                    LayoutCachedTop =1185
+                    LayoutCachedWidth =3969
+                    LayoutCachedHeight =1500
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =390
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    CanGrow = NotDefault
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =10773
+                    Width =1134
+                    Height =390
+                    ColumnOrder =3
+                    FontSize =10
+                    TabIndex =1
+                    Name ="Produktname"
+                    ControlSource ="Nr"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =10773
+                    LayoutCachedWidth =11907
+                    LayoutCachedHeight =390
+                End
+                Begin TextBox
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =11907
+                    Width =1134
+                    Height =390
+                    ColumnOrder =4
+                    FontSize =10
+                    Name ="Menge"
+                    ControlSource ="Datum"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =11907
+                    LayoutCachedWidth =13041
+                    LayoutCachedHeight =390
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =14175
+                    Width =1134
+                    Height =390
+                    ColumnOrder =2
+                    FontSize =10
+                    TabIndex =2
+                    Name ="Text17"
+                    ControlSource ="=-[Saldo]"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =14175
+                    LayoutCachedWidth =15309
+                    LayoutCachedHeight =390
+                    CurrencySymbol ="€"
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =13041
+                    Width =1134
+                    Height =390
+                    ColumnOrder =0
+                    FontSize =10
+                    TabIndex =3
+                    Name ="Einheit"
+                    ControlSource ="betragInkl"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =13041
+                    LayoutCachedWidth =14175
+                    LayoutCachedHeight =390
+                    CurrencySymbol ="€"
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Width =2835
+                    Height =390
+                    FontSize =10
+                    TabIndex =4
+                    Name ="Kundenname"
+                    ControlSource ="Kundenname"
+                    ShowDatePicker =1
+
+                    LayoutCachedWidth =2835
+                    LayoutCachedHeight =390
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Left =6237
+                    Width =2268
+                    Height =390
+                    FontSize =10
+                    TabIndex =5
+                    Name ="Adresse"
+                    ControlSource ="Adresse"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =6237
+                    LayoutCachedWidth =8505
+                    LayoutCachedHeight =390
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Left =8505
+                    Width =2268
+                    Height =390
+                    FontSize =10
+                    TabIndex =6
+                    Name ="PLZOrt_"
+                    ControlSource ="PLZOrt_"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =8505
+                    LayoutCachedWidth =10773
+                    LayoutCachedHeight =390
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Left =3969
+                    Width =2268
+                    Height =390
+                    FontSize =10
+                    TabIndex =7
+                    Name ="AnschriftName"
+                    ControlSource ="AnschriftName"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =3969
+                    LayoutCachedWidth =6237
+                    LayoutCachedHeight =390
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    IMESentenceMode =3
+                    Left =2835
+                    Width =1134
+                    Height =390
+                    FontSize =10
+                    TabIndex =8
+                    Name ="Anrede"
+                    ControlSource ="Anrede"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =2835
+                    LayoutCachedWidth =3969
+                    LayoutCachedHeight =390
+                End
+            End
+        End
+        Begin PageFooter
+            Height =285
+            Name ="Seitenfußbereich"
+            Begin
+                Begin TextBox
+                    TextAlign =3
+                    IMESentenceMode =3
+                    Left =12870
+                    Width =2423
+                    Height =285
+                    ColumnOrder =4
+                    FontSize =8
+                    ForeColor =7500402
+                    Name ="Text40"
+                    ControlSource ="OrtDatum"
+                    FontName ="Verdana"
+
+                    LayoutCachedLeft =12870
+                    LayoutCachedWidth =15293
+                    LayoutCachedHeight =285
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "RAListe.cls"

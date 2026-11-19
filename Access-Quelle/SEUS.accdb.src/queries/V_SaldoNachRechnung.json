@@ -1,0 +1,38 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "V_SaldoNachRechnung"
+  },
+  "Items": {
+    "QueryType": 0,
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1705,
+        "bottom": 857
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1689,
+        "bottom": 268
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "T_Buchungen",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 249,
+          "Bottom": 236,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

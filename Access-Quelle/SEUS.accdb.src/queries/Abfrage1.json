@@ -1,0 +1,57 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "Abfrage1"
+  },
+  "Items": {
+    "QueryType": 48,
+    "QueryProperties": {
+      "RecordLocks": {
+        "Type": 2,
+        "Value": 2
+      },
+      "FailOnError": {
+        "Type": 1,
+        "Value": false
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 2220,
+        "bottom": 1176
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 2204,
+        "bottom": 630
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 579,
+      "Tables": [
+        {
+          "Name": "T_Rechnungen",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 192,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "T_Lieferscheine",
+          "Alias": "",
+          "Left": 240,
+          "Top": 12,
+          "Right": 384,
+          "Bottom": 156,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

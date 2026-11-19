@@ -1,0 +1,71 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "V_Rechnungen"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "BetragInkl": {
+        "ColumnWidth": 1815,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 851,
+        "bottom": 851
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 835,
+        "bottom": 300
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "T_Kartei",
+          "Alias": "",
+          "Left": 216,
+          "Top": 0,
+          "Right": 360,
+          "Bottom": 144,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "T_Rechnungen",
+          "Alias": "",
+          "Left": 474,
+          "Top": 17,
+          "Right": 618,
+          "Bottom": 161,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "T_RechnungsPos",
+          "Alias": "",
+          "Left": 757,
+          "Top": 0,
+          "Right": 959,
+          "Bottom": 253,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "T_Adressen",
+          "Alias": "",
+          "Left": 62,
+          "Top": 43,
+          "Right": 206,
+          "Bottom": 252,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

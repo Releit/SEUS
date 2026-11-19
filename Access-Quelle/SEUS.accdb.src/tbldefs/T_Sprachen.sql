@@ -1,0 +1,4 @@
+﻿CREATE TABLE [T_Sprachen] (
+  [ID] LONG CONSTRAINT [PrimaryKey] PRIMARY KEY UNIQUE NOT NULL,
+  [Sprache] VARCHAR (50)
+)

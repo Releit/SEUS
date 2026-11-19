@@ -1,0 +1,63 @@
+﻿{
+  "Info": {
+    "Class": "clsDbTableDef",
+    "Description": "Linked Table"
+  },
+  "Items": {
+    "Name": "T_Projekte",
+    "Connect": "ODBC;DSN=zeiterfassung;",
+    "SourceTableName": "T_Projekte",
+    "Attributes": 536870912,
+    "PrimaryKey": "[ID]",
+    "FieldProperties": {
+      "ID": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "KarteiID": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "obsolet": {
+        "DisplayControl": {
+          "Type": 3,
+          "Value": 106
+        }
+      },
+      "Pauschalverrechnung": {
+        "DisplayControl": {
+          "Type": 3,
+          "Value": 106
+        }
+      },
+      "Pauschalbetrag": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "PauschalStd": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "ProjektStdSatz": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      },
+      "StatusID": {
+        "DecimalPlaces": {
+          "Type": 2,
+          "Value": 255
+        }
+      }
+    }
+  }
+}

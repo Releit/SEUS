@@ -1,0 +1,365 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    DividingLines = NotDefault
+    DataEntry = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    AllowUpdating =2
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =21200
+    DatasheetFontHeight =11
+    ItemSuffix =24
+    Right =50000
+    Bottom =50000
+    RecSrcDt = Begin
+        0x491cda679259e640
+    End
+    OnCurrent ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =15921906
+    DatasheetGridlinesColor12 =0
+    FitToScreen =1
+    DatasheetBackThemeColorIndex =1
+    BorderThemeColorIndex =3
+    ThemeFontIndex =1
+    ForeThemeColorIndex =0
+    AlternateBackThemeColorIndex =1
+    AlternateBackShade =95.0
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =0
+            BorderTint =50.0
+            ForeThemeColorIndex =0
+            ForeTint =60.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            FontName ="Calibri"
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+            UseTheme =1
+            Shape =1
+            Gradient =12
+            BackThemeColorIndex =4
+            BackTint =60.0
+            BorderLineStyle =0
+            BorderThemeColorIndex =4
+            BorderTint =60.0
+            ThemeFontIndex =1
+            HoverThemeColorIndex =4
+            HoverTint =40.0
+            PressedThemeColorIndex =4
+            PressedShade =75.0
+            HoverForeThemeColorIndex =0
+            HoverForeTint =75.0
+            PressedForeThemeColorIndex =0
+            PressedForeTint =75.0
+        End
+        Begin ComboBox
+            AddColon = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ForeThemeColorIndex =2
+            ForeShade =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderThemeColorIndex =1
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+            BorderShade =65.0
+            ShowPageHeaderAndPageFooter =1
+        End
+        Begin Tab
+            TextFontFamily =18
+            Width =5100
+            Height =3420
+            FontSize =11
+            FontName ="Cambria"
+            ThemeFontIndex =0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+            UseTheme =1
+            Shape =3
+            BackThemeColorIndex =1
+            BackShade =85.0
+            BorderLineStyle =0
+            BorderThemeColorIndex =2
+            BorderTint =60.0
+            HoverThemeColorIndex =1
+            PressedThemeColorIndex =1
+            HoverForeThemeColorIndex =0
+            HoverForeTint =75.0
+            PressedForeThemeColorIndex =0
+            PressedForeTint =75.0
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+        End
+        Begin Page
+            Width =1701
+            Height =1701
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin FormHeader
+            Height =907
+            Name ="Formularkopf"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =2
+            BackTint =20.0
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =60
+                    Top =60
+                    Width =3419
+                    Height =625
+                    FontSize =20
+                    Name ="Bezeichnungsfeld0"
+                    Caption ="Leistungssummen"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =11678
+                    Top =170
+                    Width =540
+                    Height =330
+                    Name ="cmd_close"
+                    OnClick ="[Event Procedure]"
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000727272ff727272ff ,
+                        0x00000000000000000000000000000000727272ff727272ff0000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000727272ff727272ff ,
+                        0x727272ff0000000000000000727272ff727272ff727272ff0000000000000000 ,
+                        0x00000000000000000000000000000000000000000000000000000000727272ff ,
+                        0x727272ff727272ff727272ff727272ff727272ff000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x727272ff727272ff727272ff727272ff00000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x727272ff727272ff727272ff727272ff00000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000000000000000000000000000727272ff ,
+                        0x727272ff727272ff727272ff727272ff727272ff000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000727272ff727272ff ,
+                        0x727272ff0000000000000000727272ff727272ff727272ff0000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000727272ff727272ff ,
+                        0x00000000000000000000000000000000727272ff727272ff0000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                    PictureCaptionArrangement =5
+                End
+            End
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =9165
+            Name ="Detailbereich"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin ComboBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =1195
+                    Top =285
+                    Width =3401
+                    Height =315
+                    Name ="cmb_MitarbeiterID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT T_Mitarbeiter.ID, T_Mitarbeiter.[Vorname] & \" \" & [Nachname] AS Name1 F"
+                        "ROM T_Mitarbeiter; "
+                    ColumnWidths ="0;3402"
+                    AfterUpdate ="[Event Procedure]"
+
+                    ShowOnlyRowSourceValues =255
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =345
+                            Top =285
+                            Width =1845
+                            Height =315
+                            Name ="Bezeichnungsfeld2"
+                            Caption ="Mitarbeiter"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    RowSourceTypeInt =1
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =5605
+                    Top =690
+                    Width =3401
+                    Height =315
+                    TabIndex =1
+                    Name ="cmb_Monat"
+                    RowSourceType ="Value List"
+                    RowSource ="1;2;3;4;5;6;7;8;9;10;11;12"
+                    ColumnWidths ="1134"
+                    AfterUpdate ="[Event Procedure]"
+                    AllowValueListEdits =0
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =4755
+                            Top =690
+                            Width =1845
+                            Height =315
+                            Name ="Bezeichnungsfeld5"
+                            Caption ="Monat:"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    RowSourceTypeInt =1
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =5605
+                    Top =285
+                    Width =3401
+                    Height =315
+                    TabIndex =2
+                    Name ="cmb_Year"
+                    RowSourceType ="Value List"
+                    RowSource ="2024;2025;2026;2027;2028"
+                    ColumnWidths ="1134"
+                    AllowValueListEdits =0
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =4755
+                            Top =285
+                            Width =1845
+                            Height =315
+                            Name ="Bezeichnungsfeld8"
+                            Caption ="Jahr:"
+                        End
+                    End
+                End
+                Begin Tab
+                    OverlapFlags =85
+                    Left =285
+                    Top =1305
+                    Width =19080
+                    Height =7500
+                    TabIndex =3
+                    Name ="RegisterStr13"
+
+                    Begin
+                        Begin Page
+                            OverlapFlags =87
+                            Left =358
+                            Top =1768
+                            Width =18965
+                            Height =6950
+                            Name ="Stunden summiert"
+                            EventProcPrefix ="Stunden_summiert"
+                            Begin
+                                Begin Subform
+                                    OverlapFlags =215
+                                    Left =438
+                                    Top =1848
+                                    Width =18210
+                                    Height =6225
+                                    Name ="Leistungssummen_UF"
+                                    SourceObject ="Form.Leistungssummen_UF"
+
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =215
+                            Left =360
+                            Top =1770
+                            Width =18960
+                            Height =6945
+                            Name ="Stunden einzeln"
+                            EventProcPrefix ="Stunden_einzeln"
+                            Begin
+                                Begin Subform
+                                    OverlapFlags =247
+                                    Left =438
+                                    Top =1848
+                                    Width =18150
+                                    Height =6225
+                                    Name ="Leistungssummen_UF_Einzel"
+                                    SourceObject ="Form.Leistungssummen_UF"
+
+                                End
+                            End
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =1134
+            Name ="Formularfuß"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+        End
+    End
+End
+CodeBehindForm
+' See "Leistungssummen.cls"

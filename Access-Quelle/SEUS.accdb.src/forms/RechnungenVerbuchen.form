@@ -1,0 +1,846 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =13860
+    DatasheetFontHeight =11
+    ItemSuffix =36
+    Right =50000
+    Bottom =50000
+    Filter ="RechnungID= 1"
+    RecSrcDt = Begin
+        0x2c7de89a5dcde340
+    End
+    RecordSource ="V_RechnungenMitSaldo"
+    Caption ="RechungenVerbuchen"
+    OnCurrent ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    AllowDatasheetView =0
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            BorderColor =-2147483609
+            ForeColor =11830108
+            FontName ="Calibri"
+        End
+        Begin Rectangle
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BorderColor =-2147483609
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+            BorderColor =-2147483609
+        End
+        Begin Image
+            BackStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin OptionButton
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =-2147483609
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            BackStyle =1
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin BoundObjectFrame
+            SizeMode =3
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+            BorderColor =-2147483609
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AsianLineBreak =1
+        End
+        Begin ListBox
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin ComboBox
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin UnboundObjectFrame
+            BackStyle =0
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Tab
+            Width =5100
+            Height =3420
+            FontSize =11
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Attachment
+            BackStyle =0
+            BorderLineStyle =0
+            PictureSizeMode =3
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+            LabelX =-1701
+        End
+        Begin EmptyCell
+            Height =240
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin FormHeader
+            Height =540
+            BackColor =-2147483599
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    FontItalic = NotDefault
+                    OverlapFlags =85
+                    Left =57
+                    Top =57
+                    Width =3750
+                    Height =480
+                    FontSize =18
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld20"
+                    Caption ="Rechnung verbuchen"
+                    FontName ="Arial"
+                    ForeThemeColorIndex =1
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =13230
+                    Width =576
+                    Height =516
+                    Name ="cmdClose"
+                    OnClick ="[Event Procedure]"
+                    ControlTipText ="Formular schließen"
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000010081080 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000040485020100810e0104050ff ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000040404080405860ff106890ff2080a0f0 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000607070ff80a0b0ff4080a0ff20a0d0ff40a8e0ff2078a0ff ,
+                        0x101020ff101020ff000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000708890ffa0d8f0ff60d0ffff50c0f0ff30a8e0ff1080b0ff ,
+                        0xe0d8d0ff102020ff000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000708890ffb0e8f0ff80e0ffff60c8f0ff50b8f0ff1088c0ff ,
+                        0xf0d8d0ff202830ff000000000000000090482030904820ff0000000000000000 ,
+                        0x0000000000000000808890ffb0e8f0ff80e0ffff60d0ffff404050ff1090c0ff ,
+                        0xf0e0d0ff303840ff0000000090482030a05030ffa05020ff0000000000000000 ,
+                        0x00000000000000008090a0ffc0f0ffff90e0ffff70d8ffff60c8f0ff0090c0ff ,
+                        0xf0e0e0ff404050ff90482030a05030ffd07840ffb05830ffa05020ffa04820ff ,
+                        0x904820ff904820ff8090a0ffc0f0ffffa0e8ffff80d8ffff70d0f0ff40b0e0ff ,
+                        0xf0e8e0ff605050ffa05830ffe08860fff09060fff08850ffe07850ffd07040ff ,
+                        0xb06840ff904820ff8098a0ffc0f0ffffa0e8ffff90e8ffff80e0ffff80b8d0ff ,
+                        0xf0e8e0ffe09870ffffc0a0ffffb090ffffa070fff09060fff08850ffe07850ff ,
+                        0xd07040ffa05020ff8098a0ffc0f0ffffc0f8ffffa0e0f0ff90a8b0ffc0c8d0ff ,
+                        0xf0f0e0ff908080fff0a070ffffc0a0ffffb090ffffb090ffffa880fff0a080ff ,
+                        0xe09870ffb05030ff90a0a0ffe0f8ffffb0c8d0ff90a0b0fff0f0f0fffff8f0ff ,
+                        0xf0f0f0ff607080ffe0987050f0a070ffffc0a0ffd06830ffe09870ffe09060ff ,
+                        0xe08860ffe08050ff90a0b0ff90a8b0ffc0c8d0ffffffffffffffffffffffffff ,
+                        0xffffffff708890ff00000000e0987050e09870ffd07040ff0000000000000000 ,
+                        0x000000000000000090a0b0ff90a0b0ff90a0b0ff90a0b0ff90a0a0ff8098a0ff ,
+                        0x8098a0ff9098a0ff0000000000000000e0987050e09870ff0000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =12415
+                    Width =576
+                    Height =516
+                    TabIndex =1
+                    Name ="cmdRequery"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100180000000000000300000000000000000000 ,
+                        0x0000000000000000ced3d6ced3d6000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000000ced3d6ced3d6ced3d60000 ,
+                        0x00ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff ,
+                        0xffff000000ced3d6ced3d6ced3d6000000ffffffffffffffffffffffffffffff ,
+                        0x008200ffffffffffffffffffffffffffffff000000ced3d6ced3d6ced3d60000 ,
+                        0x00ffffffffffffffffffffffff008200008200ffffffffffffffffffffffffff ,
+                        0xffff000000ced3d6ced3d6ced3d6000000ffffffffffffffffff008200008200 ,
+                        0x008200008200008200ffffffffffffffffff000000ced3d6ced3d6ced3d60000 ,
+                        0x00ffffffffffffffffffffffff008200008200ffffffffffff008200ffffffff ,
+                        0xffff000000ced3d6ced3d6ced3d6000000ffffffffffffffffffffffffffffff ,
+                        0x008200ffffffffffff008200ffffffffffff000000ced3d6ced3d6ced3d60000 ,
+                        0x00ffffffffffff008200ffffffffffffffffffffffffffffff008200ffffffff ,
+                        0xffff000000ced3d6ced3d6ced3d6000000ffffffffffff008200ffffffffffff ,
+                        0x008200ffffffffffffffffffffffffffffff000000ced3d6ced3d6ced3d60000 ,
+                        0x00ffffffffffff008200ffffffffffff008200008200ffffffffffffffffffff ,
+                        0xffff000000ced3d6ced3d6ced3d6000000ffffffffffffffffff008200008200 ,
+                        0x008200008200008200ffffffffffffffffff000000ced3d6ced3d6ced3d60000 ,
+                        0x00ffffffffffffffffffffffffffffff008200008200ffffffffffffffffffff ,
+                        0xffff000000ced3d6ced3d6ced3d6000000ffffffffffffffffffffffffffffff ,
+                        0x008200ffffffffffff000000000000000000000000ced3d6ced3d6ced3d60000 ,
+                        0x00ffffffffffffffffffffffffffffffffffffffffffffffff000000ffffff00 ,
+                        0x0000ced3d6ced3d6ced3d6ced3d6000000ffffffffffffffffffffffffffffff ,
+                        0xffffffffffffffffff000000000000ced3d6ced3d6ced3d6ced3d6ced3d60000 ,
+                        0x00000000000000000000000000000000000000000000000000000000ced3d6ce ,
+                        0xd3d6ced3d6ced3d6
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Daten aktualisieren"
+                    Picture ="REFRESH.ICO"
+
+                End
+            End
+        End
+        Begin Section
+            Height =7020
+            BackColor =15527148
+            Name ="Detailbereich"
+            AlternateBackColor =16777215
+            Begin
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =2625
+                    Top =6555
+                    Width =5313
+                    Height =402
+                    TabIndex =14
+                    ForeColor =-2147483615
+                    Name ="cmdTeilZahlung"
+                    Caption ="Teilzahlung buchen"
+                    OnClick ="[Event Procedure]"
+                    ImageData = Begin
+                        0x00000000
+                    End
+
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =6120
+                    Height =360
+                    TabIndex =13
+                    Name ="TZBetrag"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    GroupTable =2
+                    RightPadding =38
+                    BottomPadding =38
+
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =2
+                    GroupTable =2
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =360
+                            Top =6120
+                            Width =2220
+                            Height =360
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld26"
+                            Caption ="Teilzahlungsbetrag"
+                            GroupTable =2
+                            BottomPadding =38
+                            LayoutGroup =2
+                            GroupTable =2
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =360
+                    Width =5280
+                    Height =300
+                    ColumnWidth =1620
+                    Name ="Datum"
+                    ControlSource ="Datum"
+                    OnDblClick ="=pv_GoToRechnung()"
+                    GroupTable =1
+                    RightPadding =38
+                    BottomPadding =38
+
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =360
+                            Top =360
+                            Width =2220
+                            Height =300
+                            ForeColor =-2147483615
+                            Name ="Datum_Bezeichnungsfeld"
+                            Caption ="Datum"
+                            GroupTable =1
+                            BottomPadding =38
+                            LayoutGroup =1
+                            GroupTable =1
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =720
+                    Width =5280
+                    Height =300
+                    ColumnWidth =1515
+                    TabIndex =1
+                    Name ="Nr"
+                    ControlSource ="Nr"
+                    OnDblClick ="=pv_GoToRechnung()"
+                    GroupTable =1
+                    RightPadding =38
+                    BottomPadding =38
+
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =360
+                            Top =720
+                            Width =2220
+                            Height =300
+                            ForeColor =-2147483615
+                            Name ="Nr_Bezeichnungsfeld"
+                            Caption ="Nr"
+                            GroupTable =1
+                            BottomPadding =38
+                            RowStart =1
+                            RowEnd =1
+                            LayoutGroup =1
+                            GroupTable =1
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =1080
+                    Width =5280
+                    Height =1140
+                    ColumnWidth =3000
+                    TabIndex =2
+                    Name ="Kundenname"
+                    ControlSource ="Kundenname"
+                    GroupTable =1
+                    RightPadding =38
+                    BottomPadding =38
+
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =360
+                            Top =1080
+                            Width =2220
+                            Height =1140
+                            ForeColor =-2147483615
+                            Name ="Kundenname_Bezeichnungsfeld"
+                            Caption ="Kundenname"
+                            GroupTable =1
+                            BottomPadding =38
+                            RowStart =2
+                            RowEnd =2
+                            LayoutGroup =1
+                            GroupTable =1
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =2280
+                    Width =5280
+                    Height =360
+                    ColumnWidth =3000
+                    TabIndex =3
+                    Name ="PLZ"
+                    ControlSource ="PLZ"
+                    GroupTable =1
+                    RightPadding =38
+                    BottomPadding =38
+
+                    RowStart =3
+                    RowEnd =3
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =360
+                            Top =2280
+                            Width =2220
+                            Height =360
+                            ForeColor =-2147483615
+                            Name ="PLZ_Bezeichnungsfeld"
+                            Caption ="PLZ"
+                            GroupTable =1
+                            BottomPadding =38
+                            RowStart =3
+                            RowEnd =3
+                            LayoutGroup =1
+                            GroupTable =1
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =2700
+                    Width =5280
+                    Height =360
+                    ColumnWidth =3000
+                    TabIndex =4
+                    Name ="Ort"
+                    ControlSource ="Ort"
+                    GroupTable =1
+                    RightPadding =38
+                    BottomPadding =38
+
+                    RowStart =4
+                    RowEnd =4
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =360
+                            Top =2700
+                            Width =2220
+                            Height =360
+                            ForeColor =-2147483615
+                            Name ="Ort_Bezeichnungsfeld"
+                            Caption ="Ort"
+                            GroupTable =1
+                            BottomPadding =38
+                            RowStart =4
+                            RowEnd =4
+                            LayoutGroup =1
+                            GroupTable =1
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =3120
+                    Width =5280
+                    Height =360
+                    ColumnWidth =3000
+                    TabIndex =5
+                    Name ="Adresse"
+                    ControlSource ="Adresse"
+                    GroupTable =1
+                    RightPadding =38
+                    BottomPadding =38
+
+                    RowStart =5
+                    RowEnd =5
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =360
+                            Top =3120
+                            Width =2220
+                            Height =360
+                            ForeColor =-2147483615
+                            Name ="Adresse_Bezeichnungsfeld"
+                            Caption ="Adresse"
+                            GroupTable =1
+                            BottomPadding =38
+                            RowStart =5
+                            RowEnd =5
+                            LayoutGroup =1
+                            GroupTable =1
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =3540
+                    Width =5280
+                    Height =300
+                    ColumnWidth =3000
+                    TabIndex =6
+                    Name ="RechnungsbetragExkl"
+                    ControlSource ="BetragExkl"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    OnDblClick ="=pv_GoToRechnung()"
+                    GroupTable =1
+                    RightPadding =38
+                    BottomPadding =38
+
+                    RowStart =6
+                    RowEnd =6
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =360
+                            Top =3540
+                            Width =2220
+                            Height =300
+                            ForeColor =-2147483615
+                            Name ="RechnungsbetragExkl_Bezeichnungsfeld"
+                            Caption ="Betrag exkl."
+                            GroupTable =1
+                            BottomPadding =38
+                            RowStart =6
+                            RowEnd =6
+                            LayoutGroup =1
+                            GroupTable =1
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =3900
+                    Width =5280
+                    Height =300
+                    ColumnWidth =3000
+                    TabIndex =7
+                    Name ="RechnungsbetragInkl"
+                    ControlSource ="BetragInkl"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    OnDblClick ="=pv_GoToRechnung()"
+                    GroupTable =1
+                    RightPadding =38
+                    BottomPadding =38
+
+                    RowStart =7
+                    RowEnd =7
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =360
+                            Top =3900
+                            Width =2220
+                            Height =300
+                            ForeColor =-2147483615
+                            Name ="RechnungsbetragInkl_Bezeichnungsfeld"
+                            Caption ="Betrag inkl."
+                            GroupTable =1
+                            BottomPadding =38
+                            RowStart =7
+                            RowEnd =7
+                            LayoutGroup =1
+                            GroupTable =1
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextFontCharSet =186
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =4260
+                    Width =5280
+                    Height =300
+                    ColumnWidth =3000
+                    FontWeight =700
+                    TabIndex =8
+                    Name ="Saldo"
+                    ControlSource ="Saldo"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    OnDblClick ="=pv_GoToRechnung()"
+                    GroupTable =1
+                    RightPadding =38
+                    BottomPadding =38
+
+                    RowStart =8
+                    RowEnd =8
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =360
+                            Top =4260
+                            Width =2220
+                            Height =300
+                            ForeColor =-2147483615
+                            Name ="Saldo_Bezeichnungsfeld"
+                            Caption ="Saldo"
+                            GroupTable =1
+                            BottomPadding =38
+                            RowStart =8
+                            RowEnd =8
+                            LayoutGroup =1
+                            GroupTable =1
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =2625
+                    Top =5130
+                    Width =5313
+                    Height =402
+                    TabIndex =11
+                    ForeColor =-2147483615
+                    Name ="cmdSaldoTotal"
+                    Caption ="offener Saldo vollständig als bezahlt buchen"
+                    OnClick ="[Event Procedure]"
+
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =2625
+                    Top =5625
+                    Width =5313
+                    Height =402
+                    TabIndex =12
+                    ForeColor =-2147483615
+                    Name ="cmdSkonto"
+                    Caption ="offener Saldo als Skonto buchen"
+                    OnClick ="[Event Procedure]"
+                    ImageData = Begin
+                        0x00000000
+                    End
+
+                End
+                Begin ListBox
+                    ColumnHeads = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =4
+                    Left =8160
+                    Top =682
+                    Width =5616
+                    Height =4020
+                    TabIndex =9
+                    BackColor =15527148
+                    Name ="LstBuchungen"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT T_Buchungen.ID, Format([T_Buchungen].[Datum],\"dd/mm/yyyy\") AS Datum, T_"
+                        "Buchungen.Betrag, T_Buchungen.Buchungsart FROM T_Buchungen WHERE (((T_Buchungen."
+                        "RechnungID)=[Formulare]![RechnungenVerbuchen]![RechnungID])) ORDER BY Format([T_"
+                        "Buchungen].[Datum],\"dd/mm/yyyy\"); "
+                    ColumnWidths ="0;1134;1420;2268"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =8145
+                            Top =345
+                            Width =2685
+                            Height =315
+                            ForeColor =-2147483615
+                            Name ="Datum1_Bezeichnungsfeld"
+                            Caption ="Buchungsliste der Rechnung"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =4740
+                    Height =360
+                    TabIndex =10
+                    Name ="Buchungsdatum"
+                    Format ="Short Date"
+                    GroupTable =3
+                    RightPadding =38
+                    BottomPadding =38
+
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =3
+                    GroupTable =3
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =360
+                            Top =4740
+                            Width =2220
+                            Height =360
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld31"
+                            Caption ="Buchungsdatum"
+                            GroupTable =3
+                            BottomPadding =38
+                            LayoutGroup =3
+                            GroupTable =3
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+            AutoHeight =1
+        End
+    End
+End
+CodeBehindForm
+' See "RechnungenVerbuchen.cls"

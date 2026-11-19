@@ -1,0 +1,36 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "A_Import_Kartei"
+  },
+  "Items": {
+    "QueryType": 64,
+    "OptionFlag": 2,
+    "QueryProperties": {
+      "RecordLocks": {
+        "Type": 2,
+        "Value": 2
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1705,
+        "bottom": 857
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1689,
+        "bottom": 560
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 2699,
+      "Tables": [
+      ]
+    }
+  }
+}

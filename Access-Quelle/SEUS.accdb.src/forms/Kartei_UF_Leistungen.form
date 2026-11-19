@@ -1,0 +1,517 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    OrderByOn = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =2
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =10216
+    RowHeight =690
+    DatasheetFontHeight =10
+    ItemSuffix =46
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    Filter ="ProjektID= 7"
+    OrderBy ="[Kartei_UF_Leistungen].[Datum] DESC"
+    RecSrcDt = Begin
+        0x44a6b7f15107e540
+    End
+    RecordSource ="SELECT T_Leistungen.*, \"Leistungen\" AS Leistungen FROM T_Leistungen ORDER BY T"
+        "_Leistungen.Datum, T_Leistungen.Von; "
+    Caption ="T_Rechnungen"
+    BeforeInsert ="[Event Procedure]"
+    BeforeUpdate ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            BorderColor =-2147483609
+            ForeColor =11830108
+            FontName ="Calibri"
+        End
+        Begin Rectangle
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BorderColor =-2147483609
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+            BorderColor =-2147483609
+        End
+        Begin Image
+            BackStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin OptionButton
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =-2147483609
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            BackStyle =1
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin BoundObjectFrame
+            SizeMode =3
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+            BorderColor =-2147483609
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AsianLineBreak =1
+        End
+        Begin ListBox
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin ComboBox
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin UnboundObjectFrame
+            BackStyle =0
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Tab
+            Width =5100
+            Height =3420
+            FontSize =11
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Attachment
+            BackStyle =0
+            BorderLineStyle =0
+            PictureSizeMode =3
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+            LabelX =-1701
+        End
+        Begin EmptyCell
+            Height =240
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =-2147483609
+            Name ="Formularkopf"
+        End
+        Begin Section
+            Height =5486
+            Name ="Detailbereich"
+            AlternateBackColor =16777215
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2494
+                    Top =396
+                    Height =315
+                    ColumnWidth =1110
+                    ColumnOrder =0
+                    Name ="Datum"
+                    ControlSource ="Datum"
+                    Format ="Short Date"
+                    OnDblClick ="[Event Procedure]"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =793
+                            Top =396
+                            Width =750
+                            Height =315
+                            Name ="Bezeichnungsfeld32"
+                            Caption ="Datum"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2494
+                    Top =793
+                    Height =315
+                    ColumnWidth =720
+                    ColumnOrder =1
+                    TabIndex =1
+                    Name ="Von"
+                    ControlSource ="Von"
+                    Format ="Short Time"
+                    AfterUpdate ="[Event Procedure]"
+                    OnDblClick ="[Event Procedure]"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =793
+                            Top =793
+                            Width =510
+                            Height =315
+                            Name ="Bezeichnungsfeld33"
+                            Caption ="von"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2494
+                    Top =1190
+                    Height =315
+                    ColumnWidth =675
+                    ColumnOrder =2
+                    TabIndex =2
+                    Name ="Bis"
+                    ControlSource ="Bis"
+                    Format ="Short Time"
+                    AfterUpdate ="[Event Procedure]"
+                    OnDblClick ="[Event Procedure]"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =793
+                            Top =1190
+                            Width =405
+                            Height =315
+                            Name ="Bezeichnungsfeld34"
+                            Caption ="bis"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2494
+                    Top =1587
+                    Height =315
+                    ColumnWidth =960
+                    ColumnOrder =5
+                    TabIndex =3
+                    Name ="Menge"
+                    ControlSource ="Menge"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =793
+                            Top =1587
+                            Width =780
+                            Height =315
+                            Name ="Bezeichnungsfeld35"
+                            Caption ="Menge"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2494
+                    Top =1984
+                    Height =315
+                    ColumnWidth =990
+                    ColumnOrder =6
+                    TabIndex =5
+                    Name ="Einheit"
+                    ControlSource ="Einheit"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =793
+                            Top =1984
+                            Width =795
+                            Height =315
+                            Name ="Bezeichnungsfeld36"
+                            Caption ="Einheit"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =7
+                    ListRows =30
+                    Left =2494
+                    Top =2437
+                    Height =315
+                    ColumnWidth =2085
+                    ColumnOrder =4
+                    TabIndex =4
+                    Name ="ProduktID"
+                    ControlSource ="ProduktID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT T_Produkte.ID, T_Produkte.Beschreibung, T_Produkte.VKexkl, T_Produkte.Ein"
+                        "heit, T_Produkte.UstProz, T_Produkte.StandardMenge, T_Produkte.MengeAusStunden F"
+                        "ROM T_Produkte WHERE (((T_Produkte.obsolet)=No)) ORDER BY T_Produkte.Beschreibun"
+                        "g; "
+                    ColumnWidths ="0;3402;0;0;0;0;0"
+                    AfterUpdate ="[Event Procedure]"
+                    OnDblClick ="[Event Procedure]"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =793
+                            Top =2437
+                            Width =1065
+                            Height =315
+                            Name ="Bezeichnungsfeld37"
+                            Caption ="Produkt"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2551
+                    Top =2948
+                    Height =315
+                    ColumnWidth =5625
+                    ColumnOrder =7
+                    TabIndex =6
+                    Name ="Beschreibung"
+                    ControlSource ="Anmerkungen"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =850
+                            Top =2948
+                            Width =1395
+                            Height =315
+                            Name ="Bezeichnungsfeld38"
+                            Caption ="Anmerkungen"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2551
+                    Top =3458
+                    Height =315
+                    ColumnWidth =1050
+                    ColumnOrder =8
+                    TabIndex =7
+                    Name ="VKExkl"
+                    ControlSource ="VKExkl"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+
+                    CurrencySymbol ="€"
+                    ColLCID =3079
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =855
+                            Top =3465
+                            Width =825
+                            Height =315
+                            Name ="Bezeichnungsfeld39"
+                            Caption ="VK exkl."
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2551
+                    Top =4025
+                    Height =315
+                    ColumnWidth =870
+                    ColumnOrder =9
+                    TabIndex =8
+                    Name ="UstProz"
+                    ControlSource ="UstProz"
+                    Format ="Percent"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =850
+                            Top =4025
+                            Width =840
+                            Height =315
+                            Name ="Bezeichnungsfeld40"
+                            Caption ="Ust %"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListRows =30
+                    Left =6916
+                    Top =1644
+                    Height =315
+                    ColumnWidth =2100
+                    ColumnOrder =3
+                    TabIndex =9
+                    Name ="ProjektID"
+                    ControlSource ="ProjektID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT T_Projekte.ID, T_Projekte.ProjektName FROM T_Projekte WHERE (((T_Projekte"
+                        ".KarteiID)=[Formulare]![Kartei]![ID])); "
+                    ColumnWidths ="0;3402"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =5215
+                            Top =1644
+                            Width =1065
+                            Height =315
+                            Name ="Bezeichnungsfeld42"
+                            Caption ="Projekt"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =2551
+                    Top =4535
+                    Height =315
+                    TabIndex =10
+                    Name ="AngelegtAm"
+                    ControlSource ="AngelegtAm"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =850
+                            Top =4535
+                            Width =1290
+                            Height =315
+                            Name ="Bezeichnungsfeld43"
+                            Caption ="angelegt am"
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =247
+                    IMESentenceMode =3
+                    Left =5896
+                    Top =4478
+                    Width =4320
+                    Height =1008
+                    TabIndex =11
+                    Name ="Memo4Nächtesmal"
+                    ControlSource ="Memo4Nächtesmal"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =255
+                            Left =4195
+                            Top =4478
+                            Width =1935
+                            Height =315
+                            Name ="Bezeichnungsfeld44"
+                            Caption ="Memo für Zukunft"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+            AutoHeight =1
+        End
+    End
+End
+CodeBehindForm
+' See "Kartei_UF_Leistungen.cls"

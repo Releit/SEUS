@@ -1,0 +1,268 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =14916
+    DatasheetFontHeight =11
+    ItemSuffix =16
+    Right =50000
+    Bottom =50000
+    RecSrcDt = Begin
+        0xa83004252d2fe540
+    End
+    RecordSource ="SELECT T_Leistungen.VerrKndID, T_Leistungen.KarteiID, Count(T_Leistungen.ID) AS "
+        "AnzahlvonID, Sum(T_Leistungen.Menge) AS SummevonMenge, T_Produkte.Einheit, T_Pro"
+        "dukte.Beschreibung AS Produkt, \"\" AS Anmerkungen, T_Projekte.ProjektName, T_Le"
+        "istungen.Datum FROM T_Produkte INNER JOIN (T_Leistungen LEFT JOIN T_Projekte ON "
+        "T_Leistungen.ProjektID = T_Projekte.ID) ON T_Produkte.ID = T_Leistungen.ProduktI"
+        "D WHERE (((T_Leistungen.Menge)<>0) AND ((T_Leistungen.VKExkl)<>0) AND ((Nz([Paus"
+        "chalverrechnung],0))<>0)) GROUP BY T_Leistungen.VerrKndID, T_Leistungen.KarteiID"
+        ", T_Produkte.Einheit, T_Produkte.Beschreibung, \"\", T_Projekte.ProjektName, T_L"
+        "eistungen.Datum HAVING (((T_Leistungen.VerrKndID)=[Formulare]![Verrechnung]![UF_"
+        "Kunden].[Formular]![ID])) ORDER BY T_Produkte.Beschreibung; "
+    Caption ="Verrechnung"
+    DatasheetFontName ="Calibri"
+    AllowDatasheetView =0
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =15921906
+    DatasheetGridlinesColor12 =0
+    FitToScreen =1
+    DatasheetBackThemeColorIndex =1
+    BorderThemeColorIndex =3
+    ThemeFontIndex =1
+    ForeThemeColorIndex =0
+    AlternateBackThemeColorIndex =1
+    AlternateBackShade =95.0
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =0
+            BorderTint =50.0
+            ForeThemeColorIndex =0
+            ForeTint =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin TextBox
+            AddColon = NotDefault
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ThemeFontIndex =1
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin FormHeader
+            Height =315
+            Name ="Formularkopf"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =2
+            BackTint =20.0
+            Begin
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =1680
+                    Width =1155
+                    Height =315
+                    FontSize =10
+                    ForeColor =5855577
+                    Name ="AnzahlvonID_Bezeichnungsfeld"
+                    Caption ="Positionen"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    ForeTint =65.0
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =3
+                    Width =851
+                    Height =315
+                    FontSize =10
+                    ForeColor =5855577
+                    Name ="SummevonMenge_Bezeichnungsfeld"
+                    Caption ="Menge"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    ForeTint =65.0
+                End
+                Begin Label
+                    OverlapFlags =215
+                    TextAlign =2
+                    Left =851
+                    Width =851
+                    Height =315
+                    FontSize =10
+                    ForeColor =5855577
+                    Name ="Einheit_Bezeichnungsfeld"
+                    Caption ="Einheit"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    ForeTint =65.0
+                End
+                Begin Label
+                    OverlapFlags =95
+                    TextAlign =1
+                    Left =2835
+                    Width =4281
+                    Height =315
+                    FontSize =10
+                    ForeColor =5855577
+                    Name ="Produkt_Bezeichnungsfeld"
+                    Caption ="Produkt"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    ForeTint =65.0
+                End
+                Begin Label
+                    OverlapFlags =215
+                    TextAlign =1
+                    Left =7086
+                    Width =4281
+                    Height =315
+                    FontSize =10
+                    ForeColor =5855577
+                    Name ="Bezeichnungsfeld15"
+                    Caption ="Projekt"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    ForeTint =65.0
+                End
+            End
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =735
+            Name ="Detailbereich"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =93
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =1701
+                    Top =45
+                    Width =1134
+                    Height =270
+                    ColumnWidth =1530
+                    FontSize =10
+                    Name ="AnzahlvonID"
+                    ControlSource ="AnzahlvonID"
+
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Top =45
+                    Width =851
+                    Height =270
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =1
+                    Name ="SummevonMenge"
+                    ControlSource ="SummevonMenge"
+
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =87
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =851
+                    Top =45
+                    Width =851
+                    Height =270
+                    ColumnWidth =1530
+                    FontSize =10
+                    TabIndex =2
+                    Name ="Einheit"
+                    ControlSource ="Einheit"
+
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OldBorderStyle =0
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =2835
+                    Top =45
+                    Width =4281
+                    Height =270
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =3
+                    Name ="Produkt"
+                    ControlSource ="Produkt"
+
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3000
+                    Top =330
+                    Width =11916
+                    Height =405
+                    FontSize =8
+                    TabIndex =4
+                    Name ="Anmerkungen"
+                    ControlSource ="Anmerkungen"
+
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =7140
+                    Top =45
+                    Width =2901
+                    FontSize =8
+                    TabIndex =5
+                    Name ="ProjektName"
+                    ControlSource ="ProjektName"
+
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+        End
+    End
+End
+CodeBehindForm
+' See "Verrechnung_UF_Positionen.cls"

@@ -1,0 +1,445 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =2
+    AllowUpdating =2
+    ViewsAllowed =1
+    TabularCharSet =186
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =18120
+    RowHeight =255
+    DatasheetFontHeight =10
+    ItemSuffix =38
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    RecSrcDt = Begin
+        0x62c547c7cd3ae440
+    End
+    RecordSource ="SELECT T_EingangsRechnungen.*, Year(Nz([Datum],Date())) AS Jahr FROM T_EingangsR"
+        "echnungen ORDER BY T_EingangsRechnungen.Datum DESC; "
+    Caption ="Liste Aufträge"
+    DatasheetFontName ="Calibri"
+    AllowDatasheetView =0
+    FilterOnLoad =255
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontCharSet =186
+            FontSize =11
+            BorderColor =-2147483609
+            ForeColor =11830108
+            FontName ="Calibri"
+        End
+        Begin Rectangle
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BorderColor =-2147483609
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+            BorderColor =-2147483609
+        End
+        Begin Image
+            BackStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin CommandButton
+            TextFontCharSet =186
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin OptionButton
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =-2147483609
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            BackStyle =1
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin BoundObjectFrame
+            SizeMode =3
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+            BorderColor =-2147483609
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontCharSet =186
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AsianLineBreak =1
+        End
+        Begin ListBox
+            TextFontCharSet =186
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin ComboBox
+            TextFontCharSet =186
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin UnboundObjectFrame
+            BackStyle =0
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin ToggleButton
+            TextFontCharSet =186
+            Width =283
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Tab
+            TextFontCharSet =186
+            Width =5100
+            Height =3420
+            FontSize =11
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Attachment
+            BackStyle =0
+            BorderLineStyle =0
+            PictureSizeMode =3
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+            LabelX =-1701
+        End
+        Begin EmptyCell
+            Height =240
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =-2147483609
+            Name ="Formularkopf"
+        End
+        Begin Section
+            Height =4800
+            Name ="Detailbereich"
+            AlternateBackColor =16777215
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =360
+                    Width =6180
+                    Height =300
+                    ColumnWidth =1140
+                    ColumnOrder =0
+                    Name ="Datum"
+                    ControlSource ="Datum"
+                    OnDblClick ="=pv_GoToID()"
+                    GroupTable =1
+                    RightPadding =38
+                    BottomPadding =38
+
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =600
+                            Top =360
+                            Width =2040
+                            Height =300
+                            Name ="Datum_Bezeichnungsfeld"
+                            Caption ="Datum"
+                            GroupTable =1
+                            BottomPadding =38
+                            LayoutGroup =1
+                            GroupTable =1
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =720
+                    Width =6180
+                    Height =360
+                    ColumnWidth =1950
+                    ColumnOrder =1
+                    TabIndex =1
+                    Name ="Nr"
+                    ControlSource ="Nr"
+                    OnDblClick ="=pv_GoToID()"
+                    GroupTable =1
+                    RightPadding =38
+                    BottomPadding =38
+
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =600
+                            Top =720
+                            Width =2040
+                            Height =360
+                            Name ="Nr_Bezeichnungsfeld"
+                            Caption ="Nr"
+                            GroupTable =1
+                            BottomPadding =38
+                            RowStart =1
+                            RowEnd =1
+                            LayoutGroup =1
+                            GroupTable =1
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =2721
+                    Top =3968
+                    Height =315
+                    ColumnWidth =1350
+                    ColumnOrder =5
+                    TabIndex =2
+                    Name ="BetragInkl"
+                    ControlSource ="Brutto"
+                    Format ="Standard"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =1020
+                            Top =3968
+                            Width =2085
+                            Height =315
+                            Name ="Bezeichnungsfeld15"
+                            Caption ="Betrag "
+                        End
+                    End
+                End
+                Begin EmptyCell
+                    Left =600
+                    Top =1140
+                    Width =2040
+                    Height =300
+                    Name ="EmptyCell25"
+                    GroupTable =1
+                    BottomPadding =38
+                    GridlineColor =0
+                    RowStart =2
+                    RowEnd =2
+                    LayoutGroup =1
+                    GridlineThemeColorIndex =-1
+                    GridlineShade =100.0
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =2640
+                    Top =1140
+                    Width =6180
+                    Height =300
+                    Name ="EmptyCell26"
+                    GroupTable =1
+                    RightPadding =38
+                    BottomPadding =38
+                    GridlineColor =0
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GridlineThemeColorIndex =-1
+                    GridlineShade =100.0
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2721
+                    Top =4478
+                    Height =315
+                    ColumnWidth =1320
+                    ColumnOrder =9
+                    TabIndex =3
+                    Name ="BezahltAm"
+                    ControlSource ="BezahltAm"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =1020
+                            Top =4478
+                            Width =1140
+                            Height =315
+                            Name ="Bezeichnungsfeld27"
+                            Caption ="Bezahlt am"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5952
+                    Top =4081
+                    Height =315
+                    ColumnWidth =750
+                    ColumnOrder =6
+                    TabIndex =4
+                    Name ="UstBetrag"
+                    ControlSource ="UstBetrag"
+                    Format ="Standard"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =4941
+                            Top =4081
+                            Width =795
+                            Height =315
+                            Name ="Bezeichnungsfeld28"
+                            Caption ="USt"
+                        End
+                    End
+                End
+                Begin TextBox
+                    DecimalPlaces =1
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =9411
+                    Top =4025
+                    Height =315
+                    ColumnWidth =870
+                    ColumnOrder =7
+                    TabIndex =5
+                    Name ="UstProz"
+                    ControlSource ="UstProz"
+                    Format ="Percent"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =7710
+                            Top =4025
+                            Width =840
+                            Height =315
+                            Name ="Bezeichnungsfeld29"
+                            Caption ="Ust %"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =12642
+                    Top =4025
+                    ColumnWidth =690
+                    ColumnOrder =8
+                    TabIndex =6
+                    Name ="Kontrollkästchen30"
+                    ControlSource ="InnerGemErwerb"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            Left =12872
+                            Top =3995
+                            Width =1860
+                            Height =315
+                            Name ="Bezeichnungsfeld31"
+                            Caption ="IGE"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "Kartei_UF_ EingangsRechnungen.cls"

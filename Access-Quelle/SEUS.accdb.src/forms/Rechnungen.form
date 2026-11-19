@@ -1,0 +1,1489 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    FilterOn = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    Cycle =1
+    GridY =10
+    Width =17030
+    DatasheetFontHeight =11
+    ItemSuffix =146
+    Right =50000
+    Bottom =50000
+    Filter ="ID= 600"
+    RecSrcDt = Begin
+        0x157535fb8da7e340
+    End
+    RecordSource ="T_Rechnungen"
+    Caption ="Rechnungen"
+    OnCurrent ="[Event Procedure]"
+    DatasheetFontName ="Tahoma"
+    OnActivate ="[Event Procedure]"
+    AllowDatasheetView =0
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            BorderColor =-2147483609
+            ForeColor =11830108
+            FontName ="Calibri"
+        End
+        Begin Rectangle
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BorderColor =-2147483609
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+            BorderColor =-2147483609
+        End
+        Begin Image
+            BackStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin OptionButton
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =-2147483609
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            BackStyle =1
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin BoundObjectFrame
+            SizeMode =3
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+            BorderColor =-2147483609
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AsianLineBreak =1
+        End
+        Begin ListBox
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin ComboBox
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin UnboundObjectFrame
+            BackStyle =0
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Tab
+            Width =5100
+            Height =3420
+            FontSize =11
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Page
+            Width =1701
+            Height =1701
+        End
+        Begin Attachment
+            BackStyle =0
+            BorderLineStyle =0
+            PictureSizeMode =3
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+            LabelX =-1701
+        End
+        Begin EmptyCell
+            Height =240
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin FormHeader
+            Height =525
+            Name ="Formularkopf"
+            BackThemeColorIndex =4
+            BackShade =50.0
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =60
+                    Top =60
+                    Width =1488
+                    Height =372
+                    FontSize =14
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld26"
+                    Caption ="Rechnung"
+                    FontName ="Tahoma"
+                    ForeThemeColorIndex =1
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =16403
+                    Top =15
+                    Width =510
+                    Height =510
+                    Name ="cmdExit"
+                    Caption ="Befehl70"
+                    OnClick ="[Event Procedure]"
+                    ControlTipText ="Formular schließen"
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000010081080 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000040485020100810e0104050ff ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000040404080405860ff106890ff2080a0f0 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000607070ff80a0b0ff4080a0ff20a0d0ff40a8e0ff2078a0ff ,
+                        0x101020ff101020ff000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000708890ffa0d8f0ff60d0ffff50c0f0ff30a8e0ff1080b0ff ,
+                        0xe0d8d0ff102020ff000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000708890ffb0e8f0ff80e0ffff60c8f0ff50b8f0ff1088c0ff ,
+                        0xf0d8d0ff202830ff000000000000000090482030904820ff0000000000000000 ,
+                        0x0000000000000000808890ffb0e8f0ff80e0ffff60d0ffff404050ff1090c0ff ,
+                        0xf0e0d0ff303840ff0000000090482030a05030ffa05020ff0000000000000000 ,
+                        0x00000000000000008090a0ffc0f0ffff90e0ffff70d8ffff60c8f0ff0090c0ff ,
+                        0xf0e0e0ff404050ff90482030a05030ffd07840ffb05830ffa05020ffa04820ff ,
+                        0x904820ff904820ff8090a0ffc0f0ffffa0e8ffff80d8ffff70d0f0ff40b0e0ff ,
+                        0xf0e8e0ff605050ffa05830ffe08860fff09060fff08850ffe07850ffd07040ff ,
+                        0xb06840ff904820ff8098a0ffc0f0ffffa0e8ffff90e8ffff80e0ffff80b8d0ff ,
+                        0xf0e8e0ffe09870ffffc0a0ffffb090ffffa070fff09060fff08850ffe07850ff ,
+                        0xd07040ffa05020ff8098a0ffc0f0ffffc0f8ffffa0e0f0ff90a8b0ffc0c8d0ff ,
+                        0xf0f0e0ff908080fff0a070ffffc0a0ffffb090ffffb090ffffa880fff0a080ff ,
+                        0xe09870ffb05030ff90a0a0ffe0f8ffffb0c8d0ff90a0b0fff0f0f0fffff8f0ff ,
+                        0xf0f0f0ff607080ffe0987050f0a070ffffc0a0ffd06830ffe09870ffe09060ff ,
+                        0xe08860ffe08050ff90a0b0ff90a8b0ffc0c8d0ffffffffffffffffffffffffff ,
+                        0xffffffff708890ff00000000e0987050e09870ffd07040ff0000000000000000 ,
+                        0x000000000000000090a0b0ff90a0b0ff90a0b0ff90a0b0ff90a0a0ff8098a0ff ,
+                        0x8098a0ff9098a0ff0000000000000000e0987050e09870ff0000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =15770
+                    Top =15
+                    Width =510
+                    Height =510
+                    TabIndex =1
+                    Name ="cmdPrint"
+                    OnClick ="[Event Procedure]"
+                    ControlTipText ="Ausdruck"
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000000000000000000000000000a08870ff ,
+                        0x907860ff807060ff807060ff807060ff807060ff000000000000000000000000 ,
+                        0x00000000000000000000000000000000000000000000000000000000a09080ff ,
+                        0xfffffffffffffffffff8fffffff8ffff807060ff000000000000000000000000 ,
+                        0x0000000000000000a098a090908890ff706060ff504850ff505050ffa09080ff ,
+                        0xfffffffff0d8b0fff0d8b0fff0d8b0ff807060ff505050ff504850ff706060ff ,
+                        0x706860ff707070b0909090ff909890ffa0a0a0ff403840ff403840ffa09080ff ,
+                        0xffffffffffe8d0ffe07850fff0d8b0ff807060ff403840ff403840ff909090ff ,
+                        0x909090ff706860ff909090ffa0a0a0ff909890ff403840ff403840ff908870ff ,
+                        0xe0e8e0fff0e0b0fff0d8b0fff0d8b0ff807060ff403840ff403840ffa0a0a0ff ,
+                        0xa0a0a0ff706860ff908890ff908890ff908890ff707070ff707070ff707070ff ,
+                        0x707070ff707070ff707070ff707070ff707070ff707070ff707070ff908890ff ,
+                        0x908080ff706860ff908890ffc0b8c0ffd0c8d0ff808880ffb0a8b0ffb0a8b0ff ,
+                        0xb0a8b0ffb0a8b0ffb0b0b0ffb0b0b0ffb0b0b0ffb0b0b0ff807880ffc0c8c0ff ,
+                        0xb0b0b0ff706860ff909090ffd0d0d0ffd0c8d0ff808880ffb0a8b0ffb0a8b0ff ,
+                        0xb0a8b0ffb0a8b0ffffa860ffffa860ffffa860ffb0b0b0ff807880ffc0c8c0ff ,
+                        0xc0c0c0ff706860ff909090fff0f8f0fff0f0f0ffa0a0a0ffd0d0d0ffd0d0d0ff ,
+                        0xd0d0d0ffd0d0d0ffd0d0d0ffd0d0d0ffd0d0d0ffd0d0d0ff909890fff0f0f0ff ,
+                        0xf0e8f0ff706860ffa098a0ffffffffffffffffff909090ffe0d8e0ffe0d8e0ff ,
+                        0xe0d8e0ffe0d8e0ffe0d8e0ffc0d0d0ff80a090ff406850ff205030ffa0b0a0ff ,
+                        0xe0e8e0ff706860ffb0b0b070b0b0b0ffb0b0b0ff909090ff909090ff909090ff ,
+                        0x909090ff909090ff908890ff507060ff307840ff60b080ff50b070ff307840ff ,
+                        0x507060ff80888080000000000000000000000000505050a0706870ffb09080ff ,
+                        0xfffffffffffffffffff8ffff407850ffa0d0b0fff0ffffffc0e0d0ff40b070ff ,
+                        0x004010c00000000000000000000000000000000050505080505850ffb09080ff ,
+                        0xfffffffffffffffffff8ffff508050ffffffffff50b870fffff8ffff90c890ff ,
+                        0x004020c0000000000000000000000000000000000000000000000000b09080ff ,
+                        0xffffffffffffffffffffffffa0b0a0ff308040ff40b070ff40a850ffffffffff ,
+                        0x509860b0000000000000000000000000000000000000000000000000b09080ff ,
+                        0xfffffffffffffffffffffffff0f0f0ff506040ff004010c0004010c060a060b0 ,
+                        0xa0d8a090000000000000000000000000000000000000000000000000b09080ff ,
+                        0xb09080ffb09080ffb09080ffb09080ffb09080ff000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =15232
+                    Top =15
+                    Width =510
+                    Height =510
+                    TabIndex =2
+                    Name ="cmdShow"
+                    OnClick ="[Event Procedure]"
+                    ControlTipText ="Druckvorschau"
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000000000000000000030507050203040ff ,
+                        0x203850500000000000000000b0a090ff604830ff604830ff604830ff604830ff ,
+                        0x604830ff604830ff604830ff604830ff604830ff504840ff305060ff4078c0ff ,
+                        0x304860ff3050605000000000b0a090ffffffffffb0a090ffb0a090ffb0a090ff ,
+                        0xb0a090ffb0a090ffb0a090ffb0a090ff908880ff305070ff3080d0ff4098e0ff ,
+                        0x50b0f0ff506870ff00000000b0a090fffffffffffffffffffff8fffff0f0f0ff ,
+                        0xd0d8d0ff909890ff706860ff606860ff505860ff407090ff40a0e0ff60c8ffff ,
+                        0x7090a0ff7088905000000000b0a090ffffffffffffffffffffffffffe0e0e0ff ,
+                        0x909090ffb0a8a0ffd0c0b0ffd0b0a0ff807870ff505850ff6090b0ff7098b0ff ,
+                        0x708890800000000000000000b0a090ffffffffffffffffffffffffffb0b0b0ff ,
+                        0xc0b8b0fffff0e0ffffe8e0fff0d8c0fff0d0b0ff807870ff6058609070889080 ,
+                        0x000000000000000000000000c0a890ffffffffffffffffffffffffffa09890ff ,
+                        0xf0e8e0fffff8f0fffff0f0ffffe8e0fff0d8d0ffd0b0a0ff505850e000000000 ,
+                        0x000000000000000000000000c0a8a0ffffffffffffffffffffffffffa0a090ff ,
+                        0xf0e8e0fffffffffffff8f0fffff0f0ffffe8e0ffe0c0b0ff606060e000000000 ,
+                        0x000000000000000000000000c0b0a0ffffffffffffffffffffffffffc0c8c0ff ,
+                        0xc0c0c0fffffffffffffffffffff8f0fffff0e0ffb0a090ff6060608000000000 ,
+                        0x000000000000000000000000d0b0a0fffffffffffffffffffffffffff0f8ffff ,
+                        0xc0b8b0ffc0c0c0fff0e8e0fff0e8e0ffb0b0a0ff707060ff8070601000000000 ,
+                        0x000000000000000000000000d0b8a0ffffffffffffffffffffffffffffffffff ,
+                        0xf0f8ffffc0c8c0ffa0a090ff909080ff909090ff605040ff0000000000000000 ,
+                        0x000000000000000000000000d0b8b0ffffffffffffffffffffffffffffffffff ,
+                        0xffffffffffffffffb0a090ff604830ff604830ff604830ff0000000000000000 ,
+                        0x000000000000000000000000d0c0b0ffffffffffffffffffffffffffffffffff ,
+                        0xffffffffffffffffc0a890ffd0c8c0ff604830ffd0b0a0900000000000000000 ,
+                        0x000000000000000000000000e0c0b0ffffffffffffffffffffffffffffffffff ,
+                        0xffffffffffffffffc0a8a0ff604830ffd0b0a090000000000000000000000000 ,
+                        0x000000000000000000000000e0c0b0ffe0c0b0ffe0c0b0ffe0c0b0ffe0c0b0ff ,
+                        0xd0c0b0ffd0b8b0ffd0b0a0ffd0b0a09000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    Left =14693
+                    Top =15
+                    Width =510
+                    Height =510
+                    TabIndex =3
+                    Name ="cmdMail"
+                    OnClick ="[Event Procedure]"
+                    ControlTipText ="eMail Versand"
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000c0a8a0ff604830ff604830ff604830ff604830ff ,
+                        0x604830ff604830ff604830ff604830ff604830ff604830ff604830ff604830ff ,
+                        0x604830ff0000000000000000c0a8a0fffffffffff0d8d0fff0d8d0ffe0d8d0ff ,
+                        0xe0d0c0ffe0c8c0ffe0c0b0ffe0b8b0ffe0b8b0ffd0b0a0ffd0a890ffd0a890ff ,
+                        0x604830ff0000000000000000c0b0a0fffffffffffffffffffff8fffffff8f0ff ,
+                        0xfff0f0fff0e8e0fff0e0e0fff0d8d0fff0d8d0fff0d0c0ffe0d0c0ffd0a890ff ,
+                        0x604830ff0000000000000000c0b0a0ffffffffffc0b0a0ffc0a8a0ffc0a890ff ,
+                        0xb0a090ffb09890fff0e8e0fff0e0e0fff0e0e0fff0d8d0fff0d0c0ffd0b0a0ff ,
+                        0x604830ff0000000000000000c0b0a0fffffffffffffffffffff8fffffff8f0ff ,
+                        0xfff8f0fffff0f0fff0f0f0fff0e8e0fff0e8e0fff0e0e0fff0d8d0ffe0b8b0ff ,
+                        0x604830ff0000000000000000c0b0a0ffffffffffc0b0a0ffc0b0a0ffc0a8a0ff ,
+                        0xc0a890ffb0a090ffb0a090fff0e8e0fff0e8e0fff0e0e0fff0d8d0ffe0b8b0ff ,
+                        0x604830ff0000000000000000c0b0a0ffffffffffffffffffffffffffffffffff ,
+                        0xfffffffffff8fffffff8f0fffff0f0fffff0f0ff2048d0ff2040a0ffe0c0b0ff ,
+                        0x604830ff0000000000000000c0b0a0ffffffffffffffffffffffffffffffffff ,
+                        0xfffffffffffffffffff8fffffff8f0fffff8f0ff4060f0ff2048d0ffe0c8c0ff ,
+                        0x604830ff0000000000000000c0b0a0ffffffffffffffffffffffffffffffffff ,
+                        0xfffffffffffffffffffffffffff8fffffff8fffffff8f0fffff0f0fff0e8e0ff ,
+                        0x604830ff0000000000000000c0b0a0fff0d8d0fff0d8d0fff0d8d0fff0d8d0ff ,
+                        0xe0d8d0ffe0d0c0ffe0c8c0ffe0c0b0ffe0c0b0ffe0b8a0ffd0b0a0ffd0a890ff ,
+                        0xb09890ff00000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =12390
+                    Top =15
+                    Width =2100
+                    Height =510
+                    TabIndex =4
+                    Name ="cmdMakeGutschrift"
+                    Caption ="Gutschrift anlegen"
+                    OnClick ="[Event Procedure]"
+
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =9600
+                    Top =12
+                    Width =510
+                    Height =510
+                    TabIndex =5
+                    Name ="cmdNew"
+                    Caption ="Befehl123"
+                    ControlTipText ="Datensatz hinzufügen"
+                    OnClickEmMacro = Begin
+                        Version =196611
+                        ColumnsShown =10
+                        Begin
+                            Action ="OnError"
+                            Argument ="0"
+                        End
+                        Begin
+                            Action ="GoToRecord"
+                            Argument ="-1"
+                            Argument =""
+                            Argument ="5"
+                        End
+                        Begin
+                            Condition ="[MacroError]<>0"
+                            Action ="MsgBox"
+                            Argument ="=[MacroError].[Description]"
+                            Argument ="-1"
+                            Argument ="0"
+                        End
+                        Begin
+                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                "nterfaceMacro For=\"cmdNew\" xmlns=\"http://schemas.microsoft.com/office/accesss"
+                                "ervices/2009/11/application\" xmlns:a=\"http://schemas.microsoft.com/office/acce"
+                                "ssservices/2009/11/forms\"><Sta"
+                        End
+                        Begin
+                            Comment ="_AXL:tements><Action Name=\"OnError\"/><Action Name=\"GoToRecord\"><Argument Nam"
+                                "e=\"Record\">New</Argument></Action><ConditionalBlock><If><Condition>[MacroError"
+                                "]&lt;&gt;0</Condition><Statements><Action Name=\"MessageBox\"><Argument Name=\"M"
+                                "essage\">=[MacroError]."
+                        End
+                        Begin
+                            Comment ="_AXL:[Description]</Argument></Action></Statements></If></ConditionalBlock></Sta"
+                                "tements></UserInterfaceMacro>"
+                        End
+                    End
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000b09880ff201010ff201010ff201010ff201010ff201010ff ,
+                        0x201010ff201010ff201010ff201010ff201010ff201010ff201010ff00000000 ,
+                        0x0000000000000000c0a090fffff8f0fffff8f0fffff0f0fffff0e0fff0e8e0ff ,
+                        0xf0e8d0fff0e0d0fff0e0d0fff0e0d0fff0d8d0fff0d8d0ff201810ff00000000 ,
+                        0x0000000000000000c0a090ffffffffffd07850ffd07840ffd07040ffc07040ff ,
+                        0xc06840ffc06840ffc06840ffc07040ffa06040fff0e0d0ff403830ff00000000 ,
+                        0x0000000000000000c0a890ffffffffffd07850fff0b8a0fff0b090fff0a880ff ,
+                        0xf0a080fff09870fff09870fff0a880ffc09880fffff0f0ff909090ff00000000 ,
+                        0x0000000000000000c0a890ffffffffffd07850ffd07850ffd07840ffd07040ff ,
+                        0xc07040ffc07050ffd09070ff70b8c0ff90d8f0ff90f0ffff40c0e0ffa0f0ffff ,
+                        0xa0e8ffff90d8f0ffc0a8a0fffffffffffffffffffffffffffffffffffff8f0ff ,
+                        0xfff8f0fffff8f0fffff8f0ffb0e8ffff30b8e0ff80e8ffff60c8e0ff90f0ffff ,
+                        0x30b8e0ffa0e8ffffc0a8a0ffc0a8a0ffc0a890ffc0a090ffc0a090ffc0a090ff ,
+                        0xc09880ffc0a090ffd0c0b0ffa0e8ffff90f0ffffc0f8ffffb0e8f0ffc0f8ffff ,
+                        0x90f0ffffa0f0ffff000000000000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000020a8e0ff50c0e0ffb0e8f0fff0ffffffb0e8f0ff ,
+                        0x50c0e0ff30b8e0ff000000000000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000080e8ffc090f0ffffc0f8ffffb0e8f0ffc0f8ffff ,
+                        0x90f0ffff90d8e0ff000000000000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000050d8ff8030b8e0ff90f0ffff60c0e0ff90f0ffff ,
+                        0x30b8e0ff50d0f080000000000000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000030b0e0a040c8f09080e8ffc020b0e0ff70e8ffc0 ,
+                        0x50d8f08030b0e080000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                    Overlaps =1
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =1644
+                    Top =113
+                    Width =1017
+                    Height =252
+                    ColumnOrder =0
+                    FontSize =9
+                    TabIndex =6
+                    BorderColor =-2147483617
+                    Name ="ID"
+                    ControlSource ="ID"
+
+                    ForeThemeColorIndex =1
+                    ForeShade =95.0
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =10905
+                    Top =15
+                    Width =1425
+                    Height =510
+                    FontSize =9
+                    TabIndex =7
+                    Name ="cmdPaketaufkleber"
+                    Caption ="Paketaufkleber"
+                    OnClick ="[Event Procedure]"
+
+                    ForeThemeColorIndex =0
+                    ForeTint =95.0
+                    HoverForeThemeColorIndex =0
+                    HoverForeTint =95.0
+                    PressedForeThemeColorIndex =0
+                    PressedForeTint =95.0
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =10204
+                    Top =12
+                    Width =510
+                    Height =510
+                    TabIndex =8
+                    Name ="cmdDel"
+                    Caption ="Befehl138"
+                    OnClick ="[Event Procedure]"
+                    ControlTipText ="Datensatz löschen"
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000b0a090ff302010ff302010ff302010ff302010ff302010ff ,
+                        0x302010ff302010ff302010ff302010ff302010ff302010ff302010ff00000000 ,
+                        0x0000000000000000b0a090fffff8f0fffff0f0ffffe8e0fff0e8e0fff0e0d0ff ,
+                        0xf0d8d0fff0d8c0fff0d8c0fff0d8c0fff0d8c0fff0d8c0ff302010ff00000000 ,
+                        0x0000000000000000b0a090ffffffffffe06830ffe06830ffe06830ffd06830ff ,
+                        0xd06830ffd06830ffd06030ffc06030ff904820ffffe0d0ff302010ff00000000 ,
+                        0x0000000000000000b0a090ffffffffffd06830ffffb080ffffa880ffffa070ff ,
+                        0xf09870fff09060ffa0b0f0ff1020e0ffc0c8f0ffffe0d0ff302010ff00000000 ,
+                        0x00000000a0a8f0ffb0a090ffffffffffe06830ffe06830ffe06830ffd06830ff ,
+                        0xd06830ffe0e0f0ff0028ffff1028f0ff4050d0ffffe0d0ff302010ff00000000 ,
+                        0x4050e0ff0010b0ffb0a090ffffffffffffffffffffffffffffffffffffffffff ,
+                        0xfff8f0ffffe8e0ff2048ffff1038ffff1028ffffe0e8f0ff302010ff7088f0ff ,
+                        0x0018c0ff6078f0ffb0a090ffb0a090ffb0a090ffb0a090ffb0a090ffb0a090ff ,
+                        0xb0a090ffb0a090ffe0e0f0ff3050ffff2040ffff8090f0ffb0b8f0ff0028f0ff ,
+                        0x4058f0ff00000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000d0d8f0ff4060ffff3050ffff2040ffff3050ffff ,
+                        0xe0e8f0ff00000000000000000000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000c0d0f0ff4068ffff4060ffffc0c8f0ff ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000c0c8f0ff6078ffff6078ffff6080ffff5070ffff ,
+                        0xe0e0f0ff00000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000b0b8f0ff6078ffff6078ffffb0c0f0fff0f0f0ff7088ffff ,
+                        0x6078ffffc0d0f0ff000000000000000000000000000000000000000000000000 ,
+                        0x0000000090a0ffff6078ffff6078ffffd0d8f0ff000000000000000000000000 ,
+                        0xb0b8f0ff8098ffff000000000000000000000000000000000000000000000000 ,
+                        0x000000008098ffff6080ffffd0d8f0ff00000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                    Overlaps =1
+                End
+            End
+        End
+        Begin PageHeader
+            DisplayWhen =1
+            Height =0
+            Name ="Seitenkopfbereich"
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =9510
+            BackColor =15590879
+            Name ="Detailbereich"
+            AlternateBackColor =16777215
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3306
+                    Top =1995
+                    Width =4641
+                    Height =270
+                    FontSize =10
+                    TabIndex =20
+                    Name ="Ort"
+                    ControlSource ="Ort"
+
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2286
+                    Top =1995
+                    Width =906
+                    Height =270
+                    FontSize =10
+                    TabIndex =19
+                    Name ="PLZ"
+                    ControlSource ="PLZ"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =2055
+                            Top =1995
+                            Width =150
+                            Height =285
+                            FontSize =10
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld142"
+                            Caption ="-"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1545
+                    Top =1995
+                    Width =456
+                    Height =270
+                    FontSize =10
+                    TabIndex =18
+                    Name ="LandCode"
+                    ControlSource ="LandCode"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =135
+                            Top =1995
+                            Width =1095
+                            Height =285
+                            FontSize =10
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld141"
+                            Caption ="Land PLZ Ort"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1545
+                    Top =1695
+                    Width =6411
+                    Height =270
+                    FontSize =10
+                    TabIndex =17
+                    Name ="Adresse"
+                    ControlSource ="Adresse"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =135
+                            Top =1695
+                            Width =780
+                            Height =285
+                            FontSize =10
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld140"
+                            Caption ="Adresse"
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1545
+                    Top =870
+                    Width =6411
+                    Height =495
+                    ColumnWidth =4650
+                    FontSize =10
+                    TabIndex =16
+                    Name ="AnschriftName"
+                    ControlSource ="AnschriftName"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =135
+                            Top =870
+                            Width =1350
+                            Height =285
+                            FontSize =10
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld139"
+                            Caption ="Anschriftname"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1545
+                    Top =1402
+                    Width =6111
+                    Height =270
+                    FontSize =10
+                    TabIndex =14
+                    Name ="ZuHanden"
+                    ControlSource ="ZuHanden"
+
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListRows =25
+                    ListWidth =3402
+                    Left =7695
+                    Top =1395
+                    Width =261
+                    Height =270
+                    FontSize =10
+                    TabIndex =12
+                    Name ="ZuHandenKontPersID"
+                    ControlSource ="ZuHandenKontPersID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT A_Ansprechpartner.ID, A_Ansprechpartner.Name1 FROM A_Ansprechpartner WHER"
+                        "E (((A_Ansprechpartner.KarteiID)=[Formulare]![Rechnungen]![KARTEIID])) ORDER BY "
+                        "A_Ansprechpartner.Name1; "
+                    ColumnWidths ="0;3402"
+                    AfterUpdate ="[Event Procedure]"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =135
+                            Top =1395
+                            Width =975
+                            Height =285
+                            FontSize =10
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld129"
+                            Caption ="Zu Handen"
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =1545
+                    Top =2310
+                    Width =6411
+                    Height =495
+                    FontSize =10
+                    TabIndex =2
+                    Name ="DruckText"
+                    ControlSource ="DruckText"
+                    RightPadding =38
+                    BottomPadding =38
+
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =1
+                    ColumnEnd =1
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =120
+                            Top =2310
+                            Width =1215
+                            Height =315
+                            FontSize =10
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld111"
+                            Caption ="Drucktext"
+                            BottomPadding =38
+                            RowStart =1
+                            RowEnd =1
+                        End
+                    End
+                End
+                Begin Tab
+                    OverlapFlags =85
+                    Left =60
+                    Top =2835
+                    Width =16980
+                    Height =6660
+                    TabIndex =3
+                    Name ="Register1"
+
+                    Begin
+                        Begin Page
+                            OverlapFlags =87
+                            Left =195
+                            Top =3315
+                            Width =16695
+                            Height =6060
+                            Name ="Seite1"
+                            Caption ="Positionen"
+                            ImageData = Begin
+                                0x00000000
+                            End
+                            Begin
+                                Begin Subform
+                                    OverlapFlags =247
+                                    Left =195
+                                    Top =3330
+                                    Width =16695
+                                    Height =6045
+                                    Name ="UF_Pos"
+                                    SourceObject ="Form.Rechnungen_UF_Pos"
+                                    LinkChildFields ="RechnungID"
+                                    LinkMasterFields ="ID"
+
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =215
+                            Left =195
+                            Top =3315
+                            Width =16695
+                            Height =6060
+                            Name ="Buchungen"
+                            Begin
+                                Begin Subform
+                                    OverlapFlags =247
+                                    Left =195
+                                    Top =3330
+                                    Width =16695
+                                    Height =6045
+                                    Name ="UF_Buchungen"
+                                    SourceObject ="Form.Rechnungen_UF_Buchungen"
+                                    LinkChildFields ="RechnungID"
+                                    LinkMasterFields ="ID"
+
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =215
+                            Left =195
+                            Top =3315
+                            Width =16695
+                            Height =6060
+                            Name ="Mahnung"
+                            Begin
+                                Begin TextBox
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =2434
+                                    Top =3588
+                                    Width =1416
+                                    Height =315
+                                    Name ="MahnStufe"
+                                    ControlSource ="MahnStufe"
+
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =215
+                                            Left =453
+                                            Top =3584
+                                            Width =1890
+                                            Height =315
+                                            Name ="Bezeichnungsfeld116"
+                                            Caption ="aktuelle Mahnstufe"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =2434
+                                    Top =4005
+                                    Width =1416
+                                    Height =315
+                                    Name ="Mahnung1Am"
+                                    ControlSource ="Mahnung1Am"
+
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =215
+                                            Left =453
+                                            Top =4004
+                                            Width =1485
+                                            Height =315
+                                            Name ="Bezeichnungsfeld117"
+                                            Caption ="1. Mahnung am"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =2439
+                                    Top =4424
+                                    Width =1416
+                                    Height =315
+                                    Name ="Mahnung2Am"
+                                    ControlSource ="Mahnung2Am"
+
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =215
+                                            Left =458
+                                            Top =4427
+                                            Width =1485
+                                            Height =315
+                                            Name ="Bezeichnungsfeld118"
+                                            Caption ="2. Mahnung am"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =2439
+                                    Top =4850
+                                    Width =1416
+                                    Height =315
+                                    Name ="Mahnung3Am"
+                                    ControlSource ="Mahnung3Am"
+
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =215
+                                            Left =458
+                                            Top =4844
+                                            Width =1485
+                                            Height =315
+                                            Name ="Bezeichnungsfeld119"
+                                            Caption ="3. Mahnung am"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =2439
+                                    Top =5264
+                                    Width =1416
+                                    Height =315
+                                    Name ="RechtsanwaltAm"
+                                    ControlSource ="RechtsanwaltAm"
+
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =215
+                                            Left =450
+                                            Top =5265
+                                            Width =1860
+                                            Height =315
+                                            Name ="Bezeichnungsfeld120"
+                                            Caption ="4. Rechtsanwalt am"
+                                        End
+                                    End
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =247
+                            Left =195
+                            Top =3315
+                            Width =16695
+                            Height =6060
+                            Name ="Leistungen"
+                            Begin
+                                Begin Subform
+                                    OverlapFlags =247
+                                    Left =195
+                                    Top =3315
+                                    Width =16695
+                                    Height =6060
+                                    Name ="Untergeordnet127"
+                                    SourceObject ="Form.Rechnungen_UF_Leistungen"
+                                    LinkChildFields ="AufRechnungID"
+                                    LinkMasterFields ="ID"
+
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =247
+                            Left =195
+                            Top =3315
+                            Width =16695
+                            Height =6060
+                            Name ="Seite134"
+                            Caption ="Zahlungseingang"
+                            Begin
+                                Begin Subform
+                                    OverlapFlags =247
+                                    Left =226
+                                    Top =3399
+                                    Width =16605
+                                    Height =5970
+                                    Name ="UF_ZE"
+                                    SourceObject ="Form.Rechnungen_UF_ZE"
+                                    LinkChildFields ="RechnungID"
+                                    LinkMasterFields ="ID"
+
+                                End
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =10602
+                    Top =870
+                    Width =1134
+                    Height =315
+                    TabIndex =4
+                    Name ="Datum"
+                    ControlSource ="Datum"
+                    AfterUpdate ="[Event Procedure]"
+                    OnDblClick ="[Event Procedure]"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =9750
+                            Top =870
+                            Width =735
+                            Height =315
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld71"
+                            Caption ="Datum"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =10602
+                    Top =1230
+                    Width =1134
+                    Height =315
+                    TabIndex =5
+                    Name ="Nr"
+                    ControlSource ="Nr"
+                    OnDblClick ="[Event Procedure]"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =10110
+                            Top =1230
+                            Width =375
+                            Height =285
+                            FontSize =10
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld72"
+                            Caption ="Nr."
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =42
+                    ListWidth =8505
+                    Left =1530
+                    Top =105
+                    Width =10206
+                    Height =315
+                    Name ="KarteiID"
+                    ControlSource ="KarteiID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="A_AuswahlKartei"
+                    ColumnWidths ="0;8505"
+                    AfterUpdate ="[Event Procedure]"
+                    OnDblClick ="[Event Procedure]"
+                    OnNotInList ="[Event Procedure]"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =105
+                            Top =105
+                            Width =735
+                            Height =315
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld76"
+                            Caption ="Kunde"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =14176
+                    Top =975
+                    Width =954
+                    Height =255
+                    FontSize =9
+                    TabIndex =6
+                    Name ="BetragExkl"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =12915
+                            Top =975
+                            Width =1170
+                            Height =315
+                            FontSize =9
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld83"
+                            Caption ="Betrag exkl."
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =15860
+                    Top =975
+                    Width =954
+                    Height =255
+                    FontSize =9
+                    TabIndex =7
+                    Name ="BetragInkl"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =15195
+                            Top =975
+                            Width =555
+                            Height =270
+                            FontSize =9
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld85"
+                            Caption ="inkl."
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =3
+                    ListWidth =8505
+                    Left =1530
+                    Top =480
+                    Width =10206
+                    Height =315
+                    TabIndex =1
+                    Name ="AdressenID"
+                    ControlSource ="AdressenID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT A_AuswahlAnschrift.* FROM A_AuswahlAnschrift WHERE (((T_Adressen.KarteiID"
+                        ")=[Formulare]![Rechnungen]![KarteiID])); "
+                    ColumnWidths ="0;3969;2268"
+                    AfterUpdate ="[Event Procedure]"
+                    OnDblClick ="[Event Procedure]"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =105
+                            Top =480
+                            Width =1365
+                            Height =315
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld98"
+                            Caption ="abw.Anschrift"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =11835
+                    Top =75
+                    Width =510
+                    Height =397
+                    TabIndex =9
+                    Name ="cmdKarteiSuche"
+                    OnClick ="[Event Procedure]"
+                    ControlTipText ="Kundenliste öffnen"
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000b0a0900000000000b0a09000a0705000 ,
+                        0xa070501000000000a07860d0a07860ff906040ff905840ff905840ff804020f0 ,
+                        0x8040201000000000b0806000b08060f0906850e0a07050ff905840ff905030ff ,
+                        0x703010f000000000b09080fffff8ffffe0c8c0ffd0a090ffc08060ff804020ff ,
+                        0x0000000000000000b0806010b08060fff0e8e0ffe0c8c0ffd0a890ffb07850ff ,
+                        0x804820ff00000000b09080fffff8ffffe0c8c0ffd0a090ffc08060ff804020ff ,
+                        0x000000000000000000000000b08060fff0e8e0fff0e0e0ffe0c0b0ffc08870ff ,
+                        0x804830ff00000000b09080fffff8ffffe0c8c0ffd0a090ffc08060ff804020ff ,
+                        0x000000000000000000000000b08060fff0e8e0fff0e0e0ffe0c0b0ffc08870ff ,
+                        0x804830ff00000000c09880fffffffffff0e8e0ffe0c8c0ffd0a080ff804020ff ,
+                        0x000000000000000000000000b08060fff0e8e0fff0e0e0ffe0c0b0ffc08870ff ,
+                        0x804830ff00000000c0a090f0b08870ffa06850ff905030ff804830ff804820ff ,
+                        0x803810ff803810e0b08870ffa06850ff905830ff904830ff804020ff703810ff ,
+                        0x905830ff00000000c0a09080b08870ffffffffffe0d0c0ffd0a090ffa07050ff ,
+                        0x804010ffb0907080b09070ffe0d8d0fff0d8d0ffd0a090ffb07850ff803820ff ,
+                        0xb090708000000000c0a09000c09080fff0f0f0fffff8f0fff0d8c0ffb08060ff ,
+                        0x804820ff803810d0b09070fffffffffffff8f0fff0d0c0ffb07850ff804820ff ,
+                        0x000000000000000000000000b0908010c09880ffb08060ffa06850ff905030ff ,
+                        0x905840ff905830e0b07860ffb08870ffa07050ff804830ff804820ffb0806010 ,
+                        0x00000000000000000000000000000000c09880fffff8ffffe0c0b0ffc09070ff ,
+                        0x804820ff70301000c09880fffff8ffffe0c8b0ffd0a080ff804820ff00000000 ,
+                        0x00000000000000000000000000000000c0a090c0b09080ffa06850ff905030ff ,
+                        0x804830f000000000c0a890ffb09080ffa06850ff905030ff804830f000000000 ,
+                        0x0000000000000000000000000000000000000000905840b0fff8f0ff703010e0 ,
+                        0x803810000000000080381000905840b0fff8f0ff703010e00000000000000000 ,
+                        0x0000000000000000000000000000000000000000c0a090e0b08870f0905830e0 ,
+                        0x000000000000000000000000c0a090c0b08870f0905830e00000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =95
+                    Left =11835
+                    Top =465
+                    Width =510
+                    Height =397
+                    TabIndex =13
+                    Name ="cmdAddAdresse"
+                    OnClick ="[Event Procedure]"
+                    ControlTipText ="Kundenliste öffnen"
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000000000000000000020182080000000ff ,
+                        0x0000007000000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000808080ff606060ff ,
+                        0x000000ff00000000000000000000000000000000304830ff203020ff102010ff ,
+                        0x101810ff000000000000000000000000000000000000000070707080807880ff ,
+                        0x1010105000000000000000000000000000000000305030ff509050ff407840ff ,
+                        0x101810ff00000000000000000000000000000000000000000000000010081070 ,
+                        0x0000000000000000000000000000000000000000406040ff509850ff408040ff ,
+                        0x101810ff000000000000000000000000000000000000000000000000202020ff ,
+                        0x0000000000000000609860ff508860ff507850ff406840ff60a860ff509050ff ,
+                        0x101810ff101810ff101810ff101810ff000000000000000000000070404040ff ,
+                        0x000000700000000070a880ffa0d0a0ff90c890ff80c080ff70b070ff60a060ff ,
+                        0x509050ff408040ff407840ff102010ff0000000000000000202820ff404040ff ,
+                        0x000000f00000000080b090ffb0d8b0ffa0d8a0ff90c890ff80c080ff70b070ff ,
+                        0x60a860ff509850ff509050ff203820ff0000000040404070606060ff505850ff ,
+                        0x202020ff0000003080b890ff80b890ff80b080ff70a870ff80c890ff70b870ff ,
+                        0x508050ff507850ff306030ff304830ff00000000404040c0707070ff606060ff ,
+                        0x504850ff0000008000000000000000000000000080b080ff90d0a0ff80c080ff ,
+                        0x609060ff00000000000000000000000000000000605860ff909890ff606060ff ,
+                        0x505050ff000000f000000000000000000000000080b890ffa0d8b0ff90d0a0ff ,
+                        0x70a070ff00000000000000000000000000000000707070ffa0a8a0ff707070ff ,
+                        0x606060ff101010f000000000000000000000000090c090ff80b890ff80b080ff ,
+                        0x70a070ff00000000000000000000000000000000807880ffc0b8c0ffb0b0b0ff ,
+                        0x908890ff100810e0000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000070707030807880ff606860ff ,
+                        0x505050ff50505020000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =87
+                    Left =12345
+                    Top =75
+                    Width =510
+                    Height =397
+                    TabIndex =10
+                    Name ="cmdAddKartei"
+                    OnClick ="[Event Procedure]"
+                    ControlTipText ="Kundenliste öffnen"
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000000000000000000020182080000000ff ,
+                        0x0000007000000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000808080ff606060ff ,
+                        0x000000ff00000000000000000000000000000000304830ff203020ff102010ff ,
+                        0x101810ff000000000000000000000000000000000000000070707080807880ff ,
+                        0x1010105000000000000000000000000000000000305030ff509050ff407840ff ,
+                        0x101810ff00000000000000000000000000000000000000000000000010081070 ,
+                        0x0000000000000000000000000000000000000000406040ff509850ff408040ff ,
+                        0x101810ff000000000000000000000000000000000000000000000000202020ff ,
+                        0x0000000000000000609860ff508860ff507850ff406840ff60a860ff509050ff ,
+                        0x101810ff101810ff101810ff101810ff000000000000000000000070404040ff ,
+                        0x000000700000000070a880ffa0d0a0ff90c890ff80c080ff70b070ff60a060ff ,
+                        0x509050ff408040ff407840ff102010ff0000000000000000202820ff404040ff ,
+                        0x000000f00000000080b090ffb0d8b0ffa0d8a0ff90c890ff80c080ff70b070ff ,
+                        0x60a860ff509850ff509050ff203820ff0000000040404070606060ff505850ff ,
+                        0x202020ff0000003080b890ff80b890ff80b080ff70a870ff80c890ff70b870ff ,
+                        0x508050ff507850ff306030ff304830ff00000000404040c0707070ff606060ff ,
+                        0x504850ff0000008000000000000000000000000080b080ff90d0a0ff80c080ff ,
+                        0x609060ff00000000000000000000000000000000605860ff909890ff606060ff ,
+                        0x505050ff000000f000000000000000000000000080b890ffa0d8b0ff90d0a0ff ,
+                        0x70a070ff00000000000000000000000000000000707070ffa0a8a0ff707070ff ,
+                        0x606060ff101010f000000000000000000000000090c090ff80b890ff80b080ff ,
+                        0x70a070ff00000000000000000000000000000000807880ffc0b8c0ffb0b0b0ff ,
+                        0x908890ff100810e0000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000070707030807880ff606860ff ,
+                        0x505050ff50505020000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                    Overlaps =1
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =15718
+                    Top =1359
+                    Width =1134
+                    Height =315
+                    TabIndex =8
+                    Name ="Saldo"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =14967
+                            Top =1359
+                            Width =585
+                            Height =315
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld122"
+                            Caption ="Saldo"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =14181
+                    Top =105
+                    Width =2646
+                    Height =315
+                    TabIndex =11
+                    Name ="ZahlartID"
+                    ControlSource ="ZahlartID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT T_Zahlungsarten.ID, T_Zahlungsarten.Zahlungsart FROM T_Zahlungsarten ORDE"
+                        "R BY T_Zahlungsarten.Zahlungsart; "
+                    ColumnWidths ="0;1701"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =13365
+                            Top =105
+                            Width =720
+                            Height =315
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld128"
+                            Caption ="Zahlart"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =12302
+                    Top =1474
+                    Width =340
+                    Height =226
+                    TabIndex =15
+                    Name ="InnerGemErwerb"
+                    ControlSource ="InnerGemErwerb"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            TextAlign =1
+                            Left =12532
+                            Top =1444
+                            Width =1965
+                            Height =315
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld137"
+                            Caption ="IGE"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =4
+                    Left =14181
+                    Top =540
+                    Width =2646
+                    Height =315
+                    TabIndex =21
+                    Name ="UStRegelungID"
+                    ControlSource ="UStRegelungID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT T_UStRegelungen.ID, T_UStRegelungen.Titel, T_UStRegelungen.Anmerkungen, T"
+                        "_UStRegelungen.UIDErforderlich FROM T_UStRegelungen ORDER BY T_UStRegelungen.Tit"
+                        "el; "
+                    ColumnWidths ="0;2835;5670;0"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =12675
+                            Top =540
+                            Width =1410
+                            Height =315
+                            ForeColor =-2147483615
+                            Name ="Bezeichnungsfeld145"
+                            Caption ="USt-Regelung"
+                        End
+                    End
+                End
+            End
+        End
+        Begin PageFooter
+            DisplayWhen =1
+            Height =0
+            Name ="Seitenfußbereich"
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "Rechnungen.cls"

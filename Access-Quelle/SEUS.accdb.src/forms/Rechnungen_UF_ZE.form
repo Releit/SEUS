@@ -1,0 +1,258 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =2
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =10209
+    DatasheetFontHeight =11
+    ItemSuffix =9
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    RecSrcDt = Begin
+        0x93554caff585e440
+    End
+    RecordSource ="SELECT T_Rechnungen_ZE.*, T_Zahlungseingänge.Datum, T_Zahlungseingänge.Betrag AS"
+        " ZEBetrag FROM T_Zahlungseingänge INNER JOIN T_Rechnungen_ZE ON T_Zahlungseingän"
+        "ge.ID = T_Rechnungen_ZE.ZEID; "
+    Caption ="Rechnungen_UF_ZE"
+    DatasheetFontName ="Calibri"
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =15921906
+    DatasheetGridlinesColor12 =0
+    FitToScreen =1
+    DatasheetBackThemeColorIndex =1
+    BorderThemeColorIndex =3
+    ThemeFontIndex =1
+    ForeThemeColorIndex =0
+    AlternateBackThemeColorIndex =1
+    AlternateBackShade =95.0
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =0
+            BorderTint =50.0
+            ForeThemeColorIndex =0
+            ForeTint =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin TextBox
+            AddColon = NotDefault
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ThemeFontIndex =1
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin ComboBox
+            AddColon = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ForeThemeColorIndex =2
+            ForeShade =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin FormHeader
+            Height =0
+            Name ="Formularkopf"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =2
+            BackTint =20.0
+        End
+        Begin Section
+            Height =3911
+            Name ="Detailbereich"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2892
+                    Top =741
+                    Width =3660
+                    Height =330
+                    ColumnWidth =1515
+                    ColumnOrder =1
+                    Name ="Betrag"
+                    ControlSource ="Betrag"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+
+                    CurrencySymbol ="€"
+                    ColLCID =3079
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =342
+                            Top =741
+                            Width =2460
+                            Height =330
+                            Name ="Betrag_Bezeichnungsfeld"
+                            Caption ="Betrag"
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2892
+                    Top =1140
+                    Width =7260
+                    Height =600
+                    ColumnWidth =5505
+                    ColumnOrder =2
+                    TabIndex =1
+                    Name ="Anmerkungen"
+                    ControlSource ="Anmerkungen"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =342
+                            Top =1140
+                            Width =2460
+                            Height =330
+                            Name ="Anmerkungen_Bezeichnungsfeld"
+                            Caption ="Anmerkungen"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    ColumnHeads = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =4
+                    Left =2892
+                    Top =342
+                    Width =3630
+                    Height =315
+                    ColumnWidth =1980
+                    ColumnOrder =0
+                    TabIndex =2
+                    Name ="ZEID"
+                    ControlSource ="ZEID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT T_Zahlungseingänge.ID, T_Zahlungseingänge.Datum, T_Zahlungseingänge.Betra"
+                        "g, Abs([T_Zahlungseingänge].[betrag]-Nz(Sum([T_Rechnungen_ZE].[Betrag]),0)) AS o"
+                        "ffen FROM T_Zahlungseingänge LEFT JOIN T_Rechnungen_ZE ON T_Zahlungseingänge.ID "
+                        "= T_Rechnungen_ZE.ZEID GROUP BY T_Zahlungseingänge.ID, T_Zahlungseingänge.Datum,"
+                        " T_Zahlungseingänge.Betrag, T_Zahlungseingänge.KarteiID HAVING (((T_Zahlungseing"
+                        "änge.Datum)>=mBR_GetDatum()-30) And ((Abs(T_Zahlungseingänge.betrag-Nz(Sum(T_Rec"
+                        "hnungen_ZE.Betrag),0)))>=0.005) And ((T_Zahlungseingänge.KarteiID)=mBR_GetKartei"
+                        "ID())) ORDER BY T_Zahlungseingänge.Datum; "
+                    ColumnWidths ="0;1134;1134;1134"
+                    AfterUpdate ="[Event Procedure]"
+
+                    ForeThemeColorIndex =0
+                    ForeTint =75.0
+                    ForeShade =100.0
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =342
+                            Top =342
+                            Width =2460
+                            Height =330
+                            Name ="ZEID_Bezeichnungsfeld"
+                            Caption ="Zahlungseingang"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2891
+                    Top =1984
+                    Height =315
+                    TabIndex =3
+                    Name ="Datum"
+                    ControlSource ="Datum"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =1190
+                            Top =1984
+                            Width =690
+                            Height =315
+                            Name ="Bezeichnungsfeld7"
+                            Caption ="Datum"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2891
+                    Top =2437
+                    Height =315
+                    TabIndex =4
+                    Name ="ZEBetrag"
+                    ControlSource ="ZEBetrag"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+
+                    CurrencySymbol ="€"
+                    ColLCID =3079
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =1185
+                            Top =2430
+                            Width =930
+                            Height =315
+                            Name ="Bezeichnungsfeld8"
+                            Caption ="ZE Betrag"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+        End
+    End
+End
+CodeBehindForm
+' See "Rechnungen_UF_ZE.cls"

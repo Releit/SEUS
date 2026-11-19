@@ -1,0 +1,38 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "A_Corona_ZE_Vergleich_ganze_Monate"
+  },
+  "Items": {
+    "QueryType": 0,
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 2089,
+        "bottom": 1193
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1301,
+        "bottom": 976
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "T_Zahlungseingänge",
+          "Alias": "",
+          "Left": 752,
+          "Top": 107,
+          "Right": 1040,
+          "Bottom": 508,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

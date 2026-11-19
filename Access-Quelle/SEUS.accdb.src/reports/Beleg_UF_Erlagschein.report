@@ -1,0 +1,259 @@
+﻿Version =20
+VersionRequired =20
+Begin Report
+    LayoutForPrint = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    RecordLocks =2
+    TabularFamily =255
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =11029
+    DatasheetFontHeight =10
+    ItemSuffix =12
+    RecSrcDt = Begin
+        0x795144455acde340
+    End
+    RecordSource ="SELECT V_Rechnungen.RechnungID, V_Rechnungen.Nr, V_Rechnungen.Datum, V_Rechnunge"
+        "n.KundenNr, V_Rechnungen.Anrede, V_Rechnungen.Anschriftname, V_Rechnungen.Adress"
+        "e, T_Einstellungen.KtoNr, T_Einstellungen.BLZ, \"***\" & IIf([betraginkl]>0,Form"
+        "at([betraginkl],\"Standard\"),0) AS Betrag, IIf([betraginkl]<0,\"Gutschrift! Bit"
+        "te nicht einzahlen!\",\"\") AS GutschrTxt, [Plz] & \" \" & [Ort] AS PLZ_Ort, For"
+        "mat([KundenNr],\"000000000000\") & \"< \" & Format(Int([ktoNr]),\"00000000000\")"
+        " & \"+ \" & Format([BLZ],\"00000000\") & \"> \" & Format(Int(IIf([BetragInkl]>0,"
+        "[BetragInkl]*100,0)),\"00000000000\") & \"<\" AS FussZeile FROM V_Rechnungen, T_"
+        "Einstellungen; "
+    DatasheetFontName ="Arial"
+    FilterOnLoad =0
+    DatasheetGridlinesColor12 =12632256
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =2
+            FontName ="Arial"
+        End
+        Begin Rectangle
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            OldBorderStyle =0
+            TextFontFamily =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Arial"
+            AsianLineBreak =255
+        End
+        Begin PageHeader
+            Height =0
+            Name ="Seitenkopfbereich"
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =5486
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    TextFontFamily =34
+                    Top =3600
+                    Width =2892
+                    Height =270
+                    FontSize =10
+                    Name ="Text32"
+                    ControlSource ="Anschriftname"
+
+                    LayoutCachedTop =3600
+                    LayoutCachedWidth =2892
+                    LayoutCachedHeight =3870
+                End
+                Begin TextBox
+                    TextFontFamily =34
+                    Top =3885
+                    Width =2892
+                    Height =270
+                    FontSize =10
+                    TabIndex =1
+                    Name ="Text33"
+                    ControlSource ="Adresse"
+
+                    LayoutCachedTop =3885
+                    LayoutCachedWidth =2892
+                    LayoutCachedHeight =4155
+                End
+                Begin TextBox
+                    TextFontFamily =34
+                    Top =4155
+                    Width =2892
+                    Height =270
+                    FontSize =10
+                    TabIndex =2
+                    Name ="Text34"
+                    ControlSource ="PLZ_Ort"
+
+                    LayoutCachedTop =4155
+                    LayoutCachedWidth =2892
+                    LayoutCachedHeight =4425
+                End
+                Begin TextBox
+                    TextFontFamily =34
+                    Left =3572
+                    Top =3600
+                    Width =4536
+                    Height =270
+                    FontSize =10
+                    TabIndex =3
+                    Name ="Text37"
+                    ControlSource ="Anschriftname"
+
+                    LayoutCachedLeft =3572
+                    LayoutCachedTop =3600
+                    LayoutCachedWidth =8108
+                    LayoutCachedHeight =3870
+                End
+                Begin TextBox
+                    TextFontFamily =34
+                    Left =3572
+                    Top =3885
+                    Width =4536
+                    Height =270
+                    FontSize =10
+                    TabIndex =4
+                    Name ="Text38"
+                    ControlSource ="Adresse"
+
+                    LayoutCachedLeft =3572
+                    LayoutCachedTop =3885
+                    LayoutCachedWidth =8108
+                    LayoutCachedHeight =4155
+                End
+                Begin TextBox
+                    TextFontFamily =34
+                    Left =3572
+                    Top =4155
+                    Width =4536
+                    Height =270
+                    FontSize =10
+                    TabIndex =5
+                    Name ="Text39"
+                    ControlSource ="PLZ_Ort"
+
+                    LayoutCachedLeft =3572
+                    LayoutCachedTop =4155
+                    LayoutCachedWidth =8108
+                    LayoutCachedHeight =4425
+                End
+                Begin TextBox
+                    TextAlign =1
+                    TextFontFamily =34
+                    Left =9356
+                    Top =2071
+                    Width =1419
+                    Height =255
+                    FontSize =9
+                    FontWeight =700
+                    TabIndex =6
+                    Name ="Text41"
+                    ControlSource ="KundenNr"
+
+                    LayoutCachedLeft =9356
+                    LayoutCachedTop =2071
+                    LayoutCachedWidth =10775
+                    LayoutCachedHeight =2326
+                End
+                Begin TextBox
+                    TextAlign =1
+                    TextFontFamily =34
+                    Left =9356
+                    Top =1587
+                    Width =1419
+                    Height =255
+                    FontSize =9
+                    FontWeight =700
+                    TabIndex =7
+                    Name ="Text43"
+                    ControlSource ="Nr"
+
+                    LayoutCachedLeft =9356
+                    LayoutCachedTop =1587
+                    LayoutCachedWidth =10775
+                    LayoutCachedHeight =1842
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    TextAlign =1
+                    Left =3515
+                    Top =5216
+                    Width =7434
+                    Height =270
+                    FontSize =11
+                    TabIndex =8
+                    Name ="Text52"
+                    ControlSource ="FussZeile"
+                    Format ="000000000000"
+                    FontName ="OCR-B"
+
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =964
+                    Top =570
+                    Height =270
+                    FontSize =10
+                    TabIndex =9
+                    Name ="Text3"
+                    ControlSource ="Betrag"
+
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =9328
+                    Top =570
+                    Height =270
+                    FontSize =10
+                    TabIndex =10
+                    Name ="Text5"
+                    ControlSource ="Betrag"
+
+                    LayoutCachedLeft =9328
+                    LayoutCachedTop =570
+                    LayoutCachedWidth =11029
+                    LayoutCachedHeight =840
+                End
+                Begin Line
+                    LineSlant = NotDefault
+                    Width =284
+                    Name ="Linie6"
+                End
+                Begin TextBox
+                    TextFontFamily =34
+                    Left =3570
+                    Top =2400
+                    Width =4821
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =11
+                    Name ="GutschrTxt"
+                    ControlSource ="GutschrTxt"
+
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="Seitenfußbereich"
+        End
+    End
+End

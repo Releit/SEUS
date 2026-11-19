@@ -1,0 +1,48 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "A_Preiserhöhung_Stundensätze_Preisliste"
+  },
+  "Items": {
+    "QueryType": 48,
+    "QueryProperties": {
+      "RecordLocks": {
+        "Type": 2,
+        "Value": 2
+      },
+      "FailOnError": {
+        "Type": 1,
+        "Value": false
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1448,
+        "bottom": 1176
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1432,
+        "bottom": 897
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 579,
+      "Tables": [
+        {
+          "Name": "T_Produkte",
+          "Alias": "",
+          "Left": 162,
+          "Top": 50,
+          "Right": 640,
+          "Bottom": 756,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}
