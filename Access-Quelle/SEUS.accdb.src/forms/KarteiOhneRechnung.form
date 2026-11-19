@@ -16,7 +16,7 @@ Begin Form
     RecSrcDt = Begin
         0xee774f802da1e640
     End
-    Caption ="Test: Karteieinträge ohne Rechnung seit 7 Jahren"
+    Caption ="Karteieinträge ohne Rechnung seit 7 Jahren"
     DatasheetFontName ="Calibri"
     OnLoad ="[Event Procedure]"
     AllowDatasheetView =0
@@ -580,4 +580,4 @@ Begin Form
     End
 End
 CodeBehindForm
-' See "Test_KarteiBereinigung.cls"
+' See "KarteiOhneRechnung.cls"

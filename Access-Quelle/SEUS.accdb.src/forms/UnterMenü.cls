@@ -17,6 +17,10 @@ Private Sub cmdEinstellungen_Click()
     DoCmd.OpenForm "Einstellungen"
 End Sub
 
+Private Sub cmdKarteiOhneRechnung_Click()
+    DoCmd.OpenForm "KarteiOhneRechnung"
+End Sub
+
 Private Sub cmdKartei_Click()
     DoCmd.OpenForm "KarteiListe"
 End Sub

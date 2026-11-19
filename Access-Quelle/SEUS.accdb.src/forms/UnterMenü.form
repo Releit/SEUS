@@ -14,7 +14,7 @@ Begin Form
     GridY =10
     Width =7937
     DatasheetFontHeight =11
-    ItemSuffix =23
+    ItemSuffix =24
     Right =50000
     Bottom =50000
     RecSrcDt = Begin
@@ -291,6 +291,44 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     FontName ="Arial"
                     ControlTipText ="Programmeinstellung verwalten"
+                    LeftPadding =60
+                    RightPadding =75
+                    BottomPadding =120
+                    ImageData = Begin
+                        0x00000000
+                    End
+
+                    ForeThemeColorIndex =1
+                    UseTheme =1
+                    Bevel =-1
+                    Gradient =25
+                    BackThemeColorIndex =9
+                    BorderThemeColorIndex =9
+                    HoverThemeColorIndex =9
+                    HoverTint =80.0
+                    PressedThemeColorIndex =9
+                    PressedShade =80.0
+                    HoverForeThemeColorIndex =1
+                    PressedForeThemeColorIndex =1
+                    Shadow =-1
+                    QuickStyle =42
+                    QuickStyleMask =-1
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =3990
+                    Top =2700
+                    Width =3236
+                    Height =572
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =6
+                    Name ="cmdKarteiOhneRechnung"
+                    Caption ="Kartei ohne Rechnung"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    ControlTipText ="Karteieinträge ohne Rechnung seit 7 Jahren"
                     LeftPadding =60
                     RightPadding =75
                     BottomPadding =120

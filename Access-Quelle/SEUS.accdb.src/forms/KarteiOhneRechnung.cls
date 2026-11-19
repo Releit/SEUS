@@ -5,7 +5,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 Option Explicit
 
-' Test-Formular: Karteieinträge, die seit mehr als 7 Jahren keine Rechnung erhalten haben,
+' Karteieinträge, die seit mehr als 7 Jahren keine Rechnung erhalten haben,
 ' und Löschen eines Eintrags samt allen abhängigen Datensätzen.
 '
 ' Geschwindigkeit: Die ID-Listen (Rechnungen, Lieferscheine, Zahlungen ...) werden einmal
