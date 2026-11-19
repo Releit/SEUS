@@ -7,24 +7,32 @@ Option Explicit
 
 ' Test-Formular: Karteieinträge, die seit mehr als 7 Jahren keine Rechnung erhalten haben,
 ' und Löschen eines Eintrags samt allen abhängigen Datensätzen.
+'
+' Geschwindigkeit: Die ID-Listen (Rechnungen, Lieferscheine, Zahlungen ...) werden einmal
+' gelesen und als feste Werte "IN (1,2,3)" eingesetzt. Unterabfragen über lokale und
+' SQL-Server-Tabellen gemischt würden Access zwingen, ganze Server-Tabellen zu laden.
 
 Private Const JAHRE As Integer = 7
+Private Const KEINE As String = "(0)"   ' leere Liste, IDs sind nie 0
+
+' ID-Listen des gerade bearbeiteten Karteieintrags
+Private K As Long
+Private Rech As String, Lief As String, ZE As String, ZA As String, ER As String, Proj As String
 
 ' Liste: letzte Ausgangsrechnung älter als 7 Jahre (ohne Rechnung zählt das Anlagedatum),
-' und auch keine Eingangsrechnung in den letzten 7 Jahren.
+' und auch keine Eingangsrechnung in den letzten 7 Jahren. Gruppiert statt je Zeile abgefragt.
 Private Function ListenSql() As String
-    Dim Grenze As String, Sql As String
+    Dim Grenze As String
     Grenze = Format(DateAdd("yyyy", -JAHRE, Date), "\#mm\/dd\/yyyy\#")
 
-    Sql = "SELECT K.ID, K.Nr, Trim(K.Name1 & ' ' & K.Name2) AS Kundenname, K.PLZ, K.Ort, K.AngelegtAm, " & _
-          "(SELECT Max(R.Datum) FROM T_Rechnungen AS R WHERE R.KarteiID=K.ID) AS LetzteRechnung, " & _
-          "(SELECT Count(*) FROM T_Rechnungen AS R WHERE R.KarteiID=K.ID) AS AnzahlRechnungen, " & _
-          "(SELECT Max(E.Datum) FROM T_EingangsRechnungen AS E WHERE E.LiefKarteiID=K.ID) AS LetzteEingangsrechnung " & _
-          "FROM T_Kartei AS K " & _
-          "WHERE Nz((SELECT Max(R.Datum) FROM T_Rechnungen AS R WHERE R.KarteiID=K.ID), Nz(K.AngelegtAm, #1/1/1900#)) < " & Grenze & _
-          " AND Nz((SELECT Max(E.Datum) FROM T_EingangsRechnungen AS E WHERE E.LiefKarteiID=K.ID), #1/1/1900#) < " & Grenze & _
+    ListenSql = "SELECT K.ID, K.Nr, Trim(K.Name1 & ' ' & K.Name2) AS Kundenname, K.PLZ, K.Ort, K.AngelegtAm, " & _
+          "R.LetzteRechnung, Nz(R.Anzahl, 0) AS AnzahlRechnungen, E.LetzteEingangsrechnung " & _
+          "FROM (T_Kartei AS K " & _
+          "LEFT JOIN (SELECT KarteiID, Max(Datum) AS LetzteRechnung, Count(*) AS Anzahl FROM T_Rechnungen GROUP BY KarteiID) AS R ON R.KarteiID = K.ID) " & _
+          "LEFT JOIN (SELECT LiefKarteiID, Max(Datum) AS LetzteEingangsrechnung FROM T_EingangsRechnungen GROUP BY LiefKarteiID) AS E ON E.LiefKarteiID = K.ID " & _
+          "WHERE Nz(R.LetzteRechnung, Nz(K.AngelegtAm, #1/1/1900#)) < " & Grenze & _
+          " AND Nz(E.LetzteEingangsrechnung, #1/1/1900#) < " & Grenze & _
           " ORDER BY K.Name1, K.Name2"
-    ListenSql = Sql
 End Function
 
 Private Sub Form_Load()
@@ -32,13 +40,17 @@ Private Sub Form_Load()
 End Sub
 
 Private Sub cmdLoeschen_Click()
-    Dim KarteiID As Long, Bezeichnung As String, Hindernis As String, Uebersicht As String
+    Dim Bezeichnung As String, Hindernis As String, Uebersicht As String
 
     If IsNull(Me!ID) Then Exit Sub
-    KarteiID = Me!ID
     Bezeichnung = "Nr " & Nz(Me!Nr, "-") & ": " & Nz(Me!Kundenname, "")
 
-    Hindernis = FremdeVerweise(KarteiID)
+    DoCmd.Hourglass True
+    LiesIdListen Me!ID
+    Hindernis = FremdeVerweise()
+    If Hindernis = "" Then Uebersicht = Zusammenfassung()
+    DoCmd.Hourglass False
+
     If Hindernis <> "" Then
         MsgBox "Der Karteieintrag " & Bezeichnung & " kann nicht gelöscht werden, " & _
                "weil Datensätze anderer Karteieinträge darauf verweisen:" & vbCrLf & vbCrLf & Hindernis, _
@@ -46,48 +58,48 @@ Private Sub cmdLoeschen_Click()
         Exit Sub
     End If
 
-    Uebersicht = Zusammenfassung(KarteiID)
     If MsgBox("Karteieintrag " & Bezeichnung & " endgültig löschen?" & vbCrLf & vbCrLf & _
               "Mitgelöscht werden:" & vbCrLf & Uebersicht & vbCrLf & _
               "Das kann nicht rückgängig gemacht werden.", _
               vbYesNo + vbExclamation + vbDefaultButton2, "Karteieintrag löschen") <> vbYes Then Exit Sub
 
-    If LoescheKartei(KarteiID) Then
+    DoCmd.Hourglass True
+    If LoescheKartei() Then
         Me.Requery
+        DoCmd.Hourglass False
         MsgBox "Karteieintrag " & Bezeichnung & " wurde gelöscht.", vbInformation
     End If
+    DoCmd.Hourglass False
 End Sub
 
-' --- Teilmengen eines Karteieintrags als Unterabfragen
+' --- ID-Listen
 
-Private Function Rech(KarteiID As Long) As String
-    Rech = "(SELECT ID FROM T_Rechnungen WHERE KarteiID=" & KarteiID & ")"
+' Liest die IDs einer Abfrage als "(1,2,3)"; ohne Treffer "(0)"
+Private Function IdListe(Sql As String) As String
+    Dim rs As DAO.Recordset, T As String
+    Set rs = CurrentDb.OpenRecordset(Sql, dbOpenSnapshot, dbSeeChanges)
+    Do While Not rs.EOF
+        T = T & "," & rs.Fields(0).Value
+        rs.MoveNext
+    Loop
+    rs.Close
+    If T = "" Then IdListe = KEINE Else IdListe = "(" & Mid(T, 2) & ")"
 End Function
 
-Private Function Lief(KarteiID As Long) As String
-    Lief = "(SELECT ID FROM T_Lieferscheine WHERE KarteiID=" & KarteiID & ")"
-End Function
-
-Private Function ZE(KarteiID As Long) As String
-    ZE = "(SELECT ID FROM [T_Zahlungseingänge] WHERE KarteiID=" & KarteiID & ")"
-End Function
-
-Private Function ZA(KarteiID As Long) As String
-    ZA = "(SELECT ID FROM [T_Zahlungsausgänge] WHERE KarteiID=" & KarteiID & ")"
-End Function
-
-Private Function ER(KarteiID As Long) As String
-    ER = "(SELECT ID FROM T_EingangsRechnungen WHERE LiefKarteiID=" & KarteiID & ")"
-End Function
-
-Private Function Proj(KarteiID As Long) As String
-    Proj = "(SELECT ID FROM T_Projekte WHERE KarteiID=" & KarteiID & ")"
-End Function
+Private Sub LiesIdListen(KarteiID As Long)
+    K = KarteiID
+    Rech = IdListe("SELECT ID FROM T_Rechnungen WHERE KarteiID=" & K)
+    Lief = IdListe("SELECT ID FROM T_Lieferscheine WHERE KarteiID=" & K)
+    ZE = IdListe("SELECT ID FROM [T_Zahlungseingänge] WHERE KarteiID=" & K)
+    ZA = IdListe("SELECT ID FROM [T_Zahlungsausgänge] WHERE KarteiID=" & K)
+    ER = IdListe("SELECT ID FROM T_EingangsRechnungen WHERE LiefKarteiID=" & K)
+    Proj = IdListe("SELECT ID FROM T_Projekte WHERE KarteiID=" & K)
+End Sub
 
 ' Zählt Datensätze einer Tabelle zu einer Bedingung
 Private Function Anzahl(Tabelle As String, Bedingung As String) As Long
     Dim rs As DAO.Recordset
-    Set rs = CurrentDb.OpenRecordset("SELECT Count(*) FROM " & Tabelle & " WHERE " & Bedingung, dbOpenSnapshot)
+    Set rs = CurrentDb.OpenRecordset("SELECT Count(*) FROM " & Tabelle & " WHERE " & Bedingung, dbOpenSnapshot, dbSeeChanges)
     Anzahl = Nz(rs.Fields(0).Value, 0)
     rs.Close
 End Function
@@ -99,26 +111,41 @@ End Sub
 
 ' Prüft, ob Datensätze anderer Karteieinträge auf Daten dieses Eintrags verweisen.
 ' Dann wird nicht gelöscht, damit keine fremden Daten verloren gehen oder ins Leere zeigen.
-Private Function FremdeVerweise(K As Long) As String
-    Dim T As String
-    Zeile T, Anzahl("T_Rechnungen", "GegenRechnungID IN " & Rech(K) & " AND Nz(KarteiID,0)<>" & K), "Rechnungen anderer Kunden mit Gegenrechnung auf diesen Kunden"
-    Zeile T, Anzahl("T_Rechnungen", "ZahlungseingangID IN " & ZE(K) & " AND Nz(KarteiID,0)<>" & K), "Rechnungen anderer Kunden mit Zahlungseingang dieses Kunden"
-    Zeile T, Anzahl("T_Buchungen", "(RechnungID IN " & Rech(K) & " OR GegenRechnungID IN " & Rech(K) & " OR ZahlungseingangID IN " & ZE(K) & ") AND Nz(KarteiID,0)<>" & K), "Buchungen anderer Kunden"
-    Zeile T, Anzahl("T_Rechnungen_ZE", "(RechnungID IN " & Rech(K) & " AND NOT ZEID IN " & ZE(K) & ") OR (ZEID IN " & ZE(K) & " AND NOT RechnungID IN " & Rech(K) & ")"), "Zahlungszuordnungen zu anderen Kunden"
-    Zeile T, Anzahl("T_RechnungsPos", "LieferscheinID IN " & Lief(K) & " AND NOT RechnungID IN " & Rech(K)), "Rechnungspositionen anderer Kunden mit Lieferschein dieses Kunden"
-    Zeile T, Anzahl("T_LieferscheinPos", "RechnungID IN " & Rech(K) & " AND NOT LieferscheinID IN " & Lief(K)), "Lieferscheinpositionen anderer Kunden auf Rechnungen dieses Kunden"
-    Zeile T, Anzahl("T_EingangsRechnungen_ZA", "(ERID IN " & ER(K) & " AND NOT ZAID IN " & ZA(K) & ") OR (ZAID IN " & ZA(K) & " AND NOT ERID IN " & ER(K) & ")"), "Zahlungsausgänge, die auch Eingangsrechnungen anderer Lieferanten betreffen"
-    Zeile T, Anzahl("T_Leistungen", "(AufRechnungID IN " & Rech(K) & " OR AufHonorarRechnungID IN " & Rech(K) & " OR ProjektID IN " & Proj(K) & ") AND Nz(KarteiID,0)<>" & K), "Leistungen anderer Kunden auf Rechnungen oder Projekten dieses Kunden"
-    Zeile T, Anzahl("T_Leistungen_alt", "(AufRechnungID IN " & Rech(K) & " OR AufHonorarRechnungID IN " & Rech(K) & ") AND Nz(KarteiID,0)<>" & K), "alte Leistungen anderer Kunden auf Rechnungen dieses Kunden"
+Private Function FremdeVerweise() As String
+    Dim T As String, Fremd As String
+    Fremd = " AND Nz(KarteiID,0)<>" & K
+
+    If Rech <> KEINE Then
+        Zeile T, Anzahl("T_Rechnungen", "GegenRechnungID IN " & Rech & Fremd), "Rechnungen anderer Kunden mit Gegenrechnung auf diesen Kunden"
+        Zeile T, Anzahl("T_Buchungen", "(RechnungID IN " & Rech & " OR GegenRechnungID IN " & Rech & ")" & Fremd), "Buchungen anderer Kunden auf Rechnungen dieses Kunden"
+        Zeile T, Anzahl("T_LieferscheinPos", "RechnungID IN " & Rech & " AND NOT LieferscheinID IN " & Lief), "Lieferscheinpositionen anderer Kunden auf Rechnungen dieses Kunden"
+        Zeile T, Anzahl("T_Leistungen_alt", "(AufRechnungID IN " & Rech & " OR AufHonorarRechnungID IN " & Rech & ")" & Fremd), "alte Leistungen anderer Kunden auf Rechnungen dieses Kunden"
+        Zeile T, Anzahl("T_Rechnungen_ZE", "RechnungID IN " & Rech & " AND NOT ZEID IN " & ZE), "Zahlungszuordnungen zu Zahlungen anderer Kunden"
+    End If
+    If ZE <> KEINE Then
+        Zeile T, Anzahl("T_Rechnungen", "ZahlungseingangID IN " & ZE & Fremd), "Rechnungen anderer Kunden mit Zahlungseingang dieses Kunden"
+        Zeile T, Anzahl("T_Buchungen", "ZahlungseingangID IN " & ZE & Fremd), "Buchungen anderer Kunden auf Zahlungen dieses Kunden"
+        Zeile T, Anzahl("T_Rechnungen_ZE", "ZEID IN " & ZE & " AND NOT RechnungID IN " & Rech), "Zahlungszuordnungen zu Rechnungen anderer Kunden"
+    End If
+    If Lief <> KEINE Then
+        Zeile T, Anzahl("T_RechnungsPos", "LieferscheinID IN " & Lief & " AND NOT RechnungID IN " & Rech), "Rechnungspositionen anderer Kunden mit Lieferschein dieses Kunden"
+    End If
+    If ER <> KEINE Or ZA <> KEINE Then
+        Zeile T, Anzahl("T_EingangsRechnungen_ZA", "(ERID IN " & ER & " AND NOT ZAID IN " & ZA & ") OR (ZAID IN " & ZA & " AND NOT ERID IN " & ER & ")"), "Zahlungsausgänge, die auch Eingangsrechnungen anderer Lieferanten betreffen"
+    End If
+    If Rech <> KEINE Or Proj <> KEINE Then
+        ' Server-Tabelle: nur feste Werte, damit SQL Server filtert
+        Zeile T, Anzahl("T_Leistungen", "(AufRechnungID IN " & Rech & " OR AufHonorarRechnungID IN " & Rech & " OR ProjektID IN " & Proj & ")" & Fremd), "Leistungen anderer Kunden auf Rechnungen oder Projekten dieses Kunden"
+    End If
     FremdeVerweise = T
 End Function
 
 ' Listet, was beim Löschen alles mit entfernt wird
-Private Function Zusammenfassung(K As Long) As String
+Private Function Zusammenfassung() As String
     Dim T As String
     Zeile T, Anzahl("T_Rechnungen", "KarteiID=" & K), "Rechnungen"
-    Zeile T, Anzahl("T_RechnungsPos", "RechnungID IN " & Rech(K)), "Rechnungspositionen"
-    Zeile T, Anzahl("T_Buchungen", "KarteiID=" & K & " OR RechnungID IN " & Rech(K) & " OR ZahlungseingangID IN " & ZE(K)), "Buchungen"
+    Zeile T, Anzahl("T_RechnungsPos", "RechnungID IN " & Rech & " OR LieferscheinID IN " & Lief), "Rechnungspositionen"
+    Zeile T, Anzahl("T_Buchungen", "KarteiID=" & K & " OR RechnungID IN " & Rech & " OR ZahlungseingangID IN " & ZE), "Buchungen"
     Zeile T, Anzahl("[T_Zahlungseingänge]", "KarteiID=" & K), "Zahlungseingänge"
     Zeile T, Anzahl("T_Lieferscheine", "KarteiID=" & K), "Lieferscheine"
     Zeile T, Anzahl("T_EingangsRechnungen", "LiefKarteiID=" & K), "Eingangsrechnungen"
@@ -137,24 +164,21 @@ End Function
 
 ' Löscht den Karteieintrag und alle abhängigen Datensätze in einer Transaktion.
 ' Reihenfolge: zuerst die abhängigen Tabellen, damit die Beziehungen nicht verletzt werden.
-Private Function LoescheKartei(K As Long) As Boolean
+Private Function LoescheKartei() As Boolean
     Dim ws As DAO.Workspace, db As DAO.Database, Schritt As String
     Dim Befehle As Variant, i As Integer
 
-    ' Die Unterabfragen müssen ausgewertet werden, solange die Ausgangsdaten noch existieren,
-    ' deshalb kommen Rechnungen, Lieferscheine, Zahlungen und Projekte erst am Schluss.
     Befehle = Array( _
-        "DELETE * FROM T_Rechnungen_ZE WHERE RechnungID IN " & Rech(K) & " OR ZEID IN " & ZE(K), _
-        "DELETE * FROM T_Buchungen WHERE KarteiID=" & K & " OR RechnungID IN " & Rech(K) & " OR GegenRechnungID IN " & Rech(K) & " OR ZahlungseingangID IN " & ZE(K), _
-        "DELETE * FROM T_RechnungsPos WHERE RechnungID IN " & Rech(K) & " OR LieferscheinID IN " & Lief(K), _
-        "DELETE * FROM T_LieferscheinPos WHERE LieferscheinID IN " & Lief(K) & " OR RechnungID IN " & Rech(K), _
+        "DELETE * FROM T_Rechnungen_ZE WHERE RechnungID IN " & Rech & " OR ZEID IN " & ZE, _
+        "DELETE * FROM T_Buchungen WHERE KarteiID=" & K & " OR RechnungID IN " & Rech & " OR GegenRechnungID IN " & Rech & " OR ZahlungseingangID IN " & ZE, _
+        "DELETE * FROM T_RechnungsPos WHERE RechnungID IN " & Rech & " OR LieferscheinID IN " & Lief, _
+        "DELETE * FROM T_LieferscheinPos WHERE LieferscheinID IN " & Lief & " OR RechnungID IN " & Rech, _
         "DELETE * FROM T_Leistungen WHERE KarteiID=" & K, _
         "DELETE * FROM T_Leistungen_alt WHERE KarteiID=" & K, _
-        "DELETE * FROM T_EingangsRechnungen_ZA WHERE ERID IN " & ER(K) & " OR ZAID IN " & ZA(K), _
+        "DELETE * FROM T_EingangsRechnungen_ZA WHERE ERID IN " & ER & " OR ZAID IN " & ZA, _
         "DELETE * FROM T_EingangsRechnungen WHERE LiefKarteiID=" & K, _
         "DELETE * FROM [T_Zahlungsausgänge] WHERE KarteiID=" & K, _
         "DELETE * FROM [T_Zahlungseingänge] WHERE KarteiID=" & K, _
-        "UPDATE T_Rechnungen SET GegenRechnungID=Null WHERE KarteiID=" & K, _
         "DELETE * FROM T_Rechnungen WHERE KarteiID=" & K, _
         "DELETE * FROM T_Lieferscheine WHERE KarteiID=" & K, _
         "DELETE * FROM T_Projekte WHERE KarteiID=" & K, _
@@ -185,6 +209,7 @@ Fehler:
     Meldung = Err.Description
     On Error Resume Next
     ws.Rollback
+    DoCmd.Hourglass False
     MsgBox "Löschen abgebrochen, es wurde nichts gelöscht." & vbCrLf & vbCrLf & _
            "Fehler: " & Meldung & vbCrLf & vbCrLf & "Bei: " & Schritt, vbCritical, "Fehler beim Löschen"
     LoescheKartei = False
