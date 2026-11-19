@@ -106,7 +106,7 @@ Private Sub cmdKarteiSuche_Click()
 End Sub
 
 Private Sub cmdMail_Click()
-    Dim eMail As String, BodyText As String, RS As Object
+    Dim eMail As String, BodyText As String, rs As Object
 
     On Error GoTo cmdMailErr
 
@@ -134,8 +134,8 @@ Private Sub cmdMail_Click()
 
     eMail = Nz(DMin("eMail", "T_Kartei", "ID=" & Str(Me!KarteiID)), "")
     If eMail <> "" Then
-        Set RS = CurrentDb.OpenRecordset("SELECT * FROM T_Einstellungen", dbOpenSnapshot)
-        BodyText = RS!EmailBody1 & vbCrLf & vbCrLf & RS!EmailBody2
+        Set rs = CurrentDb.OpenRecordset("SELECT * FROM T_Einstellungen", dbOpenSnapshot)
+        BodyText = rs!EmailBody1 & vbCrLf & vbCrLf & rs!EmailBody2
 
 
         DoCmd.SendObject acSendReport, "Rechnung", acFormatPDF, eMail, , , "Rechnung " & Format(Nr), _

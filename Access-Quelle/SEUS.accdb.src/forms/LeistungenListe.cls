@@ -68,7 +68,7 @@ End Sub
 
 Private Sub cmdReadVersionen_Click()
     Dim txt As String
-    Dim RS As DAO.Recordset
+    Dim rs As DAO.Recordset
     Dim Sql As String
     Dim countResult As Long
 
@@ -84,16 +84,16 @@ Private Sub cmdReadVersionen_Click()
     End If
 
     Sql = "SELECT Count(*) AS Anzahl FROM T_VersionsNummern_Fügetechnik WHERE " & Replace(txt, "T_Leistungen", "T_VersionsNummern_Fügetechnik")
-    Set RS = CurrentDb.OpenRecordset(Sql)
+    Set rs = CurrentDb.OpenRecordset(Sql)
 
-    If Not RS.EOF Then
-        countResult = RS!Anzahl
+    If Not rs.EOF Then
+        countResult = rs!Anzahl
     Else
         countResult = 0
     End If
 
-    RS.Close
-    Set RS = Nothing
+    rs.Close
+    Set rs = Nothing
 
     If countResult = 0 Then
         MsgBox "Keine Versionsnummern in diesem Zeitraum"
@@ -135,13 +135,13 @@ End Sub
 
 Private Sub cmdVerrechnen_Click()
     Dim NewID As Long, Sql As String
-    Dim RS As DAO.Recordset
+    Dim rs As DAO.Recordset
 
     With UF.Form
-        Set RS = .RecordsetClone
-        RS.MoveFirst
-        Do While Not RS.EOF
-            .Bookmark = RS.Bookmark
+        Set rs = .RecordsetClone
+        rs.MoveFirst
+        Do While Not rs.EOF
+            .Bookmark = rs.Bookmark
             If IsNull(!ProjektName) And Not IsNull(!ProjektID) Then
                 '** Fehlende Projektname eintragen **
                 .Projekt_AfterUpdate
@@ -152,7 +152,7 @@ Private Sub cmdVerrechnen_Click()
             End If
             If IsNull(!UstProz) Then !UstProz = 0.2
 
-            RS.MoveNext
+            rs.MoveNext
         Loop
 
     End With

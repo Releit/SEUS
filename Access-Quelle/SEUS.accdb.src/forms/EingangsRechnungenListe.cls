@@ -81,7 +81,7 @@ End Sub
 
 Private Sub cmdOhneZuordnungVerschieben_Click()
     Dim Pfad As String
-    Dim RS As DAO.Recordset
+    Dim rs As DAO.Recordset
 
     If IsNull(cmbJahr) Then
         MsgBox "Jahr auswählen", , "fehlende Eingabe"
@@ -91,8 +91,8 @@ Private Sub cmdOhneZuordnungVerschieben_Click()
     MsgBox Pfad
     mFM_FillTempDateien Pfad
 
-    Set RS = CurrentDb.OpenRecordset("TempDateien", dbOpenSnapshot)
-    With RS
+    Set rs = CurrentDb.OpenRecordset("TempDateien", dbOpenSnapshot)
+    With rs
     Do While Not .EOF
         If DCount("*", "T_Eingangsrechnungen", "PfadDatei='" & !FileName & "'") = 0 Then
             mFM_MoveFile Pfad & "\" & !FileName, Pfad & "\Ohne Zuordnung\" & !FileName

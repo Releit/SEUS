@@ -15,9 +15,9 @@ Sub testmED_GetMemo()
 End Sub
 
 Function mED_GetMemo(Feldname As String) As String
-    Dim RS As Object
-    Set RS = CurrentDb.OpenRecordset("SELECT " & Feldname & " FROM T_Einstellungen", dbOpenSnapshot)
-    mED_GetMemo = Nz(RS.Fields(0), "")
+    Dim rs As Object
+    Set rs = CurrentDb.OpenRecordset("SELECT " & Feldname & " FROM T_Einstellungen", dbOpenSnapshot)
+    mED_GetMemo = Nz(rs.Fields(0), "")
 End Function
 
 Function mED_LetztesMahnDatum(RechnungID As Long) As Date

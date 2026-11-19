@@ -3,7 +3,7 @@ Option Compare Database
 Option Explicit
 
 Function m_GoToID(FormName As String, ToID As Long)
-    Dim RS As Object
+    Dim rs As Object
 
     DoCmd.OpenForm FormName
 

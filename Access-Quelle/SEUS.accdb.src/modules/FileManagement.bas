@@ -246,15 +246,15 @@ End Sub
 Function mFM_FillTempDateien(SearchFolder As String, Optional filenameCriteria As String) As Long
 
     Dim FileName As String
-    Dim RS As Recordset, i As Long
+    Dim rs As Recordset, i As Long
 
     mFM_CreateTempDateien
 
-    Set RS = CurrentDb.OpenRecordset("TempDateien", dbOpenDynaset)
+    Set rs = CurrentDb.OpenRecordset("TempDateien", dbOpenDynaset)
 
     FileName = Dir(SearchFolder & "\*" & filenameCriteria)
     Do While Len(FileName) > 0
-        With RS
+        With rs
             .AddNew
             !FileName = FileName
             !DateCreated = mFM_FileDateCreated(SearchFolder & "\" & FileName)
@@ -269,12 +269,12 @@ Function mFM_FillTempDateien(SearchFolder As String, Optional filenameCriteria A
 End Function
 
 Sub mFM_TempDateienSetZugeordnetER(Datum As Date)
-    Dim RS As Recordset, sPath As String
+    Dim rs As Recordset, sPath As String
     sPath = mED_ER_Pfad(Datum)
 
 
-    Set RS = CurrentDb.OpenRecordset("TempDateien", dbOpenDynaset)
-    With RS
+    Set rs = CurrentDb.OpenRecordset("TempDateien", dbOpenDynaset)
+    With rs
         Do While Not .EOF()
             If DCount("ID", "T_Eingangsrechnungen", "PfadDatei='" & !FileName & "'") Then
                 .Edit

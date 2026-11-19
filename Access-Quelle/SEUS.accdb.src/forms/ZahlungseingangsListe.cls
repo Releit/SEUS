@@ -62,11 +62,11 @@ End Sub
 Private Sub cmdLfdNr_Click()
     If MsgBox("Sollen die fehlenden Laufenden Nummern vergeben werden?", vbYesNo + vbDefaultButton2, "Nummervergabe") = vbYes Then
 
-        Dim RS As Object, Nr As Long
+        Dim rs As Object, Nr As Long
 
-        Set RS = UF.Form.RecordsetClone
+        Set rs = UF.Form.RecordsetClone
 
-        With RS
+        With rs
             .MoveFirst
             If IsNull(!LfdNr) Then Nr = 1
 

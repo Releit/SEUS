@@ -27,17 +27,17 @@ Function mDF_ProjektLeistungenEuroVerrechnet(ProjektID As Long) As Currency
 End Function
 
 Function mDF_ReturnTextFromSQL(Sql As String) As String
-    Dim RS As DAO.Recordset
+    Dim rs As DAO.Recordset
 
-    Set RS = CurrentDb.OpenRecordset(Sql, dbOpenSnapshot)
-    If Not RS.EOF Then mDF_ReturnTextFromSQL = Nz(RS.Fields(0), "")
+    Set rs = CurrentDb.OpenRecordset(Sql, dbOpenSnapshot)
+    If Not rs.EOF Then mDF_ReturnTextFromSQL = Nz(rs.Fields(0), "")
 End Function
 
 Function mDF_ReturnLongFromSQL(Sql As String) As Long
-    Dim RS As DAO.Recordset
+    Dim rs As DAO.Recordset
 
-    Set RS = CurrentDb.OpenRecordset(Sql, dbOpenSnapshot)
-    If Not RS.EOF Then mDF_ReturnLongFromSQL = Nz(RS.Fields(0), 0)
+    Set rs = CurrentDb.OpenRecordset(Sql, dbOpenSnapshot)
+    If Not rs.EOF Then mDF_ReturnLongFromSQL = Nz(rs.Fields(0), 0)
 End Function
 
 Function mDF_ZE_RechungenBetrag(ZEID As Long) As Currency
@@ -70,14 +70,14 @@ Function mDF_ZABetrag(ZAID As Long) As Currency
 End Function
 
 Function mDF_ZE_RechnungsNummern(ZEID As Long) As String
-    Dim Sql As String, RS As DAO.Recordset, x As String
+    Dim Sql As String, rs As DAO.Recordset, x As String
 
     Sql = "SELECT T_Rechnungen.Nr FROM T_Rechnungen INNER JOIN T_Rechnungen_ZE ON T_Rechnungen.ID = T_Rechnungen_ZE.RechnungID" & _
           " WHERE T_Rechnungen_ZE.ZEID=" & Str(ZEID)
 
-    Set RS = CurrentDb.OpenRecordset(Sql, dbOpenSnapshot)
+    Set rs = CurrentDb.OpenRecordset(Sql, dbOpenSnapshot)
 
-    With RS
+    With rs
         Do While Not .EOF
             x = x & !Nr & ", "
             .MoveNext

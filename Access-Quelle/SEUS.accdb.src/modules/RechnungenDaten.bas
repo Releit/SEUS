@@ -7,14 +7,14 @@ Function mRD_BetragInkl(RechnungID As Long) As Currency
 End Function
 
 Function mRD_RechnungsDatum(ZEID As Long) As String
-    Dim Sql As String, RS As DAO.Recordset, x As String
+    Dim Sql As String, rs As DAO.Recordset, x As String
 
     Sql = "SELECT T_Rechnungen.Datum FROM T_Rechnungen INNER JOIN T_Rechnungen_ZE ON T_Rechnungen.ID = T_Rechnungen_ZE.RechnungID" & _
           " WHERE T_Rechnungen_ZE.ZEID=" & Str(ZEID)
 
-    Set RS = CurrentDb.OpenRecordset(Sql, dbOpenSnapshot)
+    Set rs = CurrentDb.OpenRecordset(Sql, dbOpenSnapshot)
 
-    With RS
+    With rs
         Do While Not .EOF
             x = x & Format(!Datum, "DD.MM.YYYY") & ", "
             .MoveNext

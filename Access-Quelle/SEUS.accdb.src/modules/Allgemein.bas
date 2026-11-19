@@ -112,19 +112,19 @@ Sub ShowConnection()
 End Sub
 
 Sub SetConnection()
-    Dim Tb As TableDef, DB As Database
+    Dim Tb As TableDef, db As Database
 
-    Set DB = CurrentDb
-    For Each Tb In DB.TableDefs
+    Set db = CurrentDb
+    For Each Tb In db.TableDefs
         If Tb.Connect <> "" Then Tb.Connect = ";DATABASE=D:\Firma\Access\RechnungsDB\Daten.accdb"
     Next
 End Sub
 
 Sub SetConnectionLeitner()
-    Dim Tb As TableDef, DB As Database
+    Dim Tb As TableDef, db As Database
 
-    Set DB = CurrentDb
-    For Each Tb In DB.TableDefs
+    Set db = CurrentDb
+    For Each Tb In db.TableDefs
         If Tb.Connect <> "" Then
             Tb.Connect = ";DATABASE=D:\Daten\Datenbanken\Schaffer Arnold\Daten.accdb"
         End If

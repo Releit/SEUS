@@ -8,11 +8,14 @@ Begin Form
     PictureAlignment =2
     DatasheetGridlinesBehavior =3
     GridY =10
-    Width =13880
+    Width =14100
     DatasheetFontHeight =11
     ItemSuffix =40
     Right =50000
     Bottom =50000
+    RecSrcDt = Begin
+        0xee774f802da1e640
+    End
     Caption ="Test: Karteieinträge ohne Rechnung seit 7 Jahren"
     DatasheetFontName ="Calibri"
     OnLoad ="[Event Procedure]"
@@ -215,7 +218,7 @@ Begin Form
                     TextAlign =1
                     Left =4620
                     Top =0
-                    Width =800
+                    Width =780
                     Height =240
                     FontWeight =700
                     ForeColor =16777215
@@ -232,9 +235,9 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =1
-                    Left =5480
+                    Left =5460
                     Top =0
-                    Width =2000
+                    Width =1980
                     Height =240
                     FontWeight =700
                     ForeColor =16777215
@@ -251,7 +254,7 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =1
-                    Left =7540
+                    Left =7500
                     Top =0
                     Width =1200
                     Height =240
@@ -270,7 +273,7 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =1
-                    Left =8800
+                    Left =8760
                     Top =0
                     Width =1500
                     Height =240
@@ -289,9 +292,9 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =3
-                    Left =10360
+                    Left =10320
                     Top =0
-                    Width =1100
+                    Width =1080
                     Height =240
                     FontWeight =700
                     ForeColor =16777215
@@ -310,7 +313,7 @@ Begin Form
                     TextAlign =1
                     Left =11520
                     Top =0
-                    Width =1300
+                    Width =1320
                     Height =240
                     FontWeight =700
                     ForeColor =16777215
@@ -325,10 +328,9 @@ Begin Form
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =12880
+                    Left =12900
                     Top =0
-                    Width =1000
-                    Height =240
+                    Width =1020
                     Name ="EmptyCell30"
                     GroupTable =1
                     RightPadding =38
@@ -400,7 +402,7 @@ Begin Form
                     IMESentenceMode =3
                     Left =4620
                     Top =0
-                    Width =800
+                    Width =780
                     Height =300
                     FontSize =10
                     TabIndex =2
@@ -423,9 +425,9 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =5480
+                    Left =5460
                     Top =0
-                    Width =2000
+                    Width =1980
                     Height =300
                     FontSize =10
                     TabIndex =3
@@ -448,7 +450,7 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =7540
+                    Left =7500
                     Top =0
                     Width =1200
                     Height =300
@@ -474,7 +476,7 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =8800
+                    Left =8760
                     Top =0
                     Width =1500
                     Height =300
@@ -500,9 +502,9 @@ Begin Form
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =10360
+                    Left =10320
                     Top =0
-                    Width =1100
+                    Width =1080
                     Height =300
                     FontSize =10
                     TabIndex =6
@@ -527,7 +529,7 @@ Begin Form
                     IMESentenceMode =3
                     Left =11520
                     Top =0
-                    Width =1300
+                    Width =1320
                     Height =300
                     FontSize =10
                     TabIndex =7
@@ -547,9 +549,9 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =12880
+                    Left =12900
                     Top =0
-                    Width =1000
+                    Width =1020
                     Height =300
                     TabIndex =8
                     ForeColor =255

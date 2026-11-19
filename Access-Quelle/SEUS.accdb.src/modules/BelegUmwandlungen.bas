@@ -274,15 +274,15 @@ End Function
 '** Rückgabe der neuen ID **
 Function mUW_VerrechnungZuRechnungen(VerrechnungID As Long, Optional ID As Long, Optional Buchen As Boolean) As Long
     Dim Sql As String, MaxID As Long, NewID As Long, AdressenID As Long
-    Dim RS As Recordset, Kundenname As String, ProjektGruppierung As Boolean
+    Dim rs As Recordset, Kundenname As String, ProjektGruppierung As Boolean
 
     On Error GoTo mUW_VerrechnungZuRechnungenErr
 
     Sql = "SELECT * FROM T_VerrechnungKunden WHERE VerrechnungID=" & Str(VerrechnungID)
     If ID <> 0 Then Sql = Sql & " AND ID=" & Str(ID)
-    Set RS = CurrentDb.OpenRecordset(Sql, dbOpenSnapshot)
+    Set rs = CurrentDb.OpenRecordset(Sql, dbOpenSnapshot)
 
-    With RS
+    With rs
         Do While Not .EOF
             MaxID = DMax("ID", "T_Rechnungen")
             AdressenID = Nz(DMax("ID", "T_Adressen", "StandardFürRechnungen=True AND KarteiID=" & Str(!KarteiID)), 0)
